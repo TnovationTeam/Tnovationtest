@@ -165,12 +165,24 @@ namespace TNovationTestFramework
              OK = AEvent.Valid(ConsultantAttending, Contact, EventName, GuestSpeakers, Location, TypeOfEvent);
              //test to see that the result is correct
              Assert.IsTrue(OK);
+         }
 
+         [TestMethod]
+         public void FindMethodOK()
+         {
+             //create an instance of the class we want to create
+             clsEvent AEvent = new clsEvent();
+             //boolean varibale to store the result of the validation
+             Boolean Found = false;
+             //create some test data to use with the method
+             Int32 EventCode = 1;
+             //invoke the method
+             Found = AEvent.Find(EventCode);
+             //test rto see that the result is correct
+             Assert.IsTrue(Found);
 
          }
      }
   }
 
 
-    }
-}

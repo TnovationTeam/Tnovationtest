@@ -31,5 +31,10 @@ namespace TNovationClassLibrary
         {
             return true;
         }
+
+        public bool Find(int EventCode)
+        {
+            return true;
+        }
     }
 }
