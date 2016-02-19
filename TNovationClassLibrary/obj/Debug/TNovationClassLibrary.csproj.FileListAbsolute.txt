@@ -1,0 +1,5 @@
+F:\2nd Year\Project Management_Mathew Dean\Final Deliverable\Client\TNovationClassLibrary\bin\Debug\TNovationClassLibrary.dll
+F:\2nd Year\Project Management_Mathew Dean\Final Deliverable\Client\TNovationClassLibrary\bin\Debug\TNovationClassLibrary.pdb
+F:\2nd Year\Project Management_Mathew Dean\Final Deliverable\Client\TNovationClassLibrary\obj\Debug\TNovationClassLibrary.csprojResolveAssemblyReference.cache
+F:\2nd Year\Project Management_Mathew Dean\Final Deliverable\Client\TNovationClassLibrary\obj\Debug\TNovationClassLibrary.dll
+F:\2nd Year\Project Management_Mathew Dean\Final Deliverable\Client\TNovationClassLibrary\obj\Debug\TNovationClassLibrary.pdb
