@@ -156,7 +156,7 @@ namespace TNovationTestFramework
              Boolean OK = false;
              //create some test data to pass to the method
              string ConsultantAttending = "Egle Sciglinskaite";
-             string Contact = "075432345"
+             string Contact = "075432345";
              string EventName = "Technology Today";
              string GuestSpeakers = "Matthew Dean";
              string Location = "DMU Leicester";
