@@ -7,6 +7,29 @@ namespace TNovationClassLibrary
 {
     public class clsEvent
     {
+        private Int32 eventCode;
+
+        private string eventName;
+
+        private string companyName;
+
+        private string consultantAttending;
+
+        private string contact;
+
+        private DateTime startDate;
+
+        private DateTime endDate;
+
+        private  string guestSpeaker;
+
+        private string location;
+
+        private string typeOfEvent;
+
+
+
+
         public int EventCode { get; set; }
 
         public string EventName { get; set; }
