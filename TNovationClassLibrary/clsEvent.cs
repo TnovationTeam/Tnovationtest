@@ -30,15 +30,80 @@ namespace TNovationClassLibrary
 
 
 
-        public int EventCode { get; set; }
+        public int EventCode
+        {
+            get
+            {
+                //return the private data
+                return eventCode;
+            }
+            set
+            {
+                //set the value of the private data member
+                eventCode = value;
+            }
+        }
 
-        public string EventName { get; set; }
+        public string EventName
+        {
+            get
+            {
+                //return the private data
+                return eventName;
 
-        public string CompanyName { get; set; }
+            }
+            set
+            {
+                //set the value of the private data member
+                eventName = value;
+            }
+        }
 
-        public string ConsultantAttending { get; set; }
 
-        public string Contact { get; set; }
+
+        public string CompanyName
+        {
+            get
+            {
+                //return the private data
+                return companyName;
+            }
+            set
+            {
+                //set the value of the private data member
+                companyName = value;
+            }
+
+        }
+
+        public string ConsultantAttending
+        {
+            get
+            {
+                //return the private data
+                return consultantAttending;
+            }
+            set
+            {
+                //set the value of the private data member
+                consultantAttending = value;
+            }
+        }
+
+        public string Contact
+        {
+            get
+            {
+                //return the private data
+                return contact;
+            }
+            set
+            {
+                //set the value of the private data member
+                contact = value;
+            }
+        }
+
 
         public DateTime EndDate { get; set; }
 
