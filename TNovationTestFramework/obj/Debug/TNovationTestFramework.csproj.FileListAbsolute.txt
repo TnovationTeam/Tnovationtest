@@ -5,3 +5,10 @@ F:\2nd Year\Project Management_Mathew Dean\Final Deliverable\Client\TNovationTes
 F:\2nd Year\Project Management_Mathew Dean\Final Deliverable\Client\TNovationTestFramework\bin\Debug\TNovationClassLibrary.pdb
 F:\2nd Year\Project Management_Mathew Dean\Final Deliverable\Client\TNovationTestFramework\obj\Debug\TNovationTestFramework.dll
 F:\2nd Year\Project Management_Mathew Dean\Final Deliverable\Client\TNovationTestFramework\obj\Debug\TNovationTestFramework.pdb
+F:\2nd Year\Project Management_Mathew Dean\Final Deliverable\TNovation\TNovationTestFramework\bin\Debug\TNovationTestFramework.dll
+F:\2nd Year\Project Management_Mathew Dean\Final Deliverable\TNovation\TNovationTestFramework\bin\Debug\TNovationTestFramework.pdb
+F:\2nd Year\Project Management_Mathew Dean\Final Deliverable\TNovation\TNovationTestFramework\bin\Debug\TNovationClassLibrary.dll
+F:\2nd Year\Project Management_Mathew Dean\Final Deliverable\TNovation\TNovationTestFramework\bin\Debug\TNovationClassLibrary.pdb
+F:\2nd Year\Project Management_Mathew Dean\Final Deliverable\TNovation\TNovationTestFramework\obj\Debug\TNovationTestFramework.csprojResolveAssemblyReference.cache
+F:\2nd Year\Project Management_Mathew Dean\Final Deliverable\TNovation\TNovationTestFramework\obj\Debug\TNovationTestFramework.dll
+F:\2nd Year\Project Management_Mathew Dean\Final Deliverable\TNovation\TNovationTestFramework\obj\Debug\TNovationTestFramework.pdb

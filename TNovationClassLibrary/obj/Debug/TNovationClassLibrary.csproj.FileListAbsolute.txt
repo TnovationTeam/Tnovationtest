@@ -3,3 +3,8 @@ F:\2nd Year\Project Management_Mathew Dean\Final Deliverable\Client\TNovationCla
 F:\2nd Year\Project Management_Mathew Dean\Final Deliverable\Client\TNovationClassLibrary\obj\Debug\TNovationClassLibrary.csprojResolveAssemblyReference.cache
 F:\2nd Year\Project Management_Mathew Dean\Final Deliverable\Client\TNovationClassLibrary\obj\Debug\TNovationClassLibrary.dll
 F:\2nd Year\Project Management_Mathew Dean\Final Deliverable\Client\TNovationClassLibrary\obj\Debug\TNovationClassLibrary.pdb
+F:\2nd Year\Project Management_Mathew Dean\Final Deliverable\TNovation\TNovationClassLibrary\bin\Debug\TNovationClassLibrary.dll
+F:\2nd Year\Project Management_Mathew Dean\Final Deliverable\TNovation\TNovationClassLibrary\bin\Debug\TNovationClassLibrary.pdb
+F:\2nd Year\Project Management_Mathew Dean\Final Deliverable\TNovation\TNovationClassLibrary\obj\Debug\TNovationClassLibrary.csprojResolveAssemblyReference.cache
+F:\2nd Year\Project Management_Mathew Dean\Final Deliverable\TNovation\TNovationClassLibrary\obj\Debug\TNovationClassLibrary.dll
+F:\2nd Year\Project Management_Mathew Dean\Final Deliverable\TNovation\TNovationClassLibrary\obj\Debug\TNovationClassLibrary.pdb

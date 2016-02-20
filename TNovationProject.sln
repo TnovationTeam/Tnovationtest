@@ -1,11 +1,33 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.40629.0
+VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TNovationClassLibrary", "TNovationClassLibrary\TNovationClassLibrary.csproj", "{6129C85E-8FD8-4D99-A936-02DEE166A193}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TNovationTestFramework", "TNovationTestFramework\TNovationTestFramework.csproj", "{128FF664-AA0A-40FF-82E3-3BFB5BEAB4F4}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "TNovation", "http://localhost:57514", "{8C5F6A91-28E1-4491-9364-3C4850560C91}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_57514"
+		Debug.AspNetCompiler.PhysicalPath = "..\TNovation\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57514\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_57514"
+		Release.AspNetCompiler.PhysicalPath = "..\TNovation\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57514\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "..\TNovation\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +43,10 @@ Global
 		{128FF664-AA0A-40FF-82E3-3BFB5BEAB4F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{128FF664-AA0A-40FF-82E3-3BFB5BEAB4F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{128FF664-AA0A-40FF-82E3-3BFB5BEAB4F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C5F6A91-28E1-4491-9364-3C4850560C91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C5F6A91-28E1-4491-9364-3C4850560C91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C5F6A91-28E1-4491-9364-3C4850560C91}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C5F6A91-28E1-4491-9364-3C4850560C91}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
