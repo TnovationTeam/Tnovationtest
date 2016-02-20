@@ -8,3 +8,8 @@ F:\2nd Year\Project Management_Mathew Dean\Final Deliverable\TNovation\TNovation
 F:\2nd Year\Project Management_Mathew Dean\Final Deliverable\TNovation\TNovationClassLibrary\obj\Debug\TNovationClassLibrary.csprojResolveAssemblyReference.cache
 F:\2nd Year\Project Management_Mathew Dean\Final Deliverable\TNovation\TNovationClassLibrary\obj\Debug\TNovationClassLibrary.dll
 F:\2nd Year\Project Management_Mathew Dean\Final Deliverable\TNovation\TNovationClassLibrary\obj\Debug\TNovationClassLibrary.pdb
+C:\Users\Palmira\Source\Repos\Tnovationtest\TNovationClassLibrary\bin\Debug\TNovationClassLibrary.dll
+C:\Users\Palmira\Source\Repos\Tnovationtest\TNovationClassLibrary\bin\Debug\TNovationClassLibrary.pdb
+C:\Users\Palmira\Source\Repos\Tnovationtest\TNovationClassLibrary\obj\Debug\TNovationClassLibrary.csprojResolveAssemblyReference.cache
+C:\Users\Palmira\Source\Repos\Tnovationtest\TNovationClassLibrary\obj\Debug\TNovationClassLibrary.dll
+C:\Users\Palmira\Source\Repos\Tnovationtest\TNovationClassLibrary\obj\Debug\TNovationClassLibrary.pdb
