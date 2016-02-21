@@ -24,7 +24,9 @@ namespace ConsultantClassLibrary
         //private data member for the Job description property
         private string jobDescription;
         //private data member for the Name property
-        private string name;
+        private string firstName;
+        //private data member for the Name property
+        private string lastName;
         //private data member for the Status property
         private Boolean status;
         //private data member for the Telephone Number property
@@ -159,19 +161,36 @@ namespace ConsultantClassLibrary
         }
 
         //public property for Name
-        public string Name
+        public string FirstName
         {
             get
             {
                 //return the private data
-                return name;
+                return firstName;
 
             }
 
             set
             {
                 //set the private data
-                name = value;
+                firstName = value;
+            }
+        }
+
+        //public property for Name
+        public string LastName
+        {
+            get
+            {
+                //return the private data
+                return lastName;
+
+            }
+
+            set
+            {
+                //set the private data
+                lastName = value;
             }
         }
 
@@ -226,9 +245,51 @@ namespace ConsultantClassLibrary
             }
         }
 
+        public bool Valid(string FirstName, string LastName, string Address, string Email, string WorkHistory, string JobDescription)
+        {
+            return true;
+        }
+
+       
+
         public bool Find(int ConsultantNo)
         {
-            throw new NotImplementedException();
+
+            //create an instance of the data connection
+            clsDataConnection DB = new clsDataConnection();
+            //add the parameter for the event code to search for
+            DB.AddParameter("ConsultantNo", ConsultantNo);
+            //execute the stored procedure
+            DB.Execute("sproc_tblEvent_FilterByConsultantNo");
+            //if one record is found (there should be either one or zero!)
+            if (DB.Count == 1)
+            {
+                //copy the data from the databse to the private data members
+                consultantNo = Convert.ToInt32(DB.DataTable.Rows[0]["ConsultantNo"]);
+                firstName = Convert.ToString(DB.DataTable.Rows[0]["FirstName"]);
+                lastName = Convert.ToString(DB.DataTable.Rows[0]["LastName"]);
+                dateOfBirth = Convert.ToDateTime(DB.DataTable.Rows[0]["DateOfBirth"]);
+                address = Convert.ToString(DB.DataTable.Rows[0]["Address"]);
+                email = Convert.ToString(DB.DataTable.Rows[0]["Email"]);
+                telephoneNo = Convert.ToString(DB.DataTable.Rows[0]["TelephoneNo"]);
+                 emergencyContact = Convert.ToString(DB.DataTable.Rows[0]["EmergencyContact"]);
+                employmentDate = Convert.ToDateTime(DB.DataTable.Rows[0]["EmploymentDate"]); 
+                hoursOfWork = Convert.ToInt32(DB.DataTable.Rows[0]["HoursOfWork"]);
+                workHistory = Convert.ToString(DB.DataTable.Rows[0]["WorkHistory"]);
+                status = Convert.ToBoolean(DB.DataTable.Rows[0]["Status"]);
+
+                //return that everything worked OK
+                return true;
+            }
+            //if no record was found
+            else
+            {
+                //return false indicating a problem
+                return false;
+            }
         }
     }
 }
+
+
+
