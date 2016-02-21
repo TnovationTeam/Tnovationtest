@@ -233,8 +233,25 @@ namespace TNovationClassLibrary
 
 
         public bool Valid(string ClientName, string ClientEmail, string ClientPosition, string ClientQualification, string ClientService, string ClientAddress, string ClientTel, string DateAdded)
-        {
-            return true;
+        {   
+            //create a boolean variable to flag the error
+            Boolean OK = true;
+            //if the ClientName is blank
+            if (ClientName.Length ==0)
+            {
+                //set the flag OK to false
+                OK = false;
+            }
+
+            //if ClientName is greater than 50 characters
+            if (ClientName.Length > 50)
+            {
+                //set the flag OK to false
+                OK = false;
+            }
+
+            //return the value of OK
+            return OK;
         }
     }
 
