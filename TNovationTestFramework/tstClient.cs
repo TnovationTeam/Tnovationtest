@@ -479,7 +479,7 @@ namespace TNovationTestFramework
             
         }
 
-        ///////////////////////////////////////////////////// Test plan for ClientName Validation property
+        ///////////////////////////////////////////////////// Test plan for ClientName Validation 
 
 
         //ClientName Validation for Min-1
@@ -687,7 +687,7 @@ namespace TNovationTestFramework
 
 
 
-        ///////////////////////////////////////////////////// Test plan for DateAdded Validation property
+        ///////////////////////////////////////////////////// Test plan for DateAdded Validation 
 
 
 
