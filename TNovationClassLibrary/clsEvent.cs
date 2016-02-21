@@ -184,12 +184,39 @@ namespace TNovationClassLibrary
             return true;
         }
 
+       
+
         public bool Find(int EventCode)
         {
-            //set the private data member to the test data value
-            eventCode = 1;
-            //always return true
-            return true;
+
+            //create an instance of the data connection
+            clsDataConnection DB = new clsDataConnection();
+            //add the parameter for the event code to search for
+            DB.AddParameter("EventCode", EventCode);
+            //execute the stored procedure
+            DB.Execute("sproc_tblEvent_FilterByEventCode");
+            //if one record is found ,there should be either one or zero!
+            if (DB.Count == 1)
+            {
+                //copy the data from the databse to the private data members
+                eventCode = Convert.ToInt32(DB.DataTable.Rows[0]["EventCode"]);
+                eventName = Convert.ToString(DB.DataTable.Rows[0]["EventName"]);
+                companyName = Convert.ToString(DB.DataTable.Rows[0]["CompanyName"]);
+                contact = Convert.ToString(DB.DataTable.Rows[0]["Contact"]);
+                endDate = Convert.ToDateTime(DB.DataTable.Rows[0]["EndDate"]);
+                startDate = Convert.ToDateTime(DB.DataTable.Rows[0]["StartDate"]);
+                guestSpeaker = Convert.ToString(DB.DataTable.Rows[0]["GuestSpeaker"]);
+                location = Convert.ToString(DB.DataTable.Rows[0]["Location"]);
+                typeOfEvent = Convert.ToString(DB.DataTable.Rows[0]["TypeOfEvent"]); 
+                //return that everything worked ok
+                return true;
+            }
+            //if no record was found
+            else
+            {
+                //return false indicating a problem
+                return false;
+            }
         }
     }
 }

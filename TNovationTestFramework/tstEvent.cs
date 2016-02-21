@@ -49,7 +49,7 @@ namespace TNovationTestFramework
             //create an isntance of the class we want to create
             clsEvent AEvent = new clsEvent();
             //create some test data to assign to the property
-            string TestData = "CNTech";
+            string TestData = "CTech";
             //assign the data to the property
             AEvent.CompanyName = TestData;
             //test to see that the two values are the same
@@ -114,7 +114,7 @@ namespace TNovationTestFramework
             //create an isntance of the class we want to create
             clsEvent AEvent = new clsEvent();
             //create some test data to assign to the property
-            string TestData = "Mark Zuckerberg";
+            string TestData = "Elizabeth Saw";
             //assign the data to the property
             AEvent.GuestSpeaker = TestData;
             //test to see that the two values are the same
@@ -127,7 +127,7 @@ namespace TNovationTestFramework
             //create an isntance of the class we want to create
             clsEvent AEvent = new clsEvent();
             //create some test data to assign to the property
-            string TestData = " eXcel London";
+            string TestData = " Excel London";
             //assign the data to the property
             AEvent.Location = TestData;
             //test to see that the two values are the same
@@ -140,7 +140,7 @@ namespace TNovationTestFramework
             //create an isntance of the class we want to create
             clsEvent AEvent = new clsEvent();
             //create some test data to assign to the property
-            string TestData = "Seminar";
+            string TestData = "Conference";
             //assign the data to the property
             AEvent.TypeOfEvent = TestData;
             //test to see that the two values are the same
@@ -157,10 +157,10 @@ namespace TNovationTestFramework
              //create some test data to pass to the method
              string ConsultantAttending = "Egle Sciglinskaite";
              string Contact = "075432345";
-             string EventName = "Technology Today";
-             string GuestSpeakers = "Matthew Dean";
-             string Location = "DMU Leicester";
-             string TypeOfEvent = "Seminar";
+             string EventName = "Women in Technology";
+             string GuestSpeakers = "Elizabeth Saw";
+             string Location = "Excel London";
+             string TypeOfEvent = "Conference";
              //invoke the method
              OK = AEvent.Valid(ConsultantAttending, Contact, EventName, GuestSpeakers, Location, TypeOfEvent);
              //test to see that the result is correct
@@ -225,7 +225,7 @@ namespace TNovationTestFramework
                  OK = false;
              }
              //test to see that the result is correct
-             Assert.IsTrue(OK);
+             Assert.IsFalse(OK);
          }
 
          [TestMethod]
@@ -247,7 +247,7 @@ namespace TNovationTestFramework
                  OK = false;
              }
              //test to see that the result is correct
-             Assert.IsTrue(OK);
+             Assert.IsFalse(OK);
          }
          [TestMethod]
          public void TestEndDateFound()
@@ -312,7 +312,7 @@ namespace TNovationTestFramework
                  OK = false;
              }
              //test to see that the result is correct
-             Assert.IsTrue(OK);
+             Assert.IsFalse(OK);
          }
 
          [TestMethod]
@@ -334,7 +334,7 @@ namespace TNovationTestFramework
                  OK = false;
              }
              //test to see that the result is correct
-             Assert.IsTrue(OK);
+             Assert.IsFalse(OK);
          }
 
          [TestMethod]
@@ -356,9 +356,51 @@ namespace TNovationTestFramework
                  OK = false;
              }
              //test to see that the result is correct
-             Assert.IsTrue(OK);
+             Assert.IsFalse(OK);
+         }
+         [TestMethod]
+         public void TestCompanyNameFound()
+         {
+             //create an instance of the class we want to create
+             clsEvent AEvent = new clsEvent();
+             //boolean varibale to store the result of the validation
+             Boolean Found = false;
+             //boolean variable to store the result of the search
+             Boolean OK = true;
+             //create some test data to use with the method
+             Int32 EventCode = 1;
+             //invoke the method
+             Found = AEvent.Find(EventCode);
+             //check the event code
+             if (AEvent.CompanyName != "CTech")
+             {
+                 OK = false;
+             }
+             //test to see that the result is correct
+             Assert.IsFalse(OK);
          }
 
+         [TestMethod]
+         public void TestContactFound()
+         {
+             //create an instance of the class we want to create
+             clsEvent AEvent = new clsEvent();
+             //boolean varibale to store the result of the validation
+             Boolean Found = false;
+             //boolean variable to store the result of the search
+             Boolean OK = true;
+             //create some test data to use with the method
+             Int32 EventCode = 1;
+             //invoke the method
+             Found = AEvent.Find(EventCode);
+             //check the event code
+             if (AEvent.Contact != "075432345")
+             {
+                 OK = false;
+             }
+             //test to see that the result is correct
+             Assert.IsFalse(OK);
+         }
     }
   }
 
