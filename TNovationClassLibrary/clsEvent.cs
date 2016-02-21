@@ -105,15 +105,79 @@ namespace TNovationClassLibrary
         }
 
 
-        public DateTime EndDate { get; set; }
+        public DateTime EndDate 
+        { 
+            get
+            {
+                //return the private data
+                return endDate;
+            }
+            set
+            {
+                //set the value of the private data member
+                endDate = value;
+            }
+        }
+            
 
-        public DateTime StartDate { get; set; }
+        public DateTime StartDate
+        {
+            get
+            {
+                //return the private data
+                return startDate;
+            }
+            set
+            {
+                //set the value of the private data member
+                startDate = value;
+            }
+        }
 
-        public string GuestSpeaker { get; set; }
+        public string GuestSpeaker 
+        { 
+            get
+            {
+                //return the private data
+                return guestSpeaker;
+            }
+            set
+            {
+                //setr the value of the private data member
+                guestSpeaker = value;
+            }
+        }
 
-        public string Location { get; set; }
+        public string Location 
+        { 
+            get
 
-        public string TypeOfEvent { get; set; }
+            {
+                //return the private data
+                return location;
+            }
+            set
+            {
+                //set the value of the private data member
+                location = value;
+            }
+        }
+
+
+        public string TypeOfEvent
+        {
+            get
+            {
+                //return the private data
+                return typeOfEvent;
+            }
+
+            set
+            {
+                //set the value of the private data member
+                typeOfEvent = value;
+            }
+        }
 
         public bool Valid(string ConsultantAttending, string Contact, string EventName, string GuestSpeakers, string Location, string TypeOfEvent)
         {
