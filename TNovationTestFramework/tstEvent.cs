@@ -22,7 +22,7 @@ namespace TNovationTestFramework
             //create an isntance of the class we want to create
             clsEvent AEvent = new clsEvent();
             //create some test data to assign to the property
-            Int32 TestData = 23;
+            Int32 TestData = 1;
             //assign the data to the property
             AEvent.EventCode = TestData;
             //test to see that the two values are the same
@@ -178,11 +178,188 @@ namespace TNovationTestFramework
              Int32 EventCode = 1;
              //invoke the method
              Found = AEvent.Find(EventCode);
-             //test rto see that the result is correct////// testingggggggggggggggggggggggg
+             //test rto see that the result is correct
              Assert.IsTrue(Found);
 
          }
-     }
+
+         [TestMethod]
+         public void TestEventCodeFound()
+         {
+             //create an instance of the class we want to create
+             clsEvent AEvent = new clsEvent();
+             //boolean varibale to store the result of the validation
+             Boolean Found = false;
+             //boolean variable to store the result of the search
+             Boolean OK = true;
+             //create some test data to use with the method
+             Int32 EventCode = 1;
+             //invoke the method
+             Found = AEvent.Find(EventCode);
+             //check the event code
+             if (AEvent.EventCode != 1) 
+             {
+                 OK = false;
+             }
+             //test to see that the result is correct
+             Assert.IsTrue(OK);
+
+         }
+
+         [TestMethod]
+         public void TestEventNameFound()
+         {
+             //create an instance of the class we want to create
+             clsEvent AEvent = new clsEvent();
+             //boolean varibale to store the result of the validation
+             Boolean Found = false;
+             //boolean variable to store the result of the search
+             Boolean OK = true;
+             //create some test data to use with the method
+             Int32 EventCode = 1;
+             //invoke the method
+             Found = AEvent.Find(EventCode);
+             //check the event code
+             if (AEvent.EventName != "Women in Technology")
+             {
+                 OK = false;
+             }
+             //test to see that the result is correct
+             Assert.IsTrue(OK);
+         }
+
+         [TestMethod]
+         public void TestConsultantAttendingFound()
+         {
+             //create an instance of the class we want to create
+             clsEvent AEvent = new clsEvent();
+             //boolean varibale to store the result of the validation
+             Boolean Found = false;
+             //boolean variable to store the result of the search
+             Boolean OK = true;
+             //create some test data to use with the method
+             Int32 EventCode = 1;
+             //invoke the method
+             Found = AEvent.Find(EventCode);
+             //check the event code
+             if (AEvent.ConsultantAttending != "Egle Sciglinskaite")
+             {
+                 OK = false;
+             }
+             //test to see that the result is correct
+             Assert.IsTrue(OK);
+         }
+         [TestMethod]
+         public void TestEndDateFound()
+         {
+             //create an instance of the class we want to create
+             clsEvent AEvent = new clsEvent();
+             //boolean varibale to store the result of the validation
+             Boolean Found = false;
+             //boolean variable to store the result of the search
+             Boolean OK = true;
+             //create some test data to use with the method
+             Int32 EventCode = 1;
+             //invoke the method
+             Found = AEvent.Find(EventCode);
+             //check the event code
+             if (AEvent.EndDate != Convert.ToDateTime("22/03/2016 19:00:00"))
+             {
+                 OK = false;
+             }
+             //test to see that the result is correct
+             Assert.IsTrue(OK);
+         }
+
+         [TestMethod]
+         public void TestStartDateFound()
+         {
+             //create an instance of the class we want to create
+             clsEvent AEvent = new clsEvent();
+             //boolean varibale to store the result of the validation
+             Boolean Found = false;
+             //boolean variable to store the result of the search
+             Boolean OK = true;
+             //create some test data to use with the method
+             Int32 EventCode = 1;
+             //invoke the method
+             Found = AEvent.Find(EventCode);
+             //check the event code
+             if (AEvent.StartDate != Convert.ToDateTime("22/03/2016 13:00:00"))
+             {
+                 OK = false;
+             }
+             //test to see that the result is correct
+             Assert.IsTrue(OK);
+         }
+
+         [TestMethod]
+         public void TestGuestSpeakerFound()
+         {
+             //create an instance of the class we want to create
+             clsEvent AEvent = new clsEvent();
+             //boolean varibale to store the result of the validation
+             Boolean Found = false;
+             //boolean variable to store the result of the search
+             Boolean OK = true;
+             //create some test data to use with the method
+             Int32 EventCode = 1;
+             //invoke the method
+             Found = AEvent.Find(EventCode);
+             //check the event code
+             if (AEvent.GuestSpeaker != "Elizabeth Saw")
+             {
+                 OK = false;
+             }
+             //test to see that the result is correct
+             Assert.IsTrue(OK);
+         }
+
+         [TestMethod]
+         public void TestLocationFound()
+         {
+             //create an instance of the class we want to create
+             clsEvent AEvent = new clsEvent();
+             //boolean varibale to store the result of the validation
+             Boolean Found = false;
+             //boolean variable to store the result of the search
+             Boolean OK = true;
+             //create some test data to use with the method
+             Int32 EventCode = 1;
+             //invoke the method
+             Found = AEvent.Find(EventCode);
+             //check the event code
+             if (AEvent.Location != " Excel London")
+             {
+                 OK = false;
+             }
+             //test to see that the result is correct
+             Assert.IsTrue(OK);
+         }
+
+         [TestMethod]
+         public void TestTypeOfEventFound()
+         {
+             //create an instance of the class we want to create
+             clsEvent AEvent = new clsEvent();
+             //boolean varibale to store the result of the validation
+             Boolean Found = false;
+             //boolean variable to store the result of the search
+             Boolean OK = true;
+             //create some test data to use with the method
+             Int32 EventCode = 1;
+             //invoke the method
+             Found = AEvent.Find(EventCode);
+             //check the event code
+             if (AEvent.TypeOfEvent != "Conference")
+             {
+                 OK = false;
+             }
+             //test to see that the result is correct
+             Assert.IsTrue(OK);
+         }
+
+    }
   }
 
 

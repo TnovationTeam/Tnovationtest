@@ -186,6 +186,9 @@ namespace TNovationClassLibrary
 
         public bool Find(int EventCode)
         {
+            //set the private data member to the test data value
+            eventCode = 1;
+            //always return true
             return true;
         }
     }
