@@ -454,6 +454,30 @@ namespace TNovationTestFramework
             Assert.IsTrue(OK);
 
         }
+
+
+        [TestMethod] //create Valid method in clsClient
+        public void ValidMethodOK()
+        {
+            //create an instance of the class we want to create
+            clsClient AClient = new clsClient();
+            //boolean variable to store the result of the validation
+            Boolean OK = false;
+            //create some test data to pass to the method
+            string ClientName = "freddy";
+            string ClientEmail = "freddy@gmail.com";
+            string ClientPosition = "CEO";
+            string ClientQualification = "degree";
+            string ClientService = "IT support for company";
+            string ClientAddress = "21b";
+            string ClientTel = "783763";
+            string DateAdded = DateTime.Now.Date.ToString();
+            //invoke the method
+            OK = AClient.Valid(ClientName, ClientEmail, ClientPosition, ClientQualification, ClientService, ClientAddress, ClientTel, DateAdded);
+            //test to see that the result is correct
+            Assert.IsTrue(OK);
+            
+        }
         
 
      }

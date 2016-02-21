@@ -231,6 +231,11 @@ namespace TNovationClassLibrary
             }
         }
 
+
+        public bool Valid(string ClientName, string ClientEmail, string ClientPosition, string ClientQualification, string ClientService, string ClientAddress, string ClientTel, string DateAdded)
+        {
+            return true;
+        }
     }
 
 }
