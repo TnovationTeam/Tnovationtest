@@ -225,5 +225,10 @@ namespace ConsultantClassLibrary
                 workHistory = value;
             }
         }
+
+        public bool Find(int ConsultantNo)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
