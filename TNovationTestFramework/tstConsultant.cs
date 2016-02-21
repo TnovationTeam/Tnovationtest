@@ -184,7 +184,7 @@ namespace ConsultantTestFramework
         public void FindMethodOK()
         {
             //create an instance of the class we want to create
-            clsConsultantCollection AConsultantList = new clsConsultantCollection();
+            clsConsultant AConsultantList = new clsConsultant();
             //boolean variable to store the result of the vaidation
             Boolean Found = false;
             //create some test data to use with the method
