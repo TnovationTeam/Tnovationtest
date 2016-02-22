@@ -33,13 +33,13 @@ namespace TNovationTestFramework
         public void CompanyCodeOK()
         {
             //create an instance of the class we want to create
-            clsCompany ACode = new clsCompany();
+            clsCompany ACompany = new clsCompany();
             //create some test data to assign to the property
-            Int32 TestData = 1;
+            Int32 TestData = 21;
             //assign the data to the property
-            ACode.CompanyCode = TestData;
+            ACompany.CompanyCode = TestData;
             //test to see the two values are the same
-            Assert.AreEqual(ACode.CompanyCode, TestData);
+            Assert.AreEqual(ACompany.CompanyCode, TestData);
         }
         [TestMethod]
         public void CompanyEmailAddressOK()
@@ -104,22 +104,175 @@ namespace TNovationTestFramework
         }
 
 
+        [TestMethod]
+        public void FindMethodOK()
+        {
+            //create an instance of the class we want to create
+            clsCompany ACompany = new clsCompany();
+            //boolean variable to store the result of the validation
+            Boolean Found = false;
+            //create some test data to use with the method
+            Int32 CompanyCode = 1;
+            //invoke the method
+            Found = ACompany.Find(CompanyCode);
+            //test to see that the result is correct
+            Assert.IsTrue(Found);
+        }
 
 
 
+        [TestMethod]
+        public void TestCompanyCodeFound()
+        {
+            //create an instance of the class we want to create
+            clsCompany ACompany = new clsCompany();
+            //boolean variable to store the result of the search
+            Boolean Found = false;
+            //boolean variable to record if data is OK (assume that it is)
+            Boolean OK = true;
+            //create some test data to use with the method
+            Int32 CompanyCode = 21;
+            //invoke the method
+            Found = ACompany.Find(CompanyCode);
+            //check the company code
+            if (ACompany.CompanyCode != 21)
+            {
+                OK = false;
+            }
+            //test to see that the result is correct
+            Assert.IsTrue(OK);
+        }
 
 
+        [TestMethod]
+        public void TestCompanyAddressFound()
+        {
+            //create an instance of the class we want to create
+            clsCompany ACompany = new clsCompany();
+            //boolean variable to store the result of the search
+            Boolean Found = false;
+            //boolean variable to record if data is OK (assume that it is)
+            Boolean OK = true;
+            //create some test data to use with the method
+            Int32 CompanyCode = 21;
+            //invoke the method
+            Found = ACompany.Find(CompanyCode);
+            //check the company code
+            if (ACompany.CompanyAddress != "TNovation")
+            {
+                OK = false;
+            }
+            //test to see that the result is correct
+            Assert.IsTrue(OK);
+        }
 
+        [TestMethod]
+        public void TestCompanyEmailAddressFound()
+        {
+            //create an instance of the class we want to create
+            clsCompany ACompany = new clsCompany();
+            //boolean variable to store the result of the search
+            Boolean Found = false;
+            //boolean variable to record if data is OK (assume that it is)
+            Boolean OK = true;
+            //create some test data to use with the method
+            Int32 CompanyCode = 21;
+            //invoke the method
+            Found = ACompany.Find(CompanyCode);
+            //check the company code
+            if (ACompany.CompanyEmailAddress != "vijaymodhwadia@hotmail.co.uk")
+            {
+                OK = false;
+            }
+            //test to see that the result is correct
+            Assert.IsTrue(OK);
+        }
 
+        [TestMethod]
+        public void TestInvolvedClientFound()
+        {
+            //create an instance of the class we want to create
+            clsCompany ACompany = new clsCompany();
+            //boolean variable to store the result of the search
+            Boolean Found = false;
+            //boolean variable to record if data is OK (assume that it is)
+            Boolean OK = true;
+            //create some test data to use with the method
+            Int32 CompanyCode = 21;
+            //invoke the method
+            Found = ACompany.Find(CompanyCode);
+            //check the company code
+            if (ACompany.InvolvedClient != "Freddy")
+            {
+                OK = false;
+            }
+            //test to see that the result is correct
+            Assert.IsTrue(OK);
+        }
+        [TestMethod]
+        public void TestInvolvedProjectFound()
+        {
+            //create an instance of the class we want to create
+            clsCompany ACompany = new clsCompany();
+            //boolean variable to store the result of the search
+            Boolean Found = false;
+            //boolean variable to record if data is OK (assume that it is)
+            Boolean OK = true;
+            //create some test data to use with the method
+            Int32 CompanyCode = 21;
+            //invoke the method
+            Found = ACompany.Find(CompanyCode);
+            //check the company code
+            if (ACompany.InvolvedProject != "MyProject")
+            {
+                OK = false;
+            }
+            //test to see that the result is correct
+            Assert.IsTrue(OK);
+        }
+        [TestMethod]
+        public void TestMobileNumberFound()
+        {
+            //create an instance of the class we want to create
+            clsCompany ACompany = new clsCompany();
+            //boolean variable to store the result of the search
+            Boolean Found = false;
+            //boolean variable to record if data is OK (assume that it is)
+            Boolean OK = true;
+            //create some test data to use with the method
+            Int32 CompanyCode = 21;
+            //invoke the method
+            Found = ACompany.Find(CompanyCode);
+            //check the company code
+            if (ACompany.MobileNumber != "676767")
+            {
+                OK = false;
+            }
+            //test to see that the result is correct
+            Assert.IsTrue(OK);
+        }
 
-
-
-
-
-
-
-
-
+        [TestMethod]
+        public void TestPhoneNumberFound()
+        {
+            //create an instance of the class we want to create
+            clsCompany ACompany = new clsCompany();
+            //boolean variable to store the result of the search
+            Boolean Found = false;
+            //boolean variable to record if data is OK (assume that it is)
+            Boolean OK = true;
+            //create some test data to use with the method
+            Int32 CompanyCode = 21;
+            //invoke the method
+            Found = ACompany.Find(CompanyCode);
+            //check the company code
+            if (ACompany.PhoneNumber != "3345354")
+            {
+                OK = false;
+            }
+            //test to see that the result is correct
+            Assert.IsTrue(OK);
+        }
 
 
 
