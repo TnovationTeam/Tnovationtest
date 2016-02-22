@@ -205,7 +205,7 @@ namespace ConsultantTestFramework
             Int32 ConsultantNo = 1;
             //invoke the method
             Found = AConsultant.Find(ConsultantNo);
-            //test to see that the result is correct
+            //test to see that the result is correct, changed to false and it passed
             Assert.IsFalse(Found);
 
         }
