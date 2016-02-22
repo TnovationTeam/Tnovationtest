@@ -268,7 +268,20 @@ namespace TNovationClassLibrary
                 OK = false;
             }
 
-            
+            //if the client email is blank
+            if (ClientEmail.Length == 0)
+            {
+                //set the flag ok to false 
+                OK = false;
+               
+            }
+
+            //if the clientemail is too long
+            if (ClientEmail.Length > 50)
+            {
+                //set the flag ok to false 
+                OK = false;
+            }
             //return the value of OK
             return OK;
         }
