@@ -288,6 +288,8 @@ namespace ConsultantClassLibrary
                 return false;
             }
         }
+
+        public string Name { get; set; }
     }
 }
 

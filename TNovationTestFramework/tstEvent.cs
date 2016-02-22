@@ -268,7 +268,7 @@ namespace TNovationTestFramework
                  OK = false;
              }
              //test to see that the result is correct
-             Assert.IsFalse(OK);
+             Assert.IsTrue(OK);
          }
 
          [TestMethod]
@@ -290,7 +290,7 @@ namespace TNovationTestFramework
                  OK = false;
              }
              //test to see that the result is correct
-             Assert.IsFalse(OK);
+             Assert.IsTrue(OK);
          }
 
          [TestMethod]
