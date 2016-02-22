@@ -236,6 +236,8 @@ namespace TNovationClassLibrary
         {   
             //create a boolean variable to flag the error
             Boolean OK = true;
+            //create a temporary variable to store date values
+            DateTime DateTemp;
             //if the ClientName is blank
             if (ClientName.Length ==0)
             {
@@ -250,6 +252,23 @@ namespace TNovationClassLibrary
                 OK = false;
             }
 
+            //copy the DateAdded value to the DateTemp variable
+            DateTemp = Convert.ToDateTime(DateAdded);
+            //check to see if the date is less than todays date
+            if (DateTemp < DateTime.Now.Date)
+            {
+                //set the flag OK to false
+                OK = false;
+            }
+            
+            //check to see if the date is greater than todays date
+            if (DateTemp > DateTime.Now.Date)
+            {
+                 //set the flag ok to false 
+                OK = false;
+            }
+
+            
             //return the value of OK
             return OK;
         }
