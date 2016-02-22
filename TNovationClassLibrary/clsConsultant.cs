@@ -245,10 +245,7 @@ namespace ConsultantClassLibrary
             }
         }
 
-        public bool Valid(string FirstName, string LastName, string Address, string Email, string WorkHistory, string JobDescription)
-        {
-            return true;
-        }
+    
 
        
 
@@ -257,10 +254,10 @@ namespace ConsultantClassLibrary
 
             //create an instance of the data connection
             clsDataConnection DB = new clsDataConnection();
-            //add the parameter for the event code to search for
+            //add the parameter for the consultant code to search for
             DB.AddParameter("ConsultantNo", ConsultantNo);
             //execute the stored procedure
-            DB.Execute("sproc_tblEvent_FilterByConsultantNo");
+            DB.Execute("sproc_tblConsultant_FilterByConsultantNo");
             //if one record is found (there should be either one or zero!)
             if (DB.Count == 1)
             {
@@ -289,7 +286,14 @@ namespace ConsultantClassLibrary
             }
         }
 
-        public string Name { get; set; }
+      
+
+
+
+        public bool Valid(string FirstName, string LastName, string Address, string Email, string WorkHistory, string JobDescription)
+        {
+            return true;
+        }
     }
 }
 
