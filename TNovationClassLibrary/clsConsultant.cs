@@ -281,7 +281,7 @@ namespace ConsultantClassLibrary
             //if no record was found
             else
             {
-                //return false indicating a problem
+                //return false indicating a problem,
                 return false;
             }
         }
