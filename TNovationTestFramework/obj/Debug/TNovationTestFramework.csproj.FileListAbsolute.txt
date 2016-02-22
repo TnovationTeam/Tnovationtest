@@ -19,3 +19,10 @@ C:\Users\Palmira\Source\Repos\Tnovationtest\TNovationTestFramework\bin\Debug\TNo
 C:\Users\Palmira\Source\Repos\Tnovationtest\TNovationTestFramework\obj\Debug\TNovationTestFramework.csprojResolveAssemblyReference.cache
 C:\Users\Palmira\Source\Repos\Tnovationtest\TNovationTestFramework\obj\Debug\TNovationTestFramework.dll
 C:\Users\Palmira\Source\Repos\Tnovationtest\TNovationTestFramework\obj\Debug\TNovationTestFramework.pdb
+C:\Users\p13239500\Source\Repos\Tnovationtest\TNovationTestFramework\obj\Debug\TNovationTestFramework.csprojResolveAssemblyReference.cache
+C:\Users\p13239500\Source\Repos\Tnovationtest\TNovationTestFramework\obj\Debug\TNovationTestFramework.dll
+C:\Users\p13239500\Source\Repos\Tnovationtest\TNovationTestFramework\bin\Debug\TNovationTestFramework.dll
+C:\Users\p13239500\Source\Repos\Tnovationtest\TNovationTestFramework\bin\Debug\TNovationTestFramework.pdb
+C:\Users\p13239500\Source\Repos\Tnovationtest\TNovationTestFramework\bin\Debug\TNovationClassLibrary.dll
+C:\Users\p13239500\Source\Repos\Tnovationtest\TNovationTestFramework\bin\Debug\TNovationClassLibrary.pdb
+C:\Users\p13239500\Source\Repos\Tnovationtest\TNovationTestFramework\obj\Debug\TNovationTestFramework.pdb
