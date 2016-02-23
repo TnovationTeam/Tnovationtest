@@ -147,25 +147,7 @@ namespace TNovationTestFramework
             Assert.AreEqual(AEvent.TypeOfEvent, TestData);
 
         }
-         [TestMethod]
-        public void ValidMethodOK()
-         {
-             //create an isntance of the class we want to create
-             clsEvent AEvent = new clsEvent();
-             // boolean variabale to store the result of the validation
-             Boolean OK = false;
-             //create some test data to pass to the method
-             string ConsultantAttending = "Egle Sciglinskaite";
-             string Contact = "075432345";
-             string EventName = "Women in Technology";
-             string GuestSpeakers = "Elizabeth Saw";
-             string Location = "Excel London";
-             string TypeOfEvent = "Conference";
-             //invoke the method
-             OK = AEvent.Valid(ConsultantAttending, Contact, EventName, GuestSpeakers, Location, TypeOfEvent);
-             //test to see that the result is correct
-             Assert.IsTrue(OK);
-         }
+       
 
          [TestMethod]
          public void FindMethodOK()
@@ -401,6 +383,32 @@ namespace TNovationTestFramework
              //test to see that the result is correct
              Assert.IsFalse(OK);
          }
+
+         [TestMethod]
+         public void ValidMethodOK()
+         {
+             //create an instance of the class we want to create
+             clsEvent AEvent = new clsEvent();
+             //boolean variable to store the result of the validation
+             Boolean OK = false;
+             //create some test data to pass to the method
+             string EventName = "Women in Technolog";
+             string CompanyName = "CTech";
+             string Contact = "075432345";
+             string EndDate = "22/03/2016 19:00:00";
+             string StartDate = "22/03/2016 13:00:00";
+             string GuestSpeaker = "Elizabeth Saw";
+             string Location = "Excel London";
+             string TypeOfEvent = "Conference";
+             //invoke method
+             OK = AEvent.Valid(EventName,CompanyName,Contact,EndDate,StartDate,GuestSpeaker,Location,TypeOfEvent);
+             //test to see that the result is correct
+             Assert.IsTrue(OK);
+
+         }
+
+
+
     }
   }
 

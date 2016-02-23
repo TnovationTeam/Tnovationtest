@@ -179,10 +179,6 @@ namespace TNovationClassLibrary
             }
         }
 
-        public bool Valid(string ConsultantAttending, string Contact, string EventName, string GuestSpeakers, string Location, string TypeOfEvent)
-        {
-            return true;
-        }
 
        
 
@@ -217,6 +213,11 @@ namespace TNovationClassLibrary
                 //return false indicating a problem
                 return false;
             }
+        }
+
+        public bool Valid(string EventName, string CompanyName, string Contact, string EndDate, string StartDate, string GuestSpeaker, string Location, string TypeOfEvent)
+        {
+            return true;
         }
     }
 }
