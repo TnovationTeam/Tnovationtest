@@ -132,17 +132,32 @@ namespace TNovationClassLibrary
 
         public bool Find(int CompanyCode)
         {
-            //set the private data member to the test data value
-            companyCode = 21;
-            companyAddress = "TNovation";
-            companyEmailAddress = "vijaymodhwadia@hotmail.co.uk";
-            involvedClient = "Freddy";
-            involvedProject = "MyProject";
-            mobileNumber = "676767";
-            phoneNumber = "3345354";
-            //always return true;
-            return true;
-
+            //create an instance of the data connection
+            clsDataConnection DB = new clsDataConnection();
+            //add the parameter for the event code to search for
+            DB.AddParameter("CompanyCode", CompanyCode);
+            //execute the stored procedure
+            DB.Execute("sproc_tblEvent_FilterByCompanyCode");
+            //if one record is found ,there should be either one or zero!
+            if (DB.Count == 1)
+            {
+                //copy the data from the databse to the private data members
+                companyCode = Convert.ToInt32(DB.DataTable.Rows[0]["CompanyCode"]);
+                companyAddress = Convert.ToString(DB.DataTable.Rows[0]["CompanyAddress"]);
+                companyEmailAddress = Convert.ToString(DB.DataTable.Rows[0]["CompanyEmailAddress"]);
+                involvedClient = Convert.ToString(DB.DataTable.Rows[0]["InvolvedClient"]);
+                involvedProject = Convert.ToString(DB.DataTable.Rows[0]["InvolvedProject"]);
+                mobileNumber = Convert.ToString(DB.DataTable.Rows[0]["MobileNumber"]);
+                phoneNumber = Convert.ToString(DB.DataTable.Rows[0]["PhoneNumber"]);
+                //return that everything worked ok
+                return true;
+            }
+            //if no record was found
+            else
+            { 
+            //return false indicating a problem
+                return false;
+            }
         }
     }
 }
