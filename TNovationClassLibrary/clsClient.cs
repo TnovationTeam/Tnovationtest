@@ -316,6 +316,32 @@ namespace TNovationClassLibrary
             }
 
 
+
+
+
+
+            //if the ClientService  is blank
+            if (ClientService.Length == 0)
+            {
+                //set the flag ok to false 
+                OK = false;
+
+            }
+
+            //if the ClientService is too long
+            if (ClientService.Length > 50)
+            {
+                //set the flag ok to false 
+                OK = false;
+            }
+
+
+
+
+
+
+
+
             //copy the DateAdded value to the DateTemp variable
             DateTemp = Convert.ToDateTime(DateAdded);
             //check to see if the date is less than todays date
