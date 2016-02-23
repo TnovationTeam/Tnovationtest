@@ -1212,6 +1212,188 @@ namespace TNovationTestFramework
         }
 
 
+        ///////////////////////////////////////////////////// Test plan for ClientQualification Validation 
+
+
+
+
+        //ClientQualification Validation for Min less one ie no characters 
+        [TestMethod] //testing for Validating ClientQualification --> Min less one ie blank
+        public void ClientQualificationMinLessOne()
+        {
+            //create an instance of the class we want to create
+            clsClient AClient = new clsClient();
+            //boolean variable to store the result of the validation
+            Boolean OK = false;
+            //create some test data to pass to the method
+            string ClientName = "freddy";
+            string ClientEmail = "freddy@gmail.com";
+            string ClientPosition = "CEO";
+            string ClientQualification = "";
+            string ClientService = "IT support for company";
+            string ClientAddress = "21b";
+            string ClientTel = "783763";
+            string DateAdded = DateTime.Now.Date.ToString();
+            //invoke the method
+            OK = AClient.Valid(ClientName, ClientEmail, ClientPosition, ClientQualification, ClientService, ClientAddress, ClientTel, DateAdded);
+            //test to see that the result is correct
+            Assert.IsFalse(OK);
+
+        }
+
+
+        //ClientQualification Validation for Min  ie one characters 
+        [TestMethod] //testing for Validating ClientQualification --> Min  ie one character
+        public void ClientQualificationMin()
+        {
+            //create an instance of the class we want to create
+            clsClient AClient = new clsClient();
+            //boolean variable to store the result of the validation
+            Boolean OK = false;
+            //create some test data to pass to the method
+            string ClientName = "freddy";
+            string ClientEmail = "freddy@gmail.com";
+            string ClientPosition = "CEO";
+            string ClientQualification = "d";
+            string ClientService = "IT support for company";
+            string ClientAddress = "21b";
+            string ClientTel = "783763";
+            string DateAdded = DateTime.Now.Date.ToString();
+            //invoke the method
+            OK = AClient.Valid(ClientName, ClientEmail, ClientPosition, ClientQualification, ClientService, ClientAddress, ClientTel, DateAdded);
+            //test to see that the result is correct
+            Assert.IsTrue(OK);
+
+        }
+
+
+        //ClientQualification Validation for MinplusOne  ie two characters 
+        [TestMethod] //testing for Validating ClientQualification --> Min  ie two characters
+        public void ClientQualificationMinplusOne()
+        {
+            //create an instance of the class we want to create
+            clsClient AClient = new clsClient();
+            //boolean variable to store the result of the validation
+            Boolean OK = false;
+            //create some test data to pass to the method
+            string ClientName = "freddy";
+            string ClientEmail = "freddy@gmail.com";
+            string ClientPosition = "CEO";
+            string ClientQualification = "de";
+            string ClientService = "IT support for company";
+            string ClientAddress = "21b";
+            string ClientTel = "783763";
+            string DateAdded = DateTime.Now.Date.ToString();
+            //invoke the method
+            OK = AClient.Valid(ClientName, ClientEmail, ClientPosition, ClientQualification, ClientService, ClientAddress, ClientTel, DateAdded);
+            //test to see that the result is correct
+            Assert.IsTrue(OK);
+
+        }
+
+
+        //ClientQualification Validation for MaxLessOne  ie 49 characters 
+        [TestMethod] //testing for Validating ClientQualification --> MaxLessOne  ie 49 characters
+        public void ClientQualificationMaxLessOne()
+        {
+            //create an instance of the class we want to create
+            clsClient AClient = new clsClient();
+            //boolean variable to store the result of the validation
+            Boolean OK = false;
+            //create some test data to pass to the method
+            string ClientName = "freddy";
+            string ClientEmail = "freddy@gmail.com";
+            string ClientPosition = "CEO";
+            string ClientQualification = "";
+            ClientQualification = ClientQualification.PadRight(49, 'd');
+            string ClientService = "IT support for company";
+            string ClientAddress = "21b";
+            string ClientTel = "783763";
+            string DateAdded = DateTime.Now.Date.ToString();
+            //invoke the method
+            OK = AClient.Valid(ClientName, ClientEmail, ClientPosition, ClientQualification, ClientService, ClientAddress, ClientTel, DateAdded);
+            //test to see that the result is correct
+            Assert.IsTrue(OK);
+
+        }
+
+
+        //ClientQualification Validation for Max  ie 50 characters 
+        [TestMethod] //testing for Validating ClientQualification --> Max  ie 50 characters
+        public void ClientQualificationMax()
+        {
+            //create an instance of the class we want to create
+            clsClient AClient = new clsClient();
+            //boolean variable to store the result of the validation
+            Boolean OK = false;
+            //create some test data to pass to the method
+            string ClientName = "freddy";
+            string ClientEmail = "freddy@gmail.com";
+            string ClientPosition = "CEO";
+            string ClientQualification = "";
+            ClientQualification = ClientQualification.PadRight(50, 'd');
+            string ClientService = "IT support for company";
+            string ClientAddress = "21b";
+            string ClientTel = "783763";
+            string DateAdded = DateTime.Now.Date.ToString();
+            //invoke the method
+            OK = AClient.Valid(ClientName, ClientEmail, ClientPosition, ClientQualification, ClientService, ClientAddress, ClientTel, DateAdded);
+            //test to see that the result is correct
+            Assert.IsTrue(OK);
+
+        }
+
+
+        //ClientQualification Validation for MaxPlusOne  ie 51 characters 
+        [TestMethod] //testing for Validating ClientQualification --> Max  ie 51 characters
+        public void ClientQualificationMaxPlusOne()
+        {
+            //create an instance of the class we want to create
+            clsClient AClient = new clsClient();
+            //boolean variable to store the result of the validation
+            Boolean OK = false;
+            //create some test data to pass to the method
+            string ClientName = "freddy";
+            string ClientEmail = "freddy@gmail.com";
+            string ClientPosition = "CEO";
+            string ClientQualification = "";
+            ClientQualification = ClientQualification.PadRight(51, 'd');
+            string ClientService = "IT support for company";
+            string ClientAddress = "21b";
+            string ClientTel = "783763";
+            string DateAdded = DateTime.Now.Date.ToString();
+            //invoke the method
+            OK = AClient.Valid(ClientName, ClientEmail, ClientPosition, ClientQualification, ClientService, ClientAddress, ClientTel, DateAdded);
+            //test to see that the result is correct
+            Assert.IsFalse(OK);
+
+        }
+
+
+        //ClientQualification Validation for Mid  ie 25 characters 
+        [TestMethod] //testing for Validating ClientQualification --> Mid  ie 25 characters
+        public void ClientQualificationMid()
+        {
+            //create an instance of the class we want to create
+            clsClient AClient = new clsClient();
+            //boolean variable to store the result of the validation
+            Boolean OK = false;
+            //create some test data to pass to the method
+            string ClientName = "freddy";
+            string ClientEmail = "freddy@gmail.com";
+            string ClientPosition = "CEO";
+            string ClientQualification = "";
+            ClientQualification = ClientQualification.PadRight(25, 'd');
+            string ClientService = "IT support for company";
+            string ClientAddress = "21b";
+            string ClientTel = "783763";
+            string DateAdded = DateTime.Now.Date.ToString();
+            //invoke the method
+            OK = AClient.Valid(ClientName, ClientEmail, ClientPosition, ClientQualification, ClientService, ClientAddress, ClientTel, DateAdded);
+            //test to see that the result is correct
+            Assert.IsTrue(OK);
+
+        }
 
 
 
