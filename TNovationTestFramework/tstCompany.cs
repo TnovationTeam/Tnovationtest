@@ -112,7 +112,7 @@ namespace TNovationTestFramework
             //boolean variable to store the result of the validation
             Boolean Found = false;
             //create some test data to use with the method
-            Int32 CompanyCode = 1;
+            Int32 CompanyCode = 21;
             //invoke the method
             Found = ACompany.Find(CompanyCode);
             //test to see that the result is correct
