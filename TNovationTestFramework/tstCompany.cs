@@ -313,16 +313,104 @@ namespace TNovationTestFramework
             //test to see that the result is correct
             Assert.IsFalse(OK);
         }
+        [TestMethod]
+        public void CompanyAddressMin()
+        {
+            //create an instance of the class we want to create
+            clsCompany ACompany = new clsCompany();
+            //boolean variable to store the result of the validation
+            Boolean OK = false;
+            //create soem test data to pass out to the method
+            string CompanyAddress = "a";//this should trigger an error
+            string CompanyEmailAddress = "vijaymodhwadia@hotmail.co.uk";
+            string InvolvedClient = "Callum Varle";
+            string InvolvedProject = "TNovationProject";
+            string MobileNumber = "654568";
+            string PhoneNumber = "5457496";
+            //invoke the method
+            OK = ACompany.Valid(CompanyAddress, CompanyEmailAddress, InvolvedClient, InvolvedProject, MobileNumber, PhoneNumber);
+            //test to see that the result is correct
+            Assert.IsFalse(OK);
+        }
 
+        [TestMethod]
+        public void CompanyAddressMinPlusOne()
+        {
+            //create an instance of the class we want to create
+            clsCompany ACompany = new clsCompany();
+            //boolean variable to store the result of the validation
+            Boolean OK = false;
+            //create soem test data to pass out to the method
+            string CompanyAddress = "aa";//this should be ok
+            string CompanyEmailAddress = "vijaymodhwadia@hotmail.co.uk";
+            string InvolvedClient = "Callum Varle";
+            string InvolvedProject = "TNovationProject";
+            string MobileNumber = "654568";
+            string PhoneNumber = "5457496";
+            //invoke the method
+            OK = ACompany.Valid(CompanyAddress, CompanyEmailAddress, InvolvedClient, InvolvedProject, MobileNumber, PhoneNumber);
+            //test to see that the result is correct
+            Assert.IsFalse(OK);
+        }
 
+        [TestMethod]
+        public void CompanyAddressMaxLessOne()
+        {
+            //create an instance of the class we want to create
+            clsCompany ACompany = new clsCompany();
+            //boolean variable to store the result of the validation
+            Boolean OK = false;
+            //create soem test data to pass out to the method
+            string CompanyAddress = "aaaa";//this should be ok
+            string CompanyEmailAddress = "vijaymodhwadia@hotmail.co.uk";
+            string InvolvedClient = "Callum Varle";
+            string InvolvedProject = "TNovationProject";
+            string MobileNumber = "654568";
+            string PhoneNumber = "5457496";
+            //invoke the method
+            OK = ACompany.Valid(CompanyAddress, CompanyEmailAddress, InvolvedClient, InvolvedProject, MobileNumber, PhoneNumber);
+            //test to see that the result is correct
+            Assert.IsFalse(OK);
+        }
 
+        [TestMethod]
+        public void CompanyAddressMax()
+        {
+            //create an instance of the class we want to create
+            clsCompany ACompany = new clsCompany();
+            //boolean variable to store the result of the validation
+            Boolean OK = false;
+            //create soem test data to pass out to the method
+            string CompanyAddress = "aaaaaa";//this should be ok
+            string CompanyEmailAddress = "vijaymodhwadia@hotmail.co.uk";
+            string InvolvedClient = "Callum Varle";
+            string InvolvedProject = "TNovationProject";
+            string MobileNumber = "654568";
+            string PhoneNumber = "5457496";
+            //invoke the method
+            OK = ACompany.Valid(CompanyAddress, CompanyEmailAddress, InvolvedClient, InvolvedProject, MobileNumber, PhoneNumber);
+            //test to see that the result is correct
+            Assert.IsFalse(OK);
+        }
 
-
-
-
-
-
-
-
+        [TestMethod]
+        public void CompanyAddressMid()
+        {
+            //create an instance of the class we want to create
+            clsCompany ACompany = new clsCompany();
+            //boolean variable to store the result of the validation
+            Boolean OK = false;
+            //create soem test data to pass out to the method
+            string CompanyAddress = "aaa";//this should be ok
+            string CompanyEmailAddress = "vijaymodhwadia@hotmail.co.uk";
+            string InvolvedClient = "Callum Varle";
+            string InvolvedProject = "TNovationProject";
+            string MobileNumber = "654568";
+            string PhoneNumber = "5457496";
+            //invoke the method
+            OK = ACompany.Valid(CompanyAddress, CompanyEmailAddress, InvolvedClient, InvolvedProject, MobileNumber, PhoneNumber);
+            //test to see that the result is correct
+            Assert.IsFalse(OK);
+        }
     }
 }
