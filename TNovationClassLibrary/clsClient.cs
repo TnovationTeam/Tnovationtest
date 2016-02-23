@@ -338,6 +338,21 @@ namespace TNovationClassLibrary
 
 
 
+            //if the ClientAddress  is blank
+            if (ClientAddress.Length == 0)
+            {
+                //set the flag ok to false 
+                OK = false;
+
+            }
+
+            //if the ClientAddress is too long
+            if (ClientAddress.Length > 50)
+            {
+                //set the flag ok to false 
+                OK = false;
+            }
+
 
 
 
