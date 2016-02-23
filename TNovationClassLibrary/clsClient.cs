@@ -354,7 +354,20 @@ namespace TNovationClassLibrary
             }
 
 
+            //if the ClientTel  is blank
+            if (ClientTel.Length == 0)
+            {
+                //set the flag ok to false 
+                OK = false;
 
+            }
+
+            //if the ClientTel is too long
+            if (ClientTel.Length > 50)
+            {
+                //set the flag ok to false 
+                OK = false;
+            }
 
 
             //copy the DateAdded value to the DateTemp variable
