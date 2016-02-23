@@ -434,7 +434,7 @@ namespace TNovationTestFramework
              //invoke method
              OK = AEvent.Valid(EventName, CompanyName, Contact, EndDate, StartDate, GuestSpeaker, Location, TypeOfEvent);   
              //check if it is correct
-             Assert.IsFalse(OK);
+             Assert.IsTrue(OK);
 
          }
          [TestMethod]
@@ -463,7 +463,7 @@ namespace TNovationTestFramework
              //invoke method
              OK = AEvent.Valid(EventName, CompanyName, Contact, EndDate, StartDate, GuestSpeaker, Location, TypeOfEvent);  
              //check iff it is correct
-             Assert.IsFalse(OK);
+             Assert.IsTrue(OK);
 
          }
          [TestMethod]
@@ -519,7 +519,7 @@ namespace TNovationTestFramework
              //invoke method
              OK = AEvent.Valid(EventName, CompanyName, Contact, EndDate, StartDate, GuestSpeaker, Location, TypeOfEvent);
              //check iff it is correct
-             Assert.IsFalse(OK);
+             Assert.IsTrue(OK);
 
          }
          [TestMethod]
@@ -548,7 +548,7 @@ namespace TNovationTestFramework
              //invoke method
              OK = AEvent.Valid(EventName, CompanyName, Contact, EndDate, StartDate, GuestSpeaker, Location, TypeOfEvent);  
              //check iff it is correct
-             Assert.IsFalse(OK);
+             Assert.IsTrue(OK);
 
          }
 
@@ -572,7 +572,7 @@ namespace TNovationTestFramework
              //invoke method
              OK = AEvent.Valid(EventName, CompanyName, Contact, EndDate, StartDate, GuestSpeaker, Location, TypeOfEvent);  
              //check iff it is correct
-             Assert.IsFalse(OK);
+             Assert.IsTrue(OK);
 
          }
          [TestMethod]
@@ -595,7 +595,7 @@ namespace TNovationTestFramework
              //invoke method
              OK = AEvent.Valid(EventName, CompanyName, Contact, EndDate, StartDate, GuestSpeaker, Location, TypeOfEvent);  
              //check iff it is correct
-             Assert.IsFalse(OK);
+             Assert.IsTrue(OK);
 
          }
 
@@ -702,7 +702,7 @@ namespace TNovationTestFramework
              //invoke method
              OK = AEvent.Valid(EventName, CompanyName, Contact, EndDate, StartDate, GuestSpeaker, Location, TypeOfEvent);
              //check iff it is correct
-             Assert.IsFalse(OK);
+             Assert.IsTrue(OK);
 
          }
          [TestMethod]
@@ -754,7 +754,7 @@ namespace TNovationTestFramework
              //variable to store date
              OK = AEvent.Valid(EventName, CompanyName, Contact, EndDate, StartDate, GuestSpeaker, Location, TypeOfEvent); 
              //check if it is correct
-             Assert.IsFalse(OK);
+             Assert.IsTrue(OK);
 
          }
 
