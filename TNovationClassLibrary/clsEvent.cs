@@ -217,7 +217,38 @@ namespace TNovationClassLibrary
 
         public bool Valid(string EventName, string CompanyName, string Contact, string EndDate, string StartDate, string GuestSpeaker, string Location, string TypeOfEvent)
         {
-            return true;
+            Boolean OK = true;
+            DateTime SomeDate;
+            if(location.Length == 0)
+            {
+                OK = false;
+            }
+
+            if (location.Length >30)
+            {
+                OK = false;
+            }
+            try
+            {
+                SomeDate = Convert.ToDateTime(startDate);
+
+                if (SomeDate < DateTime.Now.Date)
+                {
+                    OK = false;
+                }
+                if (SomeDate > DateTime.Now.Date)
+                {
+                    OK = false;
+                }
+            }
+            catch
+            {
+                OK = false; // returns flag ok
+
+            }
+            return OK;
+
+            }
         }
     }
-}
+
