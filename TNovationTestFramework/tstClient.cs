@@ -842,7 +842,6 @@ namespace TNovationTestFramework
         }
 
 
-
         ///////////////////////////////////////////////////// Test plan for ClientEmail Validation 
 
 
@@ -864,7 +863,7 @@ namespace TNovationTestFramework
             string ClientService = "IT support for company";
             string ClientAddress = "21b";
             string ClientTel = "783763";
-            string DateAdded = "22/02/2016";
+            string DateAdded = DateTime.Now.Date.ToString();
             //invoke the method
             OK = AClient.Valid(ClientName, ClientEmail, ClientPosition, ClientQualification, ClientService, ClientAddress, ClientTel, DateAdded);
             //test to see that the result is correct
@@ -889,7 +888,7 @@ namespace TNovationTestFramework
             string ClientService = "IT support for company";
             string ClientAddress = "21b";
             string ClientTel = "783763";
-            string DateAdded = "22/02/2016";
+            string DateAdded = DateTime.Now.Date.ToString();
             //invoke the method
             OK = AClient.Valid(ClientName, ClientEmail, ClientPosition, ClientQualification, ClientService, ClientAddress, ClientTel, DateAdded);
             //test to see that the result is correct
@@ -914,7 +913,7 @@ namespace TNovationTestFramework
             string ClientService = "IT support for company";
             string ClientAddress = "21b";
             string ClientTel = "783763";
-            string DateAdded = "22/02/2016";
+            string DateAdded = DateTime.Now.Date.ToString();
             //invoke the method
             OK = AClient.Valid(ClientName, ClientEmail, ClientPosition, ClientQualification, ClientService, ClientAddress, ClientTel, DateAdded);
             //test to see that the result is correct
@@ -940,7 +939,7 @@ namespace TNovationTestFramework
             string ClientService = "IT support for company";
             string ClientAddress = "21b";
             string ClientTel = "783763";
-            string DateAdded = "22/02/2016";
+            string DateAdded = DateTime.Now.Date.ToString();
             //invoke the method
             OK = AClient.Valid(ClientName, ClientEmail, ClientPosition, ClientQualification, ClientService, ClientAddress, ClientTel, DateAdded);
             //test to see that the result is correct
@@ -966,7 +965,7 @@ namespace TNovationTestFramework
             string ClientService = "IT support for company";
             string ClientAddress = "21b";
             string ClientTel = "783763";
-            string DateAdded = "22/02/2016";
+            string DateAdded = DateTime.Now.Date.ToString();
             //invoke the method
             OK = AClient.Valid(ClientName, ClientEmail, ClientPosition, ClientQualification, ClientService, ClientAddress, ClientTel, DateAdded);
             //test to see that the result is correct
@@ -992,7 +991,7 @@ namespace TNovationTestFramework
             string ClientService = "IT support for company";
             string ClientAddress = "21b";
             string ClientTel = "783763";
-            string DateAdded = "22/02/2016";
+            string DateAdded = DateTime.Now.Date.ToString();
             //invoke the method
             OK = AClient.Valid(ClientName, ClientEmail, ClientPosition, ClientQualification, ClientService, ClientAddress, ClientTel, DateAdded);
             //test to see that the result is correct
@@ -1018,13 +1017,14 @@ namespace TNovationTestFramework
             string ClientService = "IT support for company";
             string ClientAddress = "21b";
             string ClientTel = "783763";
-            string DateAdded = "22/02/2016";
+            string DateAdded = DateTime.Now.Date.ToString();
             //invoke the method
             OK = AClient.Valid(ClientName, ClientEmail, ClientPosition, ClientQualification, ClientService, ClientAddress, ClientTel, DateAdded);
             //test to see that the result is correct
             Assert.IsTrue(OK);
 
         }
+        
 
 
 

@@ -252,6 +252,21 @@ namespace TNovationClassLibrary
                 OK = false;
             }
 
+            //if the client email is blank
+            if (ClientEmail.Length == 0)
+            {
+                //set the flag ok to false 
+                OK = false;
+
+            }
+
+            //if the clientemail is too long
+            if (ClientEmail.Length > 50)
+            {
+                //set the flag ok to false 
+                OK = false;
+            }
+
             //copy the DateAdded value to the DateTemp variable
             DateTemp = Convert.ToDateTime(DateAdded);
             //check to see if the date is less than todays date
@@ -268,23 +283,11 @@ namespace TNovationClassLibrary
                 OK = false;
             }
 
-            //if the client email is blank
-            if (ClientEmail.Length == 0)
-            {
-                //set the flag ok to false 
-                OK = false;
-               
-            }
-
-            //if the clientemail is too long
-            if (ClientEmail.Length > 50)
-            {
-                //set the flag ok to false 
-                OK = false;
-            }
+                      
             //return the value of OK
             return OK;
         }
+
     }
 
 }
