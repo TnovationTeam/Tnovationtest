@@ -13,3 +13,8 @@ C:\Users\Palmira\Source\Repos\Tnovationtest\TNovationClassLibrary\bin\Debug\TNov
 C:\Users\Palmira\Source\Repos\Tnovationtest\TNovationClassLibrary\obj\Debug\TNovationClassLibrary.csprojResolveAssemblyReference.cache
 C:\Users\Palmira\Source\Repos\Tnovationtest\TNovationClassLibrary\obj\Debug\TNovationClassLibrary.dll
 C:\Users\Palmira\Source\Repos\Tnovationtest\TNovationClassLibrary\obj\Debug\TNovationClassLibrary.pdb
+C:\Users\p13239500\Source\Repos\Tnovationtest\TNovationClassLibrary\bin\Debug\TNovationClassLibrary.dll
+C:\Users\p13239500\Source\Repos\Tnovationtest\TNovationClassLibrary\bin\Debug\TNovationClassLibrary.pdb
+C:\Users\p13239500\Source\Repos\Tnovationtest\TNovationClassLibrary\obj\Debug\TNovationClassLibrary.csprojResolveAssemblyReference.cache
+C:\Users\p13239500\Source\Repos\Tnovationtest\TNovationClassLibrary\obj\Debug\TNovationClassLibrary.dll
+C:\Users\p13239500\Source\Repos\Tnovationtest\TNovationClassLibrary\obj\Debug\TNovationClassLibrary.pdb
