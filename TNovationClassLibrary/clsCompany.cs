@@ -159,5 +159,10 @@ namespace TNovationClassLibrary
                 return false;
             }
         }
+
+        public bool Valid(string CompanyAddress, string CompanyEmailAddress, string InvolvedClient, string InvolvedProject, string MobileNumber, string PhoneNumber)
+        {
+            return true;
+        }
     }
 }
