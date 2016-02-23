@@ -162,7 +162,16 @@ namespace TNovationClassLibrary
 
         public bool Valid(string CompanyAddress, string CompanyEmailAddress, string InvolvedClient, string InvolvedProject, string MobileNumber, string PhoneNumber)
         {
-            return true;
+            //create a Boolean variable to flag the error
+            Boolean OK = true;
+            //if the CompanyAddress is blank
+            if (CompanyAddress.Length==0)
+            {
+                //set the flag OK to false
+                OK = false;
+            }
+            //return the value of OK
+            return OK;
         }
     }
 }
