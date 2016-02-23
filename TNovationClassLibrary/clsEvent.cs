@@ -179,10 +179,6 @@ namespace TNovationClassLibrary
             }
         }
 
-        public bool Valid(string ConsultantAttending, string Contact, string EventName, string GuestSpeakers, string Location, string TypeOfEvent)
-        {
-            return true;
-        }
 
        
 
@@ -218,5 +214,41 @@ namespace TNovationClassLibrary
                 return false;
             }
         }
+
+        public bool Valid(string EventName, string CompanyName, string Contact, string EndDate, string StartDate, string GuestSpeaker, string Location, string TypeOfEvent)
+        {
+            Boolean OK = true;
+            DateTime SomeDate;
+            if(location.Length == 0)
+            {
+                OK = false;
+            }
+
+            if (location.Length >30)
+            {
+                OK = false;
+            }
+            try
+            {
+                SomeDate = Convert.ToDateTime(startDate);
+
+                if (SomeDate < DateTime.Now.Date)
+                {
+                    OK = false;
+                }
+                if (SomeDate > DateTime.Now.Date)
+                {
+                    OK = false;
+                }
+            }
+            catch
+            {
+                OK = false; // returns flag ok
+
+            }
+            return OK;
+
+            }
+        }
     }
-}
+

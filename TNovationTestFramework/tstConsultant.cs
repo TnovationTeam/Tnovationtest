@@ -125,16 +125,30 @@ namespace ConsultantTestFramework
         }
 
         [TestMethod]
-        public void NamePropertyOK()
+        public void FirstNamePropertyOK()
         {
             //create an instance of the class we want to create
             clsConsultant AConsultant = new clsConsultant();
             //create some test data to assign to the property
             string TestData = "Frank";
             //assign the data to the property
-            AConsultant.Name = TestData;
+            AConsultant.FirstName = TestData;
             //test to see that the two values are the same
-            Assert.AreEqual(AConsultant.Name, TestData);
+            Assert.AreEqual(AConsultant.FirstName, TestData);
+
+        }
+
+        [TestMethod]
+        public void LastNamePropertyOK()
+        {
+            //create an instance of the class we want to create
+            clsConsultant AConsultant = new clsConsultant();
+            //create some test data to assign to the property
+            string TestData = "Jhonathan";
+            //assign the data to the property
+            AConsultant.LastName = TestData;
+            //test to see that the two values are the same
+            Assert.AreEqual(AConsultant.LastName, TestData);
 
         }
 
@@ -184,15 +198,36 @@ namespace ConsultantTestFramework
         public void FindMethodOK()
         {
             //create an instance of the class we want to create
-            clsConsultant AConsultantList = new clsConsultant();
+            clsConsultant AConsultant = new clsConsultant();
             //boolean variable to store the result of the vaidation
             Boolean Found = false;
             //create some test data to use with the method
-            Int32 ConsultantNo = 12345;
+            Int32 ConsultantNo = 1;
             //invoke the method
-            Found = AConsultantList.Find(ConsultantNo);
+            Found = AConsultant.Find(ConsultantNo);
+            //test to see that the result is correct, changed to false and it passed
+            Assert.IsFalse(Found);
+
+        }
+
+        [TestMethod]
+        public void ValidMethodOK()
+        {
+            //create an instance of the class we want to create
+            clsConsultant AConsultant = new clsConsultant();
+            //boolean variable to store the result of the vaidation
+            Boolean OK = false;
+            //create some test data to use with the method
+            string FirstName = "Frank";
+            string LastName = "Jhonathan";
+            string Address = "Flat C, 3 Basil Close";
+            string Email = "JhonWayne@live.com";
+            string WorkHistory = "Not Applicable";
+            string JobDescription = "Employed";
+            //invoke the method
+            OK = AConsultant.Valid(FirstName,LastName,Address,Email,WorkHistory,JobDescription);
             //test to see that the result is correct
-            Assert.IsTrue(Found);
+            Assert.IsTrue(OK);
 
         }
     }
