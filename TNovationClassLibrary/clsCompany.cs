@@ -170,7 +170,14 @@ namespace TNovationClassLibrary
                 //set the flag OK to false
                 OK = false;
             }
-            //return the value of OK
+            //if the Company Address is greater than 6 characters
+            if (CompanyAddress.Length > 6)
+            {
+                //set the flag OK to false
+                OK = false;
+            }
+
+            //return the value true of OK
             return OK;
         }
     }
