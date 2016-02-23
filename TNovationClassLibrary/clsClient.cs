@@ -267,6 +267,21 @@ namespace TNovationClassLibrary
                 OK = false;
             }
 
+            //if the ClientPosition  is blank
+            if (ClientPosition.Length == 0)
+            {
+                //set the flag ok to false 
+                OK = false;
+
+            }
+
+            //if the ClientPosition is too long
+            if (ClientPosition.Length > 50)
+            {
+                //set the flag ok to false 
+                OK = false;
+            }
+
             //copy the DateAdded value to the DateTemp variable
             DateTemp = Convert.ToDateTime(DateAdded);
             //check to see if the date is less than todays date
