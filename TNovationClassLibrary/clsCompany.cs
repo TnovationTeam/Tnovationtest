@@ -176,7 +176,6 @@ namespace TNovationClassLibrary
                 //set the flag OK to false
                 OK = false;
             }
-
             //return the value true of OK
             return OK;
         }
