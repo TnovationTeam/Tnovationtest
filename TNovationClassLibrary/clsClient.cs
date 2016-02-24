@@ -238,6 +238,10 @@ namespace TNovationClassLibrary
             Boolean OK = true;
             //create a temporary variable to store date values
             DateTime DateTemp;
+            
+            
+            
+            
             //if the ClientName is blank
             if (ClientName.Length ==0)
             {
@@ -251,6 +255,120 @@ namespace TNovationClassLibrary
                 //set the flag OK to false
                 OK = false;
             }
+
+
+
+
+
+            //if the client email is blank
+            if (ClientEmail.Length == 0)
+            {
+                //set the flag ok to false 
+                OK = false;
+
+            }
+
+            //if the clientemail is too long
+            if (ClientEmail.Length > 50)
+            {
+                //set the flag ok to false 
+                OK = false;
+            }
+
+
+
+
+
+
+
+
+            //if the ClientPosition  is blank
+            if (ClientPosition.Length == 0)
+            {
+                //set the flag ok to false 
+                OK = false;
+
+            }
+
+            //if the ClientPosition is too long
+            if (ClientPosition.Length > 50)
+            {
+                //set the flag ok to false 
+                OK = false;
+            }
+
+
+
+
+            //if the ClientQualification  is blank
+            if (ClientQualification.Length == 0)
+            {
+                //set the flag ok to false 
+                OK = false;
+
+            }
+
+            //if the ClientQualification is too long
+            if (ClientQualification.Length > 50)
+            {
+                //set the flag ok to false 
+                OK = false;
+            }
+
+
+
+
+
+
+            //if the ClientService  is blank
+            if (ClientService.Length == 0)
+            {
+                //set the flag ok to false 
+                OK = false;
+
+            }
+
+            //if the ClientService is too long
+            if (ClientService.Length > 50)
+            {
+                //set the flag ok to false 
+                OK = false;
+            }
+
+
+
+
+            //if the ClientAddress  is blank
+            if (ClientAddress.Length == 0)
+            {
+                //set the flag ok to false 
+                OK = false;
+
+            }
+
+            //if the ClientAddress is too long
+            if (ClientAddress.Length > 50)
+            {
+                //set the flag ok to false 
+                OK = false;
+            }
+
+
+            //if the ClientTel  is blank
+            if (ClientTel.Length == 0)
+            {
+                //set the flag ok to false 
+                OK = false;
+
+            }
+
+            //if the ClientTel is too long
+            if (ClientTel.Length > 50)
+            {
+                //set the flag ok to false 
+                OK = false;
+            }
+
 
             //copy the DateAdded value to the DateTemp variable
             DateTemp = Convert.ToDateTime(DateAdded);
@@ -268,23 +386,11 @@ namespace TNovationClassLibrary
                 OK = false;
             }
 
-            //if the client email is blank
-            if (ClientEmail.Length == 0)
-            {
-                //set the flag ok to false 
-                OK = false;
-               
-            }
-
-            //if the clientemail is too long
-            if (ClientEmail.Length > 50)
-            {
-                //set the flag ok to false 
-                OK = false;
-            }
+                      
             //return the value of OK
             return OK;
         }
+
     }
 
 }

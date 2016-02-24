@@ -137,7 +137,7 @@ namespace TNovationClassLibrary
             //add the parameter for the event code to search for
             DB.AddParameter("CompanyCode", CompanyCode);
             //execute the stored procedure
-            DB.Execute("sproc_tblEvent_FilterByCompanyCode");
+            DB.Execute("sproc_tblCompany_FilterByCompanyCode");
             //if one record is found ,there should be either one or zero!
             if (DB.Count == 1)
             {
@@ -176,7 +176,6 @@ namespace TNovationClassLibrary
                 //set the flag OK to false
                 OK = false;
             }
-
             //return the value true of OK
             return OK;
         }
