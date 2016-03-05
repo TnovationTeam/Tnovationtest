@@ -167,30 +167,30 @@ namespace ConsultantTestFramework
         }
 
         [TestMethod]
-        public void TelephoneNoPropertyOK()
+        public void TelNoPropertyOK()
         {
             //create an instance of the class we want to create
             clsConsultant AConsultant = new clsConsultant();
             //create some test data to assign to the property
             string TestData = "+44752890120";
             //assign the data to the property
-            AConsultant.TelephoneNo = TestData;
+            AConsultant.TelNo = TestData;
             //test to see that the two values are the same
-            Assert.AreEqual(AConsultant.TelephoneNo, TestData);
+            Assert.AreEqual(AConsultant.TelNo, TestData);
 
         }
 
         [TestMethod]
-        public void WorkHistoryPropertyOK()
+        public void EmploymentHistoryPropertyOK()
         {
             //create an instance of the class we want to create
             clsConsultant AConsultant = new clsConsultant();
             //create some test data to assign to the property
             string TestData = "Not Applicable";
             //assign the data to the property
-            AConsultant.WorkHistory = TestData;
+            AConsultant.EmploymentHistory = TestData;
             //test to see that the two values are the same
-            Assert.AreEqual(AConsultant.WorkHistory, TestData);
+            Assert.AreEqual(AConsultant.EmploymentHistory, TestData);
 
         }
 
@@ -230,5 +230,297 @@ namespace ConsultantTestFramework
             Assert.IsTrue(OK);
 
         }
+
+
+        [TestMethod]
+        public void TestConsultantNoFound()
+        {
+            //create an instance of the class we want to create
+            clsConsultant AConsultant = new clsConsultant();
+            //boolean variable to store the result of the search
+            Boolean Found = false;
+            //boolean variable to record ifdata is OK (assume it is)
+            Boolean OK = true;
+            //create some test data to use with the method
+            Int32 ConsultantNo = 2;
+            //invoke the method
+            Found = AConsultant.Find(ConsultantNo);
+            //check the Consultant No
+            if (AConsultant.ConsultantNo != 2)
+            {
+
+                OK = false;
+            }
+            //test to see that the result is correct
+            Assert.IsFalse(OK);
+            
+
+        }
+
+        [TestMethod]
+        public void TestFirstNameFound()
+        {
+            //create an instance of the class we want to create
+            clsConsultant AConsultant = new clsConsultant();
+            //boolean varibale to store the result of the validation
+            Boolean Found = false;
+            //boolean variable to store the result of the search
+            Boolean OK = true;
+            //create some test data to use with the method
+            Int32 ConsultantNo = 1;
+            //invoke the method
+            Found = AConsultant.Find(ConsultantNo);
+            //check the ConsultantNo
+            if (AConsultant.FirstName != "mmm")
+            {
+                OK = false;
+            }
+            //test to see that the result is correct
+            Assert.IsFalse(OK);
+
+
+        }
+
+        [TestMethod]
+        public void TestLastNameFound()
+        {
+            //create an instance of the class we want to create
+            clsConsultant AConsultant = new clsConsultant();
+            //boolean varibale to store the result of the validation
+            Boolean Found = false;
+            //boolean variable to store the result of the search
+            Boolean OK = true;
+            //create some test data to use with the method
+            Int32 ConsultantNo = 1;
+            //invoke the method
+            Found = AConsultant.Find(ConsultantNo);
+            //check the ConsultantNo
+            if (AConsultant.LastName != "mmmmmm")
+            {
+                OK = false;
+            }
+            //test to see that the result is correct
+            Assert.IsFalse(OK);
+
+
+        }
+
+        [TestMethod]
+        public void TestDateOfBirthFound()
+        {
+            //create an instance of the class we want to create
+            clsConsultant AConsultant = new clsConsultant();
+            //boolean varibale to store the result of the validation
+            Boolean Found = false;
+            //boolean variable to store the result of the search
+            Boolean OK = true;
+            //create some test data to use with the method
+            Int32 ConsultantNo = 1;
+            //invoke the method
+            Found = AConsultant.Find(ConsultantNo);
+            //check the ConsultantNo
+            if (AConsultant.DateOfBirth != Convert.ToDateTime("24/12/1994 00:00:00"))
+            {
+                OK = false;
+            }
+            //test to see that the result is correct
+            Assert.IsFalse(OK);
+
+
+        }
+        [TestMethod]
+        public void TestAddressFound()
+        {
+            //create an instance of the class we want to create
+            clsConsultant AConsultant = new clsConsultant();
+            //boolean varibale to store the result of the validation
+            Boolean Found = false;
+            //boolean variable to store the result of the search
+            Boolean OK = true;
+            //create some test data to use with the method
+            Int32 ConsultantNo = 1;
+            //invoke the method
+            Found = AConsultant.Find(ConsultantNo);
+            //check the ConsultantNo
+            if (AConsultant.Address != "flat b 2, thml")
+            {
+                OK = false;
+            }
+            //test to see that the result is correct
+            Assert.IsFalse(OK);
+
+
+        }
+
+        [TestMethod]
+        public void TestEmailFound()
+        {
+            //create an instance of the class we want to create
+            clsConsultant AConsultant = new clsConsultant();
+            //boolean varibale to store the result of the validation
+            Boolean Found = false;
+            //boolean variable to store the result of the search
+            Boolean OK = true;
+            //create some test data to use with the method
+            Int32 ConsultantNo = 1;
+            //invoke the method
+            Found = AConsultant.Find(ConsultantNo);
+            //check the ConsultantNo
+            if (AConsultant.Email != "mwen@live.com")
+            {
+                OK = false;
+            }
+            //test to see that the result is correct
+            Assert.IsFalse(OK);
+
+
+        }
+
+        [TestMethod]
+        public void TestTelNoFound()
+        {
+            //create an instance of the class we want to create
+            clsConsultant AConsultant = new clsConsultant();
+            //boolean varibale to store the result of the validation
+            Boolean Found = false;
+            //boolean variable to store the result of the search
+            Boolean OK = true;
+            //create some test data to use with the method
+            Int32 ConsultantNo = 1;
+            //invoke the method
+            Found = AConsultant.Find(ConsultantNo);
+            //check the ConsultantNo
+            if (AConsultant.TelNo != "0185815930")
+            {
+                OK = false;
+            }
+            //test to see that the result is correct
+            Assert.IsFalse(OK);
+
+
+        }
+
+        [TestMethod]
+        public void TestEmergencyContactFound()
+        {
+            //create an instance of the class we want to create
+            clsConsultant AConsultant = new clsConsultant();
+            //boolean varibale to store the result of the validation
+            Boolean Found = false;
+            //boolean variable to store the result of the search
+            Boolean OK = true;
+            //create some test data to use with the method
+            Int32 ConsultantNo = 1;
+            //invoke the method
+            Found = AConsultant.Find(ConsultantNo);
+            //check the ConsultantNo
+            if (AConsultant.EmergencyContact != "sjfhfjaf")
+            {
+                OK = false;
+            }
+            //test to see that the result is correct
+            Assert.IsFalse(OK);
+
+
+        }
+
+        [TestMethod]
+        public void TestEmploymentDateFound()
+        {
+            //create an instance of the class we want to create
+            clsConsultant AConsultant = new clsConsultant();
+            //boolean varibale to store the result of the validation
+            Boolean Found = false;
+            //boolean variable to store the result of the search
+            Boolean OK = true;
+            //create some test data to use with the method
+            Int32 ConsultantNo = 1;
+            //invoke the method
+            Found = AConsultant.Find(ConsultantNo);
+            //check the ConsultantNo
+            if (AConsultant.EmploymentDate != Convert.ToDateTime("24/11/2005"))
+            {
+                OK = false;
+            }
+            //test to see that the result is correct
+            Assert.IsFalse(OK);
+
+
+        }
+
+        [TestMethod]
+        public void TestHoursOfWorkFound()
+        {
+            //create an instance of the class we want to create
+            clsConsultant AConsultant = new clsConsultant();
+            //boolean variable to store the result of the search
+            Boolean Found = false;
+            //boolean variable to record ifdata is OK (assume it is)
+            Boolean OK = true;
+            //create some test data to use with the method
+            Int32 ConsultantNo = 2;
+            //invoke the method
+            Found = AConsultant.Find(ConsultantNo);
+            //check the Consultant No
+            if (AConsultant.HoursOfWork != 72)
+            {
+
+                OK = false;
+            }
+            //test to see that the result is correct
+            Assert.IsFalse(OK);
+
+
+        }
+
+        [TestMethod]
+        public void TestEmploymentHistoryFound()
+        {
+            //create an instance of the class we want to create
+            clsConsultant AConsultant = new clsConsultant();
+            //boolean varibale to store the result of the validation
+            Boolean Found = false;
+            //boolean variable to store the result of the search
+            Boolean OK = true;
+            //create some test data to use with the method
+            Int32 ConsultantNo = 1;
+            //invoke the method
+            Found = AConsultant.Find(ConsultantNo);
+            //check the ConsultantNo
+            if (AConsultant.EmploymentHistory != "sjfhfjaf")
+            {
+                OK = false;
+            }
+            //test to see that the result is correct
+            Assert.IsFalse(OK);
+
+
+        }
+
+        [TestMethod]
+        public void TestStatusFound()
+        {
+            //create an instance of the class we want to create
+            clsConsultant AConsultant = new clsConsultant();
+            //boolean varibale to store the result of the validation
+            Boolean Found = false;
+            //boolean variable to store the result of the search
+            Boolean OK = true;
+            //create some test data to use with the method
+            Int32 ConsultantNo = 1;
+            //invoke the method
+            Found = AConsultant.Find(ConsultantNo);
+            //check the ConsultantNo
+            if (AConsultant.Status != true)
+            {
+                OK = false;
+            }
+            //test to see that the result is correct
+            Assert.IsTrue(OK);
+
+
+        }
+
+
     }
 }
