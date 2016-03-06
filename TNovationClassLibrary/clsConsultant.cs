@@ -21,8 +21,6 @@ namespace ConsultantClassLibrary
         private DateTime employmentDate;
         //private data member for the hours of work property
         private int hoursOfWork;
-        //private data member for the Job description property
-        private string jobDescription;
         //private data member for the Name property
         private string firstName;
         //private data member for the Name property
@@ -142,22 +140,7 @@ namespace ConsultantClassLibrary
             }
         }
 
-        //public property for Job description
-        public string JobDescription
-        {
-            get
-            {
-                //return the private data
-                return jobDescription;
 
-            }
-
-            set
-            {
-                //set the private data
-                jobDescription = value;
-            }
-        }
 
         //public property for Name
         public string FirstName
@@ -289,9 +272,48 @@ namespace ConsultantClassLibrary
 
 
 
-        public bool Valid(string FirstName, string LastName, string Address, string Email, string WorkHistory, string JobDescription)
+        public bool Valid(string FirstName, string LastName, string Address, string Email, string EmploymentHistory, string DateOfBirth)
         {
-            return true;
+            //createa a Boolean variable to flag the error
+            Boolean OK = true;
+            //create a temp variable to store the date values
+            DateTime DateTemp;
+            //if the FirstName is blank
+            if (FirstName.Length == 0)
+            {
+                //set the flag OK to false
+                OK = false;
+
+
+            }
+
+            //if the FirstName is greater than 50 characters
+            if (FirstName.Length == 50)
+            {
+            //set the flag OK to false
+                OK = false;
+
+            }
+
+            //copy the DateOfBirth value to the datetemp variable
+            DateTemp = Convert.ToDateTime(DateOfBirth);
+            //check to see ifthe date is less than today's date
+            if (DateTemp < DateTime.Now.Date)
+            {
+                //set the flag OK to false
+                OK = false;
+
+            }
+
+            //check to see if the date is greater than today's date
+            if (DateTemp >DateTime.Now.Date)
+            {
+                //set the flag OK to false
+                OK = false;
+
+            }
+            //return the value of OK
+            return OK;
         }
     }
 }

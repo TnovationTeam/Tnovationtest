@@ -521,6 +521,324 @@ namespace ConsultantTestFramework
 
         }
 
+        [TestMethod]
+        public void FirstNameMinLessOne()
+        {
+            //create an instance of the class we want to create
+            clsConsultant AConsultant = new clsConsultant();
+            //boolean variable to store the result of the validation
+            Boolean OK = false;
+            //create some test data to use with the method
+            string FirstName = ""; //This should fail
+            string LastName = "mmmmmm";
+            string Address = "flat b 2, thml";
+            string Email = "mwen@live.com";
+            string DateOfBirth = "24/11/2005";
+            string EmploymentHistory = "";
+            //invoke the method
+            OK = AConsultant.Valid(FirstName, LastName, Address, Email, DateOfBirth, EmploymentHistory);
+            //test to see that the result is correct
+            Assert.IsFalse(OK);
 
+
+        }
+
+        [TestMethod]
+        public void FirstNameNoMin()
+        {
+            //create an instance of the class we want to create
+            clsConsultant AConsultant = new clsConsultant();
+            //boolean variable to store the result of the validation
+            Boolean OK = false;
+            //create some test data to use with the method
+            string FirstName = "B"; //This should pass
+            string LastName = "mmmmmm";
+            string Address = "flat b 2, thml";
+            string Email = "mwen@live.com";
+            string DateOfBirth = "24/11/2005";
+            string EmploymentHistory = "";
+            //invoke the method
+            OK = AConsultant.Valid(FirstName, LastName, Address, Email, DateOfBirth, EmploymentHistory);
+            //test to see that the result is correct
+            Assert.IsTrue(OK);
+
+
+        }
+
+        [TestMethod]
+        public void FirstNameMinPlusOne()
+        {
+            //create an instance of the class we want to create
+            clsConsultant AConsultant = new clsConsultant();
+            //boolean variable to store the result of the validation
+            Boolean OK = false;
+            //create some test data to use with the method
+            string FirstName = "AB"; //This should pass
+            string LastName = "mmmmmm";
+            string Address = "flat b 2, thml";
+            string Email = "mwen@live.com";
+            string DateOfBirth = "24/11/2005";
+            string EmploymentHistory = "";
+            //invoke the method
+            OK = AConsultant.Valid(FirstName, LastName, Address, Email, DateOfBirth, EmploymentHistory);
+            //test to see that the result is correct
+            Assert.IsTrue(OK);
+
+
+        }
+
+        [TestMethod]
+        public void FirstNameMaxLessOne()
+        {
+            //create an instance of the class we want to create
+            clsConsultant AConsultant = new clsConsultant();
+            //boolean variable to store the result of the validation
+            Boolean OK = false;
+            //create some test data to use with the method
+            string FirstName = "Abcdhfmhklfigmahsmghcksmsdmjnbhmklowpoutfghmglava"; //This should pass
+            string LastName = "mmmmmm";
+            string Address = "flat b 2, thml";
+            string Email = "mwen@live.com";
+            string DateOfBirth = "24/11/2005";
+            string EmploymentHistory = "";
+            //invoke the method
+            OK = AConsultant.Valid(FirstName, LastName, Address, Email, DateOfBirth, EmploymentHistory);
+            //test to see that the result is correct
+            Assert.IsTrue(OK);
+
+
+        }
+        [TestMethod]
+        public void FirstNameNoMax()
+        {
+            //create an instance of the class we want to create
+            clsConsultant AConsultant = new clsConsultant();
+            //boolean variable to store the result of the validation
+            Boolean OK = false;
+            //create some test data to use with the method
+            string FirstName = "abcdmjmjmghhkgkngnn abcdmjmjmghhkgkngnnamjnhgbnjss"; //This should pass
+            string LastName = "mmmmmm";
+            string Address = "flat b 2, thml";
+            string Email = "mwen@live.com";
+            string DateOfBirth = "24/11/2005";
+            string EmploymentHistory = "";
+            //invoke the method
+            OK = AConsultant.Valid(FirstName, LastName, Address, Email, DateOfBirth, EmploymentHistory);
+            //test to see that the result is correct
+            Assert.IsTrue(OK);
+
+
+        }
+
+        [TestMethod]
+        public void FirstNameNoMid()
+        {
+            //create an instance of the class we want to create
+            clsConsultant AConsultant = new clsConsultant();
+            //boolean variable to store the result of the validation
+            Boolean OK = false;
+            //create some test data to use with the method
+            string FirstName = "abcdmjmjmghhasmjkloithkgk"; //This should pass
+            string LastName = "mmmmmm";
+            string Address = "flat b 2, thml";
+            string Email = "mwen@live.com";
+            string DateOfBirth = "24/11/2005";
+            string EmploymentHistory = "";
+            //invoke the method
+            OK = AConsultant.Valid(FirstName, LastName, Address, Email, DateOfBirth, EmploymentHistory);
+            //test to see that the result is correct
+            Assert.IsTrue(OK);
+
+
+        }
+
+        [TestMethod]
+        public void FirstNameNoMaxPlusOne()
+        {
+            //create an instance of the class we want to create
+            clsConsultant AConsultant = new clsConsultant();
+            //boolean variable to store the result of the validation
+            Boolean OK = false;
+            //create some test data to use with the method
+            string FirstName = "abcdmjmjmghhkgkngnn abcdmjmjmghhkgkngnnamjnhgbnjsss"; //This should fail
+            string LastName = "mmmmmm";
+            string Address = "flat b 2, thml";
+            string Email = "mwen@live.com";
+            string DateOfBirth = "24/11/2005";
+            string EmploymentHistory = "";
+            //invoke the method
+            OK = AConsultant.Valid(FirstName, LastName, Address, Email, DateOfBirth, EmploymentHistory);
+            //test to see that the result is correct
+            Assert.IsFalse(OK);
+
+
+        }
+
+        public void FirstNameExtremeMax()
+        {
+            //create an instance of the class we want to create
+            clsConsultant AConsultant = new clsConsultant();
+            //boolean variable to store the result of the validation
+            Boolean OK = false;
+            //create some test data to use with the method
+            string FirstName = "abcdmjmjmghhkgkngnnabcdmjmjmghhkgkngnnabcdmjmjmghhkgkngnn abcdmjmjmghhkgkngnn abcdmjmjmghhkgkngnn abcdmjmjmghhkgkngnnmshfnvczsa’"; //This should fail
+            string LastName = "mmmmmm";
+            string Address = "flat b 2, thml";
+            string Email = "mwen@live.com";
+            string DateOfBirth = "24/11/2005";
+            string EmploymentHistory = "";
+            //invoke the method
+            OK = AConsultant.Valid(FirstName, LastName, Address, Email, DateOfBirth, EmploymentHistory);
+            //test to see that the result is correct
+            Assert.IsFalse(OK);
+
+
+
+        }
+
+        [TestMethod]
+        public void DateOfBirthExtremeMin()
+        {
+            //create an instance of the class we want to create
+            clsConsultant AConsultant = new clsConsultant();
+            //boolean variable to store the result of the validation
+            Boolean OK = false;
+            //create some test data to use with the method
+            string FirstName = "James"; 
+            string LastName = "mmmmmm";
+            string Address = "flat b 2, thml";
+            string Email = "mwen@live.com";
+            string EmploymentHistory = "";
+            //create a variable to store the test date data
+            DateTime TestDate;
+            //set the date to todays date
+            TestDate = DateTime.Now.Date;
+            //change the date to whatever the date is less than 100 years 
+            TestDate = TestDate.AddYears(-100);
+            //convert the date variable to string variable
+            string DateOfBirth = TestDate.ToString();
+            //invoke the method
+            OK = AConsultant.Valid(FirstName, LastName, Address, Email, DateOfBirth, EmploymentHistory);
+            //test to see that the result is correct
+            Assert.IsFalse(OK);
+
+
+        }
+
+        [TestMethod]
+        public void DateOfBirthMinLessOne()
+        {
+            //create an instance of the class we want to create
+            clsConsultant AConsultant = new clsConsultant();
+            //boolean variable to store the result of the validation
+            Boolean OK = false;
+            //create some test data to use with the method
+            string FirstName = "James";
+            string LastName = "mmmmmm";
+            string Address = "flat b 2, thml";
+            string Email = "mwen@live.com";
+            string EmploymentHistory = "";
+            //create a variable to store the test date data
+            DateTime TestDate;
+            //set the date to todays date
+            TestDate = DateTime.Now.Date;
+            //change the date to whatever the date is less than 15 years
+            TestDate = TestDate.AddYears(-15);
+            //convert the date variable to string variable
+            string DateOfBirth = TestDate.ToString();
+            //invoke the method
+            OK = AConsultant.Valid(FirstName, LastName, Address, Email, DateOfBirth, EmploymentHistory);
+            //test to see that the result is correct
+            Assert.IsFalse(OK);
+
+
+        }
+
+        [TestMethod]
+        public void DateOfBirthAddedMin()
+        {
+            //create an instance of the class we want to create
+            clsConsultant AConsultant = new clsConsultant();
+            //boolean variable to store the result of the validation
+            Boolean OK = false;
+            //create some test data to use with the method
+            string FirstName = "James";
+            string LastName = "mmmmmm";
+            string Address = "flat b 2, thml";
+            string Email = "mwen@live.com";
+            string EmploymentHistory = "";
+            //create a variable to store the test date data
+            DateTime TestDate;
+            //set the date to todays date
+            TestDate = DateTime.Now.Date;
+            //change the date to whatever the date is less than 16 years
+            TestDate = TestDate.AddYears(-16);
+            //convert the date variable to string variable
+            string DateOfBirth = TestDate.ToString();
+            //invoke the method
+            OK = AConsultant.Valid(FirstName, LastName, Address, Email, DateOfBirth, EmploymentHistory);
+            //test to see that the result is correct
+            Assert.IsTrue(OK);
+
+
+        }
+
+        [TestMethod]
+        public void DateOfBirthMinPlusOne()
+        {
+            //create an instance of the class we want to create
+            clsConsultant AConsultant = new clsConsultant();
+            //boolean variable to store the result of the validation
+            Boolean OK = false;
+            //create some test data to use with the method
+            string FirstName = "James";
+            string LastName = "mmmmmm";
+            string Address = "flat b 2, thml";
+            string Email = "mwen@live.com";
+            string EmploymentHistory = "";
+            //create a variable to store the test date data
+            DateTime TestDate;
+            //set the date to todays date
+            TestDate = DateTime.Now.Date;
+            //change the date to whatever the date is less than 17 years
+            TestDate = TestDate.AddYears(-17);
+            //convert the date variable to string variable
+            string DateOfBirth = TestDate.ToString();
+            //invoke the method
+            OK = AConsultant.Valid(FirstName, LastName, Address, Email, DateOfBirth, EmploymentHistory);
+            //test to see that the result is correct
+            Assert.IsTrue(OK);
+
+
+        }
+
+        [TestMethod]
+        public void DateOfBirthExtremeMax()
+        {
+            //create an instance of the class we want to create
+            clsConsultant AConsultant = new clsConsultant();
+            //boolean variable to store the result of the validation
+            Boolean OK = false;
+            //create some test data to use with the method
+            string FirstName = "James";
+            string LastName = "mmmmmm";
+            string Address = "flat b 2, thml";
+            string Email = "mwen@live.com";
+            string EmploymentHistory = "";
+            //create a variable to store the test date data
+            DateTime TestDate;
+            //set the date to todays date
+            TestDate = DateTime.Now.Date;
+            //change the date to whatever the date is plus 100years
+            TestDate = TestDate.AddYears(100);
+            //convert the date variable to string variable
+            string DateOfBirth = TestDate.ToString();
+            //invoke the method
+            OK = AConsultant.Valid(FirstName, LastName, Address, Email, DateOfBirth, EmploymentHistory);
+            //test to see that the result is correct
+            Assert.IsTrue(OK);
+
+
+        }
     }
 }
