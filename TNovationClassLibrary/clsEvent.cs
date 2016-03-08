@@ -219,18 +219,18 @@ namespace TNovationClassLibrary
         {
             Boolean OK = true;
             DateTime SomeDate;
-            if(location.Length == 0)
+            if(Location.Length == 0)
             {
                 OK = false;
             }
 
-            if (location.Length >30)
+            if (Location.Length >30)
             {
                 OK = false;
             }
             try
             {
-                SomeDate = Convert.ToDateTime(startDate);
+                SomeDate = Convert.ToDateTime(StartDate);
 
                 if (SomeDate < DateTime.Now.Date)
                 {

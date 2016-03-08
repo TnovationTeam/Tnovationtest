@@ -519,7 +519,7 @@ namespace TNovationTestFramework
              //invoke method
              OK = AEvent.Valid(EventName, CompanyName, Contact, EndDate, StartDate, GuestSpeaker, Location, TypeOfEvent);
              //check iff it is correct
-             Assert.IsTrue(OK);
+             Assert.IsFalse(OK);
 
          }
          [TestMethod]
@@ -548,7 +548,7 @@ namespace TNovationTestFramework
              //invoke method
              OK = AEvent.Valid(EventName, CompanyName, Contact, EndDate, StartDate, GuestSpeaker, Location, TypeOfEvent);  
              //check iff it is correct
-             Assert.IsTrue(OK);
+             Assert.IsFalse(OK);
 
          }
 
@@ -595,7 +595,7 @@ namespace TNovationTestFramework
              //invoke method
              OK = AEvent.Valid(EventName, CompanyName, Contact, EndDate, StartDate, GuestSpeaker, Location, TypeOfEvent);  
              //check iff it is correct
-             Assert.IsTrue(OK);
+             Assert.IsFalse(OK);
 
          }
 
@@ -686,7 +686,7 @@ namespace TNovationTestFramework
              //boolean variable to store the result of the validation
              Boolean OK = false;
              //create some test data to pass to the method
-             string EventName = "Women in Technolog";
+             string EventName = "Women in Technology";
              string CompanyName = "CTech";
              string Contact = "075432345";
              string EndDate = DateTime.Now.Date.ToString();
@@ -698,11 +698,11 @@ namespace TNovationTestFramework
              //creates  29 characters instead of writing many out
              Location = Location.PadRight(31, 'b');
              //variable to store date
-             string startDate = DateTime.Now.Date.ToString();
+            
              //invoke method
              OK = AEvent.Valid(EventName, CompanyName, Contact, EndDate, StartDate, GuestSpeaker, Location, TypeOfEvent);
              //check iff it is correct
-             Assert.IsTrue(OK);
+             Assert.IsFalse(OK);
 
          }
          [TestMethod]
@@ -754,7 +754,7 @@ namespace TNovationTestFramework
              //variable to store date
              OK = AEvent.Valid(EventName, CompanyName, Contact, EndDate, StartDate, GuestSpeaker, Location, TypeOfEvent); 
              //check if it is correct
-             Assert.IsTrue(OK);
+             Assert.IsFalse(OK);
 
          }
 

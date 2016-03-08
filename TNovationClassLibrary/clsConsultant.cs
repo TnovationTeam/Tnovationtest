@@ -21,8 +21,6 @@ namespace ConsultantClassLibrary
         private DateTime employmentDate;
         //private data member for the hours of work property
         private int hoursOfWork;
-        //private data member for the Job description property
-        private string jobDescription;
         //private data member for the Name property
         private string firstName;
         //private data member for the Name property
@@ -30,11 +28,10 @@ namespace ConsultantClassLibrary
         //private data member for the Status property
         private Boolean status;
         //private data member for the Telephone Number property
-        private string telephoneNo;
-        //private data member for the Work History property
-        private string workHistory;
-
-
+        private string telNo;
+        //private data member for the Employment History property
+        private string employmentHistory;
+        
 
         //public property for Address
         public string Address
@@ -143,22 +140,7 @@ namespace ConsultantClassLibrary
             }
         }
 
-        //public property for Job description
-        public string JobDescription
-        {
-            get
-            {
-                //return the private data
-                return jobDescription;
 
-            }
-
-            set
-            {
-                //set the private data
-                jobDescription = value;
-            }
-        }
 
         //public property for Name
         public string FirstName
@@ -212,36 +194,36 @@ namespace ConsultantClassLibrary
         }
 
         //public property for Telephone No
-        public string TelephoneNo
+        public string TelNo
         {
             get
             {
                 //return the private data
-                return telephoneNo;
+                return telNo;
 
             }
 
             set
             {
                 //set the private data
-                telephoneNo = value;
+                telNo = value;
             }
         }
 
-        //public property for Work History
-        public string WorkHistory
+        //public property for Employment History
+        public string EmploymentHistory
         {
             get
             {
                 //return the private data
-                return workHistory;
+                return EmploymentHistory;
 
             }
 
             set
             {
                 //set the private data
-                workHistory = value;
+                EmploymentHistory = value;
             }
         }
 
@@ -268,11 +250,11 @@ namespace ConsultantClassLibrary
                 dateOfBirth = Convert.ToDateTime(DB.DataTable.Rows[0]["DateOfBirth"]);
                 address = Convert.ToString(DB.DataTable.Rows[0]["Address"]);
                 email = Convert.ToString(DB.DataTable.Rows[0]["Email"]);
-                telephoneNo = Convert.ToString(DB.DataTable.Rows[0]["TelephoneNo"]);
+                telNo = Convert.ToString(DB.DataTable.Rows[0]["TelNo"]);
                  emergencyContact = Convert.ToString(DB.DataTable.Rows[0]["EmergencyContact"]);
                 employmentDate = Convert.ToDateTime(DB.DataTable.Rows[0]["EmploymentDate"]); 
                 hoursOfWork = Convert.ToInt32(DB.DataTable.Rows[0]["HoursOfWork"]);
-                workHistory = Convert.ToString(DB.DataTable.Rows[0]["WorkHistory"]);
+                employmentHistory = Convert.ToString(DB.DataTable.Rows[0]["EmploymentHistory"]);
                 status = Convert.ToBoolean(DB.DataTable.Rows[0]["Status"]);
 
                 //return that everything worked OK
@@ -290,9 +272,48 @@ namespace ConsultantClassLibrary
 
 
 
-        public bool Valid(string FirstName, string LastName, string Address, string Email, string WorkHistory, string JobDescription)
+        public bool Valid(string FirstName, string LastName, string Address, string Email, string EmploymentHistory, string DateOfBirth)
         {
-            return true;
+            //createa a Boolean variable to flag the error
+            Boolean OK = true;
+            //create a temp variable to store the date values
+            DateTime DateTemp;
+            //if the FirstName is blank
+            if (FirstName.Length == 0)
+            {
+                //set the flag OK to false
+                OK = false;
+
+
+            }
+
+            //if the FirstName is greater than 50 characters
+            if (FirstName.Length == 50)
+            {
+            //set the flag OK to false
+                OK = false;
+
+            }
+
+            //copy the DateOfBirth value to the datetemp variable
+            DateTemp = Convert.ToDateTime(DateOfBirth);
+            //check to see ifthe date is less than today's date
+            if (DateTemp < DateTime.Now.Date)
+            {
+                //set the flag OK to false
+                OK = false;
+
+            }
+
+            //check to see if the date is greater than today's date
+            if (DateTemp >DateTime.Now.Date)
+            {
+                //set the flag OK to false
+                OK = false;
+
+            }
+            //return the value of OK
+            return OK;
         }
     }
 }
