@@ -315,6 +315,8 @@ namespace ConsultantClassLibrary
             //return the value of OK
             return OK;
         }
+
+        public string JobDescription { get; set; }
     }
 }
 
