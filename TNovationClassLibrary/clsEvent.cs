@@ -203,7 +203,8 @@ namespace TNovationClassLibrary
                 startDate = Convert.ToDateTime(DB.DataTable.Rows[0]["StartDate"]);
                 guestSpeaker = Convert.ToString(DB.DataTable.Rows[0]["GuestSpeaker"]);
                 location = Convert.ToString(DB.DataTable.Rows[0]["Location"]);
-                typeOfEvent = Convert.ToString(DB.DataTable.Rows[0]["TypeOfEvent"]); 
+                typeOfEvent = Convert.ToString(DB.DataTable.Rows[0]["TypeOfEvent"]);
+                consultantAttending = Convert.ToString(DB.DataTable.Rows[0]["ConsultantAttending"]); 
                 //return that everything worked ok
                 return true;
             }
@@ -215,40 +216,64 @@ namespace TNovationClassLibrary
             }
         }
 
-        public bool Valid(string EventName, string CompanyName, string Contact, string EndDate, string StartDate, string GuestSpeaker, string Location, string TypeOfEvent)
+        public bool Valid(string EventName, string CompanyName, string Contact, string EndDate, string StartDate, string GuestSpeaker, string Location, string TypeOfEvent, string ConsultantAttending)
         {
             Boolean OK = true;
             DateTime SomeDate;
-            if(Location.Length == 0)
+            if (Location.Length == 0)
             {
                 OK = false;
             }
 
-            if (Location.Length >30)
+            if (Location.Length > 30)
             {
                 OK = false;
+            }
+
+            if (ConsultantAttending.Length == 0)
+            {
+                OK = false;
+            }
+
+            if (ConsultantAttending.Length > 30)
+            {
+                OK = false;
+            }
+            if (Contact.Length > 12)
+            {
+                OK = false;
+            }
+
+            if(Contact.Length < 9)
+            {
+                OK = false;
+
             }
             try
             {
                 SomeDate = Convert.ToDateTime(StartDate);
+               
 
-                if (SomeDate < DateTime.Now.Date)
-                {
-                    OK = false;
-                }
-                if (SomeDate > DateTime.Now.Date)
-                {
-                    OK = false;
-                }
-            }
-            catch
-            {
-                OK = false; // returns flag ok
 
-            }
-            return OK;
+                    if (SomeDate < DateTime.Now.Date)
+                    {
+                        OK = false;
+                    }
+                    if (SomeDate > DateTime.Now.Date)
+                    {
+                        OK = false;
+                    }
+                }
+                catch
+                {
+                    OK = false; // returns flag ok
+
+                }
+                return OK;
 
             }
         }
     }
+    
+  
 
