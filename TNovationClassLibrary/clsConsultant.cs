@@ -31,7 +31,7 @@ namespace ConsultantClassLibrary
         private string telNo;
         //private data member for the Employment History property
         private string employmentHistory;
-        
+
 
         //public property for Address
         public string Address
@@ -49,49 +49,49 @@ namespace ConsultantClassLibrary
         }
 
         //public property for ConsultantNo
-        public int ConsultantNo 
-        { 
+        public int ConsultantNo
+        {
             get
             {
                 //return the private data
                 return consultantNo;
             }
-                set
+            set
             {
-                    //set the private data
+                //set the private data
                 consultantNo = value;
             }
-                }
+        }
 
         //public property for Date of birth
-        public DateTime DateOfBirth 
-        { 
+        public DateTime DateOfBirth
+        {
             get
             {
                 //return the private data
                 return dateOfBirth;
             }
-                set
+            set
             {
                 //set the private data
                 dateOfBirth = value;
             }
-                }
+        }
 
         //public property for Email
-        public string Email 
-        { 
+        public string Email
+        {
             get
             {
                 //return the private data
                 return email;
             }
-                set
+            set
             {
-                    //set the private data
+                //set the private data
                 email = value;
             }
-                }
+        }
 
         //public property Emergency contact
         public string EmergencyContact
@@ -216,20 +216,20 @@ namespace ConsultantClassLibrary
             get
             {
                 //return the private data
-                return EmploymentHistory;
+                return employmentHistory;
 
             }
 
             set
             {
                 //set the private data
-                EmploymentHistory = value;
+                employmentHistory = value;
             }
         }
 
-    
 
-       
+
+
 
         public bool Find(int ConsultantNo)
         {
@@ -251,8 +251,8 @@ namespace ConsultantClassLibrary
                 address = Convert.ToString(DB.DataTable.Rows[0]["Address"]);
                 email = Convert.ToString(DB.DataTable.Rows[0]["Email"]);
                 telNo = Convert.ToString(DB.DataTable.Rows[0]["TelNo"]);
-                 emergencyContact = Convert.ToString(DB.DataTable.Rows[0]["EmergencyContact"]);
-                employmentDate = Convert.ToDateTime(DB.DataTable.Rows[0]["EmploymentDate"]); 
+                emergencyContact = Convert.ToString(DB.DataTable.Rows[0]["EmergencyContact"]);
+                employmentDate = Convert.ToDateTime(DB.DataTable.Rows[0]["EmploymentDate"]);
                 hoursOfWork = Convert.ToInt32(DB.DataTable.Rows[0]["HoursOfWork"]);
                 employmentHistory = Convert.ToString(DB.DataTable.Rows[0]["EmploymentHistory"]);
                 status = Convert.ToBoolean(DB.DataTable.Rows[0]["Status"]);
@@ -268,7 +268,7 @@ namespace ConsultantClassLibrary
             }
         }
 
-      
+
 
 
 
@@ -290,35 +290,48 @@ namespace ConsultantClassLibrary
             //if the FirstName is greater than 50 characters
             if (FirstName.Length == 50)
             {
-            //set the flag OK to false
-                OK = false;
-
-            }
-
-            //copy the DateOfBirth value to the datetemp variable
-            DateTemp = Convert.ToDateTime(DateOfBirth);
-            //check to see ifthe date is less than today's date
-            if (DateTemp < DateTime.Now.Date)
-            {
                 //set the flag OK to false
                 OK = false;
 
             }
 
-            //check to see if the date is greater than today's date
-            if (DateTemp >DateTime.Now.Date)
+            //try the date validation assuming the data is a valid date
+            try
+            {
+                //copy the DateOfBirth value to the datetemp variable
+                DateTemp = Convert.ToDateTime(DateOfBirth);
+                //check to see ifthe date is less than today's date
+                if (DateTemp < DateTime.Now.Date)
+                {
+                    //set the flag OK to false
+                    OK = false;
+
+                }
+
+                //check to see if the date is greater than today's date
+                if (DateTemp > DateTime.Now.Date)
+                {
+                    //set the flag OK to false
+                    OK = false;
+
+                }
+            }
+
+            //the data was not a date so flag an error
+            catch
             {
                 //set the flag OK to false
                 OK = false;
-
             }
             //return the value of OK
             return OK;
+
+
+
+
         }
 
-        public string JobDescription { get; set; }
     }
+
 }
-
-
 
