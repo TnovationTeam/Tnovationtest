@@ -42,10 +42,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="clsClient.cs" />
-    <Compile Include="clsConsultant.cs" />
+    <Compile Include="clsCompany.cs" />
+    <Compile Include="clsConsultant.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="clsDataConnection.cs" />
     <Compile Include="clsEvent.cs" />
-    <Compile Include="clsProject.cs" />
+    <Compile Include="clsProject.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
