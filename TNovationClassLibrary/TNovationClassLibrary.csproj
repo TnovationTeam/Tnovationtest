@@ -43,11 +43,11 @@
   <ItemGroup>
     <Compile Include="clsClient.cs" />
     <Compile Include="clsCompany.cs" />
-    <Compile Include="clsConsultant.cs">
+    <Compile Include="clsConsultant.cs" />
+    <Compile Include="clsDataConnection.cs" />
+    <Compile Include="clsEvent.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="clsDataConnection.cs" />
-    <Compile Include="clsEvent.cs" />
     <Compile Include="clsProject.cs">
       <SubType>Code</SubType>
     </Compile>
