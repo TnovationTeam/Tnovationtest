@@ -770,6 +770,11 @@ namespace TNovationTestFramework
              Assert.IsFalse(OK);
 
          }
+
+
+        /// <summary>
+        /// End date testing starts from here
+        /// </summary>
          [TestMethod]
          public void EndDateExtremeMinOK()
          {
@@ -1303,7 +1308,786 @@ namespace TNovationTestFramework
 
          }
 
+        /// <summary>
+        /// Contact testing finishes here
+        /// </summary>
+       
+
+
+
+        ///<summary>
+        /// Event Name testing begins here
+        /// </summary>
+
+         [TestMethod]
+         public void EventNameMinlessoneOk()
+         {
+
+             //create an instance of the class we want to create
+             clsEvent AEvent = new clsEvent();
+             //boolean variable to store the result of the validation
+             Boolean OK = false;
+             //create some test data to pass to the method
+             string EventName = "";
+             string CompanyName = "CTech";
+             string Contact = "075432345";
+             string EndDate = DateTime.Now.Date.ToString();
+             string StartDate = DateTime.Now.Date.ToString();
+             string GuestSpeaker = "Elizabeth Saw";
+             string Location = "Excel London";///testing this
+             string TypeOfEvent = "Conference";
+             string ConsultantAttending = "Egle Sciglinskaite";
+             //invoke method
+             OK = AEvent.Valid(EventName, CompanyName, Contact, EndDate, StartDate, GuestSpeaker, Location, TypeOfEvent, ConsultantAttending);
+             //check iff it is correct
+             Assert.IsFalse(OK);
+
+         }
+
+         [TestMethod]
+         public void EventNameMinOk()
+         {
+
+             //create an instance of the class we want to create
+             clsEvent AEvent = new clsEvent();
+             //boolean variable to store the result of the validation
+             Boolean OK = false;
+             //create some test data to pass to the method
+             string EventName = "W";
+             string CompanyName = "CTech";
+             string Contact = "075432345";
+             string EndDate = DateTime.Now.Date.ToString();
+             string StartDate = DateTime.Now.Date.ToString();
+             string GuestSpeaker = "Elizabeth Saw";
+             string ConsultantAttending = "Egle Sciglinskaite";
+             string TypeOfEvent = "Conference";
+             string Location = "Excel London"; //testing this
+             //variable to store date
+
+             //invoke method
+             OK = AEvent.Valid(EventName, CompanyName, Contact, EndDate, StartDate, GuestSpeaker, Location, TypeOfEvent, ConsultantAttending);
+             //check iff it is correct
+             Assert.IsTrue(OK);
+
+         }
+         [TestMethod]
+         public void EventNameMaxLessOneOk()
+         {
+             //create an instance of the class we want to create
+             clsEvent AEvent = new clsEvent();
+             //boolean variable to store the result of the validation
+             Boolean OK = false;
+             //create some test data to pass to the method
+             string EventName = "";
+             string CompanyName = "CTech";
+             string Contact = "075432345";
+             string EndDate = DateTime.Now.Date.ToString();
+             string StartDate = DateTime.Now.Date.ToString();
+             string GuestSpeaker = "Elizabeth Saw";
+             string TypeOfEvent = "Conference";
+             string ConsultantAttending = "Egle Sciglinskaite";
+             string Location = "Excel London";
+             //creates  29 characters instead of writing many out
+             EventName = EventName.PadRight(29, 'b');
+             //variable to store date
+
+             //invoke method
+             OK = AEvent.Valid(EventName, CompanyName, Contact, EndDate, StartDate, GuestSpeaker, Location, TypeOfEvent, ConsultantAttending);
+             //check iff it is correct
+             Assert.IsTrue(OK);
+
+         }
+         [TestMethod]
+         public void EventNameMaxOk()
+         {
+             //create an instance of the class we want to create
+             clsEvent AEvent = new clsEvent();
+             //boolean variable to store the result of the validation
+             Boolean OK = false;
+             //create some test data to pass to the method
+             string EventName = "";
+             string CompanyName = "CTech";
+             string Contact = "075432345";
+             string EndDate = DateTime.Now.Date.ToString();
+             string StartDate = DateTime.Now.Date.ToString();
+             string GuestSpeaker = "Elizabeth Saw";
+             string TypeOfEvent = "Conference";
+             string ConsultantAttending = "Egle Sciglinskaite";
+             //variable to store location
+             string Location = "Excel London";
+             //creates  29 characters instead of writing many out
+             EventName = EventName.PadRight(30, 'b');
+             //variable to store date
+             string startDate = DateTime.Now.Date.ToString();
+             //invoke method
+             OK = AEvent.Valid(EventName, CompanyName, Contact, EndDate, StartDate, GuestSpeaker, Location, TypeOfEvent, ConsultantAttending);
+             //check iff it is correct
+             Assert.IsTrue(OK);
+
+         }
+         [TestMethod]
+         public void EventNameMaxPlusOneOk()
+         {
+             //create an instance of the class we want to create
+             clsEvent AEvent = new clsEvent();
+             //boolean variable to store the result of the validation
+             Boolean OK = false;
+             //create some test data to pass to the method
+             string EventName = "";
+             string CompanyName = "CTech";
+             string Contact = "075432345";
+             string EndDate = DateTime.Now.Date.ToString();
+             string StartDate = DateTime.Now.Date.ToString();
+             string GuestSpeaker = "Elizabeth Saw";
+             string TypeOfEvent = "Conference";
+             string ConsultantAttending = "Egle Sciglinskaite";
+             //variable to store location
+             string Location = "Excel London";
+             //creates  29 characters instead of writing many out
+             EventName = EventName.PadRight(31, 'b');
+             //variable to store date
+
+             //invoke method
+             OK = AEvent.Valid(EventName, CompanyName, Contact, EndDate, StartDate, GuestSpeaker, Location, TypeOfEvent, ConsultantAttending);
+             //check iff it is correct
+             Assert.IsFalse(OK);
+
+         }
+         [TestMethod]
+         public void EventNameMidOk()
+         {
+             //create an instance of the class we want to create
+             clsEvent AEvent = new clsEvent();
+             //boolean variable to store the result of the validation
+             Boolean OK = false;
+             //create some test data to pass to the method
+             string EventName = "";
+             string CompanyName = "CTech";
+             string Contact = "075432345";
+             string EndDate = DateTime.Now.Date.ToString();
+             string StartDate = DateTime.Now.Date.ToString();
+             string GuestSpeaker = "Elizabeth Saw";
+             string TypeOfEvent = "Conference";
+             string ConsultantAttending = "Egle Sciglinskaite";
+             //variable to store location
+             string Location = "Excel London";
+             //creates  29 characters instead of writing many out
+             EventName = EventName.PadRight(15, 'b');
+             //variable to store date
+             string startDate = DateTime.Now.Date.ToString();
+             //invoke method
+             OK = AEvent.Valid(EventName, CompanyName, Contact, EndDate, StartDate, GuestSpeaker, Location, TypeOfEvent, ConsultantAttending);
+             //check iff it is correct
+             Assert.IsTrue(OK);
+
+         }
+         [TestMethod]
+         public void EventNameExtremeMaxOk()
+         {
+             //create an instance of the class we want to create
+             clsEvent AEvent = new clsEvent();
+             //boolean variable to store the result of the validation
+             Boolean OK = false;
+             //create some test data to pass to the method
+             string EventName = "";
+             string CompanyName = "CTech";
+             string Contact = "075432345";
+             string EndDate = DateTime.Now.Date.ToString();
+             string StartDate = DateTime.Now.Date.ToString();
+             string GuestSpeaker = "Elizabeth Saw";
+             string TypeOfEvent = "Conference";
+             string ConsultantAttending = "Egle Sciglinskaite";
+             //variable to store location
+             string Location = "Excel London";
+             //creates  29 characters instead of writing many 
+             Location = Location.PadRight(500, 'b');
+             //variable to store date
+             OK = AEvent.Valid(EventName, CompanyName, Contact, EndDate, StartDate, GuestSpeaker, Location, TypeOfEvent, ConsultantAttending);
+             //check if it is correct
+             Assert.IsFalse(OK);
+
+         }
+
+        ///<summary>
+        ///This is the end of the Event Name testing
+        ///</summary>
+        
+
+        ///<summary>
+        ///Beginning of the Guest Speaker testing
+        ///
+
+         [TestMethod]
+         public void GuestSpeakerMinlessoneOk()
+         {
+
+             //create an instance of the class we want to create
+             clsEvent AEvent = new clsEvent();
+             //boolean variable to store the result of the validation
+             Boolean OK = false;
+             //create some test data to pass to the method
+             string EventName = "Women in Technology";
+             string CompanyName = "CTech";
+             string Contact = "075432345";
+             string EndDate = DateTime.Now.Date.ToString();
+             string StartDate = DateTime.Now.Date.ToString();
+             string GuestSpeaker = "";
+             string Location = "Excel London";///testing this
+             string TypeOfEvent = "Conference";
+             string ConsultantAttending = "Egle Sciglinskaite";
+             //invoke method
+             OK = AEvent.Valid(EventName, CompanyName, Contact, EndDate, StartDate, GuestSpeaker, Location, TypeOfEvent, ConsultantAttending);
+             //check if it is correct
+             Assert.IsFalse(OK);
+
+         }
+
+         [TestMethod]
+         public void GuestSpeakerNameMinOk()
+         {
+
+             //create an instance of the class we want to create
+             clsEvent AEvent = new clsEvent();
+             //boolean variable to store the result of the validation
+             Boolean OK = false;
+             //create some test data to pass to the method
+             string EventName = "Women in Technology";
+             string CompanyName = "CTech";
+             string Contact = "075432345";
+             string EndDate = DateTime.Now.Date.ToString();
+             string StartDate = DateTime.Now.Date.ToString();
+             string GuestSpeaker = "E";
+             string ConsultantAttending = "Egle Sciglinskaite";
+             string TypeOfEvent = "Conference";
+             string Location = "Excel London"; //testing this
+          
+             //invoke method
+             OK = AEvent.Valid(EventName, CompanyName, Contact, EndDate, StartDate, GuestSpeaker, Location, TypeOfEvent, ConsultantAttending);
+             //check iff it is correct
+             Assert.IsTrue(OK);
+
+         }
+         [TestMethod]
+         public void GuestSpeakerMaxLessOneOk()
+         {
+             //create an instance of the class we want to create
+             clsEvent AEvent = new clsEvent();
+             //boolean variable to store the result of the validation
+             Boolean OK = false;
+             //create some test data to pass to the method
+             string EventName = "Women in Technology";
+             string CompanyName = "CTech";
+             string Contact = "075432345";
+             string EndDate = DateTime.Now.Date.ToString();
+             string StartDate = DateTime.Now.Date.ToString();
+             string GuestSpeaker = "";
+             string TypeOfEvent = "Conference";
+             string ConsultantAttending = "Egle Sciglinskaite";
+             string Location = "Excel London";
+             GuestSpeaker = GuestSpeaker.PadRight(29, 'b');
+             //variable to store date
+
+             //invoke method
+             OK = AEvent.Valid(EventName, CompanyName, Contact, EndDate, StartDate, GuestSpeaker, Location, TypeOfEvent, ConsultantAttending);
+             //check if it is correct
+             Assert.IsTrue(OK);
+
+         }
+         [TestMethod]
+         public void GuestSpeakerMaxOk()
+         {
+             //create an instance of the class we want to create
+             clsEvent AEvent = new clsEvent();
+             //boolean variable to store the result of the validation
+             Boolean OK = false;
+             //create some test data to pass to the method
+             string EventName = "Women in Technology";
+             string CompanyName = "CTech";
+             string Contact = "075432345";
+             string EndDate = DateTime.Now.Date.ToString();
+             string StartDate = DateTime.Now.Date.ToString();
+             string GuestSpeaker = "";
+             string TypeOfEvent = "Conference";
+             string ConsultantAttending = "Egle Sciglinskaite";
+             //variable to store location
+             string Location = "Excel London";
+             //creates  29 characters instead of writing many out
+             GuestSpeaker = GuestSpeaker.PadRight(30, 'b');
+             //variable to store date
+             
+             //invoke method
+             OK = AEvent.Valid(EventName, CompanyName, Contact, EndDate, StartDate, GuestSpeaker, Location, TypeOfEvent, ConsultantAttending);
+             //check iff it is correct
+             Assert.IsTrue(OK);
+
+         }
+         [TestMethod]
+         public void GuestSpeakerMaxPlusOneOk()
+         {
+             //create an instance of the class we want to create
+             clsEvent AEvent = new clsEvent();
+             //boolean variable to store the result of the validation
+             Boolean OK = false;
+             //create some test data to pass to the method
+             string EventName = "Women in Technology";
+             string CompanyName = "CTech";
+             string Contact = "075432345";
+             string EndDate = DateTime.Now.Date.ToString();
+             string StartDate = DateTime.Now.Date.ToString();
+             string GuestSpeaker = "";
+             string TypeOfEvent = "Conference";
+             string ConsultantAttending = "Egle Sciglinskaite";
+             //variable to store location
+             string Location = "Excel London";
+             //creates  29 characters instead of writing many out
+            GuestSpeaker = GuestSpeaker.PadRight(31, 'b');
+             //variable to store date
+
+             //invoke method
+             OK = AEvent.Valid(EventName, CompanyName, Contact, EndDate, StartDate, GuestSpeaker, Location, TypeOfEvent, ConsultantAttending);
+             //check iff it is correct
+             Assert.IsFalse(OK);
+
+         }
+         [TestMethod]
+         public void GuestSpeakerMidOk()
+         {
+             //create an instance of the class we want to create
+             clsEvent AEvent = new clsEvent();
+             //boolean variable to store the result of the validation
+             Boolean OK = false;
+             //create some test data to pass to the method
+             string EventName = "Women in Technology";
+             string CompanyName = "CTech";
+             string Contact = "075432345";
+             string EndDate = DateTime.Now.Date.ToString();
+             string StartDate = DateTime.Now.Date.ToString();
+             string GuestSpeaker = "";
+             string TypeOfEvent = "Conference";
+             string ConsultantAttending = "Egle Sciglinskaite";
+             //variable to store location
+             string Location = "Excel London";
+             //creates  29 characters instead of writing many out
+             GuestSpeaker = GuestSpeaker.PadRight(15, 'b');
+           
+             
+             //invoke method
+             OK = AEvent.Valid(EventName, CompanyName, Contact, EndDate, StartDate, GuestSpeaker, Location, TypeOfEvent, ConsultantAttending);
+             //check iff it is correct
+             Assert.IsTrue(OK);
+
+         }
+         [TestMethod]
+         public void GuestSpeakerExtremeMaxOk()
+
+         {
+             //create an instance of the class we want to create
+             clsEvent AEvent = new clsEvent();
+             //boolean variable to store the result of the validation
+             Boolean OK = false;
+             //create some test data to pass to the method
+             string EventName = "Women in Technology";
+             string CompanyName = "CTech";
+             string Contact = "075432345";
+             string EndDate = DateTime.Now.Date.ToString();
+             string StartDate = DateTime.Now.Date.ToString();
+             string GuestSpeaker = "";
+             string TypeOfEvent = "Conference";
+             string ConsultantAttending = "Egle Sciglinskaite";
+             //variable to store location
+             string Location = "Excel London";
+             //creates  29 characters instead of writing many 
+             GuestSpeaker = GuestSpeaker.PadRight(500, 'b');
+             //variable to store date
+             OK = AEvent.Valid(EventName, CompanyName, Contact, EndDate, StartDate, GuestSpeaker, Location, TypeOfEvent, ConsultantAttending);
+             //check if it is correct
+             Assert.IsFalse(OK);
+
+         }
+
+        ///<summary
+        ///This is the end of the Guest Speaker tests
+        ///</summary>
+        
+        
+
+        ///<summary>
+        ///Beginning of type of event testing
+        ///</sumamary>
+
+         [TestMethod]
+         public void TypeOfEventMinlessoneOk()
+         {
+
+             //create an instance of the class we want to create
+             clsEvent AEvent = new clsEvent();
+             //boolean variable to store the result of the validation
+             Boolean OK = false;
+             //create some test data to pass to the method
+             string EventName = "Women in Technology";
+             string CompanyName = "CTech";
+             string Contact = "075432345";
+             string EndDate = DateTime.Now.Date.ToString();
+             string StartDate = DateTime.Now.Date.ToString();
+             string GuestSpeaker = "Elizabeth Saw";
+             string Location = "Excel London";///testing this
+             string TypeOfEvent = "Co";
+             string ConsultantAttending = "Egle Sciglinskaite";
+             //invoke method
+             OK = AEvent.Valid(EventName, CompanyName, Contact, EndDate, StartDate, GuestSpeaker, Location, TypeOfEvent, ConsultantAttending);
+             //check if it is correct
+             Assert.IsFalse(OK);
+
+         }
+
+         [TestMethod]
+         public void TypeOfEventMinOk()
+         {
+
+             //create an instance of the class we want to create
+             clsEvent AEvent = new clsEvent();
+             //boolean variable to store the result of the validation
+             Boolean OK = false;
+             //create some test data to pass to the method
+             string EventName = "Women in Technology";
+             string CompanyName = "CTech";
+             string Contact = "075432345";
+             string EndDate = DateTime.Now.Date.ToString();
+             string StartDate = DateTime.Now.Date.ToString();
+             string GuestSpeaker = "Elizabeth Saw";
+             string ConsultantAttending = "Egle Sciglinskaite";
+             string TypeOfEvent = "Con";
+             string Location = "Excel London"; //testing this
+
+             //invoke method
+             OK = AEvent.Valid(EventName, CompanyName, Contact, EndDate, StartDate, GuestSpeaker, Location, TypeOfEvent, ConsultantAttending);
+             //check iff it is correct
+             Assert.IsTrue(OK);
+
+         }
+         [TestMethod]
+         public void TypeOfEventMaxLessOneOk()
+
+         {
+             //create an instance of the class we want to create
+             clsEvent AEvent = new clsEvent();
+             //boolean variable to store the result of the validation
+             Boolean OK = false;
+             //create some test data to pass to the method
+             string EventName = "Women in Technology";
+             string CompanyName = "CTech";
+             string Contact = "075432345";
+             string EndDate = DateTime.Now.Date.ToString();
+             string StartDate = DateTime.Now.Date.ToString();
+             string GuestSpeaker = "Elizabeth Saw";
+             string TypeOfEvent = "";
+             string ConsultantAttending = "Egle Sciglinskaite";
+             string Location = "Excel London";
+             TypeOfEvent = TypeOfEvent.PadRight(29, 'b');         
+             //invoke method
+             OK = AEvent.Valid(EventName, CompanyName, Contact, EndDate, StartDate, GuestSpeaker, Location, TypeOfEvent, ConsultantAttending);
+             //check if it is correct
+             Assert.IsTrue(OK);
+
+         }
+         [TestMethod]
+         public void TypeOfEventMaxOk()
+         {
+             //create an instance of the class we want to create
+             clsEvent AEvent = new clsEvent();
+             //boolean variable to store the result of the validation
+             Boolean OK = false;
+             //create some test data to pass to the method
+             string EventName = "Women in Technology";
+             string CompanyName = "CTech";
+             string Contact = "075432345";
+             string EndDate = DateTime.Now.Date.ToString();
+             string StartDate = DateTime.Now.Date.ToString();
+             string GuestSpeaker = "Elizabeth Saw";
+             string TypeOfEvent = "";
+             string ConsultantAttending = "Egle Sciglinskaite";          
+             string Location = "Excel London";
+             //creates  29 characters instead of writing many out
+            TypeOfEvent = TypeOfEvent.PadRight(30, 'b');
+             //variable to store date
+
+             //invoke method
+             OK = AEvent.Valid(EventName, CompanyName, Contact, EndDate, StartDate, GuestSpeaker, Location, TypeOfEvent, ConsultantAttending);
+             //check iff it is correct
+             Assert.IsTrue(OK);
+
+         }
+         [TestMethod]
+         public void TypeOfEventMaxPlusOneOk()
+
+         {
+             //create an instance of the class we want to create
+             clsEvent AEvent = new clsEvent();
+             //boolean variable to store the result of the validation
+             Boolean OK = false;
+             //create some test data to pass to the method
+             string EventName = "Women in Technology";
+             string CompanyName = "CTech";
+             string Contact = "075432345";
+             string EndDate = DateTime.Now.Date.ToString();
+             string StartDate = DateTime.Now.Date.ToString();
+             string GuestSpeaker = "Elizabeth Saw";
+             string TypeOfEvent = "";
+             string ConsultantAttending = "Egle Sciglinskaite";
+             //variable to store location
+             string Location = "Excel London";
+             //creates  29 characters instead of writing many out
+             TypeOfEvent = TypeOfEvent.PadRight(31, 'b');
+             //invoke method
+             OK = AEvent.Valid(EventName, CompanyName, Contact, EndDate, StartDate, GuestSpeaker, Location, TypeOfEvent, ConsultantAttending);
+             //check iff it is correct
+             Assert.IsFalse(OK);
+
+         }
+         [TestMethod]
+         public void TypeOfEventMidOk()
+
+         {
+             //create an instance of the class we want to create
+             clsEvent AEvent = new clsEvent();
+             //boolean variable to store the result of the validation
+             Boolean OK = false;
+             //create some test data to pass to the method
+             string EventName = "Women in Technology";
+             string CompanyName = "CTech";
+             string Contact = "075432345";
+             string EndDate = DateTime.Now.Date.ToString();
+             string StartDate = DateTime.Now.Date.ToString();
+             string GuestSpeaker = "Elizabeth Saw";
+             string TypeOfEvent = "";
+             string ConsultantAttending = "Egle Sciglinskaite";
+             //variable to store location
+             string Location = "Excel London";
+             //creates  29 characters instead of writing many out
+             TypeOfEvent = TypeOfEvent.PadRight(13, 'b');
+             //invoke method
+             OK = AEvent.Valid(EventName, CompanyName, Contact, EndDate, StartDate, GuestSpeaker, Location, TypeOfEvent, ConsultantAttending);
+             //check iff it is correct
+             Assert.IsTrue(OK);
+
+         }
+         [TestMethod]
+         public void    TypeOfEventExtremeMaxOk()
+
+         {
+             //create an instance of the class we want to create
+             clsEvent AEvent = new clsEvent();
+             //boolean variable to store the result of the validation
+             Boolean OK = false;
+             //create some test data to pass to the method
+             string EventName = "Women in Technology";
+             string CompanyName = "CTech";
+             string Contact = "075432345";
+             string EndDate = DateTime.Now.Date.ToString();
+             string StartDate = DateTime.Now.Date.ToString();
+             string GuestSpeaker = "Elizabeth Saw";
+             string TypeOfEvent = "";
+             string ConsultantAttending = "Egle Sciglinskaite";
+             string Location = "Excel London";
+             //creates  500 characters instead of writing many 
+             GuestSpeaker = GuestSpeaker.PadRight(500, 'b');
+             //variable to store date
+             OK = AEvent.Valid(EventName, CompanyName, Contact, EndDate, StartDate, GuestSpeaker, Location, TypeOfEvent, ConsultantAttending);
+             //check if it is correct
+             Assert.IsFalse(OK);
+
+         }
+        ///<summary>
+        ///This is the end of the type of event testing
+        ///</summary>
+
+
+
+        ///<summary>
+        ///Begining of Campany Name testing
+        ///</summary>
+
+         [TestMethod]
+         public void CompanyNameMinlessoneOk()
+         {
+
+             //create an instance of the class we want to create
+             clsEvent AEvent = new clsEvent();
+             //boolean variable to store the result of the validation
+             Boolean OK = false;
+             //create some test data to pass to the method
+             string EventName = "Women in Technology";
+             string CompanyName = "";
+             string Contact = "075432345";
+             string EndDate = DateTime.Now.Date.ToString();
+             string StartDate = DateTime.Now.Date.ToString();
+             string GuestSpeaker = "Elizabeth Saw";
+             string Location = "Excel London";///testing this
+             string TypeOfEvent = "Conference";
+             string ConsultantAttending = "Egle Sciglinskaite";
+             //invoke method
+             OK = AEvent.Valid(EventName, CompanyName, Contact, EndDate, StartDate, GuestSpeaker, Location, TypeOfEvent, ConsultantAttending);
+             //check if it is correct
+             Assert.IsFalse(OK);
+
+         }
+
+         [TestMethod]
+         public void CompanyNameMinOk()
+
+         {
+
+             //create an instance of the class we want to create
+             clsEvent AEvent = new clsEvent();
+             //boolean variable to store the result of the validation
+             Boolean OK = false;
+             //create some test data to pass to the method
+             string EventName = "Women in Technology";
+             string CompanyName = "CTe";
+             string Contact = "075432345";
+             string EndDate = DateTime.Now.Date.ToString();
+             string StartDate = DateTime.Now.Date.ToString();
+             string GuestSpeaker = "Elizabeth Saw";
+             string ConsultantAttending = "Egle Sciglinskaite";
+             string TypeOfEvent = "Conference";
+             string Location = "Excel London"; //testing this
+
+             //invoke method
+             OK = AEvent.Valid(EventName, CompanyName, Contact, EndDate, StartDate, GuestSpeaker, Location, TypeOfEvent, ConsultantAttending);
+             //check iff it is correct
+             Assert.IsTrue(OK);
+
+         }
+         [TestMethod]
+         public void CompanyNameMaxLessOneOk()
+         {
+             //create an instance of the class we want to create
+             clsEvent AEvent = new clsEvent();
+             //boolean variable to store the result of the validation
+             Boolean OK = false;
+             //create some test data to pass to the method
+             string EventName = "Women in Technology";
+             string CompanyName = "";
+             string Contact = "075432345";
+             string EndDate = DateTime.Now.Date.ToString();
+             string StartDate = DateTime.Now.Date.ToString();
+             string GuestSpeaker = "Elizabeth Saw";
+             string TypeOfEvent = "Conference";
+             string ConsultantAttending = "Egle Sciglinskaite";
+             string Location = "Excel London";
+             CompanyName = CompanyName.PadRight(29, 'b');
+             //invoke method
+             OK = AEvent.Valid(EventName, CompanyName, Contact, EndDate, StartDate, GuestSpeaker, Location, TypeOfEvent, ConsultantAttending);
+             //check if it is correct
+             Assert.IsTrue(OK);
+
+         }
+         [TestMethod]
+         public void CompanyNameMaxOk()
+
+         {
+             //create an instance of the class we want to create
+             clsEvent AEvent = new clsEvent();
+             //boolean variable to store the result of the validation
+             Boolean OK = false;
+             //create some test data to pass to the method
+             string EventName = "Women in Technology";
+             string CompanyName = "";
+             string Contact = "075432345";
+             string EndDate = DateTime.Now.Date.ToString();
+             string StartDate = DateTime.Now.Date.ToString();
+             string GuestSpeaker = "Elizabeth Saw";
+             string TypeOfEvent = "Conference";
+             string ConsultantAttending = "Egle Sciglinskaite";
+             string Location = "Excel London";
+             //creates  29 characters instead of writing many out
+             CompanyName = CompanyName.PadRight(30, 'b');
+             //invoke method
+             OK = AEvent.Valid(EventName, CompanyName, Contact, EndDate, StartDate, GuestSpeaker, Location, TypeOfEvent, ConsultantAttending);
+             //check iff it is correct
+             Assert.IsTrue(OK);
+
+         }
+         [TestMethod]
+         public void CompanyNameMaxPlusOneOk()
+         {
+             //create an instance of the class we want to create
+             clsEvent AEvent = new clsEvent();
+             //boolean variable to store the result of the validation
+             Boolean OK = false;
+             //create some test data to pass to the method
+             string EventName = "Women in Technology";
+             string CompanyName = "";
+             string Contact = "075432345";
+             string EndDate = DateTime.Now.Date.ToString();
+             string StartDate = DateTime.Now.Date.ToString();
+             string GuestSpeaker = "Elizabeth Saw";
+             string TypeOfEvent = "Conference";
+             string ConsultantAttending = "Egle Sciglinskaite";
+             //variable to store location
+             string Location = "Excel London";
+             //creates  29 characters instead of writing many out
+             CompanyName = CompanyName.PadRight(31, 'b');
+             //invoke method
+             OK = AEvent.Valid(EventName, CompanyName, Contact, EndDate, StartDate, GuestSpeaker, Location, TypeOfEvent, ConsultantAttending);
+             //check iff it is correct
+             Assert.IsFalse(OK);
+
+         }
+         [TestMethod]
+         public void CompanyNameMidOk()
+         {
+             //create an instance of the class we want to create
+             clsEvent AEvent = new clsEvent();
+             //boolean variable to store the result of the validation
+             Boolean OK = false;
+             //create some test data to pass to the method
+             string EventName = "Women in Technology";
+             string CompanyName = "";
+             string Contact = "075432345";
+             string EndDate = DateTime.Now.Date.ToString();
+             string StartDate = DateTime.Now.Date.ToString();
+             string GuestSpeaker = "Elizabeth Saw";
+             string TypeOfEvent = "Conference";
+             string ConsultantAttending = "Egle Sciglinskaite";
+             //variable to store location
+             string Location = "Excel London";
+             //creates  29 characters instead of writing many out
+             CompanyName = CompanyName.PadRight(13, 'b');
+             //invoke method
+             OK = AEvent.Valid(EventName, CompanyName, Contact, EndDate, StartDate, GuestSpeaker, Location, TypeOfEvent, ConsultantAttending);
+             //check iff it is correct
+             Assert.IsTrue(OK);
+
+         }
+         [TestMethod]
+         public void CompanyNameExtremeMaxOk()
+
+         {
+             //create an instance of the class we want to create
+             clsEvent AEvent = new clsEvent();
+             //boolean variable to store the result of the validation
+             Boolean OK = false;
+             //create some test data to pass to the method
+             string EventName = "Women in Technology";
+             string CompanyName = "";
+             string Contact = "075432345";
+             string EndDate = DateTime.Now.Date.ToString();
+             string StartDate = DateTime.Now.Date.ToString();
+             string GuestSpeaker = "Elizabeth Saw";
+             string TypeOfEvent = "Conference";
+             string ConsultantAttending = "Egle Sciglinskaite";
+             string Location = "Excel London";
+             //creates  500 characters instead of writing many 
+            CompanyName = CompanyName.PadRight(500, 'b');
+             //variable to store date
+             OK = AEvent.Valid(EventName, CompanyName, Contact, EndDate, StartDate, GuestSpeaker, Location, TypeOfEvent, ConsultantAttending);
+             //check if it is correct
+             Assert.IsFalse(OK);
+
+         }
     }
+
   }
 
 

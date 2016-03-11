@@ -249,6 +249,48 @@ namespace TNovationClassLibrary
                 OK = false;
 
             }
+
+            if (EventName.Length == 0)
+            {
+                OK = false;
+            }
+
+            if (EventName.Length > 30)
+            {
+                OK = false;
+            }
+
+            if(GuestSpeaker.Length == 0)
+            {
+                OK = false;
+            }
+
+            if(GuestSpeaker.Length > 30)
+            {
+                OK = false;
+            }
+            if(TypeOfEvent.Length > 30)
+            {
+                OK = false;
+
+            }
+
+            if(TypeOfEvent.Length < 3 )
+            {
+                OK = false;
+            }
+
+            if(CompanyName.Length < 3)
+            {
+                OK = false;
+            }
+
+            if(CompanyName.Length > 30)
+            {
+                OK = false;
+
+            }
+
             try
             {
                 SomeDate = Convert.ToDateTime(StartDate);
