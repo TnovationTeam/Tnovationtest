@@ -55,6 +55,7 @@
     <Compile Include="tstClientCollection.cs" />
     <Compile Include="tstCompany.cs" />
     <Compile Include="tstConsultant.cs" />
+    <Compile Include="tstConsultantCollection.cs" />
     <Compile Include="tstEvent.cs" />
     <Compile Include="tstProject.cs" />
   </ItemGroup>

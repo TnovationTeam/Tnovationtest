@@ -45,6 +45,7 @@
     <Compile Include="clsClientCollection.cs" />
     <Compile Include="clsCompany.cs" />
     <Compile Include="clsConsultant.cs" />
+    <Compile Include="clsConsultantCollection.cs" />
     <Compile Include="clsDataConnection.cs" />
     <Compile Include="clsEvent.cs">
       <SubType>Code</SubType>
