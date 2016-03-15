@@ -1339,12 +1339,12 @@ namespace ConsultantTestFramework
             string LastName = "mmmmmm";
             string Address = "FlatB2CTHYMEROADLESS";
             string Email = "mmwen@xyz";
-            string DateOfBirth = "24/11/1992";
+            string DateOfBirth = "24/11/1990";
             string EmploymentHistory = "Fired";
             //invoke the method
             OK = AConsultant.Valid(FirstName, LastName, Address, Email, DateOfBirth, EmploymentHistory);
             //test to see that the result is correct
-            Assert.IsFalse(OK);
+            Assert.IsTrue(OK);
         }
 
         [TestMethod]
@@ -1384,7 +1384,7 @@ namespace ConsultantTestFramework
             //invoke the method
             OK = AConsultant.Valid(FirstName, LastName, Address, Email, DateOfBirth, EmploymentHistory);
             //test to see that the result is correct
-            Assert.IsFalse(OK);
+            Assert.IsTrue(OK);
         }
 
         [TestMethod]
