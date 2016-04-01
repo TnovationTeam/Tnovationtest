@@ -41,9 +41,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="clsClient.cs" />
-    <Compile Include="clsCompany.cs" />
+    <Compile Include="clsClient.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsClientCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsCompany.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="clsConsultant.cs" />
+    <Compile Include="clsConsultantCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="clsDataConnection.cs" />
     <Compile Include="clsEvent.cs">
       <SubType>Code</SubType>
