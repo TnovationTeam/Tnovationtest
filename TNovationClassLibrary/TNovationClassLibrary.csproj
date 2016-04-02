@@ -58,6 +58,7 @@
     <Compile Include="clsEvent.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="clsEventCollection.cs" />
     <Compile Include="clsProject.cs">
       <SubType>Code</SubType>
     </Compile>

@@ -65,6 +65,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="tstEvent.cs" />
+    <Compile Include="tstEventCollection.cs" />
     <Compile Include="tstProject.cs">
       <SubType>Code</SubType>
     </Compile>
