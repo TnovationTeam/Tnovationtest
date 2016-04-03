@@ -23,7 +23,7 @@ namespace TNovationTestFramework
             //create an instance of the class we want to create
             clsEventCollection AllEvents = new clsEventCollection();
             //create some test dat to ssign to the property
-            Int32 SomeCount = 2;
+            Int32 SomeCount = 0;
             //assign the data to the property
             AllEvents.Count = SomeCount;
             //test to see that the two values are the same

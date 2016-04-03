@@ -55,7 +55,7 @@ namespace TNovationClassLibrary
             //create an instance of the county class to store a county
              clsDataConnection DB = new clsDataConnection();
             //execute the stored procedure to get the list of data
-              DB.Execute("sproc_tblEvent_SelectAll");
+             DB.Execute("sproc_tblEvent_SelectAll");
             //get the count of records
               Int32 RecordCount = DB.Count;
             //set up the index for the loop
@@ -74,39 +74,7 @@ namespace TNovationClassLibrary
             }
           }
 
-       //   Int32 DisplayEvents()
-     //     {
-              //create an instance of the event class
-       //       clsEvent AEvent = new clsEvent();
-              //var to store the event primary key
-     //         string EventCode;
-              //var to store the name of the event
-      //        string EventName;
-      //        //var to store the index for the loop
-      //        Int32 Index = 0;
-              //while the index is less than the number of records to process
-//while (Index < AEvent.Count)
-      //        {
-                  //get the event code from the database
-        //          EventCode = Convert.ToString(AEvent.AllEvents[Index].EventCode);
-                  //get the event name from the databse
-         //         EventName = Convert.ToString(AEvent.AllEvents[Index].EventName);
-                  //set up the new row to be added to the list
-         //         ListItem NewEvent = new ListItem(EventCode, EventName);
-                  //add the new row to the list
-          //        ddlEvent.Items.Add(NewEvent);
-                  //increment the index to the next record
-          //        Index++;
-
-
-       //       }
-              //return the number of records found
-       //       return AEvent.Count;
-
-
-       //   }
-
-
+    
 
 
  
