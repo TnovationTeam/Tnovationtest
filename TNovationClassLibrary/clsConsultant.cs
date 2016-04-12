@@ -323,6 +323,68 @@ namespace ConsultantClassLibrary
                 //set the flag OK to false
                 OK = false;
             }
+
+            //is the lastname blank
+            if (LastName.Length == 0)
+            {
+                //set the flag OK to false
+                OK = false;
+                
+            }
+
+            //if the lastname is too long
+            if (LastName.Length > 50)
+            {  
+                //set the flag OK to false
+                OK = false;
+            }
+
+            //is the address blank
+            if (Address.Length == 0)
+            {
+                //set the flag OK to false
+                OK = false;
+
+            }
+
+            //if the address is too long
+            if (Address.Length > 60)
+            {
+                //set the flag OK to false
+                OK = false;
+            }
+
+            //is the email blank
+            if (Email.Length == 0)
+            {
+                //set the flag OK to false
+                OK = false;
+
+            }
+
+            //if the email is too long
+            if (Email.Length > 50)
+            {
+                //set the flag OK to false
+                OK = false;
+            }
+
+            //is the EmploymentHistory blank
+            if (EmploymentHistory.Length == 0)
+            {
+                //set the flag OK to false
+                OK = true;
+
+            }
+
+            //if the email is too long
+            if (EmploymentHistory.Length > 150)
+            {
+                //set the flag OK to false
+                OK = false;
+            }
+            
+            
             //return the value of OK
             return OK;
 

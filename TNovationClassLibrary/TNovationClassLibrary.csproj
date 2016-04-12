@@ -41,17 +41,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="clsClient.cs" />
-    <Compile Include="clsClientCollection.cs" />
-    <Compile Include="clsCompany.cs" />
-    <Compile Include="clsConsultant.cs" />
     <Compile Include="clsDataConnection.cs" />
     <Compile Include="clsEvent.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="clsProject.cs">
-      <SubType>Code</SubType>
-    </Compile>
+    <Compile Include="clsEventCollection.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
