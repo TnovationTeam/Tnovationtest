@@ -464,7 +464,7 @@ namespace TNovationTestFramework
             //create a variable to store the test company email address data
             DateTime TestDate;
             // set the string to you email
-            TestDate = DateTime.Now.Date;
+            String = "myemail";
             //change the date to variable to a string variable
             TestDate = TestDate.AddYears(-100);
             //convert the date variable to a string variable
