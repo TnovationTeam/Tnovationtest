@@ -17,9 +17,7 @@ namespace TNovationClassLibrary
 
         private string contact;
 
-        private DateTime startDate;
-
-        private DateTime endDate;
+        private DateTime startDate;      
 
         private  string guestSpeaker;
 
@@ -105,19 +103,7 @@ namespace TNovationClassLibrary
         }
 
 
-        public DateTime EndDate 
-        { 
-            get
-            {
-                //return the private data
-                return endDate;
-            }
-            set
-            {
-                //set the value of the private data member
-                endDate = value;
-            }
-        }
+     
             
 
         public DateTime StartDate
@@ -198,8 +184,7 @@ namespace TNovationClassLibrary
                 eventCode = Convert.ToInt32(DB.DataTable.Rows[0]["EventCode"]);
                 eventName = Convert.ToString(DB.DataTable.Rows[0]["EventName"]);
                 companyName = Convert.ToString(DB.DataTable.Rows[0]["CompanyName"]);
-                contact = Convert.ToString(DB.DataTable.Rows[0]["Contact"]);
-                endDate = Convert.ToDateTime(DB.DataTable.Rows[0]["EndDate"]);
+                contact = Convert.ToString(DB.DataTable.Rows[0]["Contact"]);            
                 startDate = Convert.ToDateTime(DB.DataTable.Rows[0]["StartDate"]);
                 guestSpeaker = Convert.ToString(DB.DataTable.Rows[0]["GuestSpeaker"]);
                 location = Convert.ToString(DB.DataTable.Rows[0]["Location"]);
@@ -216,7 +201,7 @@ namespace TNovationClassLibrary
             }
         }
 
-        public bool Valid(string EventName, string CompanyName, string Contact, string EndDate, string StartDate, string GuestSpeaker, string Location, string TypeOfEvent, string ConsultantAttending)
+        public bool Valid(string EventName, string CompanyName, string Contact, string StartDate, string GuestSpeaker, string Location, string TypeOfEvent, string ConsultantAttending)
         {
             Boolean OK = true;
             DateTime SomeDate;

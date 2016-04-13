@@ -11,7 +11,6 @@ using System.Data;
 ///Matthew Dean mjdean@dmu.ac.uk De Montfort University 2013
 namespace TNovationClassLibrary
 {
-
     public class clsDataConnection
     {
         //connection object used to connect to the database

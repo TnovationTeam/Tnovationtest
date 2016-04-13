@@ -69,6 +69,8 @@ namespace TNovationClassLibrary
                 AEvent.EventCode = Convert.ToInt32(DB.DataTable.Rows[Index]["EventCode"]);
                 //get the event name 
                 AEvent.EventName = DB.DataTable.Rows[Index]["EventName"].ToString();
+                //add the event to the array list
+                allEvents.Add(AEvent);
                 //increment index
                 Index++;
             }
