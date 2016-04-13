@@ -158,13 +158,24 @@ namespace TNovationClassLibrary
         {
             //create a Boolean variable to flag the error
             Boolean OK = true;
+            //create a temporary variable to store the date values
+            DateTime DateTemp;
             //if the CompanyAddress is blank
-            if (CompanyAddress.Length==0)
+
+            //if the company address is blank
+            if (CompanyAddress.Length == 0)
             {
                 //set the flag OK to false
                 OK = false;
             }
-
+            //if the Company Address is greater than 6 characters
+            if (CompanyAddress.Length > 6)
+            {
+                //set the flag OK to false
+                OK = false;
+            }
+            //copy the DateAdded value to the DateTemp variable
+            DateTemp = Convert.ToDateTime(DateTime);
             return OK;
         }
     }
