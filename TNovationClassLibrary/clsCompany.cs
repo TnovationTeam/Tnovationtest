@@ -26,12 +26,6 @@ namespace TNovationClassLibrary
 
 
 
-
-
-
-
-
-
         public int CompanyCode
         {
             get
@@ -170,13 +164,7 @@ namespace TNovationClassLibrary
                 //set the flag OK to false
                 OK = false;
             }
-            //if the Company Address is greater than 6 characters
-            if (CompanyAddress.Length > 6)
-            {
-                //set the flag OK to false
-                OK = false;
-            }
-            //return the value true of OK
+
             return OK;
         }
     }
