@@ -587,7 +587,7 @@ namespace TNovationTestFramework
              //variable to store date
            
              //invoke method
-             OK = AEvent.Valid(EventName, CompanyName, Contact StartDate, GuestSpeaker, Location, TypeOfEvent, ConsultantAttending);
+             OK = AEvent.Valid(EventName, CompanyName, Contact, StartDate, GuestSpeaker, Location, TypeOfEvent, ConsultantAttending);
              //check iff it is correct
              Assert.IsTrue(OK);
 
@@ -1155,7 +1155,7 @@ namespace TNovationTestFramework
              //variable to store date
 
              //invoke method
-             OK = AEvent.Valid(EventName, CompanyName, Contact, EndDate, StartDate, GuestSpeaker, Location, TypeOfEvent, ConsultantAttending);
+             OK = AEvent.Valid(EventName, CompanyName, Contact, StartDate, GuestSpeaker, Location, TypeOfEvent, ConsultantAttending);
              //check iff it is correct
              Assert.IsTrue(OK);
 
@@ -1170,8 +1170,7 @@ namespace TNovationTestFramework
              //create some test data to pass to the method
              string EventName = "";
              string CompanyName = "CTech";
-             string Contact = "075432345";
-             string EndDate = DateTime.Now.Date.ToString();
+             string Contact = "075432345";          
              string StartDate = DateTime.Now.Date.ToString();
              string GuestSpeaker = "Elizabeth Saw";
              string TypeOfEvent = "Conference";
@@ -1182,7 +1181,7 @@ namespace TNovationTestFramework
              //variable to store date
 
              //invoke method
-             OK = AEvent.Valid(EventName, CompanyName, Contact, EndDate, StartDate, GuestSpeaker, Location, TypeOfEvent, ConsultantAttending);
+             OK = AEvent.Valid(EventName, CompanyName, Contact, StartDate, GuestSpeaker, Location, TypeOfEvent, ConsultantAttending);
              //check iff it is correct
              Assert.IsTrue(OK);
 
@@ -1198,7 +1197,6 @@ namespace TNovationTestFramework
              string EventName = "";
              string CompanyName = "CTech";
              string Contact = "075432345";
-             string EndDate = DateTime.Now.Date.ToString();
              string StartDate = DateTime.Now.Date.ToString();
              string GuestSpeaker = "Elizabeth Saw";
              string TypeOfEvent = "Conference";
@@ -1210,7 +1208,7 @@ namespace TNovationTestFramework
              //variable to store date
              string startDate = DateTime.Now.Date.ToString();
              //invoke method
-             OK = AEvent.Valid(EventName, CompanyName, Contact, EndDate, StartDate, GuestSpeaker, Location, TypeOfEvent, ConsultantAttending);
+             OK = AEvent.Valid(EventName, CompanyName, Contact, StartDate, GuestSpeaker, Location, TypeOfEvent, ConsultantAttending);
              //check iff it is correct
              Assert.IsTrue(OK);
 
@@ -1226,7 +1224,6 @@ namespace TNovationTestFramework
              string EventName = "";
              string CompanyName = "CTech";
              string Contact = "075432345";
-             string EndDate = DateTime.Now.Date.ToString();
              string StartDate = DateTime.Now.Date.ToString();
              string GuestSpeaker = "Elizabeth Saw";
              string TypeOfEvent = "Conference";
@@ -1238,7 +1235,7 @@ namespace TNovationTestFramework
              //variable to store date
 
              //invoke method
-             OK = AEvent.Valid(EventName, CompanyName, Contact, EndDate, StartDate, GuestSpeaker, Location, TypeOfEvent, ConsultantAttending);
+             OK = AEvent.Valid(EventName, CompanyName, Contact, StartDate, GuestSpeaker, Location, TypeOfEvent, ConsultantAttending);
              //check iff it is correct
              Assert.IsFalse(OK);
 
@@ -1253,8 +1250,7 @@ namespace TNovationTestFramework
              //create some test data to pass to the method
              string EventName = "";
              string CompanyName = "CTech";
-             string Contact = "075432345";
-             string EndDate = DateTime.Now.Date.ToString();
+             string Contact = "075432345";         
              string StartDate = DateTime.Now.Date.ToString();
              string GuestSpeaker = "Elizabeth Saw";
              string TypeOfEvent = "Conference";
@@ -1266,7 +1262,7 @@ namespace TNovationTestFramework
              //variable to store date
              string startDate = DateTime.Now.Date.ToString();
              //invoke method
-             OK = AEvent.Valid(EventName, CompanyName, Contact, EndDate, StartDate, GuestSpeaker, Location, TypeOfEvent, ConsultantAttending);
+             OK = AEvent.Valid(EventName, CompanyName, Contact, StartDate, GuestSpeaker, Location, TypeOfEvent, ConsultantAttending);
              //check iff it is correct
              Assert.IsTrue(OK);
 
@@ -1282,7 +1278,6 @@ namespace TNovationTestFramework
              string EventName = "";
              string CompanyName = "CTech";
              string Contact = "075432345";
-             string EndDate = DateTime.Now.Date.ToString();
              string StartDate = DateTime.Now.Date.ToString();
              string GuestSpeaker = "Elizabeth Saw";
              string TypeOfEvent = "Conference";
@@ -1292,7 +1287,7 @@ namespace TNovationTestFramework
              //creates  29 characters instead of writing many 
              Location = Location.PadRight(500, 'b');
              //variable to store date
-             OK = AEvent.Valid(EventName, CompanyName, Contact, EndDate, StartDate, GuestSpeaker, Location, TypeOfEvent, ConsultantAttending);
+             OK = AEvent.Valid(EventName, CompanyName, Contact, StartDate, GuestSpeaker, Location, TypeOfEvent, ConsultantAttending);
              //check if it is correct
              Assert.IsFalse(OK);
 
@@ -1318,15 +1313,14 @@ namespace TNovationTestFramework
              //create some test data to pass to the method
              string EventName = "Women in Technology";
              string CompanyName = "CTech";
-             string Contact = "075432345";
-             string EndDate = DateTime.Now.Date.ToString();
+             string Contact = "075432345";        
              string StartDate = DateTime.Now.Date.ToString();
              string GuestSpeaker = "";
              string Location = "Excel London";///testing this
              string TypeOfEvent = "Conference";
              string ConsultantAttending = "Egle Sciglinskaite";
              //invoke method
-             OK = AEvent.Valid(EventName, CompanyName, Contact, EndDate, StartDate, GuestSpeaker, Location, TypeOfEvent, ConsultantAttending);
+             OK = AEvent.Valid(EventName, CompanyName, Contact, StartDate, GuestSpeaker, Location, TypeOfEvent, ConsultantAttending);
              //check if it is correct
              Assert.IsFalse(OK);
 
@@ -1344,7 +1338,6 @@ namespace TNovationTestFramework
              string EventName = "Women in Technology";
              string CompanyName = "CTech";
              string Contact = "075432345";
-             string EndDate = DateTime.Now.Date.ToString();
              string StartDate = DateTime.Now.Date.ToString();
              string GuestSpeaker = "E";
              string ConsultantAttending = "Egle Sciglinskaite";
@@ -1352,7 +1345,7 @@ namespace TNovationTestFramework
              string Location = "Excel London"; //testing this
           
              //invoke method
-             OK = AEvent.Valid(EventName, CompanyName, Contact, EndDate, StartDate, GuestSpeaker, Location, TypeOfEvent, ConsultantAttending);
+             OK = AEvent.Valid(EventName, CompanyName, Contact, StartDate, GuestSpeaker, Location, TypeOfEvent, ConsultantAttending);
              //check iff it is correct
              Assert.IsTrue(OK);
 
@@ -1368,7 +1361,6 @@ namespace TNovationTestFramework
              string EventName = "Women in Technology";
              string CompanyName = "CTech";
              string Contact = "075432345";
-             string EndDate = DateTime.Now.Date.ToString();
              string StartDate = DateTime.Now.Date.ToString();
              string GuestSpeaker = "";
              string TypeOfEvent = "Conference";
@@ -1378,7 +1370,7 @@ namespace TNovationTestFramework
              //variable to store date
 
              //invoke method
-             OK = AEvent.Valid(EventName, CompanyName, Contact, EndDate, StartDate, GuestSpeaker, Location, TypeOfEvent, ConsultantAttending);
+             OK = AEvent.Valid(EventName, CompanyName, Contact, StartDate, GuestSpeaker, Location, TypeOfEvent, ConsultantAttending);
              //check if it is correct
              Assert.IsTrue(OK);
 
@@ -1394,7 +1386,6 @@ namespace TNovationTestFramework
              string EventName = "Women in Technology";
              string CompanyName = "CTech";
              string Contact = "075432345";
-             string EndDate = DateTime.Now.Date.ToString();
              string StartDate = DateTime.Now.Date.ToString();
              string GuestSpeaker = "";
              string TypeOfEvent = "Conference";
@@ -1406,7 +1397,7 @@ namespace TNovationTestFramework
              //variable to store date
              
              //invoke method
-             OK = AEvent.Valid(EventName, CompanyName, Contact, EndDate, StartDate, GuestSpeaker, Location, TypeOfEvent, ConsultantAttending);
+             OK = AEvent.Valid(EventName, CompanyName, Contact, StartDate, GuestSpeaker, Location, TypeOfEvent, ConsultantAttending);
              //check iff it is correct
              Assert.IsTrue(OK);
 
@@ -1422,7 +1413,6 @@ namespace TNovationTestFramework
              string EventName = "Women in Technology";
              string CompanyName = "CTech";
              string Contact = "075432345";
-             string EndDate = DateTime.Now.Date.ToString();
              string StartDate = DateTime.Now.Date.ToString();
              string GuestSpeaker = "";
              string TypeOfEvent = "Conference";
@@ -1434,7 +1424,7 @@ namespace TNovationTestFramework
              //variable to store date
 
              //invoke method
-             OK = AEvent.Valid(EventName, CompanyName, Contact, EndDate, StartDate, GuestSpeaker, Location, TypeOfEvent, ConsultantAttending);
+             OK = AEvent.Valid(EventName, CompanyName, Contact, StartDate, GuestSpeaker, Location, TypeOfEvent, ConsultantAttending);
              //check iff it is correct
              Assert.IsFalse(OK);
 
@@ -1450,7 +1440,6 @@ namespace TNovationTestFramework
              string EventName = "Women in Technology";
              string CompanyName = "CTech";
              string Contact = "075432345";
-             string EndDate = DateTime.Now.Date.ToString();
              string StartDate = DateTime.Now.Date.ToString();
              string GuestSpeaker = "";
              string TypeOfEvent = "Conference";
@@ -1462,7 +1451,7 @@ namespace TNovationTestFramework
            
              
              //invoke method
-             OK = AEvent.Valid(EventName, CompanyName, Contact, EndDate, StartDate, GuestSpeaker, Location, TypeOfEvent, ConsultantAttending);
+             OK = AEvent.Valid(EventName, CompanyName, Contact, StartDate, GuestSpeaker, Location, TypeOfEvent, ConsultantAttending);
              //check iff it is correct
              Assert.IsTrue(OK);
 
@@ -1479,7 +1468,6 @@ namespace TNovationTestFramework
              string EventName = "Women in Technology";
              string CompanyName = "CTech";
              string Contact = "075432345";
-             string EndDate = DateTime.Now.Date.ToString();
              string StartDate = DateTime.Now.Date.ToString();
              string GuestSpeaker = "";
              string TypeOfEvent = "Conference";
@@ -1489,7 +1477,7 @@ namespace TNovationTestFramework
              //creates  29 characters instead of writing many 
              GuestSpeaker = GuestSpeaker.PadRight(500, 'b');
              //variable to store date
-             OK = AEvent.Valid(EventName, CompanyName, Contact, EndDate, StartDate, GuestSpeaker, Location, TypeOfEvent, ConsultantAttending);
+             OK = AEvent.Valid(EventName, CompanyName, Contact, StartDate, GuestSpeaker, Location, TypeOfEvent, ConsultantAttending);
              //check if it is correct
              Assert.IsFalse(OK);
 
@@ -1516,15 +1504,14 @@ namespace TNovationTestFramework
              //create some test data to pass to the method
              string EventName = "Women in Technology";
              string CompanyName = "CTech";
-             string Contact = "075432345";
-             string EndDate = DateTime.Now.Date.ToString();
+             string Contact = "075432345";         
              string StartDate = DateTime.Now.Date.ToString();
              string GuestSpeaker = "Elizabeth Saw";
              string Location = "Excel London";///testing this
              string TypeOfEvent = "Co";
              string ConsultantAttending = "Egle Sciglinskaite";
              //invoke method
-             OK = AEvent.Valid(EventName, CompanyName, Contact, EndDate, StartDate, GuestSpeaker, Location, TypeOfEvent, ConsultantAttending);
+             OK = AEvent.Valid(EventName, CompanyName, Contact, StartDate, GuestSpeaker, Location, TypeOfEvent, ConsultantAttending);
              //check if it is correct
              Assert.IsFalse(OK);
 
@@ -1542,7 +1529,6 @@ namespace TNovationTestFramework
              string EventName = "Women in Technology";
              string CompanyName = "CTech";
              string Contact = "075432345";
-             string EndDate = DateTime.Now.Date.ToString();
              string StartDate = DateTime.Now.Date.ToString();
              string GuestSpeaker = "Elizabeth Saw";
              string ConsultantAttending = "Egle Sciglinskaite";
@@ -1550,7 +1536,7 @@ namespace TNovationTestFramework
              string Location = "Excel London"; //testing this
 
              //invoke method
-             OK = AEvent.Valid(EventName, CompanyName, Contact, EndDate, StartDate, GuestSpeaker, Location, TypeOfEvent, ConsultantAttending);
+             OK = AEvent.Valid(EventName, CompanyName, Contact, StartDate, GuestSpeaker, Location, TypeOfEvent, ConsultantAttending);
              //check iff it is correct
              Assert.IsTrue(OK);
 
@@ -1567,7 +1553,6 @@ namespace TNovationTestFramework
              string EventName = "Women in Technology";
              string CompanyName = "CTech";
              string Contact = "075432345";
-             string EndDate = DateTime.Now.Date.ToString();
              string StartDate = DateTime.Now.Date.ToString();
              string GuestSpeaker = "Elizabeth Saw";
              string TypeOfEvent = "";
@@ -1575,7 +1560,7 @@ namespace TNovationTestFramework
              string Location = "Excel London";
              TypeOfEvent = TypeOfEvent.PadRight(29, 'b');         
              //invoke method
-             OK = AEvent.Valid(EventName, CompanyName, Contact, EndDate, StartDate, GuestSpeaker, Location, TypeOfEvent, ConsultantAttending);
+             OK = AEvent.Valid(EventName, CompanyName, Contact, StartDate, GuestSpeaker, Location, TypeOfEvent, ConsultantAttending);
              //check if it is correct
              Assert.IsTrue(OK);
 
@@ -1591,7 +1576,6 @@ namespace TNovationTestFramework
              string EventName = "Women in Technology";
              string CompanyName = "CTech";
              string Contact = "075432345";
-             string EndDate = DateTime.Now.Date.ToString();
              string StartDate = DateTime.Now.Date.ToString();
              string GuestSpeaker = "Elizabeth Saw";
              string TypeOfEvent = "";
@@ -1602,7 +1586,7 @@ namespace TNovationTestFramework
              //variable to store date
 
              //invoke method
-             OK = AEvent.Valid(EventName, CompanyName, Contact, EndDate, StartDate, GuestSpeaker, Location, TypeOfEvent, ConsultantAttending);
+             OK = AEvent.Valid(EventName, CompanyName, Contact, StartDate, GuestSpeaker, Location, TypeOfEvent, ConsultantAttending);
              //check iff it is correct
              Assert.IsTrue(OK);
 
@@ -1619,7 +1603,6 @@ namespace TNovationTestFramework
              string EventName = "Women in Technology";
              string CompanyName = "CTech";
              string Contact = "075432345";
-             string EndDate = DateTime.Now.Date.ToString();
              string StartDate = DateTime.Now.Date.ToString();
              string GuestSpeaker = "Elizabeth Saw";
              string TypeOfEvent = "";
@@ -1629,7 +1612,7 @@ namespace TNovationTestFramework
              //creates  29 characters instead of writing many out
              TypeOfEvent = TypeOfEvent.PadRight(31, 'b');
              //invoke method
-             OK = AEvent.Valid(EventName, CompanyName, Contact, EndDate, StartDate, GuestSpeaker, Location, TypeOfEvent, ConsultantAttending);
+             OK = AEvent.Valid(EventName, CompanyName, Contact, StartDate, GuestSpeaker, Location, TypeOfEvent, ConsultantAttending);
              //check iff it is correct
              Assert.IsFalse(OK);
 
@@ -1646,7 +1629,6 @@ namespace TNovationTestFramework
              string EventName = "Women in Technology";
              string CompanyName = "CTech";
              string Contact = "075432345";
-             string EndDate = DateTime.Now.Date.ToString();
              string StartDate = DateTime.Now.Date.ToString();
              string GuestSpeaker = "Elizabeth Saw";
              string TypeOfEvent = "";
@@ -1656,7 +1638,7 @@ namespace TNovationTestFramework
              //creates  29 characters instead of writing many out
              TypeOfEvent = TypeOfEvent.PadRight(13, 'b');
              //invoke method
-             OK = AEvent.Valid(EventName, CompanyName, Contact, EndDate, StartDate, GuestSpeaker, Location, TypeOfEvent, ConsultantAttending);
+             OK = AEvent.Valid(EventName, CompanyName, Contact, StartDate, GuestSpeaker, Location, TypeOfEvent, ConsultantAttending);
              //check iff it is correct
              Assert.IsTrue(OK);
 
@@ -1673,7 +1655,6 @@ namespace TNovationTestFramework
              string EventName = "Women in Technology";
              string CompanyName = "CTech";
              string Contact = "075432345";
-             string EndDate = DateTime.Now.Date.ToString();
              string StartDate = DateTime.Now.Date.ToString();
              string GuestSpeaker = "Elizabeth Saw";
              string TypeOfEvent = "";
@@ -1682,7 +1663,7 @@ namespace TNovationTestFramework
              //creates  500 characters instead of writing many 
              GuestSpeaker = GuestSpeaker.PadRight(500, 'b');
              //variable to store date
-             OK = AEvent.Valid(EventName, CompanyName, Contact, EndDate, StartDate, GuestSpeaker, Location, TypeOfEvent, ConsultantAttending);
+             OK = AEvent.Valid(EventName, CompanyName, Contact, StartDate, GuestSpeaker, Location, TypeOfEvent, ConsultantAttending);
              //check if it is correct
              Assert.IsFalse(OK);
 
@@ -1709,14 +1690,13 @@ namespace TNovationTestFramework
              string EventName = "Women in Technology";
              string CompanyName = "";
              string Contact = "075432345";
-             string EndDate = DateTime.Now.Date.ToString();
              string StartDate = DateTime.Now.Date.ToString();
              string GuestSpeaker = "Elizabeth Saw";
              string Location = "Excel London";///testing this
              string TypeOfEvent = "Conference";
              string ConsultantAttending = "Egle Sciglinskaite";
              //invoke method
-             OK = AEvent.Valid(EventName, CompanyName, Contact, EndDate, StartDate, GuestSpeaker, Location, TypeOfEvent, ConsultantAttending);
+             OK = AEvent.Valid(EventName, CompanyName, Contact, StartDate, GuestSpeaker, Location, TypeOfEvent, ConsultantAttending);
              //check if it is correct
              Assert.IsFalse(OK);
 
@@ -1735,7 +1715,6 @@ namespace TNovationTestFramework
              string EventName = "Women in Technology";
              string CompanyName = "CTe";
              string Contact = "075432345";
-             string EndDate = DateTime.Now.Date.ToString();
              string StartDate = DateTime.Now.Date.ToString();
              string GuestSpeaker = "Elizabeth Saw";
              string ConsultantAttending = "Egle Sciglinskaite";
@@ -1743,7 +1722,7 @@ namespace TNovationTestFramework
              string Location = "Excel London"; //testing this
 
              //invoke method
-             OK = AEvent.Valid(EventName, CompanyName, Contact, EndDate, StartDate, GuestSpeaker, Location, TypeOfEvent, ConsultantAttending);
+             OK = AEvent.Valid(EventName, CompanyName, Contact, StartDate, GuestSpeaker, Location, TypeOfEvent, ConsultantAttending);
              //check iff it is correct
              Assert.IsTrue(OK);
 
@@ -1759,7 +1738,6 @@ namespace TNovationTestFramework
              string EventName = "Women in Technology";
              string CompanyName = "";
              string Contact = "075432345";
-             string EndDate = DateTime.Now.Date.ToString();
              string StartDate = DateTime.Now.Date.ToString();
              string GuestSpeaker = "Elizabeth Saw";
              string TypeOfEvent = "Conference";
@@ -1767,7 +1745,7 @@ namespace TNovationTestFramework
              string Location = "Excel London";
              CompanyName = CompanyName.PadRight(29, 'b');
              //invoke method
-             OK = AEvent.Valid(EventName, CompanyName, Contact, EndDate, StartDate, GuestSpeaker, Location, TypeOfEvent, ConsultantAttending);
+             OK = AEvent.Valid(EventName, CompanyName, Contact, StartDate, GuestSpeaker, Location, TypeOfEvent, ConsultantAttending);
              //check if it is correct
              Assert.IsTrue(OK);
 
@@ -1784,7 +1762,6 @@ namespace TNovationTestFramework
              string EventName = "Women in Technology";
              string CompanyName = "";
              string Contact = "075432345";
-             string EndDate = DateTime.Now.Date.ToString();
              string StartDate = DateTime.Now.Date.ToString();
              string GuestSpeaker = "Elizabeth Saw";
              string TypeOfEvent = "Conference";
@@ -1793,7 +1770,7 @@ namespace TNovationTestFramework
              //creates  29 characters instead of writing many out
              CompanyName = CompanyName.PadRight(30, 'b');
              //invoke method
-             OK = AEvent.Valid(EventName, CompanyName, Contact, EndDate, StartDate, GuestSpeaker, Location, TypeOfEvent, ConsultantAttending);
+             OK = AEvent.Valid(EventName, CompanyName, Contact, StartDate, GuestSpeaker, Location, TypeOfEvent, ConsultantAttending);
              //check iff it is correct
              Assert.IsTrue(OK);
 
@@ -1809,7 +1786,6 @@ namespace TNovationTestFramework
              string EventName = "Women in Technology";
              string CompanyName = "";
              string Contact = "075432345";
-             string EndDate = DateTime.Now.Date.ToString();
              string StartDate = DateTime.Now.Date.ToString();
              string GuestSpeaker = "Elizabeth Saw";
              string TypeOfEvent = "Conference";
@@ -1819,7 +1795,7 @@ namespace TNovationTestFramework
              //creates  29 characters instead of writing many out
              CompanyName = CompanyName.PadRight(31, 'b');
              //invoke method
-             OK = AEvent.Valid(EventName, CompanyName, Contact, EndDate, StartDate, GuestSpeaker, Location, TypeOfEvent, ConsultantAttending);
+             OK = AEvent.Valid(EventName, CompanyName, Contact, StartDate, GuestSpeaker, Location, TypeOfEvent, ConsultantAttending);
              //check iff it is correct
              Assert.IsFalse(OK);
 
@@ -1835,7 +1811,6 @@ namespace TNovationTestFramework
              string EventName = "Women in Technology";
              string CompanyName = "";
              string Contact = "075432345";
-             string EndDate = DateTime.Now.Date.ToString();
              string StartDate = DateTime.Now.Date.ToString();
              string GuestSpeaker = "Elizabeth Saw";
              string TypeOfEvent = "Conference";
@@ -1845,7 +1820,7 @@ namespace TNovationTestFramework
              //creates  29 characters instead of writing many out
              CompanyName = CompanyName.PadRight(13, 'b');
              //invoke method
-             OK = AEvent.Valid(EventName, CompanyName, Contact, EndDate, StartDate, GuestSpeaker, Location, TypeOfEvent, ConsultantAttending);
+             OK = AEvent.Valid(EventName, CompanyName, Contact, StartDate, GuestSpeaker, Location, TypeOfEvent, ConsultantAttending);
              //check iff it is correct
              Assert.IsTrue(OK);
 
@@ -1862,7 +1837,6 @@ namespace TNovationTestFramework
              string EventName = "Women in Technology";
              string CompanyName = "";
              string Contact = "075432345";
-             string EndDate = DateTime.Now.Date.ToString();
              string StartDate = DateTime.Now.Date.ToString();
              string GuestSpeaker = "Elizabeth Saw";
              string TypeOfEvent = "Conference";
@@ -1871,7 +1845,7 @@ namespace TNovationTestFramework
              //creates  500 characters instead of writing many 
             CompanyName = CompanyName.PadRight(500, 'b');
              //variable to store date
-             OK = AEvent.Valid(EventName, CompanyName, Contact, EndDate, StartDate, GuestSpeaker, Location, TypeOfEvent, ConsultantAttending);
+             OK = AEvent.Valid(EventName, CompanyName, Contact, StartDate, GuestSpeaker, Location, TypeOfEvent, ConsultantAttending);
              //check if it is correct
              Assert.IsFalse(OK);
 
