@@ -51,12 +51,8 @@
   </Choose>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="tstClient.cs" />
-    <Compile Include="tstClientCollection.cs" />
-    <Compile Include="tstCompany.cs" />
-    <Compile Include="tstConsultant.cs" />
     <Compile Include="tstEvent.cs" />
-    <Compile Include="tstProject.cs" />
+    <Compile Include="tstEventCollection.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TNovationClassLibrary\TNovationClassLibrary.csproj">
