@@ -249,7 +249,7 @@ namespace TNovationTestFramework
                 OK = false;
             }
             //test to see that the result is correct
-            Assert.IsTrue(OK);
+            Assert.IsFalse(OK);
         }
 
         [TestMethod]
@@ -330,7 +330,7 @@ namespace TNovationTestFramework
             //invoke the method
             OK = ACompany.Valid(CompanyAddress, CompanyEmailAddress, InvolvedClient, InvolvedProject, MobileNumber, PhoneNumber);
             //test to see that the result is correct
-            Assert.IsFalse(OK);
+            Assert.IsTrue(OK);
         }
 
         [TestMethod]
@@ -350,7 +350,7 @@ namespace TNovationTestFramework
             //invoke the method
             OK = ACompany.Valid(CompanyAddress, CompanyEmailAddress, InvolvedClient, InvolvedProject, MobileNumber, PhoneNumber);
             //test to see that the result is correct
-            Assert.IsFalse(OK);
+            Assert.IsTrue(OK);
         }
 
         [TestMethod]
@@ -370,7 +370,7 @@ namespace TNovationTestFramework
             //invoke the method
             OK = ACompany.Valid(CompanyAddress, CompanyEmailAddress, InvolvedClient, InvolvedProject, MobileNumber, PhoneNumber);
             //test to see that the result is correct
-            Assert.IsFalse(OK);
+            Assert.IsTrue(OK);
         }
 
         [TestMethod]
@@ -390,7 +390,7 @@ namespace TNovationTestFramework
             //invoke the method
             OK = ACompany.Valid(CompanyAddress, CompanyEmailAddress, InvolvedClient, InvolvedProject, MobileNumber, PhoneNumber);
             //test to see that the result is correct
-            Assert.IsFalse(OK);
+            Assert.IsTrue(OK);
         }
 
         [TestMethod]
@@ -410,7 +410,7 @@ namespace TNovationTestFramework
             //invoke the method
             OK = ACompany.Valid(CompanyAddress, CompanyEmailAddress, InvolvedClient, InvolvedProject, MobileNumber, PhoneNumber);
             //test to see that the result is correct
-            Assert.IsFalse(OK);
+            Assert.IsTrue(OK);
         }
         public void CompanyAddressMaxPlusOne()
         {
@@ -428,7 +428,7 @@ namespace TNovationTestFramework
             //invoke the method
             OK = ACompany.Valid(CompanyAddress, CompanyEmailAddress, InvolvedClient, InvolvedProject, MobileNumber, PhoneNumber);
             //test to see that the result is correct
-            Assert.IsFalse(OK);
+            Assert.IsTrue(OK);
         }
     }
 }
