@@ -430,5 +430,22 @@ namespace TNovationTestFramework
             //test to see that the result is correct
             Assert.IsTrue(OK);
         }
+
+        [TestMethod]
+        public void CompanyEmailAddressMid()
+        {
+            //create an instance of the class we wnat to create
+            clsCompany ACompany = new clsCompany();
+            //boolean variable to store the result of the validation
+            Boolean OK = false;
+            //create some test data to pass to the method
+            string CompanyAddress = "32a";
+            string CompanyEmailAddress = "vijay45@gmail.com";
+            string InvolvedClient = "Thomas";
+            string InvolvedProject = "sdas";
+            string MobileNumber = "354351568";
+            string PhoneNumber = "5656561";
+        }
+
     }
 }
