@@ -49,10 +49,21 @@ namespace TNovationTestFramework
             //test to see that the two values are the same
             Assert.AreEqual(AllClients.ClientList, TestList);
            
-
-
         }
 
+        [TestMethod]
+        public void CountPropertyOK()
+        {
+            //create an instance of the class we want to create 
+            clsClientCollection AllClients = new clsClientCollection();
+            //create some test data to assign to the property
+            Int32 SomeCount = 0;
+            //assignt the data to the property
+            AllClients.Count = SomeCount;
+            //test to see that the two values are the same
+            Assert.AreEqual(AllClients.Count, SomeCount);
+            
+        }
 
 
 
