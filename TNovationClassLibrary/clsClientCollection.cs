@@ -9,7 +9,8 @@ namespace TNovationClassLibrary
     {
         //private data member for the list
         List<clsClient> clientList = new List<clsClient>();
-
+        //private data member thisClient
+        clsClient thisClient = new clsClient();
 
         //public property for the client list
         public List<clsClient> ClientList 
@@ -45,7 +46,23 @@ namespace TNovationClassLibrary
             }
         }
         
-        public clsClient ThisClient { get; set; }
+        //public property for this client
+        public clsClient ThisClient { 
+            
+            get {
+                //return the private data
+                return thisClient;
+
+            }
+
+            set
+            {
+                //set the private data
+                thisClient = value;
+            }
+            
+            
+            }
         
         //public constructor for the class
         public clsClientCollection()
@@ -82,6 +99,26 @@ namespace TNovationClassLibrary
                 Index++;
             }
             
+        }
+
+        public int Add()
+        {
+            //adds a new record to the database based on the values of thisaddress
+           //connect to the database
+            clsDataConnection DB = new clsDataConnection();
+            //set the parameters for the stored procedure
+            DB.AddParameter("@ClientNo", thisClient.ClientNo);
+            DB.AddParameter("@ClientName", thisClient.ClientName);
+            DB.AddParameter("@ClientEmail", thisClient.ClientEmail);
+            DB.AddParameter("@ClientPosition", thisClient.ClientPosition);
+            DB.AddParameter("@ClientQualification", thisClient.ClientQualification);
+            DB.AddParameter("@ClientService", thisClient.ClientService);
+            DB.AddParameter("@ClientAddress", thisClient.ClientAddress);
+            DB.AddParameter("@ClientTel", thisClient.ClientTel);
+            DB.AddParameter("@DateAdded", thisClient.DateAdded);
+            DB.AddParameter("@Active", thisClient.Active);
+            //execute the query returning the primary key value
+            return DB.Execute("sproc_tblClient_Insert");
         }
     }
 }

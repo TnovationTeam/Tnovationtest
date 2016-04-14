@@ -8,3 +8,4 @@ F:\TNovation\TNovationProject\obj\Debug\TNovationProject.EventList.resources
 F:\TNovation\TNovationProject\obj\Debug\TNovationProject.csproj.GenerateResource.Cache
 F:\TNovation\TNovationProject\obj\Debug\TNovationProject.dll
 F:\TNovation\TNovationProject\obj\Debug\TNovationProject.pdb
+F:\TNovation\TNovationProject\obj\Debug\TNovationProject.AddClient.resources
