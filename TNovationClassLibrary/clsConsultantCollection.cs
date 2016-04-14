@@ -48,5 +48,32 @@ set
 
         }
 
+        //public constructor for the class
+        public clsConsultantCollection()
+        {
+            //create an instance of the county class to store a county
+            clsDataConnection DB = new clsDataConnection();
+            //execute the stored procedure to get the list of data
+            DB.Execute("sproc_tblConsultant_SelectAll");
+            //get the count of records
+            Int32 RecordCount = DB.Count;
+            //set up the index for the loop
+            Int32 Index = 0;
+            //while there are records to process
+            while (Index < RecordCount)
+            {
+                //create an instance of the Consultant class
+                clsConsultant AConsultant = new clsConsultant();
+                //get the ConsultantNo
+                AConsultant.ConsultantNo = Convert.ToInt32(DB.DataTable.Rows[Index]["ConsultantNo"]);
+                //get the Consultant name 
+                AConsultant.FirstName = DB.DataTable.Rows[Index]["FirstName"].ToString();
+                //add the Consultant to the array list
+                allConsultants.Add(AConsultant);
+                //increment index
+                Index++;
+            }
+        }
+
     }
 }
