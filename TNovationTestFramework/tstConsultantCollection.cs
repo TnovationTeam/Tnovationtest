@@ -35,7 +35,6 @@ namespace TNovationTestFramework
         {
             //Create an instance of the class we want to create
             clsConsultantCollection Consultants = new clsConsultantCollection();
-
             //create some test data to assign to the property
             //in this case the data needs to be a list of objects
             List<clsConsultant> TestList = new List<clsConsultant>();
@@ -78,31 +77,15 @@ namespace TNovationTestFramework
 
         }
 
-         //public constructor for the class
-        public clsConsultantCollection()
-          {
-            //create an instance of the county class to store a county
-             clsDataConnection DB = new clsDataConnection();
-            //execute the stored procedure to get the list of data
-             DB.Execute("sproc_tblConsultant_SelectAll");
-            //get the count of records
-              Int32 RecordCount = DB.Count;
-            //set up the index for the loop
-              Int32 Index = 0;
-            //while there are records to process
-            while (Index < RecordCount)
-            {
-                //create an instance of the Consultant class
-                clsConsultant AConsultant = new clsConsultant();
-                //get the ConsultantNo
-                AConsultant.ConsultantNo = Convert.ToInt32(DB.DataTable.Rows[Index]["ConsultantNo"]);
-                //get the Consultant name 
-                AConsultant.FirstName = DB.DataTable.Rows[Index]["firstName"].ToString();
-                //add the Consultant to the array list
-                allConsultants.Add(AConsultant);
-                //increment index
-                Index++;
-            }
-    }
+        //[TestMethod]
+        //public void TwoConsultantsPresent()
+        //{
+        //    //Create an instance of the class we want to create
+        //    clsConsultantCollection Consultants = new clsConsultantCollection();
+        //    //test to see that the two values are the same
+        //    Assert.AreEqual(Consultants.Count, 2);
+        //}
+
+        
 }
 }
