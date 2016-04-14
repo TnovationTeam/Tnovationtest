@@ -207,7 +207,6 @@
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(204, 22);
             this.textBox5.TabIndex = 39;
-            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
             // label9
             // 
@@ -253,45 +252,47 @@
             this.labelCompanyName.Size = new System.Drawing.Size(125, 17);
             this.labelCompanyName.TabIndex = 35;
             this.labelCompanyName.Text = "Company Name:";
-            this.labelCompanyName.Click += new System.EventHandler(this.labelCompanyName_Click);
             // 
             // buttonBookIn
             // 
             this.buttonBookIn.BackColor = System.Drawing.Color.DodgerBlue;
             this.buttonBookIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonBookIn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.buttonBookIn.Location = new System.Drawing.Point(723, 105);
+            this.buttonBookIn.Location = new System.Drawing.Point(765, 185);
             this.buttonBookIn.Margin = new System.Windows.Forms.Padding(4);
             this.buttonBookIn.Name = "buttonBookIn";
             this.buttonBookIn.Size = new System.Drawing.Size(132, 57);
             this.buttonBookIn.TabIndex = 45;
             this.buttonBookIn.Text = "Book In";
             this.buttonBookIn.UseVisualStyleBackColor = false;
+            this.buttonBookIn.Click += new System.EventHandler(this.buttonBookIn_Click);
             // 
             // buttonBack
             // 
             this.buttonBack.BackColor = System.Drawing.Color.DodgerBlue;
             this.buttonBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonBack.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.buttonBack.Location = new System.Drawing.Point(757, 395);
+            this.buttonBack.Location = new System.Drawing.Point(765, 405);
             this.buttonBack.Margin = new System.Windows.Forms.Padding(4);
             this.buttonBack.Name = "buttonBack";
             this.buttonBack.Size = new System.Drawing.Size(132, 58);
             this.buttonBack.TabIndex = 44;
             this.buttonBack.Text = "Back";
             this.buttonBack.UseVisualStyleBackColor = false;
+            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
             // 
             // buttonSave
             // 
             this.buttonSave.BackColor = System.Drawing.Color.DodgerBlue;
             this.buttonSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonSave.Location = new System.Drawing.Point(714, 244);
+            this.buttonSave.Location = new System.Drawing.Point(765, 269);
             this.buttonSave.Margin = new System.Windows.Forms.Padding(4);
             this.buttonSave.Name = "buttonSave";
             this.buttonSave.Size = new System.Drawing.Size(132, 63);
             this.buttonSave.TabIndex = 43;
             this.buttonSave.Text = "Save";
             this.buttonSave.UseVisualStyleBackColor = false;
+            this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
             // 
             // EventForm
             // 

@@ -16,13 +16,21 @@ namespace TNovationProject
         {
             InitializeComponent();
         }
+    
+      
 
-        private void textBox5_TextChanged(object sender, EventArgs e)
+
+        private void buttonBookIn_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void labelCompanyName_Click(object sender, EventArgs e)
+        private void buttonSave_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonBack_Click(object sender, EventArgs e)
         {
 
         }

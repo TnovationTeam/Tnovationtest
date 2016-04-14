@@ -32,7 +32,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EventList));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.labelHeading = new System.Windows.Forms.Label();
-            this.tNovationDataSet = new TNovationProject.TNovationDataSet();
             this.tNovationDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.listView2 = new System.Windows.Forms.ListView();
             this.columnEventCode = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -47,8 +46,8 @@
             this.buttonBack = new System.Windows.Forms.Button();
             this.buttonArchive = new System.Windows.Forms.Button();
             this.buttonAdd = new System.Windows.Forms.Button();
+            this.btnFilter = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -75,16 +74,6 @@
             this.labelHeading.Size = new System.Drawing.Size(466, 91);
             this.labelHeading.TabIndex = 23;
             this.labelHeading.Text = "T{Novation}";
-            // 
-            // tNovationDataSet
-            // 
-            this.tNovationDataSet.DataSetName = "TNovationDataSet";
-            this.tNovationDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tNovationDataSetBindingSource
-            // 
-            this.tNovationDataSetBindingSource.DataSource = this.tNovationDataSet;
-            this.tNovationDataSetBindingSource.Position = 0;
             // 
             // listView2
             // 
@@ -152,7 +141,7 @@
             // 
             this.buttonUpdate.BackColor = System.Drawing.Color.DodgerBlue;
             this.buttonUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonUpdate.Location = new System.Drawing.Point(857, 218);
+            this.buttonUpdate.Location = new System.Drawing.Point(857, 260);
             this.buttonUpdate.Margin = new System.Windows.Forms.Padding(4);
             this.buttonUpdate.Name = "buttonUpdate";
             this.buttonUpdate.Size = new System.Drawing.Size(117, 41);
@@ -198,11 +187,24 @@
             this.buttonAdd.Text = "Add";
             this.buttonAdd.UseVisualStyleBackColor = false;
             // 
+            // btnFilter
+            // 
+            this.btnFilter.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnFilter.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFilter.Location = new System.Drawing.Point(857, 142);
+            this.btnFilter.Margin = new System.Windows.Forms.Padding(4);
+            this.btnFilter.Name = "btnFilter";
+            this.btnFilter.Size = new System.Drawing.Size(117, 46);
+            this.btnFilter.TabIndex = 30;
+            this.btnFilter.Text = "Filter";
+            this.btnFilter.UseVisualStyleBackColor = false;
+            // 
             // EventList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1027, 571);
+            this.Controls.Add(this.btnFilter);
             this.Controls.Add(this.buttonUpdate);
             this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.buttonArchive);
@@ -213,7 +215,6 @@
             this.Name = "EventList";
             this.Text = "EventList";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -225,7 +226,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label labelHeading;
         private System.Windows.Forms.BindingSource tNovationDataSetBindingSource;
-        private TNovationDataSet tNovationDataSet;
+     
         private System.Windows.Forms.ListView listView2;
         private System.Windows.Forms.ColumnHeader columnEventCode;
         private System.Windows.Forms.ColumnHeader columnEventName;
@@ -239,5 +240,6 @@
         private System.Windows.Forms.Button buttonBack;
         private System.Windows.Forms.Button buttonArchive;
         private System.Windows.Forms.Button buttonAdd;
+        private System.Windows.Forms.Button btnFilter;
     }
 }
