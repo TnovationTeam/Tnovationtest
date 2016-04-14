@@ -62,6 +62,12 @@
     <Compile Include="AddClient.Designer.cs">
       <DependentUpon>AddClient.cs</DependentUpon>
     </Compile>
+    <Compile Include="ClientList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientList.Designer.cs">
+      <DependentUpon>ClientList.cs</DependentUpon>
+    </Compile>
     <Compile Include="EventForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +90,9 @@
   <ItemGroup>
     <EmbeddedResource Include="AddClient.resx">
       <DependentUpon>AddClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientList.resx">
+      <DependentUpon>ClientList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EventForm.resx">
       <DependentUpon>EventForm.cs</DependentUpon>

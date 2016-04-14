@@ -9,3 +9,4 @@ F:\TNovation\TNovationProject\obj\Debug\TNovationProject.csproj.GenerateResource
 F:\TNovation\TNovationProject\obj\Debug\TNovationProject.dll
 F:\TNovation\TNovationProject\obj\Debug\TNovationProject.pdb
 F:\TNovation\TNovationProject\obj\Debug\TNovationProject.AddClient.resources
+F:\TNovation\TNovationProject\obj\Debug\TNovationProject.ClientList.resources
