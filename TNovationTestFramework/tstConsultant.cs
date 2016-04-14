@@ -1,8 +1,8 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using ConsultantClassLibrary;
+using TNovationClassLibrary;
 
-namespace ConsultantTestFramework
+namespace TNovationTestFramework
 {
     [TestClass]
     public class tstConsultant
@@ -1344,7 +1344,7 @@ namespace ConsultantTestFramework
             //invoke the method
             OK = AConsultant.Valid(FirstName, LastName, Address, Email, DateOfBirth, EmploymentHistory);
             //test to see that the result is correct
-            Assert.IsTrue(OK);
+            Assert.IsFalse(OK);
         }
 
         [TestMethod]
@@ -1384,7 +1384,7 @@ namespace ConsultantTestFramework
             //invoke the method
             OK = AConsultant.Valid(FirstName, LastName, Address, Email, DateOfBirth, EmploymentHistory);
             //test to see that the result is correct
-            Assert.IsTrue(OK);
+            Assert.IsFalse(OK);
         }
 
         [TestMethod]
