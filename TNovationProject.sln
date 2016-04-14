@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TNovationClassLibrary", "TN
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TNovationTestFramework", "TNovationTestFramework\TNovationTestFramework.csproj", "{128FF664-AA0A-40FF-82E3-3BFB5BEAB4F4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TNovationProject", "TNovationProject\TNovationProject.csproj", "{27FAC1F7-2EE7-467C-A5BB-51045CBCA8A8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{128FF664-AA0A-40FF-82E3-3BFB5BEAB4F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{128FF664-AA0A-40FF-82E3-3BFB5BEAB4F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{128FF664-AA0A-40FF-82E3-3BFB5BEAB4F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27FAC1F7-2EE7-467C-A5BB-51045CBCA8A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27FAC1F7-2EE7-467C-A5BB-51045CBCA8A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27FAC1F7-2EE7-467C-A5BB-51045CBCA8A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27FAC1F7-2EE7-467C-A5BB-51045CBCA8A8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
