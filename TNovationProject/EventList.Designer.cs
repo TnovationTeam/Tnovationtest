@@ -32,8 +32,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EventList));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.labelHeading = new System.Windows.Forms.Label();
-            this.tNovationDataSet = new TNovationProject.TNovationDataSet();
-            this.tNovationDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.listView2 = new System.Windows.Forms.ListView();
             this.columnEventCode = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnEventName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -48,7 +46,6 @@
             this.buttonArchive = new System.Windows.Forms.Button();
             this.buttonAdd = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -78,12 +75,9 @@
             // 
             // tNovationDataSet
             // 
-            this.tNovationDataSet.DataSetName = "TNovationDataSet";
-            this.tNovationDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // tNovationDataSetBindingSource
             // 
-            this.tNovationDataSetBindingSource.DataSource = this.tNovationDataSet;
             this.tNovationDataSetBindingSource.Position = 0;
             // 
             // listView2
@@ -213,7 +207,6 @@
             this.Name = "EventList";
             this.Text = "EventList";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -225,7 +218,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label labelHeading;
         private System.Windows.Forms.BindingSource tNovationDataSetBindingSource;
-        private TNovationDataSet tNovationDataSet;
         private System.Windows.Forms.ListView listView2;
         private System.Windows.Forms.ColumnHeader columnEventCode;
         private System.Windows.Forms.ColumnHeader columnEventName;

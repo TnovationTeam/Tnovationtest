@@ -35,7 +35,6 @@ namespace TNovationTestFramework
         {
             //Create an instance of the class we want to create
             clsConsultantCollection Consultants = new clsConsultantCollection();
-
             //create some test data to assign to the property
             //in this case the data needs to be a list of objects
             List<clsConsultant> TestList = new List<clsConsultant>();
@@ -77,6 +76,15 @@ namespace TNovationTestFramework
 
 
         }
+
+        //[TestMethod]
+        //public void TwoConsultantsPresent()
+        //{
+        //    //Create an instance of the class we want to create
+        //    clsConsultantCollection Consultants = new clsConsultantCollection();
+        //    //test to see that the two values are the same
+        //    Assert.AreEqual(Consultants.Count, 2);
+        //}
 
         
 }
