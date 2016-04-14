@@ -7,5 +7,6 @@ namespace TNovationClassLibrary
 {
     public class clsClientCollection
     {
+        public List<clsClient> ClientList { get; set; }
     }
 }
