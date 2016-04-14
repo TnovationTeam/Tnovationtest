@@ -7,14 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TNovationClassLibrary", "TN
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TNovationTestFramework", "TNovationTestFramework\TNovationTestFramework.csproj", "{128FF664-AA0A-40FF-82E3-3BFB5BEAB4F4}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PBFrontEnd", "PBFrontEnd", "{EFBB914A-982D-49AA-8236-3B4ECA6E7420}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PBBackOffice", "PBBackOffice", "{8F2395ED-CB1F-4092-8012-5870415D2843}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ClassLibrary", "ClassLibrary", "{D4591FD2-49B5-41D7-BAC3-426F12E57F8D}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TNovationTesting", "TNovationTesting", "{7DB1A9E1-1337-418A-8831-5E3475369344}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,9 +24,5 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{6129C85E-8FD8-4D99-A936-02DEE166A193} = {D4591FD2-49B5-41D7-BAC3-426F12E57F8D}
-		{128FF664-AA0A-40FF-82E3-3BFB5BEAB4F4} = {7DB1A9E1-1337-418A-8831-5E3475369344}
 	EndGlobalSection
 EndGlobal
