@@ -41,6 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="clsConsultant.cs" />
+    <Compile Include="clsConsultantCollection.cs" />
     <Compile Include="clsDataConnection.cs" />
     <Compile Include="clsEvent.cs">
       <SubType>Code</SubType>
