@@ -125,7 +125,7 @@ namespace TNovationTestFramework
             TestItem.ClientAddress = "21b";
             TestItem.ClientEmail = "freddy@gmail.com";
             TestItem.ClientName = "freddy";
-            TestItem.ClientNo = 21;
+            TestItem.ClientNo = 8;
             TestItem.ClientPosition = "CEO";
             TestItem.ClientQualification = "degree";
             TestItem.ClientService = "IT support for company";
@@ -159,7 +159,7 @@ namespace TNovationTestFramework
             TestItem.ClientAddress = "21b";
             TestItem.ClientEmail = "freddy@gmail.com";
             TestItem.ClientName = "freddy";
-            TestItem.ClientNo = 1;
+            TestItem.ClientNo = 21;
             TestItem.ClientPosition = "CEO";
             TestItem.ClientQualification = "degree";
             TestItem.ClientService = "IT support for company";
@@ -167,9 +167,6 @@ namespace TNovationTestFramework
             TestItem.DateAdded = DateTime.Now.Date;
             //set ThisAddress to the test data
             AllClients.ThisClient = TestItem;
-            //add the record
-            PrimaryKey = AllClients.Add();
-            //set the primary key of the test data
             TestItem.ClientNo = PrimaryKey;
             //find the record
             AllClients.ThisClient.Find(PrimaryKey);

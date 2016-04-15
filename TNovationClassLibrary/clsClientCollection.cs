@@ -104,7 +104,7 @@ namespace TNovationClassLibrary
         public int Add()
         {
             //adds a new record to the database based on the values of thisaddress
-           //connect to the database
+            //connect to the database
             clsDataConnection DB = new clsDataConnection();
             //set the parameters for the stored procedure
             DB.AddParameter("@ClientNo", thisClient.ClientNo);
