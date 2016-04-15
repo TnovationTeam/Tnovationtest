@@ -33,6 +33,7 @@
             this.buttonDelete = new System.Windows.Forms.Button();
             this.buttonUpdate = new System.Windows.Forms.Button();
             this.buttonAdd = new System.Windows.Forms.Button();
+            this.labelError = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // listboxClient
@@ -61,6 +62,7 @@
             this.buttonDelete.TabIndex = 58;
             this.buttonDelete.Text = "Delete Client";
             this.buttonDelete.UseVisualStyleBackColor = true;
+            this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
             // 
             // buttonUpdate
             // 
@@ -81,11 +83,20 @@
             this.buttonAdd.UseVisualStyleBackColor = true;
             this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
+            // labelError
+            // 
+            this.labelError.AutoSize = true;
+            this.labelError.Location = new System.Drawing.Point(83, 364);
+            this.labelError.Name = "labelError";
+            this.labelError.Size = new System.Drawing.Size(0, 13);
+            this.labelError.TabIndex = 61;
+            // 
             // ClientList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(760, 419);
+            this.Controls.Add(this.labelError);
             this.Controls.Add(this.listboxClient);
             this.Controls.Add(this.labelClientInformation);
             this.Controls.Add(this.buttonDelete);
@@ -106,5 +117,6 @@
         private System.Windows.Forms.Button buttonDelete;
         private System.Windows.Forms.Button buttonUpdate;
         private System.Windows.Forms.Button buttonAdd;
+        private System.Windows.Forms.Label labelError;
     }
 }

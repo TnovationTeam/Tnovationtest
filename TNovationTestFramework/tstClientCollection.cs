@@ -145,7 +145,42 @@ namespace TNovationTestFramework
         }
 
 
+        [TestMethod]
+        public void DeleteMethodOK()
+        {
+            //create an instance of the class we want to create 
+            clsClientCollection AllClients = new clsClientCollection();
+            //create the item of the test data
+            clsClient TestItem = new clsClient();
+            //var to store the primary key
+            Int32 PrimaryKey = 0;
+            //set its properties
+            TestItem.Active = true;
+            TestItem.ClientAddress = "21b";
+            TestItem.ClientEmail = "freddy@gmail.com";
+            TestItem.ClientName = "freddy";
+            TestItem.ClientNo = 1;
+            TestItem.ClientPosition = "CEO";
+            TestItem.ClientQualification = "degree";
+            TestItem.ClientService = "IT support for company";
+            TestItem.ClientTel = 783763;
+            TestItem.DateAdded = DateTime.Now.Date;
+            //set ThisAddress to the test data
+            AllClients.ThisClient = TestItem;
+            //add the record
+            PrimaryKey = AllClients.Add();
+            //set the primary key of the test data
+            TestItem.ClientNo = PrimaryKey;
+            //find the record
+            AllClients.ThisClient.Find(PrimaryKey);
+            //delete the record
+            AllClients.Delete();
+            //now find the record
+            Boolean Found = AllClients.ThisClient.Find(PrimaryKey);
+            //test to see that the record was not found
+            Assert.IsFalse(Found);
 
+        }
 
 
 
