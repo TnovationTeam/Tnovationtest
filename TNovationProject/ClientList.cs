@@ -67,7 +67,7 @@ namespace TNovationProject
             TNovation.ThisClient.Find(ClientNo);
             //delete the record
             TNovation.Delete();
-
+            labelError.Text = "The record has been deleted";
         }
     }
 }

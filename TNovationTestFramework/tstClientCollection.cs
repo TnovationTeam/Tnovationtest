@@ -179,7 +179,50 @@ namespace TNovationTestFramework
 
         }
 
-
+        [TestMethod]
+        public void UpdateMethodOK()
+        {
+            //create an instance of the class we want to create 
+            clsClientCollection AllClients = new clsClientCollection();
+            //create the item of the test data
+            clsClient TestItem = new clsClient();
+            //var to store the primary key
+            Int32 PrimaryKey = 0;
+            //set its properties
+            TestItem.Active = true;
+            TestItem.ClientAddress = "21b";
+            TestItem.ClientEmail = "freddy@gmail.com";
+            TestItem.ClientName = "freddy";
+            TestItem.ClientNo = 21;
+            TestItem.ClientPosition = "CEO";
+            TestItem.ClientQualification = "degree";
+            TestItem.ClientService = "IT support for company";
+            TestItem.ClientTel = 783763;
+            TestItem.DateAdded = DateTime.Now.Date;
+            //set ThisAddress to the test data
+            AllClients.ThisClient = TestItem;
+            //set the primary key of the test data
+            TestItem.ClientNo = PrimaryKey;
+            //modify the test data
+            TestItem.Active = false;
+            TestItem.ClientAddress = "21f";
+            TestItem.ClientEmail = "thomas@gmail.com";
+            TestItem.ClientName = "thomas";
+            TestItem.ClientNo = 9;
+            TestItem.ClientPosition = "CO";
+            TestItem.ClientQualification = "college";
+            TestItem.ClientService = "IT support for company";
+            TestItem.ClientTel = 88909;
+            TestItem.DateAdded = DateTime.Now.Date;
+            //set the record based on new test data
+            AllClients.ThisClient = TestItem;
+            //update the record
+            AllClients.Update();
+            //find the record
+            AllClients.ThisClient.Find(PrimaryKey);
+            //test to see this address matches the test data
+            Assert.AreEqual(AllClients.ThisClient, TestItem);
+        }
 
 
 
