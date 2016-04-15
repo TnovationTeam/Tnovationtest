@@ -34,12 +34,15 @@
             this.buttonUpdate = new System.Windows.Forms.Button();
             this.buttonAdd = new System.Windows.Forms.Button();
             this.labelError = new System.Windows.Forms.Label();
+            this.labelInfo2 = new System.Windows.Forms.Label();
+            this.labelInfo1 = new System.Windows.Forms.Label();
+            this.labelInfo3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // listboxClient
             // 
             this.listboxClient.FormattingEnabled = true;
-            this.listboxClient.Location = new System.Drawing.Point(176, 70);
+            this.listboxClient.Location = new System.Drawing.Point(40, 81);
             this.listboxClient.Name = "listboxClient";
             this.listboxClient.Size = new System.Drawing.Size(361, 147);
             this.listboxClient.TabIndex = 60;
@@ -72,6 +75,7 @@
             this.buttonUpdate.TabIndex = 57;
             this.buttonUpdate.Text = "Update Client";
             this.buttonUpdate.UseVisualStyleBackColor = true;
+            this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
             // buttonAdd
             // 
@@ -91,11 +95,41 @@
             this.labelError.Size = new System.Drawing.Size(0, 13);
             this.labelError.TabIndex = 61;
             // 
+            // labelInfo2
+            // 
+            this.labelInfo2.AutoSize = true;
+            this.labelInfo2.Location = new System.Drawing.Point(422, 143);
+            this.labelInfo2.Name = "labelInfo2";
+            this.labelInfo2.Size = new System.Drawing.Size(256, 13);
+            this.labelInfo2.TabIndex = 62;
+            this.labelInfo2.Text = "To update a record click on the Update Client button";
+            // 
+            // labelInfo1
+            // 
+            this.labelInfo1.AutoSize = true;
+            this.labelInfo1.Location = new System.Drawing.Point(422, 95);
+            this.labelInfo1.Name = "labelInfo1";
+            this.labelInfo1.Size = new System.Drawing.Size(225, 13);
+            this.labelInfo1.TabIndex = 63;
+            this.labelInfo1.Text = "To add a record click on the Add Client button";
+            // 
+            // labelInfo3
+            // 
+            this.labelInfo3.AutoSize = true;
+            this.labelInfo3.Location = new System.Drawing.Point(422, 185);
+            this.labelInfo3.Name = "labelInfo3";
+            this.labelInfo3.Size = new System.Drawing.Size(326, 13);
+            this.labelInfo3.TabIndex = 64;
+            this.labelInfo3.Text = "Select a record to delete in the listbox and click Delete Client button";
+            // 
             // ClientList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(760, 419);
+            this.Controls.Add(this.labelInfo3);
+            this.Controls.Add(this.labelInfo1);
+            this.Controls.Add(this.labelInfo2);
             this.Controls.Add(this.labelError);
             this.Controls.Add(this.listboxClient);
             this.Controls.Add(this.labelClientInformation);
@@ -118,5 +152,8 @@
         private System.Windows.Forms.Button buttonUpdate;
         private System.Windows.Forms.Button buttonAdd;
         private System.Windows.Forms.Label labelError;
+        private System.Windows.Forms.Label labelInfo2;
+        private System.Windows.Forms.Label labelInfo1;
+        private System.Windows.Forms.Label labelInfo3;
     }
 }

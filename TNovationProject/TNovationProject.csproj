@@ -86,6 +86,12 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="UpdateClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateClient.Designer.cs">
+      <DependentUpon>UpdateClient.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="AddClient.resx">
@@ -99,6 +105,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EventList.resx">
       <DependentUpon>EventList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateClient.resx">
+      <DependentUpon>UpdateClient.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

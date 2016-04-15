@@ -10,3 +10,4 @@ F:\TNovation\TNovationProject\obj\Debug\TNovationProject.dll
 F:\TNovation\TNovationProject\obj\Debug\TNovationProject.pdb
 F:\TNovation\TNovationProject\obj\Debug\TNovationProject.AddClient.resources
 F:\TNovation\TNovationProject\obj\Debug\TNovationProject.ClientList.resources
+F:\TNovation\TNovationProject\obj\Debug\TNovationProject.UpdateClient.resources

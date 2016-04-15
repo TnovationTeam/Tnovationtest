@@ -125,7 +125,7 @@ namespace TNovationTestFramework
             TestItem.ClientAddress = "21b";
             TestItem.ClientEmail = "freddy@gmail.com";
             TestItem.ClientName = "freddy";
-            TestItem.ClientNo = 8;
+            TestItem.ClientNo = 11;
             TestItem.ClientPosition = "CEO";
             TestItem.ClientQualification = "degree";
             TestItem.ClientService = "IT support for company";
