@@ -14,7 +14,6 @@ namespace TNovationProject
 {
     public partial class ClientList : Form
     {
-        //var to store the primary key value of the record to be deleted
         Int32 ClientNo;
 
         public ClientList()
@@ -41,14 +40,15 @@ namespace TNovationProject
         private void buttonDelete_Click(object sender, EventArgs e)
         {
             //var to store the primary key value of the record to be deleted
-            Int32 ClientNo;
+            
             //if a record has been selected from the list
             if (listboxClient.SelectedIndex != -1)
             {
+                
                 //get the primary key value of the record to delete 
                 ClientNo = Convert.ToInt32(listboxClient.SelectedValue);
                 DeleteClient();
-                
+                labelError.Text = "The record has been deleted";
 
             }
             else //if no record has been selected 
@@ -70,7 +70,7 @@ namespace TNovationProject
             TNovation.ThisClient.Find(ClientNo);
             //delete the record
             TNovation.Delete();
-            labelError.Text = "The record has been deleted";
+           
         }
 
         private void buttonUpdate_Click(object sender, EventArgs e)
@@ -82,7 +82,8 @@ namespace TNovationProject
 
         private void buttonPopulate_Click(object sender, EventArgs e)
         {
-           
+             //update the listbox
+            DisplayClients();
         }
         
         Int32 DisplayClients()

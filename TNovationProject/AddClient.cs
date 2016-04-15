@@ -44,7 +44,7 @@ namespace TNovationProject
                 TNovation.ThisClient.ClientName = textboxClientName.Text;
                 TNovation.ThisClient.ClientEmail = textboxClientEmail.Text;
                 TNovation.ThisClient.ClientAddress = textboxClientAddress.Text;
-                TNovation.ThisClient.ClientPosition = textboxClientNo.Text;
+                TNovation.ThisClient.ClientPosition = textboxClientPosition.Text;
                 TNovation.ThisClient.ClientQualification = textboxClientQualification.Text;
                 TNovation.ThisClient.ClientTel = Convert.ToInt32(textboxClientTel.Text);
                 TNovation.ThisClient.ClientService = textboxClientService.Text;

@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.listboxClient = new System.Windows.Forms.ListBox();
             this.labelClientInformation = new System.Windows.Forms.Label();
             this.buttonDelete = new System.Windows.Forms.Button();
             this.buttonUpdate = new System.Windows.Forms.Button();
@@ -39,15 +38,8 @@
             this.labelInfo3 = new System.Windows.Forms.Label();
             this.buttonPopulate = new System.Windows.Forms.Button();
             this.labelFound = new System.Windows.Forms.Label();
+            this.listboxClient = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
-            // 
-            // listboxClient
-            // 
-            this.listboxClient.FormattingEnabled = true;
-            this.listboxClient.Location = new System.Drawing.Point(40, 81);
-            this.listboxClient.Name = "listboxClient";
-            this.listboxClient.Size = new System.Drawing.Size(361, 147);
-            this.listboxClient.TabIndex = 60;
             // 
             // labelClientInformation
             // 
@@ -142,6 +134,14 @@
             this.labelFound.Size = new System.Drawing.Size(0, 13);
             this.labelFound.TabIndex = 66;
             // 
+            // listboxClient
+            // 
+            this.listboxClient.FormattingEnabled = true;
+            this.listboxClient.Location = new System.Drawing.Point(40, 81);
+            this.listboxClient.Name = "listboxClient";
+            this.listboxClient.Size = new System.Drawing.Size(361, 147);
+            this.listboxClient.TabIndex = 60;
+            // 
             // ClientList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -168,7 +168,6 @@
 
         #endregion
 
-        private System.Windows.Forms.ListBox listboxClient;
         private System.Windows.Forms.Label labelClientInformation;
         private System.Windows.Forms.Button buttonDelete;
         private System.Windows.Forms.Button buttonUpdate;
@@ -179,5 +178,6 @@
         private System.Windows.Forms.Label labelInfo3;
         private System.Windows.Forms.Button buttonPopulate;
         private System.Windows.Forms.Label labelFound;
+        private System.Windows.Forms.ListBox listboxClient;
     }
 }
