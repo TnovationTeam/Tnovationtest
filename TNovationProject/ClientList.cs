@@ -22,9 +22,12 @@ namespace TNovationProject
             InitializeComponent();
         }
 
+        //this function handles the load event of the page
         private void ClientList_Load(object sender, EventArgs e)
         {
-
+                //update the listbox
+                DisplayClients();
+            
         }
 
         private void buttonAdd_Click(object sender, EventArgs e)
@@ -76,5 +79,27 @@ namespace TNovationProject
             new UpdateClient().Show();
             this.Hide();
         }
+
+        private void buttonPopulate_Click(object sender, EventArgs e)
+        {
+           
+        }
+        
+        Int32 DisplayClients()
+        {
+
+            //create an instance of the client collection
+            clsClientCollection Clients = new clsClientCollection();
+            //see the data source to the list of clients in the collection
+            listboxClient.DataSource = Clients.ClientList;
+            //set the name of the primary key value
+            listboxClient.ValueMember = "ClientNo";
+            //set the data field to be displayed
+            listboxClient.DisplayMember = "ClientNo";
+            //return the count of records in the list
+            return Clients.Count;
+        }
+
+
     }
 }

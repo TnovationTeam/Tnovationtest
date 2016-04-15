@@ -37,6 +37,8 @@
             this.labelInfo2 = new System.Windows.Forms.Label();
             this.labelInfo1 = new System.Windows.Forms.Label();
             this.labelInfo3 = new System.Windows.Forms.Label();
+            this.buttonPopulate = new System.Windows.Forms.Button();
+            this.labelFound = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // listboxClient
@@ -59,7 +61,7 @@
             // 
             // buttonDelete
             // 
-            this.buttonDelete.Location = new System.Drawing.Point(471, 314);
+            this.buttonDelete.Location = new System.Drawing.Point(479, 314);
             this.buttonDelete.Name = "buttonDelete";
             this.buttonDelete.Size = new System.Drawing.Size(86, 23);
             this.buttonDelete.TabIndex = 58;
@@ -69,7 +71,7 @@
             // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(260, 314);
+            this.buttonUpdate.Location = new System.Drawing.Point(332, 314);
             this.buttonUpdate.Name = "buttonUpdate";
             this.buttonUpdate.Size = new System.Drawing.Size(86, 23);
             this.buttonUpdate.TabIndex = 57;
@@ -79,7 +81,7 @@
             // 
             // buttonAdd
             // 
-            this.buttonAdd.Location = new System.Drawing.Point(83, 314);
+            this.buttonAdd.Location = new System.Drawing.Point(189, 314);
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(86, 23);
             this.buttonAdd.TabIndex = 56;
@@ -122,11 +124,31 @@
             this.labelInfo3.TabIndex = 64;
             this.labelInfo3.Text = "Select a record to delete in the listbox and click Delete Client button";
             // 
+            // buttonPopulate
+            // 
+            this.buttonPopulate.Location = new System.Drawing.Point(40, 314);
+            this.buttonPopulate.Name = "buttonPopulate";
+            this.buttonPopulate.Size = new System.Drawing.Size(98, 23);
+            this.buttonPopulate.TabIndex = 65;
+            this.buttonPopulate.Text = "Populate list box";
+            this.buttonPopulate.UseVisualStyleBackColor = true;
+            this.buttonPopulate.Click += new System.EventHandler(this.buttonPopulate_Click);
+            // 
+            // labelFound
+            // 
+            this.labelFound.AutoSize = true;
+            this.labelFound.Location = new System.Drawing.Point(40, 264);
+            this.labelFound.Name = "labelFound";
+            this.labelFound.Size = new System.Drawing.Size(0, 13);
+            this.labelFound.TabIndex = 66;
+            // 
             // ClientList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(760, 419);
+            this.Controls.Add(this.labelFound);
+            this.Controls.Add(this.buttonPopulate);
             this.Controls.Add(this.labelInfo3);
             this.Controls.Add(this.labelInfo1);
             this.Controls.Add(this.labelInfo2);
@@ -155,5 +177,7 @@
         private System.Windows.Forms.Label labelInfo2;
         private System.Windows.Forms.Label labelInfo1;
         private System.Windows.Forms.Label labelInfo3;
+        private System.Windows.Forms.Button buttonPopulate;
+        private System.Windows.Forms.Label labelFound;
     }
 }
