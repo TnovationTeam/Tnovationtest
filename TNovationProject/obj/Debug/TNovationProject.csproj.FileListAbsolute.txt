@@ -21,3 +21,8 @@ C:\Users\Palmira\Source\Repos\TNovationtest\TNovationProject\obj\Debug\TNovation
 C:\Users\Palmira\Source\Repos\TNovationtest\TNovationProject\obj\Debug\TNovationProject.mdiBackend.resources
 C:\Users\Palmira\Source\Repos\TNovationtest\TNovationProject\obj\Debug\TNovationProject.UpdateClient.resources
 C:\Users\Palmira\Source\Repos\TNovationtest\TNovationProject\obj\Debug\TNovationProject.csproj.GenerateResource.Cache
+C:\Users\Palmira\Source\Repos\TNovationtest\TNovationProject\bin\Debug\TNovationProject.exe
+C:\Users\Palmira\Source\Repos\TNovationtest\TNovationProject\bin\Debug\TNovationProject.pdb
+C:\Users\Palmira\Source\Repos\TNovationtest\TNovationProject\bin\Debug\TNovationClassLibrary.dll
+C:\Users\Palmira\Source\Repos\TNovationtest\TNovationProject\bin\Debug\TNovationClassLibrary.pdb
+C:\Users\Palmira\Source\Repos\TNovationtest\TNovationProject\obj\Debug\TNovationProject.AddClient.resources
