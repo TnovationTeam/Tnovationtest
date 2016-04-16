@@ -73,5 +73,29 @@ namespace TNovationProject
         {
 
         }
+
+        private void textboxClientNo_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelUpdateSuccess_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonBack_Click(object sender, EventArgs e)
+        {
+            //This line of code navigates to the Client list page when clicked on cancel button.
+            new ClientList().Show();
+            this.Hide();
+        }
+
+        private void buttonCancel_Click(object sender, EventArgs e)
+        {
+            //This line of code navigates to the Client list page when clicked on cancel button.
+            new ClientList().Show();
+            this.Hide();
+        }
     }
 }
