@@ -55,6 +55,8 @@
             this.labelClientNo = new System.Windows.Forms.Label();
             this.lblError = new System.Windows.Forms.Label();
             this.checkBoxActive = new System.Windows.Forms.CheckBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.buttonBack = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -93,63 +95,63 @@
             // 
             // textboxDate
             // 
-            this.textboxDate.Location = new System.Drawing.Point(503, 258);
+            this.textboxDate.Location = new System.Drawing.Point(703, 259);
             this.textboxDate.Name = "textboxDate";
             this.textboxDate.Size = new System.Drawing.Size(100, 20);
             this.textboxDate.TabIndex = 51;
             // 
             // textboxClientService
             // 
-            this.textboxClientService.Location = new System.Drawing.Point(295, 258);
+            this.textboxClientService.Location = new System.Drawing.Point(395, 261);
             this.textboxClientService.Name = "textboxClientService";
             this.textboxClientService.Size = new System.Drawing.Size(100, 20);
             this.textboxClientService.TabIndex = 50;
             // 
             // textboxClientQualification
             // 
-            this.textboxClientQualification.Location = new System.Drawing.Point(503, 222);
+            this.textboxClientQualification.Location = new System.Drawing.Point(703, 216);
             this.textboxClientQualification.Name = "textboxClientQualification";
             this.textboxClientQualification.Size = new System.Drawing.Size(100, 20);
             this.textboxClientQualification.TabIndex = 49;
             // 
             // textboxClientPosition
             // 
-            this.textboxClientPosition.Location = new System.Drawing.Point(295, 215);
+            this.textboxClientPosition.Location = new System.Drawing.Point(395, 219);
             this.textboxClientPosition.Name = "textboxClientPosition";
             this.textboxClientPosition.Size = new System.Drawing.Size(100, 20);
             this.textboxClientPosition.TabIndex = 48;
             // 
             // textboxClientTel
             // 
-            this.textboxClientTel.Location = new System.Drawing.Point(106, 259);
+            this.textboxClientTel.Location = new System.Drawing.Point(180, 259);
             this.textboxClientTel.Name = "textboxClientTel";
             this.textboxClientTel.Size = new System.Drawing.Size(100, 20);
             this.textboxClientTel.TabIndex = 47;
             // 
             // textboxClientAddress
             // 
-            this.textboxClientAddress.Location = new System.Drawing.Point(106, 222);
+            this.textboxClientAddress.Location = new System.Drawing.Point(180, 222);
             this.textboxClientAddress.Name = "textboxClientAddress";
             this.textboxClientAddress.Size = new System.Drawing.Size(100, 20);
             this.textboxClientAddress.TabIndex = 46;
             // 
             // textboxClientEmail
             // 
-            this.textboxClientEmail.Location = new System.Drawing.Point(503, 179);
+            this.textboxClientEmail.Location = new System.Drawing.Point(703, 179);
             this.textboxClientEmail.Name = "textboxClientEmail";
             this.textboxClientEmail.Size = new System.Drawing.Size(100, 20);
             this.textboxClientEmail.TabIndex = 45;
             // 
             // textboxClientName
             // 
-            this.textboxClientName.Location = new System.Drawing.Point(295, 179);
+            this.textboxClientName.Location = new System.Drawing.Point(395, 183);
             this.textboxClientName.Name = "textboxClientName";
             this.textboxClientName.Size = new System.Drawing.Size(100, 20);
             this.textboxClientName.TabIndex = 44;
             // 
             // textboxClientNo
             // 
-            this.textboxClientNo.Location = new System.Drawing.Point(105, 182);
+            this.textboxClientNo.Location = new System.Drawing.Point(180, 182);
             this.textboxClientNo.Name = "textboxClientNo";
             this.textboxClientNo.Size = new System.Drawing.Size(100, 20);
             this.textboxClientNo.TabIndex = 43;
@@ -162,6 +164,7 @@
             this.buttonCancel.TabIndex = 42;
             this.buttonCancel.Text = "Cancel";
             this.buttonCancel.UseVisualStyleBackColor = true;
+            this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
             // 
             // buttonAdd
             // 
@@ -176,25 +179,25 @@
             // labelActive
             // 
             this.labelActive.AutoSize = true;
-            this.labelActive.Location = new System.Drawing.Point(22, 297);
+            this.labelActive.Location = new System.Drawing.Point(23, 299);
             this.labelActive.Name = "labelActive";
-            this.labelActive.Size = new System.Drawing.Size(40, 13);
+            this.labelActive.Size = new System.Drawing.Size(117, 13);
             this.labelActive.TabIndex = 40;
-            this.labelActive.Text = "Active:";
+            this.labelActive.Text = "Active (*Tick if active) :";
             // 
             // labelDateAdded
             // 
             this.labelDateAdded.AutoSize = true;
-            this.labelDateAdded.Location = new System.Drawing.Point(401, 259);
+            this.labelDateAdded.Location = new System.Drawing.Point(514, 262);
             this.labelDateAdded.Name = "labelDateAdded";
-            this.labelDateAdded.Size = new System.Drawing.Size(66, 13);
+            this.labelDateAdded.Size = new System.Drawing.Size(185, 13);
             this.labelDateAdded.TabIndex = 39;
-            this.labelDateAdded.Text = "Date added:";
+            this.labelDateAdded.Text = "Date added (*Type today\'s date only):";
             // 
             // labelClientService
             // 
             this.labelClientService.AutoSize = true;
-            this.labelClientService.Location = new System.Drawing.Point(215, 259);
+            this.labelClientService.Location = new System.Drawing.Point(295, 265);
             this.labelClientService.Name = "labelClientService";
             this.labelClientService.Size = new System.Drawing.Size(73, 13);
             this.labelClientService.TabIndex = 38;
@@ -205,14 +208,14 @@
             this.labelTel.AutoSize = true;
             this.labelTel.Location = new System.Drawing.Point(22, 259);
             this.labelTel.Name = "labelTel";
-            this.labelTel.Size = new System.Drawing.Size(54, 13);
+            this.labelTel.Size = new System.Drawing.Size(134, 13);
             this.labelTel.TabIndex = 37;
-            this.labelTel.Text = "Client Tel:";
+            this.labelTel.Text = "Client Tel (*Type 0-9 only) :";
             // 
             // labelClientQualification
             // 
             this.labelClientQualification.AutoSize = true;
-            this.labelClientQualification.Location = new System.Drawing.Point(401, 222);
+            this.labelClientQualification.Location = new System.Drawing.Point(515, 222);
             this.labelClientQualification.Name = "labelClientQualification";
             this.labelClientQualification.Size = new System.Drawing.Size(95, 13);
             this.labelClientQualification.TabIndex = 36;
@@ -221,7 +224,7 @@
             // labelClientPosition
             // 
             this.labelClientPosition.AutoSize = true;
-            this.labelClientPosition.Location = new System.Drawing.Point(215, 222);
+            this.labelClientPosition.Location = new System.Drawing.Point(296, 225);
             this.labelClientPosition.Name = "labelClientPosition";
             this.labelClientPosition.Size = new System.Drawing.Size(75, 13);
             this.labelClientPosition.TabIndex = 35;
@@ -230,7 +233,7 @@
             // labelClientAddress
             // 
             this.labelClientAddress.AutoSize = true;
-            this.labelClientAddress.Location = new System.Drawing.Point(22, 222);
+            this.labelClientAddress.Location = new System.Drawing.Point(23, 224);
             this.labelClientAddress.Name = "labelClientAddress";
             this.labelClientAddress.Size = new System.Drawing.Size(76, 13);
             this.labelClientAddress.TabIndex = 34;
@@ -239,7 +242,7 @@
             // labelClientEmail
             // 
             this.labelClientEmail.AutoSize = true;
-            this.labelClientEmail.Location = new System.Drawing.Point(401, 179);
+            this.labelClientEmail.Location = new System.Drawing.Point(517, 187);
             this.labelClientEmail.Name = "labelClientEmail";
             this.labelClientEmail.Size = new System.Drawing.Size(63, 13);
             this.labelClientEmail.TabIndex = 33;
@@ -248,7 +251,7 @@
             // labelClientName
             // 
             this.labelClientName.AutoSize = true;
-            this.labelClientName.Location = new System.Drawing.Point(215, 182);
+            this.labelClientName.Location = new System.Drawing.Point(298, 189);
             this.labelClientName.Name = "labelClientName";
             this.labelClientName.Size = new System.Drawing.Size(65, 13);
             this.labelClientName.TabIndex = 32;
@@ -257,35 +260,55 @@
             // labelClientNo
             // 
             this.labelClientNo.AutoSize = true;
-            this.labelClientNo.Location = new System.Drawing.Point(22, 182);
+            this.labelClientNo.Location = new System.Drawing.Point(22, 186);
             this.labelClientNo.Name = "labelClientNo";
-            this.labelClientNo.Size = new System.Drawing.Size(77, 13);
+            this.labelClientNo.Size = new System.Drawing.Size(157, 13);
             this.labelClientNo.TabIndex = 31;
-            this.labelClientNo.Text = "Client number: ";
+            this.labelClientNo.Text = "Client number (*Type 0-9 only) : ";
             // 
             // lblError
             // 
             this.lblError.AutoSize = true;
-            this.lblError.Location = new System.Drawing.Point(23, 337);
+            this.lblError.Location = new System.Drawing.Point(23, 408);
             this.lblError.Name = "lblError";
-            this.lblError.Size = new System.Drawing.Size(39, 13);
+            this.lblError.Size = new System.Drawing.Size(0, 13);
             this.lblError.TabIndex = 55;
-            this.lblError.Text = "lblError";
             // 
             // checkBoxActive
             // 
             this.checkBoxActive.AutoSize = true;
-            this.checkBoxActive.Location = new System.Drawing.Point(81, 297);
+            this.checkBoxActive.Location = new System.Drawing.Point(180, 299);
             this.checkBoxActive.Name = "checkBoxActive";
             this.checkBoxActive.Size = new System.Drawing.Size(15, 14);
             this.checkBoxActive.TabIndex = 56;
             this.checkBoxActive.UseVisualStyleBackColor = true;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(517, 279);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(82, 13);
+            this.label1.TabIndex = 57;
+            this.label1.Text = "ex: dd/mm/yyyy";
+            // 
+            // buttonBack
+            // 
+            this.buttonBack.Location = new System.Drawing.Point(395, 356);
+            this.buttonBack.Name = "buttonBack";
+            this.buttonBack.Size = new System.Drawing.Size(75, 23);
+            this.buttonBack.TabIndex = 58;
+            this.buttonBack.Text = "Back";
+            this.buttonBack.UseVisualStyleBackColor = true;
+            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
+            // 
             // AddClient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(640, 451);
+            this.ClientSize = new System.Drawing.Size(842, 500);
+            this.Controls.Add(this.buttonBack);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.checkBoxActive);
             this.Controls.Add(this.lblError);
             this.Controls.Add(this.labelClientInformation);
@@ -349,5 +372,7 @@
         private System.Windows.Forms.Label labelClientNo;
         private System.Windows.Forms.Label lblError;
         private System.Windows.Forms.CheckBox checkBoxActive;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button buttonBack;
     }
 }
