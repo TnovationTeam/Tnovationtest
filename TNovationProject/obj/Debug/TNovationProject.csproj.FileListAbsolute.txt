@@ -1,0 +1,14 @@
+F:\TNovation\TNovationProject\bin\Debug\TNovationProject.pdb
+F:\TNovation\TNovationProject\bin\Debug\TNovationClassLibrary.dll
+F:\TNovation\TNovationProject\bin\Debug\TNovationClassLibrary.pdb
+F:\TNovation\TNovationProject\obj\Debug\TNovationProject.csprojResolveAssemblyReference.cache
+F:\TNovation\TNovationProject\obj\Debug\TNovationProject.EventForm.resources
+F:\TNovation\TNovationProject\obj\Debug\TNovationProject.EventList.resources
+F:\TNovation\TNovationProject\obj\Debug\TNovationProject.csproj.GenerateResource.Cache
+F:\TNovation\TNovationProject\obj\Debug\TNovationProject.pdb
+F:\TNovation\TNovationProject\obj\Debug\TNovationProject.AddClient.resources
+F:\TNovation\TNovationProject\obj\Debug\TNovationProject.ClientList.resources
+F:\TNovation\TNovationProject\obj\Debug\TNovationProject.UpdateClient.resources
+F:\TNovation\TNovationProject\bin\Debug\TNovationProject.exe
+F:\TNovation\TNovationProject\obj\Debug\TNovationProject.mdiBackend.resources
+F:\TNovation\TNovationProject\obj\Debug\TNovationProject.exe
