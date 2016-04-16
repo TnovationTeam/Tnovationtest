@@ -46,7 +46,7 @@
             this.buttonArchive = new System.Windows.Forms.Button();
             this.buttonAdd = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetBindingSource)).BeginInit();
+          
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -78,7 +78,7 @@
             // 
             // tNovationDataSetBindingSource
             // 
-            this.tNovationDataSetBindingSource.Position = 0;
+           
             // 
             // listView2
             // 
@@ -207,7 +207,7 @@
             this.Name = "EventList";
             this.Text = "EventList";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetBindingSource)).EndInit();
+         
             this.ResumeLayout(false);
             this.PerformLayout();
 
