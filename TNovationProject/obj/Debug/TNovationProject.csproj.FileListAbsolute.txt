@@ -12,3 +12,12 @@ F:\TNovation\TNovationProject\obj\Debug\TNovationProject.UpdateClient.resources
 F:\TNovation\TNovationProject\bin\Debug\TNovationProject.exe
 F:\TNovation\TNovationProject\obj\Debug\TNovationProject.mdiBackend.resources
 F:\TNovation\TNovationProject\obj\Debug\TNovationProject.exe
+C:\Users\Palmira\Source\Repos\TNovationtest\TNovationProject\obj\Debug\TNovationProject.exe
+C:\Users\Palmira\Source\Repos\TNovationtest\TNovationProject\obj\Debug\TNovationProject.pdb
+C:\Users\Palmira\Source\Repos\TNovationtest\TNovationProject\obj\Debug\TNovationProject.csprojResolveAssemblyReference.cache
+C:\Users\Palmira\Source\Repos\TNovationtest\TNovationProject\obj\Debug\TNovationProject.ClientList.resources
+C:\Users\Palmira\Source\Repos\TNovationtest\TNovationProject\obj\Debug\TNovationProject.EventForm.resources
+C:\Users\Palmira\Source\Repos\TNovationtest\TNovationProject\obj\Debug\TNovationProject.EventList.resources
+C:\Users\Palmira\Source\Repos\TNovationtest\TNovationProject\obj\Debug\TNovationProject.mdiBackend.resources
+C:\Users\Palmira\Source\Repos\TNovationtest\TNovationProject\obj\Debug\TNovationProject.UpdateClient.resources
+C:\Users\Palmira\Source\Repos\TNovationtest\TNovationProject\obj\Debug\TNovationProject.csproj.GenerateResource.Cache
