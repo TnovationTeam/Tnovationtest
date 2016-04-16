@@ -296,6 +296,7 @@
             this.Controls.Add(this.labelClientInformation);
             this.Name = "UpdateClient";
             this.Text = "UpdateClient";
+            this.Load += new System.EventHandler(this.UpdateClient_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

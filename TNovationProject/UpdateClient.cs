@@ -24,7 +24,7 @@ namespace TNovationProject
 
 
 
-        void Update()
+        void UpdateUser()
         {
             //create an instance of TNovation
             clsClientCollection TNovation = new clsClientCollection();
@@ -36,10 +36,11 @@ namespace TNovationProject
                 //find the record to update
                 TNovation.ThisClient.Find(ClientNo);
                 //get the data entered by the user
+                TNovation.ThisClient.ClientNo = Convert.ToInt32(textboxClientNo.Text);
                 TNovation.ThisClient.ClientName = textboxClientName.Text;
                 TNovation.ThisClient.ClientEmail = textboxClientEmail.Text;
                 TNovation.ThisClient.ClientAddress = textboxClientAddress.Text;
-                TNovation.ThisClient.ClientPosition = textboxClientNo.Text;
+                TNovation.ThisClient.ClientPosition = textboxClientPosition.Text;
                 TNovation.ThisClient.ClientQualification = textboxClientQualification.Text;
                 TNovation.ThisClient.ClientTel = Convert.ToInt32(textboxClientTel.Text);
                 TNovation.ThisClient.ClientService = textboxClientService.Text;
@@ -60,11 +61,17 @@ namespace TNovationProject
 
         private void buttonUpdate_Click(object sender, EventArgs e)
         {
-            //add new record
-            Update();
-            //all done so redirect back to the client list form 
-            //Response.Redirect("ClientList.cs");
-            labelUpdateSuccess.Text = "The Client record has been updated";
+                       
+                //update new record
+                UpdateUser();
+                //show msg
+                labelUpdateSuccess.Text = "The Client record has been updated";
+            
+        }
+
+        private void UpdateClient_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

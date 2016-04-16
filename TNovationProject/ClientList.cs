@@ -75,9 +75,13 @@ namespace TNovationProject
 
         private void buttonUpdate_Click(object sender, EventArgs e)
         {
-            //This line of code navigates to the edit Client page when clicked on edit client button.
-            new UpdateClient().Show();
-            this.Hide();
+            
+                //This line of code navigates to the edit Client page when clicked on edit client button.
+                new UpdateClient().Show();
+                this.Hide();
+
+           
+            
         }
 
         private void buttonPopulate_Click(object sender, EventArgs e)
