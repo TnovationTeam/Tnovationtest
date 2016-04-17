@@ -44,6 +44,8 @@
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clientToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eventListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eventFormToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip = new System.Windows.Forms.ToolStrip();
             this.newToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.openToolStripButton = new System.Windows.Forms.ToolStripButton();
@@ -56,8 +58,7 @@
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.eventListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.eventFormToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultantListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.toolStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
@@ -69,7 +70,8 @@
             this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileMenu,
             this.clientToolStripMenuItem,
-            this.eventListToolStripMenuItem});
+            this.eventListToolStripMenuItem,
+            this.consultantListToolStripMenuItem});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
             this.menuStrip.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
@@ -184,6 +186,21 @@
             this.clientToolStripMenuItem.Text = "TNovation - Client";
             this.clientToolStripMenuItem.Click += new System.EventHandler(this.clientToolStripMenuItem_Click);
             // 
+            // eventListToolStripMenuItem
+            // 
+            this.eventListToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.eventFormToolStripMenuItem});
+            this.eventListToolStripMenuItem.Name = "eventListToolStripMenuItem";
+            this.eventListToolStripMenuItem.Size = new System.Drawing.Size(83, 24);
+            this.eventListToolStripMenuItem.Text = "Event List";
+            this.eventListToolStripMenuItem.Click += new System.EventHandler(this.eventListToolStripMenuItem_Click);
+            // 
+            // eventFormToolStripMenuItem
+            // 
+            this.eventFormToolStripMenuItem.Name = "eventFormToolStripMenuItem";
+            this.eventFormToolStripMenuItem.Size = new System.Drawing.Size(158, 26);
+            this.eventFormToolStripMenuItem.Text = "Event Form";
+            // 
             // toolStrip
             // 
             this.toolStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
@@ -286,20 +303,12 @@
             this.toolStripStatusLabel.Size = new System.Drawing.Size(49, 20);
             this.toolStripStatusLabel.Text = "Status";
             // 
-            // eventListToolStripMenuItem
+            // consultantListToolStripMenuItem
             // 
-            this.eventListToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.eventFormToolStripMenuItem});
-            this.eventListToolStripMenuItem.Name = "eventListToolStripMenuItem";
-            this.eventListToolStripMenuItem.Size = new System.Drawing.Size(83, 24);
-            this.eventListToolStripMenuItem.Text = "Event List";
-            this.eventListToolStripMenuItem.Click += new System.EventHandler(this.eventListToolStripMenuItem_Click);
-            // 
-            // eventFormToolStripMenuItem
-            // 
-            this.eventFormToolStripMenuItem.Name = "eventFormToolStripMenuItem";
-            this.eventFormToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
-            this.eventFormToolStripMenuItem.Text = "Event Form";
+            this.consultantListToolStripMenuItem.Name = "consultantListToolStripMenuItem";
+            this.consultantListToolStripMenuItem.Size = new System.Drawing.Size(117, 24);
+            this.consultantListToolStripMenuItem.Text = "Consultant List";
+            this.consultantListToolStripMenuItem.Click += new System.EventHandler(this.consultantListToolStripMenuItem_Click);
             // 
             // mdiBackend
             // 
@@ -357,6 +366,7 @@
         private System.Windows.Forms.ToolStripMenuItem clientToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eventListToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eventFormToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem consultantListToolStripMenuItem;
     }
 }
 
