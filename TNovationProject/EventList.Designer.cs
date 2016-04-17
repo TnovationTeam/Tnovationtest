@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EventList));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.labelHeading = new System.Windows.Forms.Label();
@@ -46,7 +45,6 @@
             this.buttonArchive = new System.Windows.Forms.Button();
             this.buttonAdd = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-          
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -72,13 +70,6 @@
             this.labelHeading.Size = new System.Drawing.Size(466, 91);
             this.labelHeading.TabIndex = 23;
             this.labelHeading.Text = "T{Novation}";
-            // 
-            // tNovationDataSet
-            // 
-            // 
-            // tNovationDataSetBindingSource
-            // 
-           
             // 
             // listView2
             // 
@@ -191,6 +182,7 @@
             this.buttonAdd.TabIndex = 26;
             this.buttonAdd.Text = "Add";
             this.buttonAdd.UseVisualStyleBackColor = false;
+            this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
             // EventList
             // 
@@ -207,7 +199,6 @@
             this.Name = "EventList";
             this.Text = "EventList";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-         
             this.ResumeLayout(false);
             this.PerformLayout();
 
