@@ -66,6 +66,9 @@ namespace TNovationProject
                 UpdateUser();
                 //show msg
                 labelUpdateSuccess.Text = "The Client record has been updated";
+                //This line of code navigates to the Client list page when clicked on update button.
+                new ClientList().Show();
+                this.Hide();
             
         }
 

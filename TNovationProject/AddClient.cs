@@ -67,7 +67,9 @@ namespace TNovationProject
             //add new record
             Add();
             lblError.Text = "The data record is entered to the database! Click back to return to the clients list page.";
-
+            //This line of code navigates to the Client list page when clicked on add button.
+            new ClientList().Show();
+            this.Hide();
         }
 
         private void buttonCancel_Click(object sender, EventArgs e)
