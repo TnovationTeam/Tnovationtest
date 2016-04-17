@@ -28,3 +28,6 @@ C:\Users\Palmira\Source\Repos\TNovationtest\TNovationProject\bin\Debug\TNovation
 C:\Users\Palmira\Source\Repos\TNovationtest\TNovationProject\obj\Debug\TNovationProject.AddClient.resources
 C:\Users\MwenyaSebastian\Source\Repos\Tnovationtest8\TNovationProject\obj\Debug\TNovationProject.exe
 C:\Users\MwenyaSebastian\Source\Repos\Tnovationtest8\TNovationProject\obj\Debug\TNovationProject.pdb
+C:\Users\Palmira\Source\Repos\TNovationtest\TNovationProject\obj\Debug\TNovationProject.AddConsultant.resources
+C:\Users\Palmira\Source\Repos\TNovationtest\TNovationProject\obj\Debug\TNovationProject.ConsultantList.resources
+C:\Users\Palmira\Source\Repos\TNovationtest\TNovationProject\obj\Debug\TNovationProject.Properties.Resources.resources
