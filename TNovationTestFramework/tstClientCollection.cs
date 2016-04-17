@@ -125,7 +125,7 @@ namespace TNovationTestFramework
             TestItem.ClientAddress = "21b";
             TestItem.ClientEmail = "freddy@gmail.com";
             TestItem.ClientName = "freddy";
-            TestItem.ClientNo = 11;
+            TestItem.ClientNo = 34;
             TestItem.ClientPosition = "CEO";
             TestItem.ClientQualification = "degree";
             TestItem.ClientService = "IT support for company";
@@ -201,6 +201,7 @@ namespace TNovationTestFramework
             TestItem.DateAdded = DateTime.Now.Date;
             //set ThisAddress to the test data
             AllClients.ThisClient = TestItem;
+            
             //set the primary key of the test data
             TestItem.ClientNo = PrimaryKey;
             //modify the test data

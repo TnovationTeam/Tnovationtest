@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ClientList));
             this.labelClientInformation = new System.Windows.Forms.Label();
             this.buttonDelete = new System.Windows.Forms.Button();
             this.buttonUpdate = new System.Windows.Forms.Button();
@@ -39,13 +40,17 @@
             this.buttonPopulate = new System.Windows.Forms.Button();
             this.labelFound = new System.Windows.Forms.Label();
             this.listboxClient = new System.Windows.Forms.ListBox();
+            this.labelUser = new System.Windows.Forms.Label();
+            this.labelHeading = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // labelClientInformation
             // 
             this.labelClientInformation.AutoSize = true;
             this.labelClientInformation.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelClientInformation.Location = new System.Drawing.Point(36, 30);
+            this.labelClientInformation.Location = new System.Drawing.Point(75, 124);
             this.labelClientInformation.Name = "labelClientInformation";
             this.labelClientInformation.Size = new System.Drawing.Size(181, 20);
             this.labelClientInformation.TabIndex = 59;
@@ -53,7 +58,7 @@
             // 
             // buttonDelete
             // 
-            this.buttonDelete.Location = new System.Drawing.Point(479, 314);
+            this.buttonDelete.Location = new System.Drawing.Point(518, 420);
             this.buttonDelete.Name = "buttonDelete";
             this.buttonDelete.Size = new System.Drawing.Size(86, 23);
             this.buttonDelete.TabIndex = 58;
@@ -63,7 +68,7 @@
             // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(332, 314);
+            this.buttonUpdate.Location = new System.Drawing.Point(371, 420);
             this.buttonUpdate.Name = "buttonUpdate";
             this.buttonUpdate.Size = new System.Drawing.Size(86, 23);
             this.buttonUpdate.TabIndex = 57;
@@ -73,7 +78,7 @@
             // 
             // buttonAdd
             // 
-            this.buttonAdd.Location = new System.Drawing.Point(189, 314);
+            this.buttonAdd.Location = new System.Drawing.Point(228, 420);
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(86, 23);
             this.buttonAdd.TabIndex = 56;
@@ -84,7 +89,7 @@
             // labelError
             // 
             this.labelError.AutoSize = true;
-            this.labelError.Location = new System.Drawing.Point(83, 364);
+            this.labelError.Location = new System.Drawing.Point(122, 470);
             this.labelError.Name = "labelError";
             this.labelError.Size = new System.Drawing.Size(0, 13);
             this.labelError.TabIndex = 61;
@@ -92,33 +97,36 @@
             // labelInfo2
             // 
             this.labelInfo2.AutoSize = true;
-            this.labelInfo2.Location = new System.Drawing.Point(422, 143);
+            this.labelInfo2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelInfo2.Location = new System.Drawing.Point(461, 249);
             this.labelInfo2.Name = "labelInfo2";
-            this.labelInfo2.Size = new System.Drawing.Size(256, 13);
+            this.labelInfo2.Size = new System.Drawing.Size(404, 19);
             this.labelInfo2.TabIndex = 62;
             this.labelInfo2.Text = "To update a record click on the Update Client button";
             // 
             // labelInfo1
             // 
             this.labelInfo1.AutoSize = true;
-            this.labelInfo1.Location = new System.Drawing.Point(422, 95);
+            this.labelInfo1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelInfo1.Location = new System.Drawing.Point(461, 201);
             this.labelInfo1.Name = "labelInfo1";
-            this.labelInfo1.Size = new System.Drawing.Size(225, 13);
+            this.labelInfo1.Size = new System.Drawing.Size(355, 19);
             this.labelInfo1.TabIndex = 63;
             this.labelInfo1.Text = "To add a record click on the Add Client button";
             // 
             // labelInfo3
             // 
             this.labelInfo3.AutoSize = true;
-            this.labelInfo3.Location = new System.Drawing.Point(422, 185);
+            this.labelInfo3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelInfo3.Location = new System.Drawing.Point(461, 291);
             this.labelInfo3.Name = "labelInfo3";
-            this.labelInfo3.Size = new System.Drawing.Size(326, 13);
+            this.labelInfo3.Size = new System.Drawing.Size(519, 19);
             this.labelInfo3.TabIndex = 64;
             this.labelInfo3.Text = "Select a record to delete in the listbox and click Delete Client button";
             // 
             // buttonPopulate
             // 
-            this.buttonPopulate.Location = new System.Drawing.Point(40, 314);
+            this.buttonPopulate.Location = new System.Drawing.Point(79, 420);
             this.buttonPopulate.Name = "buttonPopulate";
             this.buttonPopulate.Size = new System.Drawing.Size(98, 23);
             this.buttonPopulate.TabIndex = 65;
@@ -129,7 +137,7 @@
             // labelFound
             // 
             this.labelFound.AutoSize = true;
-            this.labelFound.Location = new System.Drawing.Point(40, 264);
+            this.labelFound.Location = new System.Drawing.Point(79, 370);
             this.labelFound.Name = "labelFound";
             this.labelFound.Size = new System.Drawing.Size(0, 13);
             this.labelFound.TabIndex = 66;
@@ -137,16 +145,52 @@
             // listboxClient
             // 
             this.listboxClient.FormattingEnabled = true;
-            this.listboxClient.Location = new System.Drawing.Point(40, 81);
+            this.listboxClient.Location = new System.Drawing.Point(79, 187);
             this.listboxClient.Name = "listboxClient";
             this.listboxClient.Size = new System.Drawing.Size(361, 147);
             this.listboxClient.TabIndex = 60;
+            // 
+            // labelUser
+            // 
+            this.labelUser.AutoSize = true;
+            this.labelUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelUser.ForeColor = System.Drawing.Color.Maroon;
+            this.labelUser.Location = new System.Drawing.Point(79, 168);
+            this.labelUser.Name = "labelUser";
+            this.labelUser.Size = new System.Drawing.Size(92, 13);
+            this.labelUser.TabIndex = 67;
+            this.labelUser.Text = "Client Numbers";
+            // 
+            // labelHeading
+            // 
+            this.labelHeading.AutoSize = true;
+            this.labelHeading.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.labelHeading.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelHeading.ForeColor = System.Drawing.Color.Navy;
+            this.labelHeading.Location = new System.Drawing.Point(249, 23);
+            this.labelHeading.Name = "labelHeading";
+            this.labelHeading.Size = new System.Drawing.Size(334, 73);
+            this.labelHeading.TabIndex = 69;
+            this.labelHeading.Text = "TNovation";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(79, 23);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(164, 74);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 68;
+            this.pictureBox1.TabStop = false;
             // 
             // ClientList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(760, 419);
+            this.ClientSize = new System.Drawing.Size(1002, 522);
+            this.Controls.Add(this.labelHeading);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.labelUser);
             this.Controls.Add(this.labelFound);
             this.Controls.Add(this.buttonPopulate);
             this.Controls.Add(this.labelInfo3);
@@ -158,9 +202,11 @@
             this.Controls.Add(this.buttonDelete);
             this.Controls.Add(this.buttonUpdate);
             this.Controls.Add(this.buttonAdd);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "ClientList";
             this.Text = "ClientList";
             this.Load += new System.EventHandler(this.ClientList_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -179,5 +225,8 @@
         private System.Windows.Forms.Button buttonPopulate;
         private System.Windows.Forms.Label labelFound;
         private System.Windows.Forms.ListBox listboxClient;
+        private System.Windows.Forms.Label labelUser;
+        private System.Windows.Forms.Label labelHeading;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

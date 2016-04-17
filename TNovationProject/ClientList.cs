@@ -49,7 +49,8 @@ namespace TNovationProject
                 ClientNo = Convert.ToInt32(listboxClient.SelectedValue);
                 DeleteClient();
                 labelError.Text = "The record has been deleted";
-
+                //update the listbox
+                DisplayClients();
             }
             else //if no record has been selected 
             {
@@ -75,9 +76,13 @@ namespace TNovationProject
 
         private void buttonUpdate_Click(object sender, EventArgs e)
         {
-            //This line of code navigates to the edit Client page when clicked on edit client button.
-            new UpdateClient().Show();
-            this.Hide();
+            
+                //This line of code navigates to the edit Client page when clicked on edit client button.
+                new UpdateClient().Show();
+                this.Hide();
+
+           
+            
         }
 
         private void buttonPopulate_Click(object sender, EventArgs e)
