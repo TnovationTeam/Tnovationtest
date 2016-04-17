@@ -56,6 +56,8 @@
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.eventListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eventFormToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.toolStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
@@ -66,7 +68,8 @@
             this.menuStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileMenu,
-            this.clientToolStripMenuItem});
+            this.clientToolStripMenuItem,
+            this.eventListToolStripMenuItem});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
             this.menuStrip.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
@@ -283,6 +286,21 @@
             this.toolStripStatusLabel.Size = new System.Drawing.Size(49, 20);
             this.toolStripStatusLabel.Text = "Status";
             // 
+            // eventListToolStripMenuItem
+            // 
+            this.eventListToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.eventFormToolStripMenuItem});
+            this.eventListToolStripMenuItem.Name = "eventListToolStripMenuItem";
+            this.eventListToolStripMenuItem.Size = new System.Drawing.Size(83, 24);
+            this.eventListToolStripMenuItem.Text = "Event List";
+            this.eventListToolStripMenuItem.Click += new System.EventHandler(this.eventListToolStripMenuItem_Click);
+            // 
+            // eventFormToolStripMenuItem
+            // 
+            this.eventFormToolStripMenuItem.Name = "eventFormToolStripMenuItem";
+            this.eventFormToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.eventFormToolStripMenuItem.Text = "Event Form";
+            // 
             // mdiBackend
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -293,7 +311,7 @@
             this.Controls.Add(this.menuStrip);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "mdiBackend";
             this.Text = "TNovation";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -337,6 +355,8 @@
         private System.Windows.Forms.ToolStripButton helpToolStripButton;
         private System.Windows.Forms.ToolTip toolTip;
         private System.Windows.Forms.ToolStripMenuItem clientToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eventListToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eventFormToolStripMenuItem;
     }
 }
 
