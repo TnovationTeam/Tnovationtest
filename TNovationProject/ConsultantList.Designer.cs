@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConsultantList));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.labelTnovation = new System.Windows.Forms.Label();
             this.listView1 = new System.Windows.Forms.ListView();
             this.ConsultantNo = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Name = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -48,6 +47,7 @@
             this.buttonDelete = new System.Windows.Forms.Button();
             this.buttonUpdate = new System.Windows.Forms.Button();
             this.buttonAdd = new System.Windows.Forms.Button();
+            this.labelHeading = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -60,18 +60,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
-            // 
-            // labelTnovation
-            // 
-            this.labelTnovation.AutoSize = true;
-            this.labelTnovation.Font = new System.Drawing.Font("Microsoft Sans Serif", 60F);
-            this.labelTnovation.ForeColor = System.Drawing.Color.Navy;
-            this.labelTnovation.Location = new System.Drawing.Point(279, 22);
-            this.labelTnovation.Name = "labelTnovation";
-            this.labelTnovation.Size = new System.Drawing.Size(428, 91);
-            this.labelTnovation.TabIndex = 5;
-            this.labelTnovation.Text = "T{Novation";
-            this.labelTnovation.Click += new System.EventHandler(this.labelTnovation_Click);
             // 
             // listView1
             // 
@@ -190,20 +178,32 @@
             this.buttonAdd.Text = "Add";
             this.buttonAdd.UseVisualStyleBackColor = true;
             // 
-            // ConsultantForm
+            // labelHeading
+            // 
+            this.labelHeading.AutoSize = true;
+            this.labelHeading.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.labelHeading.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelHeading.ForeColor = System.Drawing.Color.Navy;
+            this.labelHeading.Location = new System.Drawing.Point(256, 40);
+            this.labelHeading.Name = "labelHeading";
+            this.labelHeading.Size = new System.Drawing.Size(334, 73);
+            this.labelHeading.TabIndex = 70;
+            this.labelHeading.Text = "TNovation";
+            // 
+            // ConsultantList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1037, 625);
+            this.Controls.Add(this.labelHeading);
             this.Controls.Add(this.buttonExit);
             this.Controls.Add(this.buttonFilter);
             this.Controls.Add(this.buttonDelete);
             this.Controls.Add(this.buttonUpdate);
             this.Controls.Add(this.buttonAdd);
             this.Controls.Add(this.listView1);
-            this.Controls.Add(this.labelTnovation);
             this.Controls.Add(this.pictureBox1);
-            this.Name = "ConsultantForm";
+            this.Name = "ConsultantList";
             this.Text = "ConsultantForm";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -214,7 +214,6 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label labelTnovation;
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.ColumnHeader ConsultantNo;
         private System.Windows.Forms.ColumnHeader Name;
@@ -232,5 +231,6 @@
         private System.Windows.Forms.Button buttonDelete;
         private System.Windows.Forms.Button buttonUpdate;
         private System.Windows.Forms.Button buttonAdd;
+        private System.Windows.Forms.Label labelHeading;
     }
 }
