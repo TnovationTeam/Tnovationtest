@@ -52,6 +52,14 @@ namespace TNovationProject
 
         }
 
+        private void buttonSave_Click(object sender, EventArgs e)
+        {
+            //add new record
+            Add();
+            new ConsultantList().Show();
+            this.Hide();
+        }
+
 
     }
 }
