@@ -30,7 +30,7 @@ namespace TNovationClassLibrary
         //private data member for the Status property
         private Boolean status;
         //private data member for the Telephone Number property
-        private string telNo;
+        private string telephoneNo;
         //private data member for the Employment History property
         private string employmentHistory;
 
@@ -196,19 +196,19 @@ namespace TNovationClassLibrary
         }
 
         //public property for Telephone No
-        public string TelNo
+        public string TelephoneNo
         {
             get
             {
                 //return the private data
-                return telNo;
+                return telephoneNo;
 
             }
 
             set
             {
                 //set the private data
-                telNo = value;
+                telephoneNo = value;
             }
         }
 
@@ -252,7 +252,7 @@ namespace TNovationClassLibrary
                 dateOfBirth = Convert.ToDateTime(DB.DataTable.Rows[0]["DateOfBirth"]);
                 address = Convert.ToString(DB.DataTable.Rows[0]["Address"]);
                 email = Convert.ToString(DB.DataTable.Rows[0]["Email"]);
-                telNo = Convert.ToString(DB.DataTable.Rows[0]["TelNo"]);
+                telephoneNo = Convert.ToString(DB.DataTable.Rows[0]["TelephoneNo"]);
                 emergencyContact = Convert.ToString(DB.DataTable.Rows[0]["EmergencyContact"]);
                 employmentDate = Convert.ToDateTime(DB.DataTable.Rows[0]["EmploymentDate"]);
                 hoursOfWork = Convert.ToInt32(DB.DataTable.Rows[0]["HoursOfWork"]);

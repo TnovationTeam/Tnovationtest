@@ -32,7 +32,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.listView1 = new System.Windows.Forms.ListView();
             this.ConsultantNo = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            
             this.DateofBirth = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Address = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Email = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -65,7 +64,6 @@
             // 
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.ConsultantNo,
-         
             this.DateofBirth,
             this.Address,
             this.Email,
@@ -86,10 +84,6 @@
             // 
             this.ConsultantNo.Text = "ConsultantNo";
             this.ConsultantNo.Width = 78;
-            // 
-            // Name
-            // 
-            
             // 
             // DateofBirth
             // 
@@ -177,6 +171,7 @@
             this.buttonAdd.TabIndex = 9;
             this.buttonAdd.Text = "Add";
             this.buttonAdd.UseVisualStyleBackColor = true;
+            this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
             // labelHeading
             // 
@@ -203,7 +198,7 @@
             this.Controls.Add(this.buttonAdd);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.pictureBox1);
-           
+            this.Name = "ConsultantList";
             this.Text = "ConsultantForm";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
