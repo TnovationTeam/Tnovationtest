@@ -40,7 +40,7 @@ namespace TNovationProject
                 TNovation.ThisConsultant.DateOfBirth = Convert.ToDateTime(textBoxDOB.Text);
                 TNovation.ThisConsultant.Address = textBoxAddress.Text;
                 TNovation.ThisConsultant.Email = textBoxEmail.Text;
-                TNovation.ThisConsultant.TelNo = textBoxTelno.Text;
+                TNovation.ThisConsultant.TelephoneNo = textBoxTelno.Text;
                 TNovation.ThisConsultant.EmergencyContact = textBoxEmerg.Text;
                 TNovation.ThisConsultant.EmploymentDate = Convert.ToDateTime(textBoxDate.Text);
                 TNovation.ThisConsultant.HoursOfWork = Convert.ToInt32(textBoxHours.Text);
