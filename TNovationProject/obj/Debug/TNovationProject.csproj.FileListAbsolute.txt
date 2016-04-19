@@ -65,3 +65,4 @@ C:\Users\Callum\Source\Repos\Tnovationtest2\TNovationProject\obj\Debug\TNovation
 C:\Users\Callum\Source\Repos\Tnovationtest2\TNovationProject\obj\Debug\TNovationProject.UpdateClient.resources
 C:\Users\Callum\Source\Repos\Tnovationtest2\TNovationProject\obj\Debug\TNovationProject.csproj.GenerateResource.Cache
 C:\Users\Callum\Source\Repos\Tnovationtest2\TNovationProject\obj\Debug\TNovationProject.pdb
+C:\Users\Callum\Source\Repos\Tnovationtest2\TNovationProject\obj\Debug\TNovationProject.ProjectList.resources
