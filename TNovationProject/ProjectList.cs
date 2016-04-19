@@ -37,7 +37,8 @@ namespace TNovationProject
 
         private void buttonAdd_Click(object sender, EventArgs e)
         {
-
+            new AddProject().Show();
+            this.Hide();
         }
 
         private void buttonArchive_Click(object sender, EventArgs e)
@@ -55,9 +56,6 @@ namespace TNovationProject
             {
                 //
             }
-            //this will direct to the event form in which the user can archive the event
-            EventForm Form = new EventForm();
-            Form.Show();
         }
 
         Int32 DisplayProjects()
