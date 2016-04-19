@@ -87,6 +87,8 @@ set
             DB.AddParameter("@EmploymentDate", thisConsultant.EmploymentDate);
             DB.AddParameter("@HoursOfWork", thisConsultant.HoursOfWork);
             DB.AddParameter("@EmploymentHistory", thisConsultant.EmploymentHistory);
+            DB.AddParameter("@Status", thisConsultant.Status);
+
 
             //execute the stored procedure to insert data 
             return DB.Execute("sproc_tblConsultant_Insert");
@@ -95,29 +97,41 @@ set
         //public constructor for the class
         public clsConsultantCollection()
         {
-            //create an instance of the county class to store a county
+            //var for the index 
+            Int32 Index = 0;
+            //var to store the record count
+            Int32 RecordCount = 0;
+            //object for data connection
             clsDataConnection DB = new clsDataConnection();
-            //execute the stored procedure to get the list of data
+            //execute the stored procedure
             DB.Execute("sproc_tblConsultant_SelectAll");
             //get the count of records
-            Int32 RecordCount = DB.Count;
-            //set up the index for the loop
-            Int32 Index = 0;
+            RecordCount = DB.Count;
             //while there are records to process
             while (Index < RecordCount)
             {
-                //create an instance of the Consultant class
+                //create a blank Consultant
                 clsConsultant AConsultant = new clsConsultant();
-                //get the ConsultantNo
+                //read in the fields from the current record
                 AConsultant.ConsultantNo = Convert.ToInt32(DB.DataTable.Rows[Index]["ConsultantNo"]);
-                //get the Consultant name 
-                AConsultant.FirstName = DB.DataTable.Rows[Index]["FirstName"].ToString();
-                //add the Consultant to the array list
-                allConsultants.Add(AConsultant);
-                //increment index
+                AConsultant.FirstName = Convert.ToString(DB.DataTable.Rows[Index]["FirstName"]);
+                AConsultant.LastName = Convert.ToString(DB.DataTable.Rows[Index]["LastName"]);
+                AConsultant.Address = Convert.ToString(DB.DataTable.Rows[Index]["Address"]);
+                AConsultant.Email = Convert.ToString(DB.DataTable.Rows[Index]["Email"]);
+                AConsultant.TelephoneNo = Convert.ToString(DB.DataTable.Rows[Index]["TelephoneNo"]);
+                AConsultant.EmergencyContact = Convert.ToString(DB.DataTable.Rows[Index]["EmergencyContact"]);
+                AConsultant.HoursOfWork = Convert.ToInt32(DB.DataTable.Rows[Index]["HoursOfWork"]);
+                AConsultant.DateOfBirth = Convert.ToDateTime(DB.DataTable.Rows[Index]["DateOfBirth"]);
+                AConsultant.EmploymentDate = Convert.ToDateTime(DB.DataTable.Rows[Index]["EmploymentDate"]);
+                AConsultant.Status = Convert.ToBoolean(DB.DataTable.Rows[Index]["Status"]);
+                //add the record to the private data member
+                //ConsultantList.Add(AConsultant);
+                //point at the next record
                 Index++;
             }
+            
         }
+
 
     }
 }
