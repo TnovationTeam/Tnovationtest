@@ -35,7 +35,7 @@
             this.buttonUpdate = new System.Windows.Forms.Button();
             this.buttonArchive = new System.Windows.Forms.Button();
             this.buttonBack = new System.Windows.Forms.Button();
-            this.listView2 = new System.Windows.Forms.ListView();
+            this.listboxProject = new System.Windows.Forms.ListView();
             this.columnProjectCode = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnProjectName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnCompanyName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -123,10 +123,10 @@
             this.buttonBack.Text = "Back";
             this.buttonBack.UseVisualStyleBackColor = false;
             // 
-            // listView2
+            // listboxProject
             // 
-            this.listView2.BackColor = System.Drawing.Color.White;
-            this.listView2.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.listboxProject.BackColor = System.Drawing.Color.White;
+            this.listboxProject.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnProjectCode,
             this.columnProjectName,
             this.columnCompanyName,
@@ -135,30 +135,30 @@
             this.columnExpectedEndDate,
             this.columnStartDate,
             this.columnProjectLocation});
-            this.listView2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listView2.Location = new System.Drawing.Point(30, 147);
-            this.listView2.Margin = new System.Windows.Forms.Padding(4);
-            this.listView2.Name = "listView2";
-            this.listView2.Size = new System.Drawing.Size(765, 368);
-            this.listView2.TabIndex = 33;
-            this.listView2.UseCompatibleStateImageBehavior = false;
-            this.listView2.View = System.Windows.Forms.View.Details;
-            this.listView2.SelectedIndexChanged += new System.EventHandler(this.listView2_SelectedIndexChanged);
+            this.listboxProject.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listboxProject.Location = new System.Drawing.Point(30, 147);
+            this.listboxProject.Margin = new System.Windows.Forms.Padding(4);
+            this.listboxProject.Name = "listboxProject";
+            this.listboxProject.Size = new System.Drawing.Size(765, 368);
+            this.listboxProject.TabIndex = 33;
+            this.listboxProject.UseCompatibleStateImageBehavior = false;
+            this.listboxProject.View = System.Windows.Forms.View.Details;
+            this.listboxProject.SelectedIndexChanged += new System.EventHandler(this.listView2_SelectedIndexChanged);
             // 
             // columnProjectCode
             // 
             this.columnProjectCode.Text = "Project Code";
-            this.columnProjectCode.Width = 113;
+            this.columnProjectCode.Width = 90;
             // 
             // columnProjectName
             // 
             this.columnProjectName.Text = "Project Name";
-            this.columnProjectName.Width = 118;
+            this.columnProjectName.Width = 83;
             // 
             // columnCompanyName
             // 
             this.columnCompanyName.Text = "Company Name";
-            this.columnCompanyName.Width = 68;
+            this.columnCompanyName.Width = 85;
             // 
             // columnProjectConsultant
             // 
@@ -190,7 +190,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1020, 569);
-            this.Controls.Add(this.listView2);
+            this.Controls.Add(this.listboxProject);
             this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.buttonArchive);
             this.Controls.Add(this.buttonUpdate);
@@ -213,7 +213,7 @@
         private System.Windows.Forms.Button buttonUpdate;
         private System.Windows.Forms.Button buttonArchive;
         private System.Windows.Forms.Button buttonBack;
-        private System.Windows.Forms.ListView listView2;
+        private System.Windows.Forms.ListView listboxProject;
         private System.Windows.Forms.ColumnHeader columnProjectCode;
         private System.Windows.Forms.ColumnHeader columnProjectName;
         private System.Windows.Forms.ColumnHeader columnCompanyName;

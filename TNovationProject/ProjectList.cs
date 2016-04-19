@@ -1,13 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Web;
 using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using TNovationClassLibrary;
 namespace TNovationProject
 {
     public partial class ProjectList : Form
@@ -57,6 +58,21 @@ namespace TNovationProject
             //this will direct to the event form in which the user can archive the event
             EventForm Form = new EventForm();
             Form.Show();
+        }
+
+        Int32 DisplayProjects()
+        {
+
+            //create an instance of the client collection
+            clsProjectCollection Projects = new clsProjectCollection();
+            //see the data source to the list of clients in the collection
+            listboxProject.DataSource = Projects.ProjectList;
+            //set the name of the primary key value
+            listboxProject.ValueMember = "ProjectCode";
+            //set the data field to be displayed
+            listboxProject.DisplayMember = "ProjectCode";
+            //return the count of records in the list
+            return Clients.Count;
         }
     }
 }
