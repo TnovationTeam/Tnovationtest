@@ -65,14 +65,14 @@ namespace TNovationProject
 
             //create an instance of the client collection
             clsProjectCollection Projects = new clsProjectCollection();
-            //see the data source to the list of clients in the collection
-            listboxProject.DataSource = Projects.ProjectList;
+            //see the data source to the list of projects in the collection
+            //listboxProject.DataSource = Projects.ProjectList;
             //set the name of the primary key value
-            listboxProject.ValueMember = "ProjectCode";
+            //listboxProject.ValueMember = "ProjectCode";
             //set the data field to be displayed
-            listboxProject.DisplayMember = "ProjectCode";
+            //listboxProject.DisplayMember = "ProjectCode";
             //return the count of records in the list
-            return Clients.Count;
+            return Projects.Count;
         }
     }
 }
