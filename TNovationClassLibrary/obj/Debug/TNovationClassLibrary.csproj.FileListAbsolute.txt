@@ -72,3 +72,4 @@ C:\Users\Callum\Source\Repos\Tnovationtest2\TNovationClassLibrary\bin\Debug\TNov
 C:\Users\Callum\Source\Repos\Tnovationtest2\TNovationClassLibrary\bin\Debug\TNovationClassLibrary.pdb
 C:\Users\Callum\Source\Repos\Tnovationtest2\TNovationClassLibrary\obj\Debug\TNovationClassLibrary.dll
 C:\Users\Callum\Source\Repos\Tnovationtest2\TNovationClassLibrary\obj\Debug\TNovationClassLibrary.pdb
+C:\Users\Callum\Source\Repos\Tnovationtest2\TNovationClassLibrary\obj\Debug\TNovationClassLibrary.csprojResolveAssemblyReference.cache
