@@ -57,6 +57,8 @@
     <Compile Include="tstConsultantCollection.cs" />
     <Compile Include="tstEvent.cs" />
     <Compile Include="tstEventCollection.cs" />
+    <Compile Include="tstProject.cs" />
+    <Compile Include="tstProjectCollection.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TNovationClassLibrary\TNovationClassLibrary.csproj">
@@ -64,6 +66,7 @@
       <Name>TNovationClassLibrary</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>

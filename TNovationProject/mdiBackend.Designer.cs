@@ -46,6 +46,7 @@
             this.clientToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eventListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eventFormToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultantListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip = new System.Windows.Forms.ToolStrip();
             this.newToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.openToolStripButton = new System.Windows.Forms.ToolStripButton();
@@ -58,7 +59,7 @@
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.consultantListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.projectListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.toolStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
@@ -71,7 +72,8 @@
             this.fileMenu,
             this.clientToolStripMenuItem,
             this.eventListToolStripMenuItem,
-            this.consultantListToolStripMenuItem});
+            this.consultantListToolStripMenuItem,
+            this.projectListToolStripMenuItem});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
             this.menuStrip.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
@@ -198,8 +200,16 @@
             // eventFormToolStripMenuItem
             // 
             this.eventFormToolStripMenuItem.Name = "eventFormToolStripMenuItem";
-            this.eventFormToolStripMenuItem.Size = new System.Drawing.Size(158, 26);
+            this.eventFormToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.eventFormToolStripMenuItem.Text = "Event Form";
+            // 
+            // consultantListToolStripMenuItem
+            // 
+            this.consultantListToolStripMenuItem.Name = "consultantListToolStripMenuItem";
+            this.consultantListToolStripMenuItem.ShowShortcutKeys = false;
+            this.consultantListToolStripMenuItem.Size = new System.Drawing.Size(117, 24);
+            this.consultantListToolStripMenuItem.Text = "Consultant List";
+            this.consultantListToolStripMenuItem.Click += new System.EventHandler(this.consultantListToolStripMenuItem_Click);
             // 
             // toolStrip
             // 
@@ -303,12 +313,12 @@
             this.toolStripStatusLabel.Size = new System.Drawing.Size(49, 20);
             this.toolStripStatusLabel.Text = "Status";
             // 
-            // consultantListToolStripMenuItem
+            // projectListToolStripMenuItem
             // 
-            this.consultantListToolStripMenuItem.Name = "consultantListToolStripMenuItem";
-            this.consultantListToolStripMenuItem.Size = new System.Drawing.Size(117, 24);
-            this.consultantListToolStripMenuItem.Text = "Consultant List";
-            this.consultantListToolStripMenuItem.Click += new System.EventHandler(this.consultantListToolStripMenuItem_Click);
+            this.projectListToolStripMenuItem.Name = "projectListToolStripMenuItem";
+            this.projectListToolStripMenuItem.Size = new System.Drawing.Size(93, 24);
+            this.projectListToolStripMenuItem.Text = "Project List";
+            this.projectListToolStripMenuItem.Click += new System.EventHandler(this.projectListToolStripMenuItem_Click);
             // 
             // mdiBackend
             // 
@@ -367,6 +377,7 @@
         private System.Windows.Forms.ToolStripMenuItem eventListToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eventFormToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem consultantListToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem projectListToolStripMenuItem;
     }
 }
 

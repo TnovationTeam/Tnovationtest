@@ -501,7 +501,7 @@ namespace TNovationTestFramework
             string ProjectConsultant = "A person";
             string ProjectLocation = "A Location";
             //variable to store date
-            string StartDate = "A date";
+            string StartDate = "April Fortytwo";
             //invoke method
             OK = AProject.Valid(ProjectName, CompanyName, CompanyContact, ExpectedEndDate, StartDate, ProjectConsultant, ProjectLocation);
             //test to see that the result is correct
@@ -510,7 +510,7 @@ namespace TNovationTestFramework
         }
 
         [TestMethod]
-        public void ProjectLocationMinlessoneOk()
+        public void ProjectLocationMinLessOneOk()
         {
 
             //create an instance of the class we want to create
@@ -547,7 +547,7 @@ namespace TNovationTestFramework
             string ExpectedEndDate = DateTime.Now.Date.ToString();
             string StartDate = DateTime.Now.Date.ToString();
             string ProjectConsultant = "A person";
-            string ProjectLocation = "";//testing location
+            string ProjectLocation = "a";//testing location
             //invoke method
             OK = AProject.Valid(ProjectName, CompanyName, CompanyContact, ExpectedEndDate, StartDate, ProjectConsultant, ProjectLocation);
             //test to see that the result is correct
@@ -571,7 +571,7 @@ namespace TNovationTestFramework
             string ProjectConsultant = "A person";
             string ProjectLocation = "";//testing location
             //creates  29 characters instead of writing many out
-            ProjectLocation = ProjectLocation.PadRight(29, 'b');
+            ProjectLocation = ProjectLocation.PadRight(20, 'a');
             //invoke method
             OK = AProject.Valid(ProjectName, CompanyName, CompanyContact, ExpectedEndDate, StartDate, ProjectConsultant, ProjectLocation);
             //test to see that the result is correct
@@ -595,7 +595,7 @@ namespace TNovationTestFramework
             string ProjectConsultant = "A person";
             string ProjectLocation = "";//testing location
             //creates  29 characters instead of writing many out
-            ProjectLocation = ProjectLocation.PadRight(30, 'b');
+            ProjectLocation = ProjectLocation.PadRight(30, 'a');
             //variable to store date
             string startDate = DateTime.Now.Date.ToString();
             //invoke method
@@ -621,7 +621,7 @@ namespace TNovationTestFramework
             string ProjectConsultant = "A person";
             string ProjectLocation = "";//testing location
             //creates  29 characters instead of writing many out
-            ProjectLocation = ProjectLocation.PadRight(31, 'b');
+            ProjectLocation = ProjectLocation.PadRight(31, 'a');
             //variable to store date
 
             //invoke method
@@ -647,7 +647,7 @@ namespace TNovationTestFramework
             string ProjectConsultant = "A person";
             string ProjectLocation = "";//testing location
             //creates  29 characters instead of writing many out
-            ProjectLocation = ProjectLocation.PadRight(15, 'b');
+            ProjectLocation = ProjectLocation.PadRight(15, 'a');
             //invoke method
             OK = AProject.Valid(ProjectName, CompanyName, CompanyContact, ExpectedEndDate, StartDate, ProjectConsultant, ProjectLocation);
             //test to see that the result is correct
@@ -671,7 +671,7 @@ namespace TNovationTestFramework
             string ProjectConsultant = "A person";
             string ProjectLocation = "";//testing location
             //creates  29 characters instead of writing many 
-            ProjectLocation = ProjectLocation.PadRight(500, 'b');
+            ProjectLocation = ProjectLocation.PadRight(400, 'a');
             //variable to store date
             OK = AProject.Valid(ProjectName, CompanyName, CompanyContact, ExpectedEndDate, StartDate, ProjectConsultant, ProjectLocation);
             //test to see that the result is correct
@@ -679,6 +679,743 @@ namespace TNovationTestFramework
 
         }
 
+        [TestMethod]
+        public void ExpectedEndDateExtremeMinOK()
+        {
+            //create an instance of the class we want to create
+            clsProject AProject = new clsProject();
+            //boolean variable to store the result of the validation
+            Boolean OK = false;
+            //create some test data to pass to the method
+            string ProjectName = "A Project";
+            string CompanyName = "Tech Company";
+            string CompanyContact = "078218122";
+            string StartDate = DateTime.Now.Date.ToString();
+            string ProjectConsultant = "A person";
+            string ProjectLocation = "Paris";
+            //create a variable to store the test date data
+            DateTime TestDate;
+            //set to todays date
+            TestDate = DateTime.Now.Date;
+            //date changed to -4000, this test should fail
+            TestDate = TestDate.AddYears(-4000);
+            //convert date variable to string variable
+            string ExpectedEndDate = TestDate.ToString();
+            //invoke method
+            OK = AProject.Valid(ProjectName, CompanyName, CompanyContact, ExpectedEndDate, StartDate, ProjectConsultant, ProjectLocation);
+            //check if it is correct
+            Assert.IsFalse(OK);
 
+        }
+        [TestMethod]
+        public void ExpectedEndDateMinLessOneOK()
+        {
+            //create an instance of the class we want to create
+            clsProject AProject = new clsProject();
+            //boolean variable to store the result of the validation
+            Boolean OK = false;
+            //create some test data to pass to the method
+            string ProjectName = "A Project";
+            string CompanyName = "Tech Company";
+            string CompanyContact = "078218122";
+            string StartDate = DateTime.Now.Date.ToString();
+            string ProjectConsultant = "A person";
+            string ProjectLocation = "Paris";
+            //create a variable to store the test date data
+            DateTime TestDate;
+            //set to todays date
+            TestDate = DateTime.Now.Date;
+            //date changed to -1, this test should fail
+            TestDate = TestDate.AddDays(-1);
+            //convert date variable to string variable
+            string ExpectedEndDate = TestDate.ToString();
+            //invoke method
+            OK = AProject.Valid(ProjectName, CompanyName, CompanyContact, ExpectedEndDate, StartDate, ProjectConsultant, ProjectLocation);
+            //check if it is correct
+            Assert.IsFalse(OK);
+        }
+        [TestMethod]
+        public void ExpectedEndDateMinOK()
+        {
+            //create an instance of the class we want to create
+            clsProject AProject = new clsProject();
+            //boolean variable to store the result of the validation
+            Boolean OK = false;
+            //create some test data to pass to the method
+            string ProjectName = "A Project";
+            string CompanyName = "Tech Company";
+            string CompanyContact = "078218122";
+            string StartDate = DateTime.Now.Date.ToString();
+            string ProjectConsultant = "A person";
+            string ProjectLocation = "Paris";
+            //create a variable to store the test date data
+            DateTime TestDate;
+            //set to todays date
+            TestDate = DateTime.Now.Date;
+            //convert date variable to string variable
+            string ExpectedEndDate = TestDate.ToString();
+            //invoke method
+            OK = AProject.Valid(ProjectName, CompanyName, CompanyContact, ExpectedEndDate, StartDate, ProjectConsultant, ProjectLocation);
+            //check if it is correct
+            Assert.IsTrue(OK);
+        }
+        [TestMethod]
+        public void ExpectedEndDateMinPlusOneOK()
+        {
+            //create an instance of the class we want to create
+            clsProject AProject = new clsProject();
+            //boolean variable to store the result of the validation
+            Boolean OK = false;
+            //create some test data to pass to the method
+            string ProjectName = "A Project";
+            string CompanyName = "Tech Company";
+            string CompanyContact = "078218122";
+            string StartDate = DateTime.Now.Date.ToString();
+            string ProjectConsultant = "A person";
+            string ProjectLocation = "Paris";
+            //create a variable to store the test date data
+            DateTime TestDate;
+            //set to todays date
+            TestDate = DateTime.Now.Date;
+            //date changed to +1, this test should fail
+            TestDate = TestDate.AddDays(1);
+            //convert date variable to string variable
+            string ExpectedEndDate = TestDate.ToString();
+            //invoke method
+            OK = AProject.Valid(ProjectName, CompanyName, CompanyContact, ExpectedEndDate, StartDate, ProjectConsultant, ProjectLocation);
+            //check if it is correct
+            Assert.IsTrue(OK);
+        }
+        [TestMethod]
+        public void ExpectedEndDateExtremeMaxOK()
+        {
+            //create an instance of the class we want to create
+            clsProject AProject = new clsProject();
+            //boolean variable to store the result of the validation
+            Boolean OK = false;
+            //create some test data to pass to the method
+            string ProjectName = "A Project";
+            string CompanyName = "Tech Company";
+            string CompanyContact = "078218122";
+            string StartDate = DateTime.Now.Date.ToString();
+            string ProjectConsultant = "A person";
+            string ProjectLocation = "Paris";
+            //create a variable to store the test date data
+            DateTime TestDate;
+            //set to todays date
+            TestDate = DateTime.Now.Date;
+            //date changed to +4000, this test should fail
+            TestDate = TestDate.AddYears(4000);
+            //convert date variable to string variable
+            string ExpectedEndDate = TestDate.ToString();
+            //invoke method
+            OK = AProject.Valid(ProjectName, CompanyName, CompanyContact, ExpectedEndDate, StartDate, ProjectConsultant, ProjectLocation);
+            //check if it is correct
+            Assert.IsFalse(OK);
+        }
+
+        [TestMethod]
+        public void ProjectConsultantMinlessoneOk()
+        {
+            //create an instance of the class we want to create
+            clsProject AProject = new clsProject();
+            //boolean variable to store the result of the validation
+            Boolean OK = false;
+            //create some test data to pass to the method
+            string ProjectName = "A Project";
+            string CompanyName = "Tech Company";
+            string CompanyContact = "078218122";
+            string ExpectedEndDate = DateTime.Now.Date.ToString();
+            string StartDate = DateTime.Now.Date.ToString();
+            string ProjectConsultant = "";
+            string ProjectLocation = "A Location";
+            //invoke method
+            OK = AProject.Valid(ProjectName, CompanyName, CompanyContact, ExpectedEndDate, StartDate, ProjectConsultant, ProjectLocation);
+            //check if it is correct
+            Assert.IsFalse(OK);
+        }
+        [TestMethod]
+        public void ProjectConsultantMinOk()
+        {
+            //create an instance of the class we want to create
+            clsProject AProject = new clsProject();
+            //boolean variable to store the result of the validation
+            Boolean OK = false;
+            //create some test data to pass to the method
+            string ProjectName = "A Project";
+            string CompanyName = "Tech Company";
+            string CompanyContact = "078218122";
+            string ExpectedEndDate = DateTime.Now.Date.ToString();
+            string StartDate = DateTime.Now.Date.ToString();
+            string ProjectConsultant = "C";
+            string ProjectLocation = "A Location";
+            //invoke method
+            OK = AProject.Valid(ProjectName, CompanyName, CompanyContact, ExpectedEndDate, StartDate, ProjectConsultant, ProjectLocation);
+            //check if it is correct
+            Assert.IsTrue(OK);
+        }
+        [TestMethod]
+        public void ProjectConsultantMaxLessOneOk()
+        {
+            //create an instance of the class we want to create
+            clsProject AProject = new clsProject();
+            //boolean variable to store the result of the validation
+            Boolean OK = false;
+            //create some test data to pass to the method
+            string ProjectName = "A Project";
+            string CompanyName = "Tech Company";
+            string CompanyContact = "078218122";
+            string ExpectedEndDate = DateTime.Now.Date.ToString();
+            string StartDate = DateTime.Now.Date.ToString();
+            string ProjectConsultant = "";
+            string ProjectLocation = "A Location";
+            //creates characters until one less than max
+            ProjectConsultant = ProjectConsultant.PadRight(29, 'a');
+            //invoke method
+            OK = AProject.Valid(ProjectName, CompanyName, CompanyContact, ExpectedEndDate, StartDate, ProjectConsultant, ProjectLocation);
+            //check if it is correct
+            Assert.IsTrue(OK);
+        }
+        [TestMethod]
+        public void ProjectConsultantMaxOk()
+        {
+            //create an instance of the class we want to create
+            clsProject AProject = new clsProject();
+            //boolean variable to store the result of the validation
+            Boolean OK = false;
+            //create some test data to pass to the method
+            string ProjectName = "A Project";
+            string CompanyName = "Tech Company";
+            string CompanyContact = "078218122";
+            string ExpectedEndDate = DateTime.Now.Date.ToString();
+            string StartDate = DateTime.Now.Date.ToString();
+            string ProjectConsultant = "";
+            string ProjectLocation = "A Location";
+            //creates characters until one less than max
+            ProjectConsultant = ProjectConsultant.PadRight(30, 'a');
+            //invoke method
+            OK = AProject.Valid(ProjectName, CompanyName, CompanyContact, ExpectedEndDate, StartDate, ProjectConsultant, ProjectLocation);
+            //check if it is correct
+            Assert.IsTrue(OK);
+        }
+        [TestMethod]
+        public void ProjectConsultantMaxPlusOneOk()
+        {
+            //create an instance of the class we want to create
+            clsProject AProject = new clsProject();
+            //boolean variable to store the result of the validation
+            Boolean OK = false;
+            //create some test data to pass to the method
+            string ProjectName = "A Project";
+            string CompanyName = "Tech Company";
+            string CompanyContact = "078218122";
+            string ExpectedEndDate = DateTime.Now.Date.ToString();
+            string StartDate = DateTime.Now.Date.ToString();
+            string ProjectConsultant = "";
+            string ProjectLocation = "A Location";
+            //creates characters until one less than max
+            ProjectConsultant = ProjectConsultant.PadRight(31, 'a');
+            //invoke method
+            OK = AProject.Valid(ProjectName, CompanyName, CompanyContact, ExpectedEndDate, StartDate, ProjectConsultant, ProjectLocation);
+            //check if it is correct
+            Assert.IsFalse(OK);
+        }
+        [TestMethod]
+        public void ProjectConsultantMidOk()
+        {
+            //create an instance of the class we want to create
+            clsProject AProject = new clsProject();
+            //boolean variable to store the result of the validation
+            Boolean OK = false;
+            //create some test data to pass to the method
+            string ProjectName = "A Project";
+            string CompanyName = "Tech Company";
+            string CompanyContact = "078218122";
+            string ExpectedEndDate = DateTime.Now.Date.ToString();
+            string StartDate = DateTime.Now.Date.ToString();
+            string ProjectConsultant = "";
+            string ProjectLocation = "A Location";
+            //creates characters until mid
+            ProjectConsultant = ProjectConsultant.PadRight(15, 'a');
+            //invoke method
+            OK = AProject.Valid(ProjectName, CompanyName, CompanyContact, ExpectedEndDate, StartDate, ProjectConsultant, ProjectLocation);
+            //check if it is correct
+            Assert.IsTrue(OK);
+        }
+        [TestMethod]
+        public void ProjectConsultantExtremeMaxOk()
+        {
+            //create an instance of the class we want to create
+            clsProject AProject = new clsProject();
+            //boolean variable to store the result of the validation
+            Boolean OK = false;
+            //create some test data to pass to the method
+            string ProjectName = "A Project";
+            string CompanyName = "Tech Company";
+            string CompanyContact = "078218122";
+            string ExpectedEndDate = DateTime.Now.Date.ToString();
+            string StartDate = DateTime.Now.Date.ToString();
+            string ProjectConsultant = "";
+            string ProjectLocation = "A Location";
+            //creates characters until extreme max
+            ProjectConsultant = ProjectConsultant.PadRight(400, 'a');
+            //invoke method
+            OK = AProject.Valid(ProjectName, CompanyName, CompanyContact, ExpectedEndDate, StartDate, ProjectConsultant, ProjectLocation);
+            //check if it is correct
+            Assert.IsFalse(OK);
+        }
+
+        [TestMethod]
+        public void CompanyContactMinLessOneOk()
+        {
+            //create an instance of the class we want to create
+            clsProject AProject = new clsProject();
+            //boolean variable to store the result of the validation
+            Boolean OK = false;
+            //create some test data to pass to the method
+            string ProjectName = "A Project";
+            string CompanyName = "Tech Company";
+            string CompanyContact = "";
+            string ExpectedEndDate = DateTime.Now.Date.ToString();
+            string StartDate = DateTime.Now.Date.ToString();
+            string ProjectConsultant = "A Person";
+            string ProjectLocation = "A Location";
+            //creates characters until one less than min
+            CompanyContact = CompanyContact.PadRight(8, '1');
+            //invoke method
+            OK = AProject.Valid(ProjectName, CompanyName, CompanyContact, ExpectedEndDate, StartDate, ProjectConsultant, ProjectLocation);
+            //check if it is correct
+            Assert.IsFalse(OK);
+        }
+        [TestMethod]
+        public void CompanyContactMinOk()
+        {
+            //create an instance of the class we want to create
+            clsProject AProject = new clsProject();
+            //boolean variable to store the result of the validation
+            Boolean OK = false;
+            //create some test data to pass to the method
+            string ProjectName = "A Project";
+            string CompanyName = "Tech Company";
+            string CompanyContact = "";
+            string ExpectedEndDate = DateTime.Now.Date.ToString();
+            string StartDate = DateTime.Now.Date.ToString();
+            string ProjectConsultant = "A Person";
+            string ProjectLocation = "A Location";
+            //creates characters until min
+            CompanyContact = CompanyContact.PadRight(9, '1');
+            //invoke method
+            OK = AProject.Valid(ProjectName, CompanyName, CompanyContact, ExpectedEndDate, StartDate, ProjectConsultant, ProjectLocation);
+            //check if it is correct
+            Assert.IsTrue(OK);
+        }
+
+        [TestMethod]
+        public void CompanyContactMaxLessOneOk()
+        {
+            //create an instance of the class we want to create
+            clsProject AProject = new clsProject();
+            //boolean variable to store the result of the validation
+            Boolean OK = false;
+            //create some test data to pass to the method
+            string ProjectName = "A Project";
+            string CompanyName = "Tech Company";
+            string CompanyContact = "";
+            string ExpectedEndDate = DateTime.Now.Date.ToString();
+            string StartDate = DateTime.Now.Date.ToString();
+            string ProjectConsultant = "A Person";
+            string ProjectLocation = "A Location";
+            //creates characters until one less than max
+            CompanyContact = CompanyContact.PadRight(11, '1');
+            //invoke method
+            OK = AProject.Valid(ProjectName, CompanyName, CompanyContact, ExpectedEndDate, StartDate, ProjectConsultant, ProjectLocation);
+            //check if it is correct
+            Assert.IsTrue(OK);
+        }
+        [TestMethod]
+        public void CompanyContactMaxOk()
+        {
+            //create an instance of the class we want to create
+            clsProject AProject = new clsProject();
+            //boolean variable to store the result of the validation
+            Boolean OK = false;
+            //create some test data to pass to the method
+            string ProjectName = "A Project";
+            string CompanyName = "Tech Company";
+            string CompanyContact = "";
+            string ExpectedEndDate = DateTime.Now.Date.ToString();
+            string StartDate = DateTime.Now.Date.ToString();
+            string ProjectConsultant = "A Person";
+            string ProjectLocation = "A Location";
+            //creates characters until max
+            CompanyContact = CompanyContact.PadRight(12, '1');
+            //invoke method
+            OK = AProject.Valid(ProjectName, CompanyName, CompanyContact, ExpectedEndDate, StartDate, ProjectConsultant, ProjectLocation);
+            //check if it is correct
+            Assert.IsTrue(OK);
+        }
+        [TestMethod]
+        public void CompanyContactMaxPlusOneOk()
+        {
+            //create an instance of the class we want to create
+            clsProject AProject = new clsProject();
+            //boolean variable to store the result of the validation
+            Boolean OK = false;
+            //create some test data to pass to the method
+            string ProjectName = "A Project";
+            string CompanyName = "Tech Company";
+            string CompanyContact = "";
+            string ExpectedEndDate = DateTime.Now.Date.ToString();
+            string StartDate = DateTime.Now.Date.ToString();
+            string ProjectConsultant = "A Person";
+            string ProjectLocation = "A Location";
+            //creates characters until one more than max
+            CompanyContact = CompanyContact.PadRight(13, '1');
+            //invoke method
+            OK = AProject.Valid(ProjectName, CompanyName, CompanyContact, ExpectedEndDate, StartDate, ProjectConsultant, ProjectLocation);
+            //check if it is correct
+            Assert.IsFalse(OK);
+        }
+        [TestMethod]
+        public void CompanyContactMidOk()
+        {
+            //create an instance of the class we want to create
+            clsProject AProject = new clsProject();
+            //boolean variable to store the result of the validation
+            Boolean OK = false;
+            //create some test data to pass to the method
+            string ProjectName = "A Project";
+            string CompanyName = "Tech Company";
+            string CompanyContact = "";
+            string ExpectedEndDate = DateTime.Now.Date.ToString();
+            string StartDate = DateTime.Now.Date.ToString();
+            string ProjectConsultant = "A Person";
+            string ProjectLocation = "A Location";
+            //creates characters until mid
+            CompanyContact = CompanyContact.PadRight(10, '1');
+            //invoke method
+            OK = AProject.Valid(ProjectName, CompanyName, CompanyContact, ExpectedEndDate, StartDate, ProjectConsultant, ProjectLocation);
+            //check if it is correct
+            Assert.IsTrue(OK);
+        }
+        [TestMethod]
+        public void CompanyContactExtremeMaxOk()
+        {
+            //create an instance of the class we want to create
+            clsProject AProject = new clsProject();
+            //boolean variable to store the result of the validation
+            Boolean OK = false;
+            //create some test data to pass to the method
+            string ProjectName = "A Project";
+            string CompanyName = "Tech Company";
+            string CompanyContact = "";
+            string ExpectedEndDate = DateTime.Now.Date.ToString();
+            string StartDate = DateTime.Now.Date.ToString();
+            string ProjectConsultant = "A Person";
+            string ProjectLocation = "A Location";
+            //creates characters until extreme max
+            CompanyContact = CompanyContact.PadRight(400, '1');
+            //invoke method
+            OK = AProject.Valid(ProjectName, CompanyName, CompanyContact, ExpectedEndDate, StartDate, ProjectConsultant, ProjectLocation);
+            //check if it is correct
+            Assert.IsFalse(OK);
+        }
+
+        [TestMethod]
+        public void ProjectNameMinLessOneOk()
+        {
+            //create an instance of the class we want to create
+            clsProject AProject = new clsProject();
+            //boolean variable to store the result of the validation
+            Boolean OK = false;
+            //create some test data to pass to the method
+            string ProjectName = "";
+            string CompanyName = "Tech Company";
+            string CompanyContact = "078218122";
+            string ExpectedEndDate = DateTime.Now.Date.ToString();
+            string StartDate = DateTime.Now.Date.ToString();
+            string ProjectConsultant = "A Person";
+            string ProjectLocation = "A Location";
+            //invoke method
+            OK = AProject.Valid(ProjectName, CompanyName, CompanyContact, ExpectedEndDate, StartDate, ProjectConsultant, ProjectLocation);
+            //check if it is correct
+            Assert.IsFalse(OK);
+        }
+        [TestMethod]
+        public void ProjectNameMinOk()
+        {
+            //create an instance of the class we want to create
+            clsProject AProject = new clsProject();
+            //boolean variable to store the result of the validation
+            Boolean OK = false;
+            //create some test data to pass to the method
+            string ProjectName = "A";
+            string CompanyName = "Tech Company";
+            string CompanyContact = "078218122";
+            string ExpectedEndDate = DateTime.Now.Date.ToString();
+            string StartDate = DateTime.Now.Date.ToString();
+            string ProjectConsultant = "A Person";
+            string ProjectLocation = "A Location";
+            //invoke method
+            OK = AProject.Valid(ProjectName, CompanyName, CompanyContact, ExpectedEndDate, StartDate, ProjectConsultant, ProjectLocation);
+            //check if it is correct
+            Assert.IsTrue(OK);
+        }
+        [TestMethod]
+        public void ProjectNameMaxLessOneOk()
+        {
+            //create an instance of the class we want to create
+            clsProject AProject = new clsProject();
+            //boolean variable to store the result of the validation
+            Boolean OK = false;
+            //create some test data to pass to the method
+            string ProjectName = "";
+            string CompanyName = "Tech Company";
+            string CompanyContact = "078218122";
+            string ExpectedEndDate = DateTime.Now.Date.ToString();
+            string StartDate = DateTime.Now.Date.ToString();
+            string ProjectConsultant = "A Person";
+            string ProjectLocation = "A Location";
+            //creates characters until one less than max
+            ProjectName = ProjectName.PadRight(29, 'a');
+            //invoke method
+            OK = AProject.Valid(ProjectName, CompanyName, CompanyContact, ExpectedEndDate, StartDate, ProjectConsultant, ProjectLocation);
+            //check if it is correct
+            Assert.IsTrue(OK);
+        }
+        [TestMethod]
+        public void ProjectNameMaxOk()
+        {
+            //create an instance of the class we want to create
+            clsProject AProject = new clsProject();
+            //boolean variable to store the result of the validation
+            Boolean OK = false;
+            //create some test data to pass to the method
+            string ProjectName = "";
+            string CompanyName = "Tech Company";
+            string CompanyContact = "078218122";
+            string ExpectedEndDate = DateTime.Now.Date.ToString();
+            string StartDate = DateTime.Now.Date.ToString();
+            string ProjectConsultant = "A Person";
+            string ProjectLocation = "A Location";
+            //creates characters until one less than max
+            ProjectName = ProjectName.PadRight(30, 'a');
+            //invoke method
+            OK = AProject.Valid(ProjectName, CompanyName, CompanyContact, ExpectedEndDate, StartDate, ProjectConsultant, ProjectLocation);
+            //check if it is correct
+            Assert.IsTrue(OK);
+        }
+        [TestMethod]
+        public void ProjectNameMaxPlusOneOk()
+        {
+            //create an instance of the class we want to create
+            clsProject AProject = new clsProject();
+            //boolean variable to store the result of the validation
+            Boolean OK = false;
+            //create some test data to pass to the method
+            string ProjectName = "";
+            string CompanyName = "Tech Company";
+            string CompanyContact = "078218122";
+            string ExpectedEndDate = DateTime.Now.Date.ToString();
+            string StartDate = DateTime.Now.Date.ToString();
+            string ProjectConsultant = "A Person";
+            string ProjectLocation = "A Location";
+            //creates characters until one less than max
+            ProjectName = ProjectName.PadRight(31, 'a');
+            //invoke method
+            OK = AProject.Valid(ProjectName, CompanyName, CompanyContact, ExpectedEndDate, StartDate, ProjectConsultant, ProjectLocation);
+            //check if it is correct
+            Assert.IsFalse(OK);
+        }
+        [TestMethod]
+        public void ProjectNameMidOk()
+        {
+            //create an instance of the class we want to create
+            clsProject AProject = new clsProject();
+            //boolean variable to store the result of the validation
+            Boolean OK = false;
+            //create some test data to pass to the method
+            string ProjectName = "";
+            string CompanyName = "Tech Company";
+            string CompanyContact = "078218122";
+            string ExpectedEndDate = DateTime.Now.Date.ToString();
+            string StartDate = DateTime.Now.Date.ToString();
+            string ProjectConsultant = "A Person";
+            string ProjectLocation = "A Location";
+            //creates characters until one less than max
+            ProjectName = ProjectName.PadRight(15, 'a');
+            //invoke method
+            OK = AProject.Valid(ProjectName, CompanyName, CompanyContact, ExpectedEndDate, StartDate, ProjectConsultant, ProjectLocation);
+            //check if it is correct
+            Assert.IsTrue(OK);
+        }
+        [TestMethod]
+        public void ProjectNameExtremeMaxOk()
+        {
+            //create an instance of the class we want to create
+            clsProject AProject = new clsProject();
+            //boolean variable to store the result of the validation
+            Boolean OK = false;
+            //create some test data to pass to the method
+            string ProjectName = "";
+            string CompanyName = "Tech Company";
+            string CompanyContact = "078218122";
+            string ExpectedEndDate = DateTime.Now.Date.ToString();
+            string StartDate = DateTime.Now.Date.ToString();
+            string ProjectConsultant = "A Person";
+            string ProjectLocation = "A Location";
+            //creates characters until one less than max
+            ProjectName = ProjectName.PadRight(400, 'a');
+            //invoke method
+            OK = AProject.Valid(ProjectName, CompanyName, CompanyContact, ExpectedEndDate, StartDate, ProjectConsultant, ProjectLocation);
+            //check if it is correct
+            Assert.IsFalse(OK);
+        }
+        [TestMethod]
+        public void CompanyNameMinLessOneOk()
+        {
+            //create an instance of the class we want to create
+            clsProject AProject = new clsProject();
+            //boolean variable to store the result of the validation
+            Boolean OK = false;
+            //create some test data to pass to the method
+            string ProjectName = "A Project";
+            string CompanyName = "";
+            string CompanyContact = "078218122";
+            string ExpectedEndDate = DateTime.Now.Date.ToString();
+            string StartDate = DateTime.Now.Date.ToString();
+            string ProjectConsultant = "A Person";
+            string ProjectLocation = "A Location";
+            //invoke method
+            OK = AProject.Valid(ProjectName, CompanyName, CompanyContact, ExpectedEndDate, StartDate, ProjectConsultant, ProjectLocation);
+            //check if it is correct
+            Assert.IsFalse(OK);
+        }
+        [TestMethod]
+        public void CompanyNameMinOk()
+        {
+            //create an instance of the class we want to create
+            clsProject AProject = new clsProject();
+            //boolean variable to store the result of the validation
+            Boolean OK = false;
+            //create some test data to pass to the method
+            string ProjectName = "A Project";
+            string CompanyName = "Te";
+            string CompanyContact = "078218122";
+            string ExpectedEndDate = DateTime.Now.Date.ToString();
+            string StartDate = DateTime.Now.Date.ToString();
+            string ProjectConsultant = "A Person";
+            string ProjectLocation = "A Location";
+            //invoke method
+            OK = AProject.Valid(ProjectName, CompanyName, CompanyContact, ExpectedEndDate, StartDate, ProjectConsultant, ProjectLocation);
+            //check if it is correct
+            Assert.IsTrue(OK);
+        }
+        [TestMethod]
+        public void CompanyNameMaxLessOneOk()
+        {
+            //create an instance of the class we want to create
+            clsProject AProject = new clsProject();
+            //boolean variable to store the result of the validation
+            Boolean OK = false;
+            //create some test data to pass to the method
+            string ProjectName = "A Project";
+            string CompanyName = "";
+            string CompanyContact = "078218122";
+            string ExpectedEndDate = DateTime.Now.Date.ToString();
+            string StartDate = DateTime.Now.Date.ToString();
+            string ProjectConsultant = "A Person";
+            string ProjectLocation = "A Location";
+            //creates characters until one less than max
+            CompanyName = CompanyName.PadRight(29, 'a');
+            //invoke method
+            OK = AProject.Valid(ProjectName, CompanyName, CompanyContact, ExpectedEndDate, StartDate, ProjectConsultant, ProjectLocation);
+            //check if it is correct
+            Assert.IsTrue(OK);
+        }
+        public void CompanyNameMaxOk()
+        {
+            //create an instance of the class we want to create
+            clsProject AProject = new clsProject();
+            //boolean variable to store the result of the validation
+            Boolean OK = false;
+            //create some test data to pass to the method
+            string ProjectName = "A Project";
+            string CompanyName = "";
+            string CompanyContact = "078218122";
+            string ExpectedEndDate = DateTime.Now.Date.ToString();
+            string StartDate = DateTime.Now.Date.ToString();
+            string ProjectConsultant = "A Person";
+            string ProjectLocation = "A Location";
+            //creates characters until one less than max
+            ProjectName = ProjectName.PadRight(30, 'a');
+            //invoke method
+            OK = AProject.Valid(ProjectName, CompanyName, CompanyContact, ExpectedEndDate, StartDate, ProjectConsultant, ProjectLocation);
+            //check if it is correct
+            Assert.IsTrue(OK);
+        }
+        public void CompanyNameMaxPlusOneOk()
+        {
+            //create an instance of the class we want to create
+            clsProject AProject = new clsProject();
+            //boolean variable to store the result of the validation
+            Boolean OK = false;
+            //create some test data to pass to the method
+            string ProjectName = "A Project";
+            string CompanyName = "";
+            string CompanyContact = "078218122";
+            string ExpectedEndDate = DateTime.Now.Date.ToString();
+            string StartDate = DateTime.Now.Date.ToString();
+            string ProjectConsultant = "A Person";
+            string ProjectLocation = "A Location";
+            //creates characters until one less than max
+            ProjectName = ProjectName.PadRight(31, 'a');
+            //invoke method
+            OK = AProject.Valid(ProjectName, CompanyName, CompanyContact, ExpectedEndDate, StartDate, ProjectConsultant, ProjectLocation);
+            //check if it is correct
+            Assert.IsFalse(OK);
+        }
+        public void CompanyNameMidOk()
+        {
+            //create an instance of the class we want to create
+            clsProject AProject = new clsProject();
+            //boolean variable to store the result of the validation
+            Boolean OK = false;
+            //create some test data to pass to the method
+            string ProjectName = "A Project";
+            string CompanyName = "";
+            string CompanyContact = "078218122";
+            string ExpectedEndDate = DateTime.Now.Date.ToString();
+            string StartDate = DateTime.Now.Date.ToString();
+            string ProjectConsultant = "A Person";
+            string ProjectLocation = "A Location";
+            //creates characters until one less than max
+            ProjectName = ProjectName.PadRight(15, 'a');
+            //invoke method
+            OK = AProject.Valid(ProjectName, CompanyName, CompanyContact, ExpectedEndDate, StartDate, ProjectConsultant, ProjectLocation);
+            //check if it is correct
+            Assert.IsTrue(OK);
+        }
+        public void CompanyNameExtremeMaxOk()
+        {
+            //create an instance of the class we want to create
+            clsProject AProject = new clsProject();
+            //boolean variable to store the result of the validation
+            Boolean OK = false;
+            //create some test data to pass to the method
+            string ProjectName = "A Project";
+            string CompanyName = "";
+            string CompanyContact = "078218122";
+            string ExpectedEndDate = DateTime.Now.Date.ToString();
+            string StartDate = DateTime.Now.Date.ToString();
+            string ProjectConsultant = "A Person";
+            string ProjectLocation = "A Location";
+            //creates characters until one less than max
+            ProjectName = ProjectName.PadRight(400, 'a');
+            //invoke method
+            OK = AProject.Valid(ProjectName, CompanyName, CompanyContact, ExpectedEndDate, StartDate, ProjectConsultant, ProjectLocation);
+            //check if it is correct
+            Assert.IsFalse(OK);
+        }
     }
 }

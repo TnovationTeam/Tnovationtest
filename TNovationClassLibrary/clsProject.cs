@@ -177,15 +177,62 @@ namespace TNovationClassLibrary
         {
             Boolean OK = true;
             DateTime SomeDate;
-            if(ProjectLocation.Length == 0)
+            if (ProjectName.Length == 0)
             {
                 OK = false;
             }
 
-            if (ProjectLocation.Length >30)
+            if (ProjectLocation.Length > 30)
             {
                 OK = false;
             }
+
+            if (ProjectConsultant.Length == 0)
+            {
+                OK = false;
+            }
+
+            if (ProjectConsultant.Length > 30)
+            {
+                OK = false;
+            }
+            if (CompanyContact.Length > 12)
+            {
+                OK = false;
+            }
+
+            if (CompanyContact.Length < 9)
+            {
+                OK = false;
+
+            }
+
+            if (ProjectName.Length == 0)
+            {
+                OK = false;
+            }
+
+            if (ProjectName.Length > 30)
+            {
+                OK = false;
+            }
+
+            if (CompanyName.Length == 0)
+            {
+                OK = false;
+            }
+
+            if (CompanyName.Length > 30)
+            {
+                OK = false;
+            }
+
+
+            if (CompanyName.Length < 3)
+            {
+                OK = false;
+            }
+
             try
             {
                 SomeDate = Convert.ToDateTime(StartDate);
@@ -206,6 +253,6 @@ namespace TNovationClassLibrary
             }
             return OK;
 
-            }
         }
+    }
 }

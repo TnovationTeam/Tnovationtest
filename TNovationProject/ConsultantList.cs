@@ -21,5 +21,12 @@ namespace TNovationProject
         {
 
         }
+
+        private void buttonAdd_Click(object sender, EventArgs e)
+        {
+            //This line of code will open the AddConsultant form
+            new AddConsultant().Show();
+            this.Hide();
+        }
     }
 }
