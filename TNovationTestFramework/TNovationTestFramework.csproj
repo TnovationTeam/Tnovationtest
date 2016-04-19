@@ -57,6 +57,7 @@
     <Compile Include="tstConsultantCollection.cs" />
     <Compile Include="tstEvent.cs" />
     <Compile Include="tstEventCollection.cs" />
+    <Compile Include="tstProject.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TNovationClassLibrary\TNovationClassLibrary.csproj">
