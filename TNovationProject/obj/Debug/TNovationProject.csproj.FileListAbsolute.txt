@@ -67,3 +67,4 @@ C:\Users\Callum\Source\Repos\Tnovationtest2\TNovationProject\obj\Debug\TNovation
 C:\Users\Callum\Source\Repos\Tnovationtest2\TNovationProject\obj\Debug\TNovationProject.pdb
 C:\Users\Callum\Source\Repos\Tnovationtest2\TNovationProject\obj\Debug\TNovationProject.ProjectList.resources
 C:\Users\Callum\Source\Repos\Tnovationtest2\TNovationProject\obj\Debug\TNovationProject.AddProject.resources
+C:\Users\MwenyaSebastian\Source\Repos\Tnovationtest11\TNovationProject\obj\Debug\TNovationProject.exe

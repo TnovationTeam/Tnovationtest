@@ -155,16 +155,16 @@ namespace TNovationTestFramework
         }
 
         [TestMethod]
-        public void TelNoPropertyOK()
+        public void TelephoneNoPropertyOK()
         {
             //create an instance of the class we want to create
             clsConsultant AConsultant = new clsConsultant();
             //create some test data to assign to the property
             string TestData = "+44752890120";
             //assign the data to the property
-            AConsultant.TelNo = TestData;
+            AConsultant.TelephoneNo = TestData;
             //test to see that the two values are the same
-            Assert.AreEqual(AConsultant.TelNo, TestData);
+            Assert.AreEqual(AConsultant.TelephoneNo, TestData);
 
         }
 
@@ -378,7 +378,7 @@ namespace TNovationTestFramework
             //invoke the method
             Found = AConsultant.Find(ConsultantNo);
             //check the ConsultantNo
-            if (AConsultant.TelNo != "0185815930")
+            if (AConsultant.TelephoneNo != "0185815930")
             {
                 OK = false;
             }
