@@ -13,6 +13,26 @@ namespace TNovationClassLibrary
         //private data member for the allEvents list
         private List<clsEvent> allEvents = new List<clsEvent>();
 
+        //private data member thisEvent
+        clsEvent thisEvent = new clsEvent();
+
+
+
+        //public property for ThisEvent
+        public clsEvent ThisEvent
+        {
+            get
+            {
+                //return the private data
+                return thisEvent;
+            }
+            set
+            {
+                //set the private data
+                thisEvent = value;
+            }
+        }
+
         //public property for the count
         public int Count 
         { 
@@ -77,7 +97,14 @@ namespace TNovationClassLibrary
           }
 
     
-
+        public int Add()
+        {
+            //adds a new record to the database based on the values of thisEvent
+            //set the primary key value pof the new record
+            thisEvent.EventCode = 1;
+            //return the primary key of the new record
+            return thisEvent.EventCode;
+        }
 
  
     }

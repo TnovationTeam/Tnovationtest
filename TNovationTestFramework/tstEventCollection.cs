@@ -82,6 +82,41 @@ namespace TNovationTestFramework
 
         }
 
+
+        [TestMethod]
+        public void AddMethodOK()
+        {
+            //create an instance of the class we want to create 
+            clsEventCollection AllEvents = new clsEventCollection();
+            //create the item of the test data
+            clsEvent TestItem = new clsEvent();
+            //var to store the primary key
+            Int32 PrimaryKey = 0;
+            //set its properties
+            TestItem.EventCode = 1;
+            TestItem.EventName = "Innovation";
+            TestItem.CompanyName = "CTech";
+            TestItem.ConsultantAttending = "Freddy";
+            TestItem.Contact = "0758675643";
+            TestItem.StartDate = DateTime.Now.Date; ;
+            TestItem.GuestSpeaker = "Tiffany Laster";
+            TestItem.Location = "IT support for company";
+            TestItem.TypeOfEvent ="Networking";
+           
+            //set ThisEvent to the test data
+            AllEvents.ThisEvent = TestItem;
+            //add the record
+            PrimaryKey = AllEvents.Add();
+            //set the primary key of the test data
+            TestItem.EventCode = PrimaryKey;
+            //find the record
+            AllEvents.ThisEvent.Find(PrimaryKey);
+            //test to see that the two values are the same
+            Assert.AreEqual(AllEvents.ThisEvent, TestItem);
+
+        }
+
+
         ////[TestMethod]
         //public void TwoEventsPresent()
         //{
