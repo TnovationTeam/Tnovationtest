@@ -159,7 +159,7 @@ namespace TNovationClassLibrary
             //create a Boolean variable to flag the error
             Boolean OK = true;
             //create a temporary variable to store the date values
-            DateTime DateTemp;
+            //DateTime DateTemp;
             //if the CompanyAddress is blank
 
             //if the company address is blank
@@ -175,7 +175,7 @@ namespace TNovationClassLibrary
                 OK = false;
             }
             //copy the DateAdded value to the DateTemp variable
-            DateTemp = Convert.ToDateTime(DateTime);
+            //DateTemp = Convert.ToDateTime(DateTime);
             return OK;
         }
     }

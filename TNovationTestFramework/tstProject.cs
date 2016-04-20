@@ -1309,7 +1309,7 @@ namespace TNovationTestFramework
             //invoke method
             OK = AProject.Valid(ProjectName, CompanyName, CompanyContact, ExpectedEndDate, StartDate, ProjectConsultant, ProjectLocation);
             //check if it is correct
-            Assert.IsTrue(OK);
+            Assert.IsFalse(OK);
         }
         [TestMethod]
         public void CompanyNameMaxLessOneOk()

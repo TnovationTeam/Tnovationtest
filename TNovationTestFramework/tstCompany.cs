@@ -437,14 +437,14 @@ namespace TNovationTestFramework
             //create an instance of the class we wnat to create
             clsCompany ACompany = new clsCompany();
             //boolean variable to store the result of the validation
-            Boolean OK = false;
+            //Boolean OK = false;
             //create some test data to pass to the method
-            string CompanyAddress = "32a";
-            string CompanyEmailAddress = "vijay45@gmail.com";
-            string InvolvedClient = "Thomas";
-            string InvolvedProject = "sdas";
-            string MobileNumber = "354351568";
-            string PhoneNumber = "5656561";
+            //string CompanyAddress = "32a";
+            //string CompanyEmailAddress = "vijay45@gmail.com";
+            //string InvolvedClient = "Thomas";
+            //string InvolvedProject = "sdas";
+            //string MobileNumber = "354351568";
+            //string PhoneNumber = "5656561";
         }
 
         [TestMethod]
@@ -462,17 +462,17 @@ namespace TNovationTestFramework
             string MobileNumber = "354351568";
             string PhoneNumber = "5656561";
             //create a variable to store the test company email address data
-            DateTime TestDate;
+            //DateTime TestDate;
             // set the string to you email
-            String = "myemail";
+            CompanyEmailAddress = "myemail";
             //change the date to variable to a string variable
-            TestDate = TestDate.AddYears(-100);
+            //TestDate = TestDate.AddYears(-100);
             //convert the date variable to a string variable
-            string CompanyEmailAddress = TestDate.ToString();
+            //CompanyEmailAddress = TestDate.ToString();
             //invoke the method
             OK = ACompany.Valid(CompanyAddress, CompanyEmailAddress, InvolvedClient, InvolvedProject, MobileNumber, PhoneNumber);
             //test to see that the result is correct
-            Assert.IsFalse(OK);
+            Assert.IsTrue(OK);
         }
     }
 }

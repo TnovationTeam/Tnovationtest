@@ -208,7 +208,7 @@
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label labelHeading;
-        private System.Windows.Forms.BindingSource tNovationDataSetBindingSource;
+        //private System.Windows.Forms.BindingSource tNovationDataSetBindingSource;
         private System.Windows.Forms.ListView listView2;
         private System.Windows.Forms.ColumnHeader columnEventCode;
         private System.Windows.Forms.ColumnHeader columnEventName;

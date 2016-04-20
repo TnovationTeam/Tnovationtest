@@ -14,7 +14,7 @@ namespace TNovationProject
     public partial class UpdateClient : Form
     {
         //var to store the primary key value of the record to be deleted
-        Int32 ClientNo; 
+        //Int32 ClientNo; 
 
         public UpdateClient()
         {
@@ -34,7 +34,7 @@ namespace TNovationProject
             if (OK == true)
             {
                 //find the record to update
-                TNovation.ThisClient.Find(ClientNo);
+                //TNovation.ThisClient.Find(ClientNo);
                 //get the data entered by the user
                 TNovation.ThisClient.ClientNo = Convert.ToInt32(textboxClientNo.Text);
                 TNovation.ThisClient.ClientName = textboxClientName.Text;
