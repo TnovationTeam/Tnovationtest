@@ -50,7 +50,7 @@
             // 
             this.labelClientInformation.AutoSize = true;
             this.labelClientInformation.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelClientInformation.Location = new System.Drawing.Point(75, 124);
+            this.labelClientInformation.Location = new System.Drawing.Point(78, 107);
             this.labelClientInformation.Name = "labelClientInformation";
             this.labelClientInformation.Size = new System.Drawing.Size(181, 20);
             this.labelClientInformation.TabIndex = 59;
@@ -58,7 +58,7 @@
             // 
             // buttonDelete
             // 
-            this.buttonDelete.Location = new System.Drawing.Point(518, 420);
+            this.buttonDelete.Location = new System.Drawing.Point(399, 455);
             this.buttonDelete.Name = "buttonDelete";
             this.buttonDelete.Size = new System.Drawing.Size(86, 23);
             this.buttonDelete.TabIndex = 58;
@@ -68,7 +68,7 @@
             // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(371, 420);
+            this.buttonUpdate.Location = new System.Drawing.Point(295, 455);
             this.buttonUpdate.Name = "buttonUpdate";
             this.buttonUpdate.Size = new System.Drawing.Size(86, 23);
             this.buttonUpdate.TabIndex = 57;
@@ -78,7 +78,7 @@
             // 
             // buttonAdd
             // 
-            this.buttonAdd.Location = new System.Drawing.Point(228, 420);
+            this.buttonAdd.Location = new System.Drawing.Point(193, 455);
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(86, 23);
             this.buttonAdd.TabIndex = 56;
@@ -89,7 +89,7 @@
             // labelError
             // 
             this.labelError.AutoSize = true;
-            this.labelError.Location = new System.Drawing.Point(122, 470);
+            this.labelError.Location = new System.Drawing.Point(79, 498);
             this.labelError.Name = "labelError";
             this.labelError.Size = new System.Drawing.Size(0, 13);
             this.labelError.TabIndex = 61;
@@ -97,36 +97,36 @@
             // labelInfo2
             // 
             this.labelInfo2.AutoSize = true;
-            this.labelInfo2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelInfo2.Location = new System.Drawing.Point(461, 249);
+            this.labelInfo2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelInfo2.Location = new System.Drawing.Point(79, 181);
             this.labelInfo2.Name = "labelInfo2";
-            this.labelInfo2.Size = new System.Drawing.Size(404, 19);
+            this.labelInfo2.Size = new System.Drawing.Size(364, 18);
             this.labelInfo2.TabIndex = 62;
             this.labelInfo2.Text = "To update a record click on the Update Client button";
             // 
             // labelInfo1
             // 
             this.labelInfo1.AutoSize = true;
-            this.labelInfo1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelInfo1.Location = new System.Drawing.Point(461, 201);
+            this.labelInfo1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelInfo1.Location = new System.Drawing.Point(79, 141);
             this.labelInfo1.Name = "labelInfo1";
-            this.labelInfo1.Size = new System.Drawing.Size(355, 19);
+            this.labelInfo1.Size = new System.Drawing.Size(320, 18);
             this.labelInfo1.TabIndex = 63;
             this.labelInfo1.Text = "To add a record click on the Add Client button";
             // 
             // labelInfo3
             // 
             this.labelInfo3.AutoSize = true;
-            this.labelInfo3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelInfo3.Location = new System.Drawing.Point(461, 291);
+            this.labelInfo3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelInfo3.Location = new System.Drawing.Point(79, 219);
             this.labelInfo3.Name = "labelInfo3";
-            this.labelInfo3.Size = new System.Drawing.Size(519, 19);
+            this.labelInfo3.Size = new System.Drawing.Size(472, 18);
             this.labelInfo3.TabIndex = 64;
             this.labelInfo3.Text = "Select a record to delete in the listbox and click Delete Client button";
             // 
             // buttonPopulate
             // 
-            this.buttonPopulate.Location = new System.Drawing.Point(79, 420);
+            this.buttonPopulate.Location = new System.Drawing.Point(82, 455);
             this.buttonPopulate.Name = "buttonPopulate";
             this.buttonPopulate.Size = new System.Drawing.Size(98, 23);
             this.buttonPopulate.TabIndex = 65;
@@ -137,7 +137,7 @@
             // labelFound
             // 
             this.labelFound.AutoSize = true;
-            this.labelFound.Location = new System.Drawing.Point(79, 370);
+            this.labelFound.Location = new System.Drawing.Point(367, 314);
             this.labelFound.Name = "labelFound";
             this.labelFound.Size = new System.Drawing.Size(0, 13);
             this.labelFound.TabIndex = 66;
@@ -145,7 +145,7 @@
             // listboxClient
             // 
             this.listboxClient.FormattingEnabled = true;
-            this.listboxClient.Location = new System.Drawing.Point(79, 187);
+            this.listboxClient.Location = new System.Drawing.Point(82, 282);
             this.listboxClient.Name = "listboxClient";
             this.listboxClient.Size = new System.Drawing.Size(361, 147);
             this.listboxClient.TabIndex = 60;
@@ -155,7 +155,7 @@
             this.labelUser.AutoSize = true;
             this.labelUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelUser.ForeColor = System.Drawing.Color.Maroon;
-            this.labelUser.Location = new System.Drawing.Point(79, 168);
+            this.labelUser.Location = new System.Drawing.Point(79, 261);
             this.labelUser.Name = "labelUser";
             this.labelUser.Size = new System.Drawing.Size(92, 13);
             this.labelUser.TabIndex = 67;
@@ -167,7 +167,7 @@
             this.labelHeading.BackColor = System.Drawing.Color.LightSteelBlue;
             this.labelHeading.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelHeading.ForeColor = System.Drawing.Color.Navy;
-            this.labelHeading.Location = new System.Drawing.Point(249, 23);
+            this.labelHeading.Location = new System.Drawing.Point(558, 9);
             this.labelHeading.Name = "labelHeading";
             this.labelHeading.Size = new System.Drawing.Size(334, 73);
             this.labelHeading.TabIndex = 69;
@@ -176,7 +176,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(79, 23);
+            this.pictureBox1.Location = new System.Drawing.Point(383, 8);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(164, 74);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -187,7 +187,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1002, 522);
+            this.ClientSize = new System.Drawing.Size(1241, 565);
             this.Controls.Add(this.labelHeading);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.labelUser);
