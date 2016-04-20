@@ -146,3 +146,5 @@ C:\Users\p13239500\Source\Repos\Tnovationtest2\TNovationProject\obj\Debug\TNovat
 C:\Users\p13239500\Source\Repos\Tnovationtest2\TNovationProject\obj\Debug\TNovationProject.csproj.GenerateResource.Cache
 C:\Users\p13239500\Source\Repos\Tnovationtest2\TNovationProject\obj\Debug\TNovationProject.exe
 C:\Users\p13239500\Source\Repos\Tnovationtest2\TNovationProject\obj\Debug\TNovationProject.pdb
+C:\Users\Egle\Source\Repos\Tnovationtest\TNovationProject\obj\Debug\TNovationProject.exe
+C:\Users\Egle\Source\Repos\Tnovationtest\TNovationProject\obj\Debug\TNovationProject.pdb
