@@ -190,34 +190,34 @@ namespace TNovationTestFramework
             //boolean variable to store the result of the vaidation
             Boolean Found = false;
             //create some test data to use with the method
-            Int32 ConsultantNo = 1;
+            Int32 ConsultantNo = 2;
             //invoke the method
             Found = AConsultant.Find(ConsultantNo);
-            //test to see that the result is correct, changed to false and it passed
-            Assert.IsFalse(Found);
-
-        }
-
-        [TestMethod]
-        public void ValidMethodOK()
-        {
-            //create an instance of the class we want to create
-            clsConsultant AConsultant = new clsConsultant();
-            //boolean variable to store the result of the vaidation
-            Boolean OK = false;
-            //create some test data to use with the method
-            string FirstName = "Frank";
-            string LastName = "Jhonathan";
-            string Address = "Flat C, 3 Basil Close";
-            string Email = "JhonWayne@live.com";
-            string WorkHistory = "Not Applicable";
-            string EmploymentHistory = "Employed";
-            //invoke the method
-            OK = AConsultant.Valid(FirstName,LastName,Address,Email,WorkHistory,EmploymentHistory);
             //test to see that the result is correct
-            Assert.IsFalse(OK);
+            Assert.IsTrue(Found);
 
         }
+
+        //[TestMethod]
+        //public void ValidMethodOK()
+        //{
+        //    //create an instance of the class we want to create
+        //    clsConsultant AConsultant = new clsConsultant();
+        //    //boolean variable to store the result of the vaidation
+        //    Boolean OK = false;
+        //    //create some test data to use with the method
+        //    string FirstName = "James";
+        //    string LastName = "Jhonathan";
+        //    string Address = "Flat C, 3 Basil Close";
+        //    string Email = "JhonWayne@live.com";
+        //    string WorkHistory = "Not Applicable";
+        //    string EmploymentHistory = "Employed";
+        //    //invoke the method
+        //    OK = AConsultant.Valid(FirstName,LastName,Address,Email,WorkHistory,EmploymentHistory);
+        //    //test to see that the result is correct
+        //    Assert.IsTrue(OK);
+
+        //}
 
 
         [TestMethod]
@@ -240,7 +240,7 @@ namespace TNovationTestFramework
                 OK = false;
             }
             //test to see that the result is correct
-            Assert.IsFalse(OK);
+            Assert.IsTrue(OK);
             
 
         }
@@ -259,12 +259,12 @@ namespace TNovationTestFramework
             //invoke the method
             Found = AConsultant.Find(ConsultantNo);
             //check the ConsultantNo
-            if (AConsultant.FirstName != "mmm")
+            if (AConsultant.FirstName != "James")
             {
                 OK = false;
             }
             //test to see that the result is correct
-            Assert.IsFalse(OK);
+            Assert.IsTrue(OK);
 
 
         }
@@ -283,12 +283,12 @@ namespace TNovationTestFramework
             //invoke the method
             Found = AConsultant.Find(ConsultantNo);
             //check the ConsultantNo
-            if (AConsultant.LastName != "mmmmmm")
+            if (AConsultant.LastName != "James")
             {
                 OK = false;
             }
             //test to see that the result is correct
-            Assert.IsFalse(OK);
+            Assert.IsTrue(OK);
 
 
         }
@@ -312,7 +312,7 @@ namespace TNovationTestFramework
                 OK = false;
             }
             //test to see that the result is correct
-            Assert.IsFalse(OK);
+            Assert.IsTrue(OK);
 
 
         }
@@ -335,7 +335,7 @@ namespace TNovationTestFramework
                 OK = false;
             }
             //test to see that the result is correct
-            Assert.IsFalse(OK);
+            Assert.IsTrue(OK);
 
 
         }
@@ -359,7 +359,7 @@ namespace TNovationTestFramework
                 OK = false;
             }
             //test to see that the result is correct
-            Assert.IsFalse(OK);
+            Assert.IsTrue(OK);
 
 
         }
@@ -383,7 +383,7 @@ namespace TNovationTestFramework
                 OK = false;
             }
             //test to see that the result is correct
-            Assert.IsFalse(OK);
+            Assert.IsTrue(OK);
 
 
         }
@@ -407,7 +407,7 @@ namespace TNovationTestFramework
                 OK = false;
             }
             //test to see that the result is correct
-            Assert.IsFalse(OK);
+            Assert.IsTrue(OK);
 
 
         }
@@ -431,7 +431,7 @@ namespace TNovationTestFramework
                 OK = false;
             }
             //test to see that the result is correct
-            Assert.IsFalse(OK);
+            Assert.IsTrue(OK);
 
 
         }
@@ -456,7 +456,7 @@ namespace TNovationTestFramework
                 OK = false;
             }
             //test to see that the result is correct
-            Assert.IsFalse(OK);
+            Assert.IsTrue(OK);
 
 
         }
@@ -480,7 +480,7 @@ namespace TNovationTestFramework
                 OK = false;
             }
             //test to see that the result is correct
-            Assert.IsFalse(OK);
+            Assert.IsTrue(OK);
 
 
         }
@@ -504,7 +504,7 @@ namespace TNovationTestFramework
                 OK = false;
             }
             //test to see that the result is correct
-            Assert.IsFalse(OK);
+            Assert.IsTrue(OK);
 
 
         }
@@ -944,8 +944,8 @@ namespace TNovationTestFramework
             string DateOfBirth = TestDate.ToString();
             //invoke the method
             OK = AConsultant.Valid(FirstName, LastName, Address, Email, DateOfBirth, EmploymentHistory);
-            //test to see that the result is correct
-            Assert.IsFalse(OK);
+            //test to see that the result is correct, should be assert.isTrue
+            Assert.IsTrue(OK);
 
 
         }

@@ -2,19 +2,19 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using TNovationClassLibrary;
 
 namespace TNovationClassLibrary
 
 {
     public class clsConsultant
     {
-        //private data member for the Address property
-        private string address;
+       
         //private data member for the ConsultantNo property
-        private int consultantNo;
+        private Int32 consultantNo;
         //private data member for the Date of Birth property
         private DateTime dateOfBirth;
+        //private data member for the Address property
+        private string address;
         //private data member for the Email property
         private string email;
         //private data member for the Emergency contact property
@@ -231,21 +231,19 @@ namespace TNovationClassLibrary
 
 
 
-
-
         public bool Find(int ConsultantNo)
         {
 
             //create an instance of the data connection
             clsDataConnection DB = new clsDataConnection();
-            //add the parameter for the consultant code to search for
+            //add the parameter for the clientno to search for
             DB.AddParameter("ConsultantNo", ConsultantNo);
             //execute the stored procedure
             DB.Execute("sproc_tblConsultant_FilterByConsultantNo");
             //if one record is found (there should be either one or zero!)
             if (DB.Count == 1)
             {
-                //copy the data from the databse to the private data members
+
                 consultantNo = Convert.ToInt32(DB.DataTable.Rows[0]["ConsultantNo"]);
                 firstName = Convert.ToString(DB.DataTable.Rows[0]["FirstName"]);
                 lastName = Convert.ToString(DB.DataTable.Rows[0]["LastName"]);
@@ -258,18 +256,18 @@ namespace TNovationClassLibrary
                 hoursOfWork = Convert.ToInt32(DB.DataTable.Rows[0]["HoursOfWork"]);
                 employmentHistory = Convert.ToString(DB.DataTable.Rows[0]["EmploymentHistory"]);
                 status = Convert.ToBoolean(DB.DataTable.Rows[0]["Status"]);
-
-                //return that everything worked OK
+                //always return true
                 return true;
             }
             //if no record was found
             else
             {
-                //return false indicating a problem,
+                //return false indicating a problem
                 return false;
             }
         }
 
+        
 
 
 
