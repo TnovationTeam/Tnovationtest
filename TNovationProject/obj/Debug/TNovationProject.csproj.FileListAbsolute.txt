@@ -186,3 +186,4 @@ C:\Users\Egle\Source\Repos\Tnovationtest\TNovationProject\bin\Debug\TNovationPro
 C:\Users\Egle\Source\Repos\Tnovationtest\TNovationProject\bin\Debug\TNovationProject.pdb
 C:\Users\Egle\Source\Repos\Tnovationtest\TNovationProject\bin\Debug\TNovationClassLibrary.dll
 C:\Users\Egle\Source\Repos\Tnovationtest\TNovationProject\bin\Debug\TNovationClassLibrary.pdb
+F:\TNovation_Client\TNovationProject\obj\Debug\TNovationProject.AddCompany.resources
