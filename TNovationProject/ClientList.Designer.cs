@@ -48,8 +48,8 @@
             this.labelHeading = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.dataGridViewClientData = new System.Windows.Forms.DataGridView();
-            this.tNovationDataSet = new TNovationProject.TNovationDataSet();
             this.tblClientBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tNovationDataSet = new TNovationProject.TNovationDataSet();
             this.tblClientTableAdapter = new TNovationProject.TNovationDataSetTableAdapters.tblClientTableAdapter();
             this.clientNoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clientNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -63,8 +63,8 @@
             this.activeDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewClientData)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblClientBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // labelClientInformation
@@ -253,15 +253,15 @@
             this.dataGridViewClientData.TabIndex = 70;
             this.dataGridViewClientData.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewClientData_CellContentClick);
             // 
-            // tNovationDataSet
-            // 
-            this.tNovationDataSet.DataSetName = "TNovationDataSet";
-            this.tNovationDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // tblClientBindingSource
             // 
             this.tblClientBindingSource.DataMember = "tblClient";
             this.tblClientBindingSource.DataSource = this.tNovationDataSet;
+            // 
+            // tNovationDataSet
+            // 
+            this.tNovationDataSet.DataSetName = "TNovationDataSet";
+            this.tNovationDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // tblClientTableAdapter
             // 
@@ -353,8 +353,8 @@
             this.Load += new System.EventHandler(this.ClientList_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewClientData)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblClientBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
