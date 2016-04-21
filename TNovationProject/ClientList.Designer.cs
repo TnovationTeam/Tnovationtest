@@ -48,9 +48,6 @@
             this.labelHeading = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.dataGridViewClientData = new System.Windows.Forms.DataGridView();
-            this.tblClientBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tNovationDataSet = new TNovationProject.TNovationDataSet();
-            this.tblClientTableAdapter = new TNovationProject.TNovationDataSetTableAdapters.tblClientTableAdapter();
             this.clientNoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clientNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clientEmailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -61,6 +58,10 @@
             this.clientTelDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dateAddedDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.activeDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.tblClientBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tNovationDataSet = new TNovationProject.TNovationDataSet();
+            this.tblClientTableAdapter = new TNovationProject.TNovationDataSetTableAdapters.tblClientTableAdapter();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewClientData)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblClientBindingSource)).BeginInit();
@@ -177,13 +178,13 @@
             // labelUser
             // 
             this.labelUser.AutoSize = true;
-            this.labelUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelUser.ForeColor = System.Drawing.Color.Maroon;
             this.labelUser.Location = new System.Drawing.Point(12, 98);
             this.labelUser.Name = "labelUser";
-            this.labelUser.Size = new System.Drawing.Size(75, 13);
+            this.labelUser.Size = new System.Drawing.Size(110, 16);
             this.labelUser.TabIndex = 67;
-            this.labelUser.Text = "Client Name";
+            this.labelUser.Text = "Client numbers";
             // 
             // labelHeading
             // 
@@ -253,20 +254,6 @@
             this.dataGridViewClientData.TabIndex = 70;
             this.dataGridViewClientData.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewClientData_CellContentClick);
             // 
-            // tblClientBindingSource
-            // 
-            this.tblClientBindingSource.DataMember = "tblClient";
-            this.tblClientBindingSource.DataSource = this.tNovationDataSet;
-            // 
-            // tNovationDataSet
-            // 
-            this.tNovationDataSet.DataSetName = "TNovationDataSet";
-            this.tNovationDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tblClientTableAdapter
-            // 
-            this.tblClientTableAdapter.ClearBeforeFill = true;
-            // 
             // clientNoDataGridViewTextBoxColumn
             // 
             this.clientNoDataGridViewTextBoxColumn.DataPropertyName = "ClientNo";
@@ -327,11 +314,37 @@
             this.activeDataGridViewCheckBoxColumn.HeaderText = "Active";
             this.activeDataGridViewCheckBoxColumn.Name = "activeDataGridViewCheckBoxColumn";
             // 
+            // tblClientBindingSource
+            // 
+            this.tblClientBindingSource.DataMember = "tblClient";
+            this.tblClientBindingSource.DataSource = this.tNovationDataSet;
+            // 
+            // tNovationDataSet
+            // 
+            this.tNovationDataSet.DataSetName = "TNovationDataSet";
+            this.tNovationDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tblClientTableAdapter
+            // 
+            this.tblClientTableAdapter.ClearBeforeFill = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Maroon;
+            this.label1.Location = new System.Drawing.Point(182, 98);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(98, 16);
+            this.label1.TabIndex = 71;
+            this.label1.Text = "Client details";
+            // 
             // ClientList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1241, 565);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridViewClientData);
             this.Controls.Add(this.labelHeading);
             this.Controls.Add(this.pictureBox1);
@@ -390,5 +403,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn clientTelDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn dateAddedDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewCheckBoxColumn activeDataGridViewCheckBoxColumn;
+        private System.Windows.Forms.Label label1;
     }
 }
