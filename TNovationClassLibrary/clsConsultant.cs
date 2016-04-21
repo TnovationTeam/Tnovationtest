@@ -372,8 +372,8 @@ namespace TNovationClassLibrary
                 OK = false;
             }
 
-            //is the email blank
-            if (Email.Length == 0)
+            //is the email  3 characters or less
+            if (Email.Length == 3)
             {
                 //set the flag OK to false
                 OK = false;

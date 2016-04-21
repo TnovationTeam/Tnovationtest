@@ -657,11 +657,11 @@ namespace TNovationTestFramework
             string Address = "flat b 2, thml";
             string Email = "mwen@live.com";
             string DateAdded = DateTime.Now.Date.ToString();
-            string EmploymentHistory = "";
+            string EmploymentHistory = "None";
             //invoke the method
-            OK = AConsultant.Valid(FirstName, LastName, Address, Email, DateAdded, EmploymentHistory);
+            OK = AConsultant.Valid(FirstName, LastName, Address, Email, EmploymentHistory, DateAdded);
             //test to see that the result is correct
-            Assert.IsFalse(OK);
+            Assert.IsTrue(OK);
 
 
         }
@@ -828,16 +828,16 @@ namespace TNovationTestFramework
             //boolean variable to store the result of the validation
             Boolean OK = false;
             //create some test data to use with the method
-            string FirstName = "James";
-            string LastName = "abcdmjmjmghhasmjkloithkgk"; //This should pass
+            string FirstName = "James"; //This should pass
+            string LastName = "abcdmjmjmghhasmjkloithkgk";
             string Address = "flat b 2, thml";
             string Email = "mwen@live.com";
             string DateAdded = DateTime.Now.Date.ToString();
-            string EmploymentHistory = "";
+            string EmploymentHistory = "None";
             //invoke the method
-            OK = AConsultant.Valid(FirstName, LastName, Address, Email, DateAdded, EmploymentHistory);
+            OK = AConsultant.Valid(FirstName, LastName, Address, Email, EmploymentHistory, DateAdded);
             //test to see that the result is correct
-            Assert.IsFalse(OK);
+            Assert.IsTrue(OK);
 
 
         }
@@ -855,7 +855,7 @@ namespace TNovationTestFramework
             string Address = "flat b 2, thml";
             string Email = "mwen@live.com";
             string DateAdded = DateTime.Now.Date.ToString();
-            string EmploymentHistory = "";
+            string EmploymentHistory = "None";
             //invoke the method
             OK = AConsultant.Valid(FirstName, LastName, Address, Email, DateAdded, EmploymentHistory);
             //test to see that the result is correct
@@ -877,7 +877,7 @@ namespace TNovationTestFramework
             string Address = "flat b 2, thml";
             string Email = "mwen@live.com";
             string DateAdded = DateTime.Now.Date.ToString();
-            string EmploymentHistory = "";
+            string EmploymentHistory = "None";
             //invoke the method
             OK = AConsultant.Valid(FirstName, LastName, Address, Email, DateAdded, EmploymentHistory);
             //test to see that the result is correct
@@ -934,7 +934,7 @@ namespace TNovationTestFramework
             //set the date to todays date
             TestDate = DateTime.Now.Date;
             //change the date to whatever the date is less than 15 years
-            TestDate = TestDate.AddYears(-15);
+            TestDate = TestDate.AddDays(-1);
             //convert the date variable to string variable
             string DateAdded = TestDate.ToString();
             //invoke the method
@@ -953,8 +953,8 @@ namespace TNovationTestFramework
             //boolean variable to store the result of the validation
             Boolean OK = false;
             //create some test data to use with the method
-            string FirstName = "James";
-            string LastName = "mmmmmm";
+            string FirstName = "James"; //This should pass
+            string LastName = "abcdmjmjmghhasmjkloithkgk";
             string Address = "flat b 2, thml";
             string Email = "mwen@live.com";
             string EmploymentHistory = "None";
@@ -962,13 +962,11 @@ namespace TNovationTestFramework
             DateTime TestDate;
             //set the date to todays date
             TestDate = DateTime.Now.Date;
-            //change the date to whatever the date is less than 16 years
-            TestDate = TestDate.AddYears(-16);
             //convert the date variable to string variable
             string DateAdded = TestDate.ToString();
             //invoke the method
-            OK = AConsultant.Valid(FirstName, LastName, Address, Email, DateAdded, EmploymentHistory);
-            //test to see that the result is correct, should be assert.isTrue
+            OK = AConsultant.Valid(FirstName, LastName, Address, Email, EmploymentHistory, DateAdded);
+            //test to see that the result is correct
             Assert.IsTrue(OK);
 
 
@@ -991,8 +989,8 @@ namespace TNovationTestFramework
             DateTime TestDate;
             //set the date to todays date
             TestDate = DateTime.Now.Date;
-            //change the date to whatever the date is less than 17 years
-            TestDate = TestDate.AddYears(-17);
+            //change the date to tomorrow (+1)
+            TestDate = TestDate.AddDays(1);
             //convert the date variable to string variable
             string DateAdded = TestDate.ToString();
             //invoke the method
@@ -1004,7 +1002,7 @@ namespace TNovationTestFramework
         }
 
         [TestMethod]
-        public void DateOfBirthExtremeMax()
+        public void DateAddedExtremeMax()
         {
             //create an instance of the class we want to create
             clsConsultant AConsultant = new clsConsultant();
@@ -1023,9 +1021,9 @@ namespace TNovationTestFramework
             //change the date to whatever the date is plus 100years
             TestDate = TestDate.AddYears(100);
             //convert the date variable to string variable
-            string DateOfBirth = TestDate.ToString();
+            string DateAdded = TestDate.ToString();
             //invoke the method
-            OK = AConsultant.Valid(FirstName, LastName, Address, Email, DateOfBirth, EmploymentHistory);
+            OK = AConsultant.Valid(FirstName, LastName, Address, Email, DateAdded, EmploymentHistory);
             //test to see that the result is correct
             Assert.IsFalse(OK);
 
@@ -1044,10 +1042,10 @@ namespace TNovationTestFramework
             string LastName = "mmmmmm";
             string Address = "FlatB2CTHYMEROADLES";
             string Email = "mwen@live.com";
-            string DateOfBirth = "24/11/2005";
+            string DateAdded = DateTime.Now.Date.ToString();
             string EmploymentHistory = "";
             //invoke the method
-            OK = AConsultant.Valid(FirstName, LastName, Address, Email, DateOfBirth, EmploymentHistory);
+            OK = AConsultant.Valid(FirstName, LastName, Address, Email, DateAdded, EmploymentHistory);
             //test to see that the result is correct
             Assert.IsFalse(OK);
         }
@@ -1064,12 +1062,12 @@ namespace TNovationTestFramework
             string LastName = "mmmmmm";
             string Address = "Flat2CBASTREETLEICER";
             string Email = "mwen@live.com";
-            string DateOfBirth = "24/11/1992";
+            string DateAdded = DateTime.Now.Date.ToString();
             string EmploymentHistory = "";
             //invoke the method
-            OK = AConsultant.Valid(FirstName, LastName, Address, Email, DateOfBirth, EmploymentHistory);
+            OK = AConsultant.Valid(FirstName, LastName, Address, Email, EmploymentHistory, DateAdded);
             //test to see that the result is correct
-            Assert.IsFalse(OK);
+            Assert.IsTrue(OK);
         }
 
         [TestMethod]
@@ -1084,12 +1082,12 @@ namespace TNovationTestFramework
             string LastName = "mmmmmm";
             string Address = "Flat2CBASTREETLEICERR";
             string Email = "mwen@live.com";
-            string DateOfBirth = "24/11/1992";
-            string EmploymentHistory = "";
+            string DateAdded = DateTime.Now.Date.ToString();
+            string EmploymentHistory = "None";
             //invoke the method
-            OK = AConsultant.Valid(FirstName, LastName, Address, Email, DateOfBirth, EmploymentHistory);
+            OK = AConsultant.Valid(FirstName, LastName, Address, Email, EmploymentHistory, DateAdded);
             //test to see that the result is correct
-            Assert.IsFalse(OK);
+            Assert.IsTrue(OK);
         }
 
         [TestMethod]
@@ -1104,12 +1102,12 @@ namespace TNovationTestFramework
             string LastName = "mmmmmm";
             string Address = "Flat2CBASTREETLEICERR";
             string Email = "mwen@live.com";
-            string DateOfBirth = "24/11/1992";
-            string EmploymentHistory = "";
+            string DateAdded = DateTime.Now.Date.ToString();
+            string EmploymentHistory = "None";
             //invoke the method
-            OK = AConsultant.Valid(FirstName, LastName, Address, Email, DateOfBirth, EmploymentHistory);
+            OK = AConsultant.Valid(FirstName, LastName, Address, Email, EmploymentHistory, DateAdded);
             //test to see that the result is correct
-            Assert.IsFalse(OK);
+            Assert.IsTrue(OK);
         }
 
         [TestMethod]
@@ -1124,12 +1122,12 @@ namespace TNovationTestFramework
             string LastName = "mmmmmm";
             string Address = "Flat2CBASTREETLEICERRFlat2CBASTREETLEICERRFlat2CBASTREETLEIC";
             string Email = "mwen@live.com";
-            string DateOfBirth = "24/11/1992";
-            string EmploymentHistory = "";
+            string DateAdded = DateTime.Now.Date.ToString();
+            string EmploymentHistory = "None";
             //invoke the method
-            OK = AConsultant.Valid(FirstName, LastName, Address, Email, DateOfBirth, EmploymentHistory);
+            OK = AConsultant.Valid(FirstName, LastName, Address, Email, EmploymentHistory, DateAdded);
             //test to see that the result is correct
-            Assert.IsFalse(OK);
+            Assert.IsTrue(OK);
         }
         [TestMethod]
         public void AddressMaxPlusOne()
@@ -1143,10 +1141,10 @@ namespace TNovationTestFramework
             string LastName = "mmmmmm";
             string Address = "Flat2CBASTREETLEICERRFlat2CBASTREETLEICERRFlat2CBASTREETLEICE";
             string Email = "mwen@live.com";
-            string DateOfBirth = "24/11/1992";
-            string EmploymentHistory = "";
+            string DateAdded = DateTime.Now.Date.ToString();
+            string EmploymentHistory = "None";
             //invoke the method
-            OK = AConsultant.Valid(FirstName, LastName, Address, Email, DateOfBirth, EmploymentHistory);
+            OK = AConsultant.Valid(FirstName, LastName, Address, Email, EmploymentHistory, DateAdded);
             //test to see that the result is correct
             Assert.IsFalse(OK);
         }
@@ -1163,12 +1161,12 @@ namespace TNovationTestFramework
             string LastName = "mmmmmm";
             string Address = "CERRFlat2CBASTREETLEICERRFlat2";
             string Email = "mwen@live.com";
-            string DateOfBirth = "24/11/1992";
-            string EmploymentHistory = "";
+            string DateAdded = DateTime.Now.Date.ToString();
+            string EmploymentHistory = "None";
             //invoke the method
-            OK = AConsultant.Valid(FirstName, LastName, Address, Email, DateOfBirth, EmploymentHistory);
+            OK = AConsultant.Valid(FirstName, LastName, Address, Email, EmploymentHistory, DateAdded);
             //test to see that the result is correct
-            Assert.IsFalse(OK);
+            Assert.IsTrue(OK);
         }
 
         [TestMethod]
@@ -1183,10 +1181,10 @@ namespace TNovationTestFramework
             string LastName = "mmmmmm";
             string Address = "FlatB2CTHYMEROADLESS";
             string Email = "m@y";
-            string DateOfBirth = "24/11/1992";
-            string EmploymentHistory = "";
+            string DateAdded = DateTime.Now.Date.ToString();
+            string EmploymentHistory = "None";
             //invoke the method
-            OK = AConsultant.Valid(FirstName, LastName, Address, Email, DateOfBirth, EmploymentHistory);
+            OK = AConsultant.Valid(FirstName, LastName, Address, Email, EmploymentHistory, DateAdded);
             //test to see that the result is correct
             Assert.IsFalse(OK);
         }
@@ -1203,12 +1201,12 @@ namespace TNovationTestFramework
             string LastName = "mmmmmm";
             string Address = "FlatB2CTHYMEROADLESS";
             string Email = "m@yz";
-            string DateOfBirth = "24/11/1992";
-            string EmploymentHistory = "";
+            string DateAdded = DateTime.Now.Date.ToString();
+            string EmploymentHistory = "None";
             //invoke the method
-            OK = AConsultant.Valid(FirstName, LastName, Address, Email, DateOfBirth, EmploymentHistory);
+            OK = AConsultant.Valid(FirstName, LastName, Address, Email, EmploymentHistory, DateAdded);
             //test to see that the result is correct
-            Assert.IsFalse(OK);
+            Assert.IsTrue(OK);
         }
 
         [TestMethod]
