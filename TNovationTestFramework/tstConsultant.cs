@@ -557,7 +557,7 @@ namespace TNovationTestFramework
         }
 
         [TestMethod]
-        public void FirstNameNoMin()
+        public void FirstNameMin()
         {
             //create an instance of the class we want to create
             clsConsultant AConsultant = new clsConsultant();
@@ -595,7 +595,7 @@ namespace TNovationTestFramework
             //invoke the method
             OK = AConsultant.Valid(FirstName, LastName, Address, Email, DateAdded, EmploymentHistory);
             //test to see that the result is correct
-            Assert.IsFalse(OK);
+            Assert.IsTrue(OK);
 
 
         }
