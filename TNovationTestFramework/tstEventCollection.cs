@@ -101,15 +101,15 @@ namespace TNovationTestFramework
             //var to store the primary key
             Int32 PrimaryKey = 0;
             //set its properties
-            TestItem.EventCode = 4;
-            TestItem.EventName = "Innovation";
-            TestItem.CompanyName = "CTech";
-            TestItem.ConsultantAttending = "Freddy";
-            TestItem.Contact = "0758675643";
+           
+            TestItem.EventName = "test";
+            TestItem.CompanyName = "test";
+            TestItem.ConsultantAttending = "test";
+            TestItem.Contact = "07545636";
             TestItem.StartDate = DateTime.Now.Date; ;
-            TestItem.GuestSpeaker = "Tiffany Laster";
-            TestItem.Location = "IT support for company";
-            TestItem.TypeOfEvent ="Networking";
+            TestItem.GuestSpeaker = "Test";
+            TestItem.Location = "test";
+            TestItem.TypeOfEvent ="test";
            
             //set ThisEvent to the test data
             AllEvents.ThisEvent = TestItem;
