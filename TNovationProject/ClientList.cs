@@ -106,7 +106,7 @@ namespace TNovationProject
             //set the name of the primary key value
             listboxClient.ValueMember = "ClientNo";
             //set the data field to be displayed
-            listboxClient.DisplayMember = "ClientNo";
+            listboxClient.DisplayMember = "ClientName";
             //return the count of records in the list
             return Clients.Count;
         }

@@ -182,9 +182,9 @@
             this.labelUser.ForeColor = System.Drawing.Color.Maroon;
             this.labelUser.Location = new System.Drawing.Point(12, 98);
             this.labelUser.Name = "labelUser";
-            this.labelUser.Size = new System.Drawing.Size(110, 16);
+            this.labelUser.Size = new System.Drawing.Size(97, 16);
             this.labelUser.TabIndex = 67;
-            this.labelUser.Text = "Client numbers";
+            this.labelUser.Text = "Client names";
             // 
             // labelHeading
             // 
