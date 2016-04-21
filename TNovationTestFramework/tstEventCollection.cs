@@ -82,7 +82,7 @@ namespace TNovationTestFramework
             //add the item to the test list
             TestList.Add(TestItem);
             //assign the data to the property
-           AllEvents.EventList = TestList;
+            AllEvents.EventList = TestList;
             //test to see that the two values are the same
             Assert.AreEqual(AllEvents.Count, TestList.Count);
 

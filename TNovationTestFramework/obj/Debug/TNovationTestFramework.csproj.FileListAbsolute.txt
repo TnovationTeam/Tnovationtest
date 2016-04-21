@@ -100,3 +100,5 @@ C:\Users\MwenyaSebastian\Source\Repos\Tnovationtest13\TNovationTestFramework\bin
 C:\Users\MwenyaSebastian\Source\Repos\Tnovationtest13\TNovationTestFramework\obj\Debug\TNovationTestFramework.csprojResolveAssemblyReference.cache
 C:\Users\MwenyaSebastian\Source\Repos\Tnovationtest13\TNovationTestFramework\obj\Debug\TNovationTestFramework.dll
 C:\Users\MwenyaSebastian\Source\Repos\Tnovationtest13\TNovationTestFramework\obj\Debug\TNovationTestFramework.pdb
+C:\Users\Egle\Source\Repos\Tnovationtest\TNovationTestFramework\obj\Debug\TNovationTestFramework.csprojResolveAssemblyReference.cache
+C:\Users\Egle\Source\Repos\Tnovationtest\TNovationTestFramework\obj\Debug\TNovationTestFramework.dll
