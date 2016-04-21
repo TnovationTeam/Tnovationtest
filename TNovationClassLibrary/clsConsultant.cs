@@ -13,6 +13,8 @@ namespace TNovationClassLibrary
         private Int32 consultantNo;
         //private data member for the Date of Birth property
         private DateTime dateOfBirth;
+        //private data member for the Date of Birth property
+        private DateTime dateAdded;
         //private data member for the Address property
         private string address;
         //private data member for the Email property
@@ -77,6 +79,21 @@ namespace TNovationClassLibrary
             {
                 //set the private data
                 dateOfBirth = value;
+            }
+        }
+
+        //public property for Date Added
+        public DateTime DateAdded
+        {
+            get
+            {
+                //return the private data
+                return dateAdded;
+            }
+            set
+            {
+                //set the private data
+                dateAdded = value;
             }
         }
 
@@ -256,6 +273,7 @@ namespace TNovationClassLibrary
                 hoursOfWork = Convert.ToInt32(DB.DataTable.Rows[0]["HoursOfWork"]);
                 employmentHistory = Convert.ToString(DB.DataTable.Rows[0]["EmploymentHistory"]);
                 status = Convert.ToBoolean(DB.DataTable.Rows[0]["Status"]);
+                dateAdded = Convert.ToDateTime(DB.DataTable.Rows[0]["DateAdded"]);
                 //always return true
                 return true;
             }
@@ -272,7 +290,7 @@ namespace TNovationClassLibrary
 
 
 
-        public bool Valid(string FirstName, string LastName, string Address, string Email, string EmploymentHistory, string DateOfBirth)
+        public bool Valid(string FirstName, string LastName, string Address, string Email, string EmploymentHistory, string DateAdded)
         {
             //createa a Boolean variable to flag the error
             Boolean OK = true;
@@ -299,7 +317,7 @@ namespace TNovationClassLibrary
             try
             {
                 //copy the DateOfBirth value to the datetemp variable
-                DateTemp = Convert.ToDateTime(DateOfBirth);
+                DateTemp = Convert.ToDateTime(DateAdded);
                 //check to see ifthe date is less than today's date
                 if (DateTemp < DateTime.Now.Date)
                 {
