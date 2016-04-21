@@ -211,3 +211,6 @@ F:\TNovation_Client\TNovationProject\bin\Debug\TNovationProject.exe.config
 C:\Users\MwenyaSebastian\Source\Repos\Tnovationtest16\TNovationProject\bin\Debug\TNovationProject.exe.config
 C:\Users\MwenyaSebastian\Source\Repos\Tnovationtest16\TNovationProject\obj\Debug\TNovationProject.exe
 C:\Users\MwenyaSebastian\Source\Repos\Tnovationtest16\TNovationProject\obj\Debug\TNovationProject.pdb
+C:\Users\MwenyaSebastian\Source\Repos\Tnovationtest17\TNovationProject\bin\Debug\TNovationProject.exe.config
+C:\Users\MwenyaSebastian\Source\Repos\Tnovationtest17\TNovationProject\obj\Debug\TNovationProject.exe
+C:\Users\MwenyaSebastian\Source\Repos\Tnovationtest17\TNovationProject\obj\Debug\TNovationProject.pdb
