@@ -547,7 +547,7 @@ namespace TNovationTestFramework
             string Address = "flat b 2, thml";
             string Email = "mwen@live.com";
             string DateAdded = DateTime.Now.Date.ToString();
-            string EmploymentHistory = "";
+            string EmploymentHistory = "None";
             //invoke the method
             OK = AConsultant.Valid(FirstName, LastName, Address, Email, EmploymentHistory, DateAdded);
             //test to see that the result is correct
@@ -569,9 +569,9 @@ namespace TNovationTestFramework
             string Address = "flat b 2, thml";
             string Email = "mwen@live.com";
             string DateAdded = DateTime.Now.Date.ToString();
-            string EmploymentHistory = "";
+            string EmploymentHistory = "None";
             //invoke the method
-            OK = AConsultant.Valid(FirstName, LastName, Address, Email, DateAdded,EmploymentHistory);
+            OK = AConsultant.Valid(FirstName, LastName, Address, Email,EmploymentHistory, DateAdded);
             //test to see that the result is correct
             Assert.IsTrue(OK);
 
@@ -591,7 +591,7 @@ namespace TNovationTestFramework
             string Address = "flat b 2, thml";
             string Email = "mwen@live.com";
             string DateAdded = DateTime.Now.Date.ToString();
-            string EmploymentHistory = "";
+            string EmploymentHistory = "None";
             //invoke the method
             OK = AConsultant.Valid(FirstName, LastName, Address, Email, DateAdded, EmploymentHistory);
             //test to see that the result is correct
@@ -958,7 +958,7 @@ namespace TNovationTestFramework
             string LastName = "mmmmmm";
             string Address = "flat b 2, thml";
             string Email = "mwen@live.com";
-            string EmploymentHistory = "";
+            string EmploymentHistory = "None";
             //create a variable to store the test date data
             DateTime TestDate;
             //set the date to todays date
@@ -966,9 +966,9 @@ namespace TNovationTestFramework
             //change the date to whatever the date is less than 16 years
             TestDate = TestDate.AddYears(-16);
             //convert the date variable to string variable
-            string DateOfBirth = TestDate.ToString();
+            string DateAdded = TestDate.ToString();
             //invoke the method
-            OK = AConsultant.Valid(FirstName, LastName, Address, Email, DateOfBirth, EmploymentHistory);
+            OK = AConsultant.Valid(FirstName, LastName, Address, Email, DateAdded, EmploymentHistory);
             //test to see that the result is correct, should be assert.isTrue
             Assert.IsTrue(OK);
 
