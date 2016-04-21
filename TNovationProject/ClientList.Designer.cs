@@ -149,6 +149,7 @@
             this.listboxClient.Name = "listboxClient";
             this.listboxClient.Size = new System.Drawing.Size(361, 147);
             this.listboxClient.TabIndex = 60;
+          
             // 
             // labelUser
             // 
