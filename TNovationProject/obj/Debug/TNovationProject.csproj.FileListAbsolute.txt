@@ -208,3 +208,6 @@ C:\Users\MwenyaSebastian\Source\Repos\Tnovationtest15\TNovationProject\obj\Debug
 C:\Users\MwenyaSebastian\Source\Repos\Tnovationtest15\TNovationProject\obj\Debug\TNovationProject.UpdateClient.resources
 C:\Users\MwenyaSebastian\Source\Repos\Tnovationtest15\TNovationProject\obj\Debug\TNovationProject.csproj.GenerateResource.Cache
 F:\TNovation_Client\TNovationProject\bin\Debug\TNovationProject.exe.config
+C:\Users\MwenyaSebastian\Source\Repos\Tnovationtest16\TNovationProject\bin\Debug\TNovationProject.exe.config
+C:\Users\MwenyaSebastian\Source\Repos\Tnovationtest16\TNovationProject\obj\Debug\TNovationProject.exe
+C:\Users\MwenyaSebastian\Source\Repos\Tnovationtest16\TNovationProject\obj\Debug\TNovationProject.pdb
