@@ -54,8 +54,12 @@
     <Compile Include="tstClient.cs" />
     <Compile Include="tstClientCollection.cs" />
     <Compile Include="tstCompany.cs" />
-    <Compile Include="tstConsultant.cs" />
-    <Compile Include="tstConsultantCollection.cs" />
+    <Compile Include="tstConsultant.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tstConsultantCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="tstEvent.cs" />
     <Compile Include="tstEventCollection.cs" />
     <Compile Include="tstProject.cs" />
