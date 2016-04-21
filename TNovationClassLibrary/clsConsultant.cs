@@ -387,11 +387,11 @@ namespace TNovationClassLibrary
                 OK = false;
             }
 
-            //is the EmploymentHistory blank
-            if (EmploymentHistory.Length == 0)
+            //is the EmploymentHistory is 3 characters or more
+            if (EmploymentHistory.Length == 3)
             {
                 //set the flag OK to false
-                OK = true;
+                OK = false;
 
             }
 
