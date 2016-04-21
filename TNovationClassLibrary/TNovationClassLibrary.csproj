@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="clsClient.cs" />
     <Compile Include="clsClientCollection.cs" />
+    <Compile Include="clsCompany.cs" />
     <Compile Include="clsConsultant.cs" />
     <Compile Include="clsConsultantCollection.cs">
       <SubType>Code</SubType>
