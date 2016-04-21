@@ -101,7 +101,7 @@ namespace TNovationTestFramework
             //var to store the primary key
             Int32 PrimaryKey = 0;
             //set its properties
-            
+            TestItem.EventCode = 4;
             TestItem.EventName = "Innovation";
             TestItem.CompanyName = "CTech";
             TestItem.ConsultantAttending = "Freddy";

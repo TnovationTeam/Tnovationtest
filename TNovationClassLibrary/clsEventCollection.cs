@@ -9,14 +9,14 @@ namespace TNovationClassLibrary
 {
     public class clsEventCollection
     {
+        //private data member for the list
+        List<clsEvent> eventList = new List<clsEvent>();
         //private data member thisEvent
         clsEvent thisEvent = new clsEvent();
         //private data member for the allEvents list
         private List<clsEvent> allEvents = new List<clsEvent>();
 
-        //private data member for the list
-        List<clsEvent> eventList = new List<clsEvent>();
-
+       
         
 
          //public property for the client list

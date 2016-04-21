@@ -182,3 +182,7 @@ C:\Users\Egle\Source\Repos\Tnovationtest\TNovationProject\obj\Debug\TNovationPro
 C:\Users\Egle\Source\Repos\Tnovationtest\TNovationProject\obj\Debug\TNovationProject.Properties.Resources.resources
 C:\Users\Egle\Source\Repos\Tnovationtest\TNovationProject\obj\Debug\TNovationProject.UpdateClient.resources
 C:\Users\Egle\Source\Repos\Tnovationtest\TNovationProject\obj\Debug\TNovationProject.csproj.GenerateResource.Cache
+C:\Users\Egle\Source\Repos\Tnovationtest\TNovationProject\bin\Debug\TNovationProject.exe
+C:\Users\Egle\Source\Repos\Tnovationtest\TNovationProject\bin\Debug\TNovationProject.pdb
+C:\Users\Egle\Source\Repos\Tnovationtest\TNovationProject\bin\Debug\TNovationClassLibrary.dll
+C:\Users\Egle\Source\Repos\Tnovationtest\TNovationProject\bin\Debug\TNovationClassLibrary.pdb

@@ -293,9 +293,9 @@
             this.labelError.ForeColor = System.Drawing.Color.Maroon;
             this.labelError.Location = new System.Drawing.Point(274, 482);
             this.labelError.Name = "labelError";
-            this.labelError.Size = new System.Drawing.Size(250, 13);
+            this.labelError.Size = new System.Drawing.Size(69, 13);
             this.labelError.TabIndex = 49;
-            this.labelError.Text = "There were problems with the data entered";
+            this.labelError.Text = "[labelError]";
             // 
             // EventForm
             // 
