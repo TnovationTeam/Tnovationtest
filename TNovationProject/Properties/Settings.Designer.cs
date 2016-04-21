@@ -33,5 +33,16 @@ namespace TNovationProject.Properties {
                 return ((string)(this["TNovationConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\v11.0;AttachDbFilename=F:\\TNovation_Client\\App_Data\\TNovati" +
+            "on.mdf;Integrated Security=True;Connect Timeout=30")]
+        public string TNovation {
+            get {
+                return ((string)(this["TNovation"]));
+            }
+        }
     }
 }

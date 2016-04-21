@@ -24,10 +24,12 @@ namespace TNovationProject
         //this function handles the load event of the page
         private void ClientList_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'tNovationDataSet.tblClient' table. You can move, or remove it, as needed.
+            this.tblClientTableAdapter.Fill(this.tNovationDataSet.tblClient);
                 //update the listbox
                 DisplayClients();
-            
-        }
+                this.Refresh();
+                       }
 
         private void buttonAdd_Click(object sender, EventArgs e)
         {
@@ -48,9 +50,12 @@ namespace TNovationProject
                 //get the primary key value of the record to delete 
                 ClientNo = Convert.ToInt32(listboxClient.SelectedValue);
                 DeleteClient();
-                labelError.Text = "The record has been deleted";
                 //update the listbox
                 DisplayClients();
+                new ClientList().Show();
+                this.Hide();
+                this.Refresh();
+              
             }
             else //if no record has been selected 
             {
@@ -71,7 +76,7 @@ namespace TNovationProject
             TNovation.ThisClient.Find(ClientNo);
             //delete the record
             TNovation.Delete();
-           
+            
         }
 
         private void buttonUpdate_Click(object sender, EventArgs e)
@@ -104,6 +109,19 @@ namespace TNovationProject
             listboxClient.DisplayMember = "ClientNo";
             //return the count of records in the list
             return Clients.Count;
+        }
+
+         
+       
+
+        private void listboxClient_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridViewClientData_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            this.Refresh();
         }
 
       
