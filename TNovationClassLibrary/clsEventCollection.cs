@@ -101,9 +101,20 @@ namespace TNovationClassLibrary
         {
             //adds a new record to the database based on the values of thisEvent
             //set the primary key value pof the new record
-            thisEvent.EventCode = 1;
-            //return the primary key of the new record
-            return thisEvent.EventCode;
+            clsDataConnection DB = new clsDataConnection();
+
+           //set the parameters for the stored procedure
+            DB.AddParameter("@EventCode", thisEvent.EventCode);
+            DB.AddParameter("@EventName", thisEvent.EventName);
+            DB.AddParameter("@CompanyName", thisEvent.CompanyName);
+            DB.AddParameter("@ConsultantAttending", thisEvent.ConsultantAttending);
+            DB.AddParameter("@Contact", thisEvent.Contact);
+            DB.AddParameter("@StartDate", thisEvent.StartDate);
+            DB.AddParameter("@GuestSpeaker", thisEvent.GuestSpeaker);
+            DB.AddParameter("@Location", thisEvent.Location);
+            DB.AddParameter("@TypeOfEvent", thisEvent.TypeOfEvent);
+            //execute the query returning the primary key value
+            return DB.Execute("sproc_tblEvent_Insert");
         }
 
  
