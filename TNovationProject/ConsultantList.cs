@@ -48,7 +48,7 @@ namespace TNovationProject
         {
             //function to delete the selected record
 
-            //create a new instance of the client book
+            //create a new instance of the Consultant book
             clsConsultantCollection TNovation = new clsConsultantCollection();
             //find the record to delete 
             TNovation.ThisConsultant.Find(ConsultantNo);
@@ -101,6 +101,13 @@ namespace TNovationProject
         private void buttonExit_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void buttonUpdate_Click(object sender, EventArgs e)
+        {
+            //This line of code takes the user to the form that updates the consultant
+            new UpdateConsultant().Show();
+            this.Hide();
         }
 
 
