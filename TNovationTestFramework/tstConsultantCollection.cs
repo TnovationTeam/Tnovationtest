@@ -161,7 +161,7 @@ namespace TNovationTestFramework
             Int32 PrimaryKey = 0;
             //set its properties
             TestItem.Status = true;
-            TestItem.ConsultantNo = 39;
+            TestItem.ConsultantNo = 61;
             TestItem.FirstName = "James";
             TestItem.LastName = "Junior";
             TestItem.DateOfBirth = DateTime.Now.Date.AddYears(-17);
@@ -195,14 +195,14 @@ namespace TNovationTestFramework
             Int32 PrimaryKey = 0;
             //set its properties
             TestItem.Status = true;
-            TestItem.ConsultantNo = 39;
+            TestItem.ConsultantNo = 46;
             TestItem.FirstName = "James";
             TestItem.LastName = "Junior";
             TestItem.DateOfBirth = DateTime.Now.Date.AddYears(-17);
-            TestItem.Address = "Flat C, Colly road";
+            TestItem.Address = "Flat C, Basil road";
             TestItem.Email = "Healthy@aol.com";
-            TestItem.TelephoneNo = "07437320192";
-            TestItem.EmergencyContact = "07528789924";
+            TestItem.TelephoneNo = "07528789965";
+            TestItem.EmergencyContact = "07528789965";
             TestItem.EmploymentDate = DateTime.Now.Date;
             TestItem.HoursOfWork = 129;
             TestItem.EmploymentHistory = "None";
