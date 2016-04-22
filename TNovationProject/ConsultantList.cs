@@ -31,8 +31,9 @@ namespace TNovationProject
 
         private void ConsultantList_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'mwenyaConsultantDataSet.tblConsultant' table. You can move, or remove it, as needed.
-            this.tblConsultantTableAdapter.Fill(this.mwenyaConsultantDataSet.tblConsultant);
+            // TODO: This line of code loads data into the 'tNovationDataSetsall.tblConsultant' table. You can move, or remove it, as needed.
+            this.tblConsultantTableAdapter1.Fill(this.tNovationDataSetsall.tblConsultant);
+           
 
         }
     }

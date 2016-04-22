@@ -24,8 +24,9 @@ namespace TNovationProject
         //this function handles the load event of the page
         private void ClientList_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'freddyDataConnection.tblClient' table. You can move, or remove it, as needed.
-            this.tblClientTableAdapter1.Fill(this.freddyDataConnection.tblClient);
+            // TODO: This line of code loads data into the 'tNovationDataSetsall.tblClient' table. You can move, or remove it, as needed.
+            this.tblClientTableAdapter.Fill(this.tNovationDataSetsall.tblClient);
+          
     
                 //update the listbox
                 DisplayClients();

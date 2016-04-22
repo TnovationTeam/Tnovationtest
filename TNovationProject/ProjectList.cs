@@ -70,10 +70,16 @@ namespace TNovationProject
 
         private void ProjectList_Load_1(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'callumProjectDataSet.tblProject' table. You can move, or remove it, as needed.
-            this.tblProjectTableAdapter.Fill(this.callumProjectDataSet.tblProject);
+            // TODO: This line of code loads data into the 'tNovationDataSetsall.tblProject' table. You can move, or remove it, as needed.
+            this.tblProjectTableAdapter1.Fill(this.tNovationDataSetsall.tblProject);
+           
             
     
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
 
         }
     }

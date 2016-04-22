@@ -40,9 +40,6 @@
             this.lblConsultantListInfo = new System.Windows.Forms.Label();
             this.tNovationDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.mwenyaConsultantDataSet = new TNovationProject.MwenyaConsultantDataSet();
-            this.tblConsultantBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tblConsultantTableAdapter = new TNovationProject.MwenyaConsultantDataSetTableAdapters.tblConsultantTableAdapter();
             this.consultantNoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.firstNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lastNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -56,11 +53,21 @@
             this.employmentHistoryDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.statusDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.dateAddedDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tblConsultantBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.mwenyaConsultantDataSet = new TNovationProject.MwenyaConsultantDataSet();
+            this.tblConsultantTableAdapter = new TNovationProject.MwenyaConsultantDataSetTableAdapters.tblConsultantTableAdapter();
+            this.tblConsultantBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.tNovationDataSetsall = new TNovationProject.TNovationDataSetsall();
+            this.tblConsultantBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.tblConsultantTableAdapter1 = new TNovationProject.TNovationDataSetsallTableAdapters.tblConsultantTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mwenyaConsultantDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblConsultantBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mwenyaConsultantDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblConsultantBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetsall)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblConsultantBindingSource2)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -158,25 +165,11 @@
             this.employmentHistoryDataGridViewTextBoxColumn,
             this.statusDataGridViewCheckBoxColumn,
             this.dateAddedDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.tblConsultantBindingSource;
+            this.dataGridView1.DataSource = this.tblConsultantBindingSource2;
             this.dataGridView1.Location = new System.Drawing.Point(12, 180);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(912, 250);
             this.dataGridView1.TabIndex = 72;
-            // 
-            // mwenyaConsultantDataSet
-            // 
-            this.mwenyaConsultantDataSet.DataSetName = "MwenyaConsultantDataSet";
-            this.mwenyaConsultantDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tblConsultantBindingSource
-            // 
-            this.tblConsultantBindingSource.DataMember = "tblConsultant";
-            this.tblConsultantBindingSource.DataSource = this.mwenyaConsultantDataSet;
-            // 
-            // tblConsultantTableAdapter
-            // 
-            this.tblConsultantTableAdapter.ClearBeforeFill = true;
             // 
             // consultantNoDataGridViewTextBoxColumn
             // 
@@ -256,6 +249,39 @@
             this.dateAddedDataGridViewTextBoxColumn.HeaderText = "DateAdded";
             this.dateAddedDataGridViewTextBoxColumn.Name = "dateAddedDataGridViewTextBoxColumn";
             // 
+            // tblConsultantBindingSource
+            // 
+            this.tblConsultantBindingSource.DataMember = "tblConsultant";
+            this.tblConsultantBindingSource.DataSource = this.mwenyaConsultantDataSet;
+            // 
+            // mwenyaConsultantDataSet
+            // 
+            this.mwenyaConsultantDataSet.DataSetName = "MwenyaConsultantDataSet";
+            this.mwenyaConsultantDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tblConsultantTableAdapter
+            // 
+            this.tblConsultantTableAdapter.ClearBeforeFill = true;
+            // 
+            // tblConsultantBindingSource1
+            // 
+            this.tblConsultantBindingSource1.DataMember = "tblConsultant";
+            this.tblConsultantBindingSource1.DataSource = this.mwenyaConsultantDataSet;
+            // 
+            // tNovationDataSetsall
+            // 
+            this.tNovationDataSetsall.DataSetName = "TNovationDataSetsall";
+            this.tNovationDataSetsall.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tblConsultantBindingSource2
+            // 
+            this.tblConsultantBindingSource2.DataMember = "tblConsultant";
+            this.tblConsultantBindingSource2.DataSource = this.tNovationDataSetsall;
+            // 
+            // tblConsultantTableAdapter1
+            // 
+            this.tblConsultantTableAdapter1.ClearBeforeFill = true;
+            // 
             // ConsultantList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -276,8 +302,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mwenyaConsultantDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblConsultantBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mwenyaConsultantDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblConsultantBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetsall)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblConsultantBindingSource2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -312,5 +341,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn employmentHistoryDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewCheckBoxColumn statusDataGridViewCheckBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn dateAddedDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource tblConsultantBindingSource1;
+        private TNovationDataSetsall tNovationDataSetsall;
+        private System.Windows.Forms.BindingSource tblConsultantBindingSource2;
+        private TNovationDataSetsallTableAdapters.tblConsultantTableAdapter tblConsultantTableAdapter1;
     }
 }
