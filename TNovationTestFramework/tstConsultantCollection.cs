@@ -185,6 +185,44 @@ namespace TNovationTestFramework
             Assert.AreEqual(AllConsultants.ThisConsultant, TestItem);
         }
 
+        [TestMethod]
+        public void DeleteMethodOK()
+        {
+            //create an instance of the class we want to create
+            clsConsultantCollection AllConsultants = new clsConsultantCollection();
+            clsConsultant TestItem = new clsConsultant();
+            //var to store the primary key
+            Int32 PrimaryKey = 0;
+            //set its properties
+            TestItem.Status = true;
+            TestItem.ConsultantNo = 39;
+            TestItem.FirstName = "James";
+            TestItem.LastName = "Junior";
+            TestItem.DateOfBirth = DateTime.Now.Date.AddYears(-17);
+            TestItem.Address = "Flat C, Colly road";
+            TestItem.Email = "Healthy@aol.com";
+            TestItem.TelephoneNo = "07437320192";
+            TestItem.EmergencyContact = "07528789924";
+            TestItem.EmploymentDate = DateTime.Now.Date;
+            TestItem.HoursOfWork = 129;
+            TestItem.EmploymentHistory = "None";
+            TestItem.DateAdded = DateTime.Now.Date;
+            //set ThisConsultant to the test data
+            AllConsultants.ThisConsultant = TestItem;
+            //add the record
+            PrimaryKey = AllConsultants.AddNew();
+            //set the primary key of the test data
+            TestItem.ConsultantNo = PrimaryKey;
+            //find the record
+            AllConsultants.ThisConsultant.Find(PrimaryKey);
+            //delete the record
+            AllConsultants.Delete();
+            //now find the record
+            Boolean Found = AllConsultants.ThisConsultant.Find(PrimaryKey);
+            //test to see that the record wasn't found
+            Assert.IsFalse(Found);
+        }
+
 
 
     }

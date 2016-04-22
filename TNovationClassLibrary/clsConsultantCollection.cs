@@ -157,5 +157,10 @@ namespace TNovationClassLibrary
         }
 
 
+
+        public void Delete()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
