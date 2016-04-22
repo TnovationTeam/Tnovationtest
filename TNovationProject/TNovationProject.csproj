@@ -151,6 +151,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>TNovationDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="TNovationDataSetcompleted.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TNovationDataSetcompleted.xsd</DependentUpon>
+    </Compile>
     <Compile Include="TNovationDataSetsall.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -265,6 +270,17 @@
     </None>
     <None Include="TNovationDataSet.xss">
       <DependentUpon>TNovationDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TNovationDataSetcompleted.xsc">
+      <DependentUpon>TNovationDataSetcompleted.xsd</DependentUpon>
+    </None>
+    <None Include="TNovationDataSetcompleted.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TNovationDataSetcompleted.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TNovationDataSetcompleted.xss">
+      <DependentUpon>TNovationDataSetcompleted.xsd</DependentUpon>
     </None>
     <None Include="TNovationDataSetsall.xsc">
       <DependentUpon>TNovationDataSetsall.xsd</DependentUpon>

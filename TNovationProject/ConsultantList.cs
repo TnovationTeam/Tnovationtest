@@ -35,6 +35,8 @@ namespace TNovationProject
 
         private void ConsultantList_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'tNovationDataSetcompleted.tblConsultant' table. You can move, or remove it, as needed.
+            this.tblConsultantTableAdapter3.Fill(this.tNovationDataSetcompleted.tblConsultant);
             // TODO: This line of code loads data into the 'tNovationDataSetTIMING.tblConsultant' table. You can move, or remove it, as needed.
             this.tblConsultantTableAdapter2.Fill(this.tNovationDataSetTIMING.tblConsultant);
             //update the listbox
@@ -108,6 +110,12 @@ namespace TNovationProject
             //This line of code takes the user to the form that updates the consultant
             new UpdateConsultant().Show();
             this.Hide();
+        }
+
+        private void buttonPopulate_Click(object sender, EventArgs e)
+        {
+            //Update the listbox
+            DisplayConsultants();
         }
 
 

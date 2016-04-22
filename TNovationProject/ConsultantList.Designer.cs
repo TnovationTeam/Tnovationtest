@@ -32,7 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConsultantList));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.buttonExit = new System.Windows.Forms.Button();
-            this.buttonFilter = new System.Windows.Forms.Button();
+            this.buttonPopulate = new System.Windows.Forms.Button();
             this.buttonDelete = new System.Windows.Forms.Button();
             this.buttonUpdate = new System.Windows.Forms.Button();
             this.buttonAdd = new System.Windows.Forms.Button();
@@ -66,6 +66,9 @@
             this.tblConsultantTableAdapter2 = new TNovationProject.TNovationDataSetTIMINGTableAdapters.tblConsultantTableAdapter();
             this.listBoxConsultant = new System.Windows.Forms.ListBox();
             this.labelError = new System.Windows.Forms.Label();
+            this.tNovationDataSetcompleted = new TNovationProject.TNovationDataSetcompleted();
+            this.tblConsultantBindingSource5 = new System.Windows.Forms.BindingSource(this.components);
+            this.tblConsultantTableAdapter3 = new TNovationProject.TNovationDataSetcompletedTableAdapters.tblConsultantTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -77,6 +80,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.tblConsultantBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mwenyaConsultantDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblConsultantBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetcompleted)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblConsultantBindingSource5)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -99,14 +104,15 @@
             this.buttonExit.UseVisualStyleBackColor = true;
             this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
             // 
-            // buttonFilter
+            // buttonPopulate
             // 
-            this.buttonFilter.Location = new System.Drawing.Point(1409, 431);
-            this.buttonFilter.Name = "buttonFilter";
-            this.buttonFilter.Size = new System.Drawing.Size(112, 43);
-            this.buttonFilter.TabIndex = 12;
-            this.buttonFilter.Text = "Filter";
-            this.buttonFilter.UseVisualStyleBackColor = true;
+            this.buttonPopulate.Location = new System.Drawing.Point(1409, 431);
+            this.buttonPopulate.Name = "buttonPopulate";
+            this.buttonPopulate.Size = new System.Drawing.Size(112, 43);
+            this.buttonPopulate.TabIndex = 12;
+            this.buttonPopulate.Text = "Populate List";
+            this.buttonPopulate.UseVisualStyleBackColor = true;
+            this.buttonPopulate.Click += new System.EventHandler(this.buttonPopulate_Click);
             // 
             // buttonDelete
             // 
@@ -177,7 +183,7 @@
             this.employmentHistoryDataGridViewTextBoxColumn,
             this.statusDataGridViewCheckBoxColumn,
             this.dateAddedDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.tblConsultantBindingSource4;
+            this.dataGridView1.DataSource = this.tblConsultantBindingSource5;
             this.dataGridView1.Location = new System.Drawing.Point(41, 193);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(1344, 466);
@@ -329,6 +335,20 @@
             this.labelError.Size = new System.Drawing.Size(0, 13);
             this.labelError.TabIndex = 74;
             // 
+            // tNovationDataSetcompleted
+            // 
+            this.tNovationDataSetcompleted.DataSetName = "TNovationDataSetcompleted";
+            this.tNovationDataSetcompleted.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tblConsultantBindingSource5
+            // 
+            this.tblConsultantBindingSource5.DataMember = "tblConsultant";
+            this.tblConsultantBindingSource5.DataSource = this.tNovationDataSetcompleted;
+            // 
+            // tblConsultantTableAdapter3
+            // 
+            this.tblConsultantTableAdapter3.ClearBeforeFill = true;
+            // 
             // ConsultantList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -340,7 +360,7 @@
             this.Controls.Add(this.lblConsultantListInfo);
             this.Controls.Add(this.labelHeading);
             this.Controls.Add(this.buttonExit);
-            this.Controls.Add(this.buttonFilter);
+            this.Controls.Add(this.buttonPopulate);
             this.Controls.Add(this.buttonDelete);
             this.Controls.Add(this.buttonUpdate);
             this.Controls.Add(this.buttonAdd);
@@ -359,6 +379,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.tblConsultantBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mwenyaConsultantDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblConsultantBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetcompleted)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblConsultantBindingSource5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -368,7 +390,7 @@
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button buttonExit;
-        private System.Windows.Forms.Button buttonFilter;
+        private System.Windows.Forms.Button buttonPopulate;
         private System.Windows.Forms.Button buttonDelete;
         private System.Windows.Forms.Button buttonUpdate;
         private System.Windows.Forms.Button buttonAdd;
@@ -403,5 +425,8 @@
         private System.Windows.Forms.BindingSource tblConsultantBindingSource4;
         private System.Windows.Forms.ListBox listBoxConsultant;
         private System.Windows.Forms.Label labelError;
+        private TNovationDataSetcompleted tNovationDataSetcompleted;
+        private System.Windows.Forms.BindingSource tblConsultantBindingSource5;
+        private TNovationDataSetcompletedTableAdapters.tblConsultantTableAdapter tblConsultantTableAdapter3;
     }
 }

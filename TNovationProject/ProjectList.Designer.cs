@@ -52,8 +52,9 @@
             this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tblProjectBindingSource6 = new System.Windows.Forms.BindingSource(this.components);
+            this.tblProjectBindingSource7 = new System.Windows.Forms.BindingSource(this.components);
             this.tNovationDataSetTIMING = new TNovationProject.TNovationDataSetTIMING();
+            this.tblProjectBindingSource6 = new System.Windows.Forms.BindingSource(this.components);
             this.tblProjectBindingSource5 = new System.Windows.Forms.BindingSource(this.components);
             this.tNovationDataSetsall = new TNovationProject.TNovationDataSetsall();
             this.tblProjectBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
@@ -62,7 +63,9 @@
             this.tblProjectTableAdapter = new TNovationProject.CallumProjectDataSetTableAdapters.tblProjectTableAdapter();
             this.tblProjectTableAdapter1 = new TNovationProject.TNovationDataSetsallTableAdapters.tblProjectTableAdapter();
             this.tblProjectTableAdapter2 = new TNovationProject.TNovationDataSetTIMINGTableAdapters.tblProjectTableAdapter();
-            this.tblProjectBindingSource7 = new System.Windows.Forms.BindingSource(this.components);
+            this.tNovationDataSetcompleted = new TNovationProject.TNovationDataSetcompleted();
+            this.tblProjectBindingSource8 = new System.Windows.Forms.BindingSource(this.components);
+            this.tblProjectTableAdapter3 = new TNovationProject.TNovationDataSetcompletedTableAdapters.tblProjectTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblProjectBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblProjectBindingSource1)).BeginInit();
@@ -70,14 +73,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblCompanyBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblProjectBindingSource6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblProjectBindingSource7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetTIMING)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblProjectBindingSource6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblProjectBindingSource5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetsall)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblProjectBindingSource4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.callumProjectDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblProjectBindingSource3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblProjectBindingSource7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetcompleted)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblProjectBindingSource8)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBoxLogo
@@ -191,7 +196,7 @@
             this.dataGridViewTextBoxColumn14,
             this.dataGridViewTextBoxColumn15,
             this.dataGridViewTextBoxColumn16});
-            this.dataGridView1.DataSource = this.tblProjectBindingSource7;
+            this.dataGridView1.DataSource = this.tblProjectBindingSource8;
             this.dataGridView1.Location = new System.Drawing.Point(204, 145);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(866, 368);
@@ -246,15 +251,20 @@
             this.dataGridViewTextBoxColumn16.HeaderText = "ProjectLocation";
             this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
             // 
-            // tblProjectBindingSource6
+            // tblProjectBindingSource7
             // 
-            this.tblProjectBindingSource6.DataMember = "tblProject";
-            this.tblProjectBindingSource6.DataSource = this.tNovationDataSetTIMING;
+            this.tblProjectBindingSource7.DataMember = "tblProject";
+            this.tblProjectBindingSource7.DataSource = this.tNovationDataSetTIMING;
             // 
             // tNovationDataSetTIMING
             // 
             this.tNovationDataSetTIMING.DataSetName = "TNovationDataSetTIMING";
             this.tNovationDataSetTIMING.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tblProjectBindingSource6
+            // 
+            this.tblProjectBindingSource6.DataMember = "tblProject";
+            this.tblProjectBindingSource6.DataSource = this.tNovationDataSetTIMING;
             // 
             // tblProjectBindingSource5
             // 
@@ -293,10 +303,19 @@
             // 
             this.tblProjectTableAdapter2.ClearBeforeFill = true;
             // 
-            // tblProjectBindingSource7
+            // tNovationDataSetcompleted
             // 
-            this.tblProjectBindingSource7.DataMember = "tblProject";
-            this.tblProjectBindingSource7.DataSource = this.tNovationDataSetTIMING;
+            this.tNovationDataSetcompleted.DataSetName = "TNovationDataSetcompleted";
+            this.tNovationDataSetcompleted.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tblProjectBindingSource8
+            // 
+            this.tblProjectBindingSource8.DataMember = "tblProject";
+            this.tblProjectBindingSource8.DataSource = this.tNovationDataSetcompleted;
+            // 
+            // tblProjectTableAdapter3
+            // 
+            this.tblProjectTableAdapter3.ClearBeforeFill = true;
             // 
             // ProjectList
             // 
@@ -323,14 +342,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblCompanyBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblProjectBindingSource6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblProjectBindingSource7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetTIMING)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblProjectBindingSource6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblProjectBindingSource5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetsall)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblProjectBindingSource4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.callumProjectDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblProjectBindingSource3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblProjectBindingSource7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetcompleted)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblProjectBindingSource8)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -389,5 +410,8 @@
         private System.Windows.Forms.BindingSource tblProjectBindingSource6;
         private TNovationDataSetTIMINGTableAdapters.tblProjectTableAdapter tblProjectTableAdapter2;
         private System.Windows.Forms.BindingSource tblProjectBindingSource7;
+        private TNovationDataSetcompleted tNovationDataSetcompleted;
+        private System.Windows.Forms.BindingSource tblProjectBindingSource8;
+        private TNovationDataSetcompletedTableAdapters.tblProjectTableAdapter tblProjectTableAdapter3;
     }
 }
