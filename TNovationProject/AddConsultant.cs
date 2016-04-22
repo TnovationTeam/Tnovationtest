@@ -54,9 +54,13 @@ namespace TNovationProject
 
         private void buttonSave_Click(object sender, EventArgs e)
         {
+          
             //add new record
             Add();
+            lblError.Text = "Data has been added successfully";
+            //This line of code navigates to the Consultantlist page once user clicks add
             new ConsultantList().Show();
+           // DisplayConsultants();
             this.Hide();
         }
 

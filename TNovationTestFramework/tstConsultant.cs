@@ -110,7 +110,7 @@ namespace TNovationTestFramework
             Assert.AreEqual(AConsultant.HoursOfWork, TestData);
         }
 
-       
+
 
         [TestMethod]
         public void FirstNamePropertyOK()
@@ -182,6 +182,21 @@ namespace TNovationTestFramework
 
         }
 
+
+        [TestMethod]
+        public void DateAddedPropertyOK()
+        {
+            //create an instance of the class we want to create
+            clsConsultant AConsultant = new clsConsultant();
+            //create some test data to assign to the property
+            DateTime TestData = DateTime.Now.Date;
+            //assign the data to the property
+            AConsultant.DateAdded = TestData;
+            //test to see that the two values are the same
+            Assert.AreEqual(AConsultant.DateAdded, TestData);
+
+        }
+
         [TestMethod]
         public void FindMethodOK()
         {
@@ -199,7 +214,7 @@ namespace TNovationTestFramework
         }
 
         [TestMethod]
-         public void ValidMethodOK()
+        public void ValidMethodOK()
         {
             //create an instance of the class we want to create
             clsConsultant AConsultant = new clsConsultant();
@@ -213,7 +228,7 @@ namespace TNovationTestFramework
             string EmploymentHistory = "Employed";
             string DateAdded = DateTime.Now.Date.ToString();
             //invoke the method
-            OK = AConsultant.Valid(FirstName,LastName,Address,Email,EmploymentHistory, DateAdded);
+            OK = AConsultant.Valid(FirstName, LastName, Address, Email, EmploymentHistory, DateAdded);
             //test to see that the result is correct
             Assert.IsTrue(OK);
 
@@ -241,7 +256,7 @@ namespace TNovationTestFramework
             }
             //test to see that the result is correct
             Assert.IsTrue(OK);
-            
+
 
         }
 
@@ -571,7 +586,7 @@ namespace TNovationTestFramework
             string DateAdded = DateTime.Now.Date.ToString();
             string EmploymentHistory = "None";
             //invoke the method
-            OK = AConsultant.Valid(FirstName, LastName, Address, Email,EmploymentHistory, DateAdded);
+            OK = AConsultant.Valid(FirstName, LastName, Address, Email, EmploymentHistory, DateAdded);
             //test to see that the result is correct
             Assert.IsTrue(OK);
 
@@ -719,7 +734,7 @@ namespace TNovationTestFramework
             //boolean variable to store the result of the validation
             Boolean OK = false;
             //create some test data to use with the method
-            string FirstName = "James"; 
+            string FirstName = "James";
             string LastName = ""; //this should fail
             string Address = "flat b 2, thml";
             string Email = "mwen@live.com";
@@ -895,7 +910,7 @@ namespace TNovationTestFramework
             //boolean variable to store the result of the validation
             Boolean OK = false;
             //create some test data to use with the method
-            string FirstName = "James"; 
+            string FirstName = "James";
             string LastName = "mmmmmm";
             string Address = "flat b 2, thml";
             string Email = "mwen@live.com";
@@ -1049,7 +1064,7 @@ namespace TNovationTestFramework
             //test to see that the result is correct
             Assert.IsFalse(OK);
         }
-        
+
         [TestMethod]
         public void AddressMin()
         {

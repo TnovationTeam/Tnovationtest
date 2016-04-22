@@ -11,10 +11,12 @@ namespace TNovationClassLibrary
         private List<clsConsultant> allConsultants = new List<clsConsultant>();
         //private data member for ThisConsultant
         clsConsultant thisConsultant = new clsConsultant();
+        //private data member for the list
+        List<clsConsultant> consultantList = new List<clsConsultant>();
 
         //public property for count
-        public int Count 
-        { 
+        public int Count
+        {
             get
             {
 
@@ -22,14 +24,14 @@ namespace TNovationClassLibrary
                 return allConsultants.Count;
             }
 
-            
-            
-set
+
+
+            set
             {
-             
-              //we will look at this later
+
+                //we will look at this later
             }
-}
+        }
 
         //public list for AllConsultants
         public List<clsConsultant> AllConsultants
@@ -48,7 +50,11 @@ set
             }
 
 
+
+
         }
+
+
 
         //public property for Consultant
         public clsConsultant ThisConsultant
@@ -70,6 +76,23 @@ set
 
         }
 
+        //public list for AllConsultants
+        public List<clsConsultant> ConsultantList
+        {
+            //the getter sends data to request code
+            get
+            {
+                //return the private data member
+                return consultantList;
+            }
+            //setter accepts data from other objects
+            set
+            {
+                //assign the incoming value to the private data member
+                consultantList = value;
+            }
+        }
+
         //Public property for add
         public int AddNew()
         {
@@ -88,8 +111,7 @@ set
             DB.AddParameter("@HoursOfWork", thisConsultant.HoursOfWork);
             DB.AddParameter("@EmploymentHistory", thisConsultant.EmploymentHistory);
             DB.AddParameter("@Status", thisConsultant.Status);
-
-
+            DB.AddParameter("@DateAdded", thisConsultant.DateAdded);
             //execute the stored procedure to insert data 
             return DB.Execute("sproc_tblConsultant_Insert");
         }
@@ -124,12 +146,14 @@ set
                 AConsultant.DateOfBirth = Convert.ToDateTime(DB.DataTable.Rows[Index]["DateOfBirth"]);
                 AConsultant.EmploymentDate = Convert.ToDateTime(DB.DataTable.Rows[Index]["EmploymentDate"]);
                 AConsultant.Status = Convert.ToBoolean(DB.DataTable.Rows[Index]["Status"]);
+                AConsultant.DateAdded = Convert.ToDateTime(DB.DataTable.Rows[Index]["DateAdded"]);
+
                 //add the record to the private data member
-                //ConsultantList.Add(AConsultant);
+                ConsultantList.Add(AConsultant);
                 //point at the next record
                 Index++;
             }
-            
+
         }
 
 

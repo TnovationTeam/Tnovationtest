@@ -4,11 +4,10 @@ using System.Linq;
 using System.Text;
 
 namespace TNovationClassLibrary
-
 {
     public class clsConsultant
     {
-       
+
         //private data member for the ConsultantNo property
         private Int32 consultantNo;
         //private data member for the Date of Birth property
@@ -285,7 +284,7 @@ namespace TNovationClassLibrary
             }
         }
 
-        
+
 
 
 
@@ -347,12 +346,12 @@ namespace TNovationClassLibrary
             {
                 //set the flag OK to false
                 OK = false;
-                
+
             }
 
             //if the lastname is too long
             if (LastName.Length > 50)
-            {  
+            {
                 //set the flag OK to false
                 OK = false;
             }
@@ -401,8 +400,8 @@ namespace TNovationClassLibrary
                 //set the flag OK to false
                 OK = false;
             }
-            
-            
+
+
             //return the value of OK
             return OK;
 

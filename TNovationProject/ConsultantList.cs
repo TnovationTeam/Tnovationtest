@@ -28,5 +28,10 @@ namespace TNovationProject
             new AddConsultant().Show();
             this.Hide();
         }
+
+        private void ConsultantList_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
