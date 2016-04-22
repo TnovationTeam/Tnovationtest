@@ -161,7 +161,7 @@ namespace TNovationTestFramework
             Int32 PrimaryKey = 0;
             //set its properties
             TestItem.Status = true;
-            TestItem.ConsultantNo = 29;
+            TestItem.ConsultantNo = 39;
             TestItem.FirstName = "James";
             TestItem.LastName = "Junior";
             TestItem.DateOfBirth = DateTime.Now.Date.AddYears(-17);
