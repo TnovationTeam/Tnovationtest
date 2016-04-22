@@ -40,7 +40,7 @@ namespace TNovationProject
                 TNovation.ThisEvent.StartDate = Convert.ToDateTime(textBoxStartDate.Text);
                 TNovation.ThisEvent.GuestSpeaker = textBoxGuestSpeaker.Text;
                 TNovation.ThisEvent.Location = textBoxLocation.Text;
-                TNovation.ThisEvent.TypeOfEvent = textBoxLocation.Text;
+                TNovation.ThisEvent.TypeOfEvent = textBoxTypeOfEvent.Text;
 
                 //add the record
                 TNovation.Add();
