@@ -54,6 +54,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.labellastName = new System.Windows.Forms.Label();
             this.textBoxlastName = new System.Windows.Forms.TextBox();
+            this.lblError = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -266,11 +267,20 @@
             this.textBoxlastName.Size = new System.Drawing.Size(125, 20);
             this.textBoxlastName.TabIndex = 73;
             // 
+            // lblError
+            // 
+            this.lblError.AutoSize = true;
+            this.lblError.Location = new System.Drawing.Point(379, 186);
+            this.lblError.Name = "lblError";
+            this.lblError.Size = new System.Drawing.Size(0, 13);
+            this.lblError.TabIndex = 74;
+            // 
             // AddConsultant
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(463, 394);
+            this.Controls.Add(this.lblError);
             this.Controls.Add(this.textBoxlastName);
             this.Controls.Add(this.labellastName);
             this.Controls.Add(this.pictureBox1);
@@ -332,5 +342,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label labellastName;
         private System.Windows.Forms.TextBox textBoxlastName;
+        private System.Windows.Forms.Label lblError;
     }
 }
