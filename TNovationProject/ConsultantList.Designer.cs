@@ -200,6 +200,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "ConsultantList";
             this.Text = "ConsultantForm";
+            this.Load += new System.EventHandler(this.ConsultantList_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
