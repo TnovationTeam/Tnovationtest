@@ -35,23 +35,27 @@
             this.buttonAdd = new System.Windows.Forms.Button();
             this.buttonUpdate = new System.Windows.Forms.Button();
             this.buttonArchive = new System.Windows.Forms.Button();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.listBoxNames = new System.Windows.Forms.ListBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.tNovationDataSet1 = new TNovationProject.TNovationDataSet1();
             this.tblProjectBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tblProjectTableAdapter = new TNovationProject.TNovationDataSet1TableAdapters.tblProjectTableAdapter();
-            this.projectCodeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.projectNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.companyNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.projectConsultantDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.companyContactDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.expectedEndDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.startDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.projectLocationDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ProjectName = new System.Windows.Forms.Label();
+            this.ProjectDetails = new System.Windows.Forms.Label();
+            this.tNovationDataSet = new TNovationProject.TNovationDataSet();
+            this.tblProjectBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.tblProjectTableAdapter1 = new TNovationProject.TNovationDataSetTableAdapters.tblProjectTableAdapter();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblProjectBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblProjectBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBoxLogo
@@ -80,7 +84,7 @@
             // 
             this.buttonAdd.BackColor = System.Drawing.Color.DodgerBlue;
             this.buttonAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonAdd.Location = new System.Drawing.Point(610, 119);
+            this.buttonAdd.Location = new System.Drawing.Point(1076, 133);
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(88, 37);
             this.buttonAdd.TabIndex = 27;
@@ -92,7 +96,7 @@
             // 
             this.buttonUpdate.BackColor = System.Drawing.Color.DodgerBlue;
             this.buttonUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonUpdate.Location = new System.Drawing.Point(610, 210);
+            this.buttonUpdate.Location = new System.Drawing.Point(1076, 190);
             this.buttonUpdate.Name = "buttonUpdate";
             this.buttonUpdate.Size = new System.Drawing.Size(88, 33);
             this.buttonUpdate.TabIndex = 30;
@@ -104,7 +108,7 @@
             // 
             this.buttonArchive.BackColor = System.Drawing.Color.DodgerBlue;
             this.buttonArchive.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonArchive.Location = new System.Drawing.Point(610, 303);
+            this.buttonArchive.Location = new System.Drawing.Point(1076, 242);
             this.buttonArchive.Name = "buttonArchive";
             this.buttonArchive.Size = new System.Drawing.Size(88, 34);
             this.buttonArchive.TabIndex = 31;
@@ -112,115 +116,138 @@
             this.buttonArchive.UseVisualStyleBackColor = false;
             this.buttonArchive.Click += new System.EventHandler(this.buttonArchive_Click);
             // 
-            // listBox1
+            // listBoxNames
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(22, 119);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(159, 290);
-            this.listBox1.TabIndex = 32;
+            this.listBoxNames.FormattingEnabled = true;
+            this.listBoxNames.Location = new System.Drawing.Point(22, 145);
+            this.listBoxNames.Name = "listBoxNames";
+            this.listBoxNames.Size = new System.Drawing.Size(159, 368);
+            this.listBoxNames.TabIndex = 32;
             // 
             // dataGridView1
             // 
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.projectCodeDataGridViewTextBoxColumn,
-            this.projectNameDataGridViewTextBoxColumn,
-            this.companyNameDataGridViewTextBoxColumn,
-            this.projectConsultantDataGridViewTextBoxColumn,
-            this.companyContactDataGridViewTextBoxColumn,
-            this.expectedEndDateDataGridViewTextBoxColumn,
-            this.startDateDataGridViewTextBoxColumn,
-            this.projectLocationDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.tblProjectBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(187, 119);
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn6,
+            this.dataGridViewTextBoxColumn7,
+            this.dataGridViewTextBoxColumn8});
+            this.dataGridView1.DataSource = this.tblProjectBindingSource1;
+            this.dataGridView1.Location = new System.Drawing.Point(204, 145);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(417, 290);
+            this.dataGridView1.Size = new System.Drawing.Size(845, 368);
             this.dataGridView1.TabIndex = 33;
             // 
-            // tNovationDataSet1
+            // ProjectName
             // 
-            this.tNovationDataSet1.DataSetName = "TNovationDataSet1";
-            this.tNovationDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.ProjectName.AutoSize = true;
+            this.ProjectName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
+            this.ProjectName.Location = new System.Drawing.Point(22, 126);
+            this.ProjectName.Name = "ProjectName";
+            this.ProjectName.Size = new System.Drawing.Size(102, 16);
+            this.ProjectName.TabIndex = 34;
+            this.ProjectName.Text = "Project Name";
             // 
-            // tblProjectBindingSource
+            // ProjectDetails
             // 
-            this.tblProjectBindingSource.DataMember = "tblProject";
-            this.tblProjectBindingSource.DataSource = this.tNovationDataSet1;
+            this.ProjectDetails.AutoSize = true;
+            this.ProjectDetails.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
+            this.ProjectDetails.Location = new System.Drawing.Point(201, 126);
+            this.ProjectDetails.Name = "ProjectDetails";
+            this.ProjectDetails.Size = new System.Drawing.Size(110, 16);
+            this.ProjectDetails.TabIndex = 35;
+            this.ProjectDetails.Text = "Project Details";
             // 
-            // tblProjectTableAdapter
+            // tNovationDataSet
             // 
-            this.tblProjectTableAdapter.ClearBeforeFill = true;
+            this.tNovationDataSet.DataSetName = "TNovationDataSet";
+            this.tNovationDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // projectCodeDataGridViewTextBoxColumn
+            // tblProjectBindingSource1
             // 
-            this.projectCodeDataGridViewTextBoxColumn.DataPropertyName = "ProjectCode";
-            this.projectCodeDataGridViewTextBoxColumn.HeaderText = "ProjectCode";
-            this.projectCodeDataGridViewTextBoxColumn.Name = "projectCodeDataGridViewTextBoxColumn";
+            this.tblProjectBindingSource1.DataMember = "tblProject";
+            this.tblProjectBindingSource1.DataSource = this.tNovationDataSet;
             // 
-            // projectNameDataGridViewTextBoxColumn
+            // tblProjectTableAdapter1
             // 
-            this.projectNameDataGridViewTextBoxColumn.DataPropertyName = "ProjectName";
-            this.projectNameDataGridViewTextBoxColumn.HeaderText = "ProjectName";
-            this.projectNameDataGridViewTextBoxColumn.Name = "projectNameDataGridViewTextBoxColumn";
+            this.tblProjectTableAdapter1.ClearBeforeFill = true;
             // 
-            // companyNameDataGridViewTextBoxColumn
+            // dataGridViewTextBoxColumn1
             // 
-            this.companyNameDataGridViewTextBoxColumn.DataPropertyName = "CompanyName";
-            this.companyNameDataGridViewTextBoxColumn.HeaderText = "CompanyName";
-            this.companyNameDataGridViewTextBoxColumn.Name = "companyNameDataGridViewTextBoxColumn";
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "ProjectCode";
+            this.dataGridViewTextBoxColumn1.HeaderText = "ProjectCode";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             // 
-            // projectConsultantDataGridViewTextBoxColumn
+            // dataGridViewTextBoxColumn2
             // 
-            this.projectConsultantDataGridViewTextBoxColumn.DataPropertyName = "ProjectConsultant";
-            this.projectConsultantDataGridViewTextBoxColumn.HeaderText = "ProjectConsultant";
-            this.projectConsultantDataGridViewTextBoxColumn.Name = "projectConsultantDataGridViewTextBoxColumn";
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "ProjectName";
+            this.dataGridViewTextBoxColumn2.HeaderText = "ProjectName";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             // 
-            // companyContactDataGridViewTextBoxColumn
+            // dataGridViewTextBoxColumn3
             // 
-            this.companyContactDataGridViewTextBoxColumn.DataPropertyName = "CompanyContact";
-            this.companyContactDataGridViewTextBoxColumn.HeaderText = "CompanyContact";
-            this.companyContactDataGridViewTextBoxColumn.Name = "companyContactDataGridViewTextBoxColumn";
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "CompanyName";
+            this.dataGridViewTextBoxColumn3.HeaderText = "CompanyName";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             // 
-            // expectedEndDateDataGridViewTextBoxColumn
+            // dataGridViewTextBoxColumn4
             // 
-            this.expectedEndDateDataGridViewTextBoxColumn.DataPropertyName = "ExpectedEndDate";
-            this.expectedEndDateDataGridViewTextBoxColumn.HeaderText = "ExpectedEndDate";
-            this.expectedEndDateDataGridViewTextBoxColumn.Name = "expectedEndDateDataGridViewTextBoxColumn";
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "ProjectConsultant";
+            this.dataGridViewTextBoxColumn4.HeaderText = "ProjectConsultant";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             // 
-            // startDateDataGridViewTextBoxColumn
+            // dataGridViewTextBoxColumn5
             // 
-            this.startDateDataGridViewTextBoxColumn.DataPropertyName = "StartDate";
-            this.startDateDataGridViewTextBoxColumn.HeaderText = "StartDate";
-            this.startDateDataGridViewTextBoxColumn.Name = "startDateDataGridViewTextBoxColumn";
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "CompanyContact";
+            this.dataGridViewTextBoxColumn5.HeaderText = "CompanyContact";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
             // 
-            // projectLocationDataGridViewTextBoxColumn
+            // dataGridViewTextBoxColumn6
             // 
-            this.projectLocationDataGridViewTextBoxColumn.DataPropertyName = "ProjectLocation";
-            this.projectLocationDataGridViewTextBoxColumn.HeaderText = "ProjectLocation";
-            this.projectLocationDataGridViewTextBoxColumn.Name = "projectLocationDataGridViewTextBoxColumn";
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "ExpectedEndDate";
+            this.dataGridViewTextBoxColumn6.HeaderText = "ExpectedEndDate";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "StartDate";
+            this.dataGridViewTextBoxColumn7.HeaderText = "StartDate";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "ProjectLocation";
+            this.dataGridViewTextBoxColumn8.HeaderText = "ProjectLocation";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
             // 
             // ProjectList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(765, 462);
+            this.ClientSize = new System.Drawing.Size(1196, 543);
+            this.Controls.Add(this.ProjectDetails);
+            this.Controls.Add(this.ProjectName);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.listBoxNames);
             this.Controls.Add(this.buttonArchive);
             this.Controls.Add(this.buttonUpdate);
             this.Controls.Add(this.buttonAdd);
             this.Controls.Add(this.labelHeading);
             this.Controls.Add(this.pictureBoxLogo);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ProjectList";
             this.Text = "ProjectList";
             this.Load += new System.EventHandler(this.ProjectList_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblProjectBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblProjectBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -233,11 +260,9 @@
         private System.Windows.Forms.Button buttonAdd;
         private System.Windows.Forms.Button buttonUpdate;
         private System.Windows.Forms.Button buttonArchive;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox listBoxNames;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private TNovationDataSet1 tNovationDataSet1;
         private System.Windows.Forms.BindingSource tblProjectBindingSource;
-        private TNovationDataSet1TableAdapters.tblProjectTableAdapter tblProjectTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn projectCodeDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn projectNameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn companyNameDataGridViewTextBoxColumn;
@@ -246,5 +271,18 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn expectedEndDateDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn startDateDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn projectLocationDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Label ProjectName;
+        private System.Windows.Forms.Label ProjectDetails;
+        private TNovationDataSet tNovationDataSet;
+        private System.Windows.Forms.BindingSource tblProjectBindingSource1;
+        private TNovationDataSetTableAdapters.tblProjectTableAdapter tblProjectTableAdapter1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
     }
 }
