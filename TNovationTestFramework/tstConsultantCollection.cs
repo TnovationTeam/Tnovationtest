@@ -150,6 +150,7 @@ namespace TNovationTestFramework
 
 
         }
+
         [TestMethod]
         public void AddMethodOK()
         {
@@ -160,27 +161,28 @@ namespace TNovationTestFramework
             Int32 PrimaryKey = 0;
             //set its properties
             TestItem.Status = true;
-            TestItem.ConsultantNo = 1;
-            TestItem.FirstName = "John";
-            TestItem.LastName = "Wayne";
-            TestItem.DateOfBirth = DateTime.Now.Date;
-            TestItem.Address = "Flat BC, 2 Cilantro Road";
+            TestItem.ConsultantNo = 16;
+            TestItem.FirstName = "James";
+            TestItem.LastName = "Junior";
+            TestItem.DateOfBirth = DateTime.Now.Date.AddYears(-17);
+            TestItem.Address = "Flat C, Colly road";
             TestItem.Email = "Healthy@aol.com";
             TestItem.TelephoneNo = "07437320192";
             TestItem.EmergencyContact = "07528789924";
             TestItem.EmploymentDate = DateTime.Now.Date;
-            TestItem.HoursOfWork = 172;
+            TestItem.HoursOfWork = 129;
             TestItem.EmploymentHistory = "None";
             TestItem.DateAdded = DateTime.Now.Date;
-            //set the pk of the test data
-            TestItem.ConsultantNo = PrimaryKey;
+            //set ThisConsultant to the test data
+            AllConsultants.ThisConsultant = TestItem;
             //add the record
             PrimaryKey = AllConsultants.AddNew();
+            //set the primary key of the test data
+            TestItem.ConsultantNo = PrimaryKey;
             //find the record
             AllConsultants.ThisConsultant.Find(PrimaryKey);
             //test to see that the two values are the same
             Assert.AreEqual(AllConsultants.ThisConsultant, TestItem);
-
         }
 
 
