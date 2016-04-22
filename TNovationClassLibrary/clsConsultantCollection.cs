@@ -160,7 +160,12 @@ namespace TNovationClassLibrary
 
         public void Delete()
         {
-            throw new NotImplementedException();
+            //deletes the record pointed to by thisconsultant
+            clsDataConnection DB = new clsDataConnection();
+            //set the parameters for the stored procedure
+            DB.AddParameter("@ConsultantNo", thisConsultant.ConsultantNo);
+            //execute the stored procedure
+            DB.Execute("sproc_tblConsultant_Delete");
         }
     }
 }
