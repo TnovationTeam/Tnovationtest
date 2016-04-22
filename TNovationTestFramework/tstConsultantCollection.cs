@@ -172,12 +172,10 @@ namespace TNovationTestFramework
             TestItem.HoursOfWork = 172;
             TestItem.EmploymentHistory = "None";
             TestItem.DateAdded = DateTime.Now.Date;
-            //assign the data to the property
-            AllConsultants.ThisConsultant = TestItem;
+            //set the pk of the test data
+            TestItem.ConsultantNo = PrimaryKey;
             //add the record
             PrimaryKey = AllConsultants.AddNew();
-            //set the primary key of the test data
-            TestItem.ConsultantNo = PrimaryKey;
             //find the record
             AllConsultants.ThisConsultant.Find(PrimaryKey);
             //test to see that the two values are the same
