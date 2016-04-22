@@ -123,6 +123,11 @@
     <Compile Include="mdiBackend.Designer.cs">
       <DependentUpon>mdiBackend.cs</DependentUpon>
     </Compile>
+    <Compile Include="MwenyaConsultantDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MwenyaConsultantDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="ProjectList.cs">
       <SubType>Form</SubType>
@@ -210,6 +215,17 @@
     </None>
     <None Include="FreddyDataConnection.xss">
       <DependentUpon>FreddyDataConnection.xsd</DependentUpon>
+    </None>
+    <None Include="MwenyaConsultantDataSet.xsc">
+      <DependentUpon>MwenyaConsultantDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MwenyaConsultantDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MwenyaConsultantDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MwenyaConsultantDataSet.xss">
+      <DependentUpon>MwenyaConsultantDataSet.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

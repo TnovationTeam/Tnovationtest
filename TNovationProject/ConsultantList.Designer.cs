@@ -38,11 +38,29 @@
             this.buttonAdd = new System.Windows.Forms.Button();
             this.labelHeading = new System.Windows.Forms.Label();
             this.lblConsultantListInfo = new System.Windows.Forms.Label();
-           
             this.tNovationDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.mwenyaConsultantDataSet = new TNovationProject.MwenyaConsultantDataSet();
+            this.tblConsultantBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tblConsultantTableAdapter = new TNovationProject.MwenyaConsultantDataSetTableAdapters.tblConsultantTableAdapter();
+            this.consultantNoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.firstNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lastNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dateOfBirthDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.addressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.telephoneNoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emergencyContactDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.employmentDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.hoursOfWorkDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.employmentHistoryDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.statusDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.dateAddedDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-          
             ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mwenyaConsultantDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblConsultantBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -122,18 +140,128 @@
             this.lblConsultantListInfo.TabIndex = 71;
             this.lblConsultantListInfo.Text = "List Consultant Information";
             // 
-            // tNovationDataSet
+            // dataGridView1
             // 
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.consultantNoDataGridViewTextBoxColumn,
+            this.firstNameDataGridViewTextBoxColumn,
+            this.lastNameDataGridViewTextBoxColumn,
+            this.dateOfBirthDataGridViewTextBoxColumn,
+            this.addressDataGridViewTextBoxColumn,
+            this.emailDataGridViewTextBoxColumn,
+            this.telephoneNoDataGridViewTextBoxColumn,
+            this.emergencyContactDataGridViewTextBoxColumn,
+            this.employmentDateDataGridViewTextBoxColumn,
+            this.hoursOfWorkDataGridViewTextBoxColumn,
+            this.employmentHistoryDataGridViewTextBoxColumn,
+            this.statusDataGridViewCheckBoxColumn,
+            this.dateAddedDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.tblConsultantBindingSource;
+            this.dataGridView1.Location = new System.Drawing.Point(223, 212);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(240, 150);
+            this.dataGridView1.TabIndex = 72;
             // 
-            // tNovationDataSetBindingSource
+            // mwenyaConsultantDataSet
             // 
-            this.tNovationDataSetBindingSource.Position = 0;
+            this.mwenyaConsultantDataSet.DataSetName = "MwenyaConsultantDataSet";
+            this.mwenyaConsultantDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tblConsultantBindingSource
+            // 
+            this.tblConsultantBindingSource.DataMember = "tblConsultant";
+            this.tblConsultantBindingSource.DataSource = this.mwenyaConsultantDataSet;
+            // 
+            // tblConsultantTableAdapter
+            // 
+            this.tblConsultantTableAdapter.ClearBeforeFill = true;
+            // 
+            // consultantNoDataGridViewTextBoxColumn
+            // 
+            this.consultantNoDataGridViewTextBoxColumn.DataPropertyName = "ConsultantNo";
+            this.consultantNoDataGridViewTextBoxColumn.HeaderText = "ConsultantNo";
+            this.consultantNoDataGridViewTextBoxColumn.Name = "consultantNoDataGridViewTextBoxColumn";
+            // 
+            // firstNameDataGridViewTextBoxColumn
+            // 
+            this.firstNameDataGridViewTextBoxColumn.DataPropertyName = "FirstName";
+            this.firstNameDataGridViewTextBoxColumn.HeaderText = "FirstName";
+            this.firstNameDataGridViewTextBoxColumn.Name = "firstNameDataGridViewTextBoxColumn";
+            // 
+            // lastNameDataGridViewTextBoxColumn
+            // 
+            this.lastNameDataGridViewTextBoxColumn.DataPropertyName = "LastName";
+            this.lastNameDataGridViewTextBoxColumn.HeaderText = "LastName";
+            this.lastNameDataGridViewTextBoxColumn.Name = "lastNameDataGridViewTextBoxColumn";
+            // 
+            // dateOfBirthDataGridViewTextBoxColumn
+            // 
+            this.dateOfBirthDataGridViewTextBoxColumn.DataPropertyName = "DateOfBirth";
+            this.dateOfBirthDataGridViewTextBoxColumn.HeaderText = "DateOfBirth";
+            this.dateOfBirthDataGridViewTextBoxColumn.Name = "dateOfBirthDataGridViewTextBoxColumn";
+            // 
+            // addressDataGridViewTextBoxColumn
+            // 
+            this.addressDataGridViewTextBoxColumn.DataPropertyName = "Address";
+            this.addressDataGridViewTextBoxColumn.HeaderText = "Address";
+            this.addressDataGridViewTextBoxColumn.Name = "addressDataGridViewTextBoxColumn";
+            // 
+            // emailDataGridViewTextBoxColumn
+            // 
+            this.emailDataGridViewTextBoxColumn.DataPropertyName = "Email";
+            this.emailDataGridViewTextBoxColumn.HeaderText = "Email";
+            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
+            // 
+            // telephoneNoDataGridViewTextBoxColumn
+            // 
+            this.telephoneNoDataGridViewTextBoxColumn.DataPropertyName = "TelephoneNo";
+            this.telephoneNoDataGridViewTextBoxColumn.HeaderText = "TelephoneNo";
+            this.telephoneNoDataGridViewTextBoxColumn.Name = "telephoneNoDataGridViewTextBoxColumn";
+            // 
+            // emergencyContactDataGridViewTextBoxColumn
+            // 
+            this.emergencyContactDataGridViewTextBoxColumn.DataPropertyName = "EmergencyContact";
+            this.emergencyContactDataGridViewTextBoxColumn.HeaderText = "EmergencyContact";
+            this.emergencyContactDataGridViewTextBoxColumn.Name = "emergencyContactDataGridViewTextBoxColumn";
+            // 
+            // employmentDateDataGridViewTextBoxColumn
+            // 
+            this.employmentDateDataGridViewTextBoxColumn.DataPropertyName = "EmploymentDate";
+            this.employmentDateDataGridViewTextBoxColumn.HeaderText = "EmploymentDate";
+            this.employmentDateDataGridViewTextBoxColumn.Name = "employmentDateDataGridViewTextBoxColumn";
+            // 
+            // hoursOfWorkDataGridViewTextBoxColumn
+            // 
+            this.hoursOfWorkDataGridViewTextBoxColumn.DataPropertyName = "HoursOfWork";
+            this.hoursOfWorkDataGridViewTextBoxColumn.HeaderText = "HoursOfWork";
+            this.hoursOfWorkDataGridViewTextBoxColumn.Name = "hoursOfWorkDataGridViewTextBoxColumn";
+            // 
+            // employmentHistoryDataGridViewTextBoxColumn
+            // 
+            this.employmentHistoryDataGridViewTextBoxColumn.DataPropertyName = "EmploymentHistory";
+            this.employmentHistoryDataGridViewTextBoxColumn.HeaderText = "EmploymentHistory";
+            this.employmentHistoryDataGridViewTextBoxColumn.Name = "employmentHistoryDataGridViewTextBoxColumn";
+            // 
+            // statusDataGridViewCheckBoxColumn
+            // 
+            this.statusDataGridViewCheckBoxColumn.DataPropertyName = "Status";
+            this.statusDataGridViewCheckBoxColumn.HeaderText = "Status";
+            this.statusDataGridViewCheckBoxColumn.Name = "statusDataGridViewCheckBoxColumn";
+            // 
+            // dateAddedDataGridViewTextBoxColumn
+            // 
+            this.dateAddedDataGridViewTextBoxColumn.DataPropertyName = "DateAdded";
+            this.dateAddedDataGridViewTextBoxColumn.HeaderText = "DateAdded";
+            this.dateAddedDataGridViewTextBoxColumn.Name = "dateAddedDataGridViewTextBoxColumn";
             // 
             // ConsultantList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1037, 625);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.lblConsultantListInfo);
             this.Controls.Add(this.labelHeading);
             this.Controls.Add(this.buttonExit);
@@ -147,6 +275,9 @@
             this.Load += new System.EventHandler(this.ConsultantList_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mwenyaConsultantDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblConsultantBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -164,5 +295,22 @@
         private System.Windows.Forms.Label lblConsultantListInfo;
      
         private System.Windows.Forms.BindingSource tNovationDataSetBindingSource;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private MwenyaConsultantDataSet mwenyaConsultantDataSet;
+        private System.Windows.Forms.BindingSource tblConsultantBindingSource;
+        private MwenyaConsultantDataSetTableAdapters.tblConsultantTableAdapter tblConsultantTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn consultantNoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn firstNameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn lastNameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dateOfBirthDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn addressDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn telephoneNoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn emergencyContactDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn employmentDateDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn hoursOfWorkDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn employmentHistoryDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn statusDataGridViewCheckBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dateAddedDataGridViewTextBoxColumn;
     }
 }
