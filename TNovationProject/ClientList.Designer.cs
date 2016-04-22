@@ -450,20 +450,8 @@
             this.Text = "ClientList";
             this.Load += new System.EventHandler(this.ClientList_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblClientBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblClientBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblClientBindingSource6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetTIMING)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblClientBindingSource5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetsall)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblClientBindingSource2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.freddyDataConnection)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblClientBindingSource3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblClientBindingSource4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetcompleted)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblClientBindingSource7)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
