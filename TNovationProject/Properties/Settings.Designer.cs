@@ -91,5 +91,17 @@ namespace TNovationProject.Properties {
                 return ((string)(this["TNovationConnectionString2TIME"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\v11.0;AttachDbFilename=C:\\Users\\MwenyaSebastian\\Source\\Repo" +
+            "s\\Tnovationtest23\\App_Data\\TNovation.mdf;Integrated Security=True;Connect Timeou" +
+            "t=30")]
+        public string TNovationConnectionString2Proper {
+            get {
+                return ((string)(this["TNovationConnectionString2Proper"]));
+            }
+        }
     }
 }
