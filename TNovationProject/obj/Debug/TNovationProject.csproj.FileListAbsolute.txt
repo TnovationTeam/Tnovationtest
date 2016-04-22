@@ -232,3 +232,6 @@ C:\Users\MwenyaSebastian\Source\Repos\Tnovationtest17\TNovationProject\obj\Debug
 C:\Users\MwenyaSebastian\Source\Repos\Tnovationtest17\TNovationProject\obj\Debug\TNovationProject.Properties.Resources.resources
 C:\Users\MwenyaSebastian\Source\Repos\Tnovationtest17\TNovationProject\obj\Debug\TNovationProject.UpdateClient.resources
 C:\Users\MwenyaSebastian\Source\Repos\Tnovationtest17\TNovationProject\obj\Debug\TNovationProject.csproj.GenerateResource.Cache
+C:\Users\Callum\Source\Repos\Tnovationtest3\TNovationProject\bin\Debug\TNovationProject.exe.config
+C:\Users\Callum\Source\Repos\Tnovationtest3\TNovationProject\obj\Debug\TNovationProject.exe
+C:\Users\Callum\Source\Repos\Tnovationtest3\TNovationProject\obj\Debug\TNovationProject.pdb
