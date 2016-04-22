@@ -128,3 +128,10 @@ C:\Users\MwenyaSebastian\Source\Repos\Tnovationtest17\TNovationTestFramework\bin
 C:\Users\MwenyaSebastian\Source\Repos\Tnovationtest17\TNovationTestFramework\obj\Debug\TNovationTestFramework.csprojResolveAssemblyReference.cache
 C:\Users\MwenyaSebastian\Source\Repos\Tnovationtest17\TNovationTestFramework\obj\Debug\TNovationTestFramework.dll
 C:\Users\MwenyaSebastian\Source\Repos\Tnovationtest17\TNovationTestFramework\obj\Debug\TNovationTestFramework.pdb
+C:\Users\P13228620\Source\Repos\Tnovationtest\TNovationTestFramework\bin\Debug\TNovationTestFramework.dll
+C:\Users\P13228620\Source\Repos\Tnovationtest\TNovationTestFramework\bin\Debug\TNovationTestFramework.pdb
+C:\Users\P13228620\Source\Repos\Tnovationtest\TNovationTestFramework\bin\Debug\TNovationClassLibrary.dll
+C:\Users\P13228620\Source\Repos\Tnovationtest\TNovationTestFramework\bin\Debug\TNovationClassLibrary.pdb
+C:\Users\P13228620\Source\Repos\Tnovationtest\TNovationTestFramework\obj\Debug\TNovationTestFramework.csprojResolveAssemblyReference.cache
+C:\Users\P13228620\Source\Repos\Tnovationtest\TNovationTestFramework\obj\Debug\TNovationTestFramework.dll
+C:\Users\P13228620\Source\Repos\Tnovationtest\TNovationTestFramework\obj\Debug\TNovationTestFramework.pdb
