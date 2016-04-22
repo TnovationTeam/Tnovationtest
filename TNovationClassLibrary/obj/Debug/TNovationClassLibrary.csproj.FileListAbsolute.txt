@@ -116,3 +116,8 @@ C:\Users\MwenyaSebastian\Source\Repos\Tnovationtest21\TNovationClassLibrary\bin\
 C:\Users\MwenyaSebastian\Source\Repos\Tnovationtest21\TNovationClassLibrary\obj\Debug\TNovationClassLibrary.csprojResolveAssemblyReference.cache
 C:\Users\MwenyaSebastian\Source\Repos\Tnovationtest21\TNovationClassLibrary\obj\Debug\TNovationClassLibrary.dll
 C:\Users\MwenyaSebastian\Source\Repos\Tnovationtest21\TNovationClassLibrary\obj\Debug\TNovationClassLibrary.pdb
+C:\Users\MwenyaSebastian\Source\Repos\Tnovationtest22\TNovationClassLibrary\bin\Debug\TNovationClassLibrary.dll
+C:\Users\MwenyaSebastian\Source\Repos\Tnovationtest22\TNovationClassLibrary\bin\Debug\TNovationClassLibrary.pdb
+C:\Users\MwenyaSebastian\Source\Repos\Tnovationtest22\TNovationClassLibrary\obj\Debug\TNovationClassLibrary.csprojResolveAssemblyReference.cache
+C:\Users\MwenyaSebastian\Source\Repos\Tnovationtest22\TNovationClassLibrary\obj\Debug\TNovationClassLibrary.dll
+C:\Users\MwenyaSebastian\Source\Repos\Tnovationtest22\TNovationClassLibrary\obj\Debug\TNovationClassLibrary.pdb

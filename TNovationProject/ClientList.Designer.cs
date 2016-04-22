@@ -62,25 +62,30 @@
             this.clientTelDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dateAddedDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.activeDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.tblClientBindingSource5 = new System.Windows.Forms.BindingSource(this.components);
+            this.tNovationDataSetsall = new TNovationProject.TNovationDataSetsall();
             this.tblClientBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.freddyDataConnection = new TNovationProject.FreddyDataConnection();
             this.tblClientTableAdapter1 = new TNovationProject.FreddyDataConnectionTableAdapters.tblClientTableAdapter();
             this.tblClientBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.tblClientBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
-            this.tNovationDataSetsall = new TNovationProject.TNovationDataSetsall();
-            this.tblClientBindingSource5 = new System.Windows.Forms.BindingSource(this.components);
             this.tblClientTableAdapter = new TNovationProject.TNovationDataSetsallTableAdapters.tblClientTableAdapter();
+            this.tNovationDataSetTIMING = new TNovationProject.TNovationDataSetTIMING();
+            this.tblClientBindingSource6 = new System.Windows.Forms.BindingSource(this.components);
+            this.tblClientTableAdapter2 = new TNovationProject.TNovationDataSetTIMINGTableAdapters.tblClientTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblClientBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblClientBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblClientBindingSource5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetsall)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblClientBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.freddyDataConnection)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblClientBindingSource3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblClientBindingSource4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetsall)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblClientBindingSource5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetTIMING)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblClientBindingSource6)).BeginInit();
             this.SuspendLayout();
             // 
             // labelClientInformation
@@ -266,7 +271,7 @@
             this.clientTelDataGridViewTextBoxColumn,
             this.dateAddedDataGridViewTextBoxColumn,
             this.activeDataGridViewCheckBoxColumn});
-            this.dataGridView1.DataSource = this.tblClientBindingSource5;
+            this.dataGridView1.DataSource = this.tblClientBindingSource6;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -348,6 +353,16 @@
             this.activeDataGridViewCheckBoxColumn.HeaderText = "Active";
             this.activeDataGridViewCheckBoxColumn.Name = "activeDataGridViewCheckBoxColumn";
             // 
+            // tblClientBindingSource5
+            // 
+            this.tblClientBindingSource5.DataMember = "tblClient";
+            this.tblClientBindingSource5.DataSource = this.tNovationDataSetsall;
+            // 
+            // tNovationDataSetsall
+            // 
+            this.tNovationDataSetsall.DataSetName = "TNovationDataSetsall";
+            this.tNovationDataSetsall.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // tblClientBindingSource2
             // 
             this.tblClientBindingSource2.DataMember = "tblClient";
@@ -372,19 +387,23 @@
             this.tblClientBindingSource4.DataMember = "tblClient";
             this.tblClientBindingSource4.DataSource = this.tNovationDataSetBindingSource;
             // 
-            // tNovationDataSetsall
-            // 
-            this.tNovationDataSetsall.DataSetName = "TNovationDataSetsall";
-            this.tNovationDataSetsall.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tblClientBindingSource5
-            // 
-            this.tblClientBindingSource5.DataMember = "tblClient";
-            this.tblClientBindingSource5.DataSource = this.tNovationDataSetsall;
-            // 
             // tblClientTableAdapter
             // 
             this.tblClientTableAdapter.ClearBeforeFill = true;
+            // 
+            // tNovationDataSetTIMING
+            // 
+            this.tNovationDataSetTIMING.DataSetName = "TNovationDataSetTIMING";
+            this.tNovationDataSetTIMING.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tblClientBindingSource6
+            // 
+            this.tblClientBindingSource6.DataMember = "tblClient";
+            this.tblClientBindingSource6.DataSource = this.tNovationDataSetTIMING;
+            // 
+            // tblClientTableAdapter2
+            // 
+            this.tblClientTableAdapter2.ClearBeforeFill = true;
             // 
             // ClientList
             // 
@@ -412,16 +431,9 @@
             this.Text = "ClientList";
             this.Load += new System.EventHandler(this.ClientList_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblClientBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblClientBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblClientBindingSource2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.freddyDataConnection)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblClientBindingSource3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblClientBindingSource4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetsall)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblClientBindingSource5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetTIMING)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -468,5 +480,8 @@
         private TNovationDataSetsall tNovationDataSetsall;
         private System.Windows.Forms.BindingSource tblClientBindingSource5;
         private TNovationDataSetsallTableAdapters.tblClientTableAdapter tblClientTableAdapter;
+        private TNovationDataSetTIMING tNovationDataSetTIMING;
+        private System.Windows.Forms.BindingSource tblClientBindingSource6;
+        private TNovationDataSetTIMINGTableAdapters.tblClientTableAdapter tblClientTableAdapter2;
     }
 }

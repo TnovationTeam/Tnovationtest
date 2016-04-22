@@ -24,8 +24,9 @@ namespace TNovationProject
         //this function handles the load event of the page
         private void ClientList_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'tNovationDataSetsall.tblClient' table. You can move, or remove it, as needed.
-            this.tblClientTableAdapter.Fill(this.tNovationDataSetsall.tblClient);
+            // TODO: This line of code loads data into the 'tNovationDataSetTIMING.tblClient' table. You can move, or remove it, as needed.
+            this.tblClientTableAdapter2.Fill(this.tNovationDataSetTIMING.tblClient);
+          
           
     
                 //update the listbox

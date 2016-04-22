@@ -151,6 +151,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>TNovationDataSetsall.xsd</DependentUpon>
     </Compile>
+    <Compile Include="TNovationDataSetTIMING.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TNovationDataSetTIMING.xsd</DependentUpon>
+    </Compile>
     <Compile Include="UpdateClient.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -246,6 +251,17 @@
     </None>
     <None Include="TNovationDataSetsall.xss">
       <DependentUpon>TNovationDataSetsall.xsd</DependentUpon>
+    </None>
+    <None Include="TNovationDataSetTIMING.xsc">
+      <DependentUpon>TNovationDataSetTIMING.xsd</DependentUpon>
+    </None>
+    <None Include="TNovationDataSetTIMING.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TNovationDataSetTIMING.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TNovationDataSetTIMING.xss">
+      <DependentUpon>TNovationDataSetTIMING.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
