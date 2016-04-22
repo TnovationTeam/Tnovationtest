@@ -49,8 +49,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tblClientBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tNovationDataSet = new TNovationProject.TNovationDataSet();
-            this.tblClientTableAdapter = new TNovationProject.TNovationDataSetTableAdapters.tblClientTableAdapter();
             this.tNovationDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tblClientBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -71,7 +69,6 @@
             this.tblClientBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblClientBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblClientBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -235,20 +232,19 @@
             // tblClientBindingSource
             // 
             this.tblClientBindingSource.DataMember = "tblClient";
-            this.tblClientBindingSource.DataSource = this.tNovationDataSet;
+        
             // 
             // tNovationDataSet
             // 
-            this.tNovationDataSet.DataSetName = "TNovationDataSet";
-            this.tNovationDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+     
+          
             // 
             // tblClientTableAdapter
             // 
-            this.tblClientTableAdapter.ClearBeforeFill = true;
+          
             // 
             // tNovationDataSetBindingSource
-            // 
-            this.tNovationDataSetBindingSource.DataSource = this.tNovationDataSet;
+   
             this.tNovationDataSetBindingSource.Position = 0;
             // 
             // tblClientBindingSource1
@@ -412,14 +408,12 @@
             this.Load += new System.EventHandler(this.ClientList_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblClientBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblClientBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.freddyDataConnection)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblClientBindingSource2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblClientBindingSource3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblClientBindingSource4)).EndInit();
+    
+            
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -441,9 +435,9 @@
         private System.Windows.Forms.Label labelUser;
         private System.Windows.Forms.Label labelHeading;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private TNovationDataSet tNovationDataSet;
+        
         private System.Windows.Forms.BindingSource tblClientBindingSource;
-        private TNovationDataSetTableAdapters.tblClientTableAdapter tblClientTableAdapter;
+     
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.BindingSource tblClientBindingSource1;
         private System.Windows.Forms.BindingSource tNovationDataSetBindingSource;

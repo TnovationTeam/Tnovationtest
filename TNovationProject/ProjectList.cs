@@ -70,8 +70,10 @@ namespace TNovationProject
 
         private void ProjectList_Load_1(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'tNovationDataSet.tblProject' table. You can move, or remove it, as needed.
-            this.tblProjectTableAdapter1.Fill(this.tNovationDataSet.tblProject);
+            // TODO: This line of code loads data into the 'callumProjectDataSet.tblProject' table. You can move, or remove it, as needed.
+            this.tblProjectTableAdapter.Fill(this.callumProjectDataSet.tblProject);
+            
+    
 
         }
     }

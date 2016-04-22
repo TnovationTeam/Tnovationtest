@@ -38,10 +38,10 @@
             this.buttonAdd = new System.Windows.Forms.Button();
             this.labelHeading = new System.Windows.Forms.Label();
             this.lblConsultantListInfo = new System.Windows.Forms.Label();
-            this.tNovationDataSet = new TNovationProject.TNovationDataSet();
+           
             this.tNovationDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSet)).BeginInit();
+          
             ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -124,12 +124,9 @@
             // 
             // tNovationDataSet
             // 
-            this.tNovationDataSet.DataSetName = "TNovationDataSet";
-            this.tNovationDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // tNovationDataSetBindingSource
             // 
-            this.tNovationDataSetBindingSource.DataSource = this.tNovationDataSet;
             this.tNovationDataSetBindingSource.Position = 0;
             // 
             // ConsultantList
@@ -149,7 +146,6 @@
             this.Text = "ConsultantForm";
             this.Load += new System.EventHandler(this.ConsultantList_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -166,7 +162,7 @@
         private System.Windows.Forms.Button buttonAdd;
         private System.Windows.Forms.Label labelHeading;
         private System.Windows.Forms.Label lblConsultantListInfo;
-        private TNovationDataSet tNovationDataSet;
+     
         private System.Windows.Forms.BindingSource tNovationDataSetBindingSource;
     }
 }
