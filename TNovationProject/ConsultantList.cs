@@ -74,6 +74,35 @@ namespace TNovationProject
             return Consultants.Count;
         }
 
+        private void buttonDelete_Click(object sender, EventArgs e)
+        {
+            //var to store the primary key value of the record to be deleted
+            //if a record has been selected from the list
+            if (listBoxConsultant.SelectedIndex != -1)
+            {
+
+                //get the primary key value of the record to delete 
+                ConsultantNo = Convert.ToInt32(listBoxConsultant.SelectedValue);
+                DeleteConsultant();
+                //update the listbox
+                DisplayConsultants();
+                new ConsultantList().Show();
+                this.Hide();
+                this.Refresh();
+
+            }
+            else //if no record has been selected 
+            {
+                //display an error
+                labelError.Text = "Please select a record to delete";
+            }
+        }
+
+        private void buttonExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
 
     }
 }

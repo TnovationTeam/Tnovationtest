@@ -65,6 +65,7 @@
             this.tblConsultantTableAdapter1 = new TNovationProject.TNovationDataSetsallTableAdapters.tblConsultantTableAdapter();
             this.tblConsultantTableAdapter2 = new TNovationProject.TNovationDataSetTIMINGTableAdapters.tblConsultantTableAdapter();
             this.listBoxConsultant = new System.Windows.Forms.ListBox();
+            this.labelError = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -96,6 +97,7 @@
             this.buttonExit.TabIndex = 13;
             this.buttonExit.Text = "Exit";
             this.buttonExit.UseVisualStyleBackColor = true;
+            this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
             // 
             // buttonFilter
             // 
@@ -114,6 +116,7 @@
             this.buttonDelete.TabIndex = 11;
             this.buttonDelete.Text = "Delete";
             this.buttonDelete.UseVisualStyleBackColor = true;
+            this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
             // 
             // buttonUpdate
             // 
@@ -176,7 +179,7 @@
             this.dataGridView1.DataSource = this.tblConsultantBindingSource4;
             this.dataGridView1.Location = new System.Drawing.Point(41, 193);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1344, 253);
+            this.dataGridView1.Size = new System.Drawing.Size(1344, 466);
             this.dataGridView1.TabIndex = 72;
             // 
             // consultantNoDataGridViewTextBoxColumn
@@ -312,16 +315,25 @@
             // listBoxConsultant
             // 
             this.listBoxConsultant.FormattingEnabled = true;
-            this.listBoxConsultant.Location = new System.Drawing.Point(41, 520);
+            this.listBoxConsultant.Location = new System.Drawing.Point(1051, 64);
             this.listBoxConsultant.Name = "listBoxConsultant";
-            this.listBoxConsultant.Size = new System.Drawing.Size(120, 95);
+            this.listBoxConsultant.Size = new System.Drawing.Size(334, 95);
             this.listBoxConsultant.TabIndex = 73;
+            // 
+            // labelError
+            // 
+            this.labelError.AutoSize = true;
+            this.labelError.Location = new System.Drawing.Point(860, 88);
+            this.labelError.Name = "labelError";
+            this.labelError.Size = new System.Drawing.Size(0, 13);
+            this.labelError.TabIndex = 74;
             // 
             // ConsultantList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1542, 702);
+            this.Controls.Add(this.labelError);
             this.Controls.Add(this.listBoxConsultant);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.lblConsultantListInfo);
@@ -389,5 +401,6 @@
         private TNovationDataSetTIMINGTableAdapters.tblConsultantTableAdapter tblConsultantTableAdapter2;
         private System.Windows.Forms.BindingSource tblConsultantBindingSource4;
         private System.Windows.Forms.ListBox listBoxConsultant;
+        private System.Windows.Forms.Label labelError;
     }
 }
