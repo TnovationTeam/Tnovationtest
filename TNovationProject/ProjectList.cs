@@ -62,6 +62,18 @@ namespace TNovationProject
         {
             return 1;
         }
+
+        private void buttonBack_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ProjectList_Load_1(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'tNovationDataSet1.tblProject' table. You can move, or remove it, as needed.
+            this.tblProjectTableAdapter.Fill(this.tNovationDataSet1.tblProject);
+
+        }
     }
 }
 
