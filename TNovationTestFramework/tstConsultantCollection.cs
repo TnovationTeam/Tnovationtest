@@ -17,18 +17,6 @@ namespace TNovationTestFramework
             Assert.IsNotNull(AllConsultants);
         }
 
-        //[TestMethod]
-        //public void CountPropertyOK()
-        //{
-        //    //Create an instance of the class we want to create
-        //    clsConsultantCollection AllConsultants = new clsConsultantCollection();
-        //    //create some test data to assign to the property
-        //    Int32 SomeCount = 0;
-        //    //assign the data to the property
-        //    AllConsultants.Count = SomeCount;
-        //    //test to see that the two values are the same
-        //    Assert.AreEqual(AllConsultants.Count, SomeCount);
-        //}
 
         [TestMethod]
         public void AllConsultantsOK()
@@ -221,6 +209,57 @@ namespace TNovationTestFramework
             Boolean Found = AllConsultants.ThisConsultant.Find(PrimaryKey);
             //test to see that the record wasn't found
             Assert.IsFalse(Found);
+        }
+
+        [TestMethod]
+        public void UpdateMethodOK()
+        {
+            //create an instance of the class we want to create
+            clsConsultantCollection AllConsultants = new clsConsultantCollection();
+            clsConsultant TestItem = new clsConsultant();
+            //var to store the primary key
+            Int32 PrimaryKey = 0;
+            //set its properties
+            TestItem.Status = true;
+            TestItem.ConsultantNo = 109;
+            TestItem.FirstName = "James";
+            TestItem.LastName = "Junior";
+            TestItem.DateOfBirth = DateTime.Now.Date.AddYears(-17);
+            TestItem.Address = "Flat C, Basil road";
+            TestItem.Email = "Healthy@aol.com";
+            TestItem.TelephoneNo = "07528789965";
+            TestItem.EmergencyContact = "07528789965";
+            TestItem.EmploymentDate = DateTime.Now.Date;
+            TestItem.HoursOfWork = 129;
+            TestItem.EmploymentHistory = "None";
+            TestItem.DateAdded = DateTime.Now.Date;
+            //set ThisConsultant to the test data
+            AllConsultants.ThisConsultant = TestItem;
+            //add the record
+            PrimaryKey = AllConsultants.AddNew();
+            //set the primary key of the test data
+            TestItem.ConsultantNo = PrimaryKey;
+            //modify the test data
+            TestItem.Status = true;
+            TestItem.ConsultantNo = 55;
+            TestItem.FirstName = "James";
+            TestItem.LastName = "Basquiat";
+            TestItem.DateOfBirth = DateTime.Now.Date.AddYears(-19);
+            TestItem.Address = "Flat C, Basil road";
+            TestItem.Email = "arty@aol.com";
+            TestItem.TelephoneNo = "07528789965";
+            TestItem.EmergencyContact = "07528789965";
+            TestItem.EmploymentDate = DateTime.Now.Date;
+            TestItem.HoursOfWork = 129;
+            TestItem.EmploymentHistory = "None";
+            //set ThisConsultant to the test data
+            AllConsultants.ThisConsultant = TestItem;
+            //update the record
+            AllConsultants.Update();
+            //find the record
+            AllConsultants.ThisConsultant.Find(PrimaryKey);
+            //test to see that the record wasn't found
+            Assert.AreEqual(AllConsultants.ThisConsultant, TestItem);
         }
 
 

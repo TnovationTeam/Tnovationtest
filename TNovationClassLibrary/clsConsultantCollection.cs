@@ -167,5 +167,10 @@ namespace TNovationClassLibrary
             //execute the stored procedure
             DB.Execute("sproc_tblConsultant_Delete");
         }
+
+        public void Update()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
