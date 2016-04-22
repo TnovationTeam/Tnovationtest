@@ -170,7 +170,24 @@ namespace TNovationClassLibrary
 
         public void Update()
         {
-            throw new NotImplementedException();
+            //connect to the database
+            clsDataConnection DB = new clsDataConnection();
+            //set the parameters for the stored procedure
+            DB.AddParameter("@ConsultantNo", thisConsultant.ConsultantNo);
+            DB.AddParameter("@FirstName", thisConsultant.FirstName);
+            DB.AddParameter("@LastName", thisConsultant.LastName);
+            DB.AddParameter("@DateOfBirth", thisConsultant.DateOfBirth);
+            DB.AddParameter("@Address", thisConsultant.Address);
+            DB.AddParameter("@Email", thisConsultant.Email);
+            DB.AddParameter("@TelephoneNo", thisConsultant.TelephoneNo);
+            DB.AddParameter("@EmergencyContact", thisConsultant.EmergencyContact);
+            DB.AddParameter("@EmploymentDate", thisConsultant.EmploymentDate);
+            DB.AddParameter("@HoursOfWork", thisConsultant.HoursOfWork);
+            DB.AddParameter("@EmploymentHistory", thisConsultant.EmploymentHistory);
+            DB.AddParameter("@Status", thisConsultant.Status);
+            DB.AddParameter("@DateAdded", thisConsultant.DateAdded);
+            //execute the stored procedure to insert data 
+            DB.Execute("sproc_tblConsultant_Update");
         }
     }
 }
