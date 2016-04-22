@@ -45,6 +45,7 @@ namespace TNovationProject
                 TNovation.ThisConsultant.EmploymentDate = Convert.ToDateTime(textBoxDate.Text);
                 TNovation.ThisConsultant.HoursOfWork = Convert.ToInt32(textBoxHours.Text);
                 TNovation.ThisConsultant.EmploymentHistory = textBoxEhist.Text;
+                TNovation.ThisConsultant.DateAdded = Convert.ToDateTime(textBoxDateAdded.Text);
                 //add the new entry
                 TNovation.AddNew();
             }

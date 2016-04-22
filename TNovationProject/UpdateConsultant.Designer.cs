@@ -57,6 +57,8 @@
             this.labelConsNo = new System.Windows.Forms.Label();
             this.labelErrorUpdate = new System.Windows.Forms.Label();
             this.labelUpdated = new System.Windows.Forms.Label();
+            this.textBoxDateAdded = new System.Windows.Forms.TextBox();
+            this.labelDateAdded = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -72,7 +74,7 @@
             // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(387, 162);
+            this.buttonUpdate.Location = new System.Drawing.Point(387, 275);
             this.buttonUpdate.Name = "buttonUpdate";
             this.buttonUpdate.Size = new System.Drawing.Size(112, 46);
             this.buttonUpdate.TabIndex = 77;
@@ -88,6 +90,7 @@
             this.buttonExit.TabIndex = 80;
             this.buttonExit.Text = "Exit";
             this.buttonExit.UseVisualStyleBackColor = true;
+            this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
             // 
             // labelHeading
             // 
@@ -294,11 +297,29 @@
             this.labelUpdated.Size = new System.Drawing.Size(0, 13);
             this.labelUpdated.TabIndex = 106;
             // 
+            // textBoxDateAdded
+            // 
+            this.textBoxDateAdded.Location = new System.Drawing.Point(210, 388);
+            this.textBoxDateAdded.Name = "textBoxDateAdded";
+            this.textBoxDateAdded.Size = new System.Drawing.Size(125, 20);
+            this.textBoxDateAdded.TabIndex = 108;
+            // 
+            // labelDateAdded
+            // 
+            this.labelDateAdded.AutoSize = true;
+            this.labelDateAdded.Location = new System.Drawing.Point(76, 393);
+            this.labelDateAdded.Name = "labelDateAdded";
+            this.labelDateAdded.Size = new System.Drawing.Size(64, 13);
+            this.labelDateAdded.TabIndex = 107;
+            this.labelDateAdded.Text = "Date Added";
+            // 
             // UpdateConsultant
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(529, 392);
+            this.ClientSize = new System.Drawing.Size(529, 446);
+            this.Controls.Add(this.textBoxDateAdded);
+            this.Controls.Add(this.labelDateAdded);
             this.Controls.Add(this.labelUpdated);
             this.Controls.Add(this.labelErrorUpdate);
             this.Controls.Add(this.textBoxlastName);
@@ -366,6 +387,8 @@
         private System.Windows.Forms.Label labelConsNo;
         private System.Windows.Forms.Label labelErrorUpdate;
         private System.Windows.Forms.Label labelUpdated;
+        private System.Windows.Forms.TextBox textBoxDateAdded;
+        private System.Windows.Forms.Label labelDateAdded;
 
     }
 }

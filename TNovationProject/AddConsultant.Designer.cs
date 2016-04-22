@@ -55,6 +55,8 @@
             this.labellastName = new System.Windows.Forms.Label();
             this.textBoxlastName = new System.Windows.Forms.TextBox();
             this.lblError = new System.Windows.Forms.Label();
+            this.labelDateAdded = new System.Windows.Forms.Label();
+            this.textBoxDateAdded = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -275,11 +277,29 @@
             this.lblError.Size = new System.Drawing.Size(0, 13);
             this.lblError.TabIndex = 74;
             // 
+            // labelDateAdded
+            // 
+            this.labelDateAdded.AutoSize = true;
+            this.labelDateAdded.Location = new System.Drawing.Point(33, 352);
+            this.labelDateAdded.Name = "labelDateAdded";
+            this.labelDateAdded.Size = new System.Drawing.Size(64, 13);
+            this.labelDateAdded.TabIndex = 75;
+            this.labelDateAdded.Text = "Date Added";
+            // 
+            // textBoxDateAdded
+            // 
+            this.textBoxDateAdded.Location = new System.Drawing.Point(167, 347);
+            this.textBoxDateAdded.Name = "textBoxDateAdded";
+            this.textBoxDateAdded.Size = new System.Drawing.Size(125, 20);
+            this.textBoxDateAdded.TabIndex = 76;
+            // 
             // AddConsultant
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(463, 394);
+            this.Controls.Add(this.textBoxDateAdded);
+            this.Controls.Add(this.labelDateAdded);
             this.Controls.Add(this.lblError);
             this.Controls.Add(this.textBoxlastName);
             this.Controls.Add(this.labellastName);
@@ -343,5 +363,7 @@
         private System.Windows.Forms.Label labellastName;
         private System.Windows.Forms.TextBox textBoxlastName;
         private System.Windows.Forms.Label lblError;
+        private System.Windows.Forms.Label labelDateAdded;
+        private System.Windows.Forms.TextBox textBoxDateAdded;
     }
 }
