@@ -24,7 +24,7 @@ namespace TNovationProject
 
         }
 
-        void UpdateConsultant()
+        void UpdateConsultants()
         {
             //create an instance of TNovation
             clsConsultantCollection TNovation = new clsConsultantCollection();
@@ -60,7 +60,7 @@ namespace TNovationProject
         private void buttonUpdate_Click(object sender, EventArgs e)
         {
             //update new record
-            UpdateConsultant();
+            UpdateConsultants();
             //show msg
             labelUpdated.Text = "The Consultant details have been updated";
             //This line of code navigates to the ConsultantList page when update button is clicked

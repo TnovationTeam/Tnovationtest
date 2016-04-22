@@ -343,3 +343,4 @@ C:\Users\MwenyaSebastian\Source\Repos\Tnovationtest23\TNovationProject\obj\Debug
 C:\Users\MwenyaSebastian\Source\Repos\Tnovationtest23\TNovationProject\obj\Debug\TNovationProject.Properties.Resources.resources
 C:\Users\MwenyaSebastian\Source\Repos\Tnovationtest23\TNovationProject\obj\Debug\TNovationProject.UpdateClient.resources
 C:\Users\MwenyaSebastian\Source\Repos\Tnovationtest23\TNovationProject\obj\Debug\TNovationProject.csproj.GenerateResource.Cache
+C:\Users\MwenyaSebastian\Source\Repos\Tnovationtest23\TNovationProject\obj\Debug\TNovationProject.UpdateConsultant.resources
