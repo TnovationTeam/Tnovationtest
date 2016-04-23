@@ -130,3 +130,4 @@ C:\Users\MwenyaSebastian\Source\Repos\Tnovationtest24\TNovationClassLibrary\bin\
 C:\Users\MwenyaSebastian\Source\Repos\Tnovationtest24\TNovationClassLibrary\obj\Debug\TNovationClassLibrary.csprojResolveAssemblyReference.cache
 C:\Users\MwenyaSebastian\Source\Repos\Tnovationtest24\TNovationClassLibrary\obj\Debug\TNovationClassLibrary.dll
 C:\Users\MwenyaSebastian\Source\Repos\Tnovationtest24\TNovationClassLibrary\obj\Debug\TNovationClassLibrary.pdb
+F:\TNOVATION\TNovationClassLibrary\obj\Debug\TNovationClassLibrary.csprojResolveAssemblyReference.cache
