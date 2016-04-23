@@ -49,6 +49,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
@@ -225,9 +226,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UpdateConsultant.resx">
       <DependentUpon>UpdateConsultant.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UpdateProject.resx">
-      <DependentUpon>UpdateProject.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
