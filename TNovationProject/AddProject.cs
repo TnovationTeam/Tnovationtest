@@ -19,7 +19,7 @@ namespace TNovationProject
             InitializeComponent();
         }
 
-        private void buttonAdd_Click(object sender, EventArgs e)
+        void Add()
         {
             //create an instance of TNovation
             clsProjectCollection TNovation = new clsProjectCollection();
@@ -47,9 +47,21 @@ namespace TNovationProject
             }
         }
 
+        private void buttonAdd_Click(object sender, EventArgs e)
+        {
+            //add new record
+            Add();
+            lblError.Text = "The data record is entered to the database! Click back to return to the clients list page.";
+            //This line of code navigates to the Project list page when clicked on add button.
+            new ProjectList().Show();
+            this.Hide();
+        }
+
         private void buttonBack_Click(object sender, EventArgs e)
         {
-
+            //This line of code navigates to the Project list page when clicked on back button.
+            new ProjectList().Show();
+            this.Hide();
         }
     }
 }

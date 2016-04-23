@@ -178,6 +178,12 @@
     <Compile Include="UpdateConsultant.Designer.cs">
       <DependentUpon>UpdateConsultant.cs</DependentUpon>
     </Compile>
+    <Compile Include="UpdateProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateProject.Designer.cs">
+      <DependentUpon>UpdateProject.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="AddClient.resx">
@@ -219,6 +225,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UpdateConsultant.resx">
       <DependentUpon>UpdateConsultant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateProject.resx">
+      <DependentUpon>UpdateProject.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

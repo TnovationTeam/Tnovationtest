@@ -1444,6 +1444,11 @@ SELECT ProjectCode, ProjectName, CompanyName, ProjectConsultant, CompanyContact,
         public virtual int Update(string ProjectName, string CompanyName, string ProjectConsultant, string CompanyContact, string ExpectedEndDate, string StartDate, string ProjectLocation, int Original_ProjectCode, string Original_ProjectName, string Original_CompanyName, string Original_ProjectConsultant, string Original_CompanyContact, string Original_ExpectedEndDate, string Original_StartDate, string Original_ProjectLocation) {
             return this.Update(Original_ProjectCode, ProjectName, CompanyName, ProjectConsultant, CompanyContact, ExpectedEndDate, StartDate, ProjectLocation, Original_ProjectCode, Original_ProjectName, Original_CompanyName, Original_ProjectConsultant, Original_CompanyContact, Original_ExpectedEndDate, Original_StartDate, Original_ProjectLocation);
         }
+
+        internal void Fill(TNovationDataSetcompleted.tblProjectDataTable tblProjectDataTable)
+        {
+            throw new System.NotImplementedException();
+        }
     }
     
     /// <summary>
