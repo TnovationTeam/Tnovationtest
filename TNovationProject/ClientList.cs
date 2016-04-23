@@ -26,8 +26,7 @@ namespace TNovationProject
         {
             // TODO: This line of code loads data into the 'tNovationDataSetcompleted.tblClient' table. You can move, or remove it, as needed.
             this.tblClientTableAdapter3.Fill(this.tNovationDataSetcompleted.tblClient);
-            // TODO: This line of code loads data into the 'tNovationDataSetTIMING.tblClient' table. You can move, or remove it, as needed.
-            this.tblClientTableAdapter2.Fill(this.tNovationDataSetTIMING.tblClient);
+          
           
           
     

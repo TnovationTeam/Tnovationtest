@@ -53,6 +53,8 @@
             this.employmentHistoryDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.statusDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.dateAddedDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tblConsultantBindingSource5 = new System.Windows.Forms.BindingSource(this.components);
+            this.tNovationDataSetcompleted = new TNovationProject.TNovationDataSetcompleted();
             this.tblConsultantBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
             this.tNovationDataSetTIMING = new TNovationProject.TNovationDataSetTIMING();
             this.tblConsultantBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
@@ -66,12 +68,12 @@
             this.tblConsultantTableAdapter2 = new TNovationProject.TNovationDataSetTIMINGTableAdapters.tblConsultantTableAdapter();
             this.listBoxConsultant = new System.Windows.Forms.ListBox();
             this.labelError = new System.Windows.Forms.Label();
-            this.tNovationDataSetcompleted = new TNovationProject.TNovationDataSetcompleted();
-            this.tblConsultantBindingSource5 = new System.Windows.Forms.BindingSource(this.components);
             this.tblConsultantTableAdapter3 = new TNovationProject.TNovationDataSetcompletedTableAdapters.tblConsultantTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblConsultantBindingSource5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetcompleted)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblConsultantBindingSource4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetTIMING)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblConsultantBindingSource3)).BeginInit();
@@ -80,8 +82,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.tblConsultantBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mwenyaConsultantDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblConsultantBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetcompleted)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblConsultantBindingSource5)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -267,6 +267,16 @@
             this.dateAddedDataGridViewTextBoxColumn.HeaderText = "DateAdded";
             this.dateAddedDataGridViewTextBoxColumn.Name = "dateAddedDataGridViewTextBoxColumn";
             // 
+            // tblConsultantBindingSource5
+            // 
+            this.tblConsultantBindingSource5.DataMember = "tblConsultant";
+            this.tblConsultantBindingSource5.DataSource = this.tNovationDataSetcompleted;
+            // 
+            // tNovationDataSetcompleted
+            // 
+            this.tNovationDataSetcompleted.DataSetName = "TNovationDataSetcompleted";
+            this.tNovationDataSetcompleted.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // tblConsultantBindingSource4
             // 
             this.tblConsultantBindingSource4.DataMember = "tblConsultant";
@@ -326,6 +336,7 @@
             this.listBoxConsultant.Name = "listBoxConsultant";
             this.listBoxConsultant.Size = new System.Drawing.Size(334, 95);
             this.listBoxConsultant.TabIndex = 73;
+            this.listBoxConsultant.SelectedIndexChanged += new System.EventHandler(this.listBoxConsultant_SelectedIndexChanged);
             // 
             // labelError
             // 
@@ -334,16 +345,6 @@
             this.labelError.Name = "labelError";
             this.labelError.Size = new System.Drawing.Size(0, 13);
             this.labelError.TabIndex = 74;
-            // 
-            // tNovationDataSetcompleted
-            // 
-            this.tNovationDataSetcompleted.DataSetName = "TNovationDataSetcompleted";
-            this.tNovationDataSetcompleted.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tblConsultantBindingSource5
-            // 
-            this.tblConsultantBindingSource5.DataMember = "tblConsultant";
-            this.tblConsultantBindingSource5.DataSource = this.tNovationDataSetcompleted;
             // 
             // tblConsultantTableAdapter3
             // 
@@ -371,6 +372,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblConsultantBindingSource5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetcompleted)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblConsultantBindingSource4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetTIMING)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblConsultantBindingSource3)).EndInit();
@@ -379,8 +382,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.tblConsultantBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mwenyaConsultantDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblConsultantBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetcompleted)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblConsultantBindingSource5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

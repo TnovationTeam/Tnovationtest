@@ -57,12 +57,13 @@
             this.lblError = new System.Windows.Forms.Label();
             this.labelDateAdded = new System.Windows.Forms.Label();
             this.textBoxDateAdded = new System.Windows.Forms.TextBox();
+            this.buttonExit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonSave
             // 
-            this.buttonSave.Location = new System.Drawing.Point(379, 352);
+            this.buttonSave.Location = new System.Drawing.Point(382, 289);
             this.buttonSave.Name = "buttonSave";
             this.buttonSave.Size = new System.Drawing.Size(75, 36);
             this.buttonSave.TabIndex = 41;
@@ -293,11 +294,21 @@
             this.textBoxDateAdded.Size = new System.Drawing.Size(125, 20);
             this.textBoxDateAdded.TabIndex = 76;
             // 
+            // buttonExit
+            // 
+            this.buttonExit.Location = new System.Drawing.Point(382, 340);
+            this.buttonExit.Name = "buttonExit";
+            this.buttonExit.Size = new System.Drawing.Size(75, 37);
+            this.buttonExit.TabIndex = 77;
+            this.buttonExit.Text = "Exit";
+            this.buttonExit.UseVisualStyleBackColor = true;
+            // 
             // AddConsultant
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(463, 394);
+            this.Controls.Add(this.buttonExit);
             this.Controls.Add(this.textBoxDateAdded);
             this.Controls.Add(this.labelDateAdded);
             this.Controls.Add(this.lblError);
@@ -365,5 +376,6 @@
         private System.Windows.Forms.Label lblError;
         private System.Windows.Forms.Label labelDateAdded;
         private System.Windows.Forms.TextBox textBoxDateAdded;
+        private System.Windows.Forms.Button buttonExit;
     }
 }
