@@ -45,7 +45,6 @@ C:\Users\MwenyaSebastian\Source\Repos\Tnovationtest5\TNovationClassLibrary\obj\D
 C:\Users\MwenyaSebastian\Source\Repos\Tnovationtest5\TNovationClassLibrary\obj\Debug\TNovationClassLibrary.pdb
 F:\TNovation\TNovationClassLibrary\bin\Debug\TNovationClassLibrary.dll
 F:\TNovation\TNovationClassLibrary\bin\Debug\TNovationClassLibrary.pdb
-F:\TNovation\TNovationClassLibrary\obj\Debug\TNovationClassLibrary.csprojResolveAssemblyReference.cache
 F:\TNovation\TNovationClassLibrary\obj\Debug\TNovationClassLibrary.dll
 F:\TNovation\TNovationClassLibrary\obj\Debug\TNovationClassLibrary.pdb
 C:\Users\P14175718\Source\Repos\Tnovationtest\TNovationClassLibrary\bin\Debug\TNovationClassLibrary.dll

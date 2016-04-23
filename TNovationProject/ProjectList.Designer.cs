@@ -367,7 +367,7 @@
             this.buttonPopulate.TabIndex = 37;
             this.buttonPopulate.Text = "Populate";
             this.buttonPopulate.UseVisualStyleBackColor = false;
-            this.buttonPopulate.Click += new System.EventHandler(this.buttonPopulate_Click);
+
             // 
             // labelError
             // 

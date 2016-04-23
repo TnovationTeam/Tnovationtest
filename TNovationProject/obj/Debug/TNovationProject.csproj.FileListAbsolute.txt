@@ -366,3 +366,11 @@ C:\Users\MwenyaSebastian\Source\Repos\Tnovationtest24\TNovationProject\obj\Debug
 C:\Users\MwenyaSebastian\Source\Repos\Tnovationtest24\TNovationProject\obj\Debug\TNovationProject.UpdateClient.resources
 C:\Users\MwenyaSebastian\Source\Repos\Tnovationtest24\TNovationProject\obj\Debug\TNovationProject.UpdateConsultant.resources
 C:\Users\MwenyaSebastian\Source\Repos\Tnovationtest24\TNovationProject\obj\Debug\TNovationProject.csproj.GenerateResource.Cache
+F:\TNOVATION\TNovationProject\bin\Debug\TNovationProject.exe.config
+F:\TNOVATION\TNovationProject\obj\Debug\TNovationProject.AddCompany.resources
+F:\TNOVATION\TNovationProject\obj\Debug\TNovationProject.AddConsultant.resources
+F:\TNOVATION\TNovationProject\obj\Debug\TNovationProject.AddProject.resources
+F:\TNOVATION\TNovationProject\obj\Debug\TNovationProject.ConsultantList.resources
+F:\TNOVATION\TNovationProject\obj\Debug\TNovationProject.ProjectList.resources
+F:\TNOVATION\TNovationProject\obj\Debug\TNovationProject.Properties.Resources.resources
+F:\TNOVATION\TNovationProject\obj\Debug\TNovationProject.UpdateConsultant.resources

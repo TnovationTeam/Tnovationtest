@@ -9,6 +9,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using TNovationClassLibrary;
+using System.Data.SqlClient;
+using System.Configuration;
+using System.Data.SqlClient;
 
 namespace TNovationProject
 {
@@ -24,16 +27,32 @@ namespace TNovationProject
         //this function handles the load event of the page
         private void ClientList_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'tNovationDataSetcompleted.tblClient' table. You can move, or remove it, as needed.
-            this.tblClientTableAdapter3.Fill(this.tNovationDataSetcompleted.tblClient);
-          
-          
-          
+
+            dataGridViewClient.DataSource = GetClient();
+                 
     
                 //update the listbox
                 DisplayClients();
                 this.Refresh();
                        }
+
+        private DataTable GetClient()
+        {
+            DataTable dtClients = new DataTable();
+
+            string connString = ConfigurationManager.ConnectionStrings["TNovationProject.Properties.Settings.TNovation"].ConnectionString;
+            using (SqlConnection con = new SqlConnection(connString))
+            {
+                using (SqlCommand cmd = new SqlCommand("SELECT * FROM tblClient", con))
+                {
+                    con.Open();
+                    SqlDataReader reader = cmd.ExecuteReader();
+                    dtClients.Load(reader);
+                }
+            }
+
+            return dtClients;
+        }
 
         private void buttonAdd_Click(object sender, EventArgs e)
         {
@@ -115,7 +134,6 @@ namespace TNovationProject
             return Clients.Count;
         }
 
-         
        
 
         private void listboxClient_SelectedIndexChanged(object sender, EventArgs e)
@@ -123,11 +141,7 @@ namespace TNovationProject
 
         }
 
-        private void dataGridViewClientData_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            this.Refresh();
-        }
-
+        
       
 
 
