@@ -72,9 +72,7 @@ namespace TNovationProject
         {
             // TODO: This line of code loads data into the 'tNovationDataSetcompleted.tblProject' table. You can move, or remove it, as needed.
             this.tblProjectTableAdapter3.Fill(this.tNovationDataSetcompleted.tblProject);
-            // TODO: This line of code loads data into the 'tNovationDataSetTIMING.tblProject' table. You can move, or remove it, as needed.
-            this.tblProjectTableAdapter2.Fill(this.tNovationDataSetTIMING.tblProject);
-         
+           
            
             
     

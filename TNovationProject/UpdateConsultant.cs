@@ -14,6 +14,8 @@ namespace TNovationProject
 {
     public partial class UpdateConsultant : Form
     {
+       // Int32 ConsultantNo;
+
         public UpdateConsultant()
         {
             InitializeComponent();
@@ -21,8 +23,39 @@ namespace TNovationProject
 
         private void UpdateConsultant_Load(object sender, EventArgs e)
         {
+            ////get the number of the consultant to be processed
+            //ConsultantNo = Convert.ToInt32("ConsultantNo");
+            ////Display consultants
+            //DisplayTheConsultant();
+            //if (ConsultantNo != -1)
+            //{
 
+            //    DisplayTheConsultant();
+            //}
         }
+
+        //void DisplayTheConsultant()
+        //{
+
+        //    //create an instance of Consultantslist
+        //    clsConsultantCollection Consultantslist = new clsConsultantCollection();
+        //    //find the record to update
+        //    Consultantslist.ThisConsultant.Find(ConsultantNo);
+        //    //display the data for this record
+        //    textBoxNo.Text = Consultantslist.ThisConsultant.ConsultantNo.ToString();
+        //    textBoxfirstName.Text = Consultantslist.ThisConsultant.FirstName;
+        //    textBoxlastName.Text = Consultantslist.ThisConsultant.LastName;
+        //    textBoxDOB.Text = Consultantslist.ThisConsultant.DateOfBirth.ToString();
+        //    textBoxAddress.Text = Consultantslist.ThisConsultant.Address;
+        //    textBoxEmail.Text = Consultantslist.ThisConsultant.Email;
+        //    textBoxTelno.Text = Consultantslist.ThisConsultant.TelephoneNo;
+        //    textBoxEmerg.Text = Consultantslist.ThisConsultant.EmergencyContact;
+        //    textBoxDate.Text = Consultantslist.ThisConsultant.EmploymentDate.ToString();
+        //    textBoxEhist.Text = Consultantslist.ThisConsultant.EmploymentHistory;
+        //    textBoxDateAdded.Text = Consultantslist.ThisConsultant.DateAdded.ToString();
+
+
+        //}
 
         void UpdateConsultants()
         {
@@ -45,6 +78,8 @@ namespace TNovationProject
                 TNovation.ThisConsultant.EmploymentDate = Convert.ToDateTime(textBoxDate.Text);
                 TNovation.ThisConsultant.HoursOfWork = Convert.ToInt32(textBoxHours.Text);
                 TNovation.ThisConsultant.EmploymentHistory = textBoxEhist.Text;
+                TNovation.ThisConsultant.DateAdded = Convert.ToDateTime(textBoxDateAdded.Text);
+
                 //update the record
                 TNovation.Update();
             }
@@ -72,6 +107,7 @@ namespace TNovationProject
         {
             this.Close();
         }
+
 
     }
 }

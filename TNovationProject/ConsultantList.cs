@@ -37,8 +37,6 @@ namespace TNovationProject
         {
             // TODO: This line of code loads data into the 'tNovationDataSetcompleted.tblConsultant' table. You can move, or remove it, as needed.
             this.tblConsultantTableAdapter3.Fill(this.tNovationDataSetcompleted.tblConsultant);
-            // TODO: This line of code loads data into the 'tNovationDataSetTIMING.tblConsultant' table. You can move, or remove it, as needed.
-            this.tblConsultantTableAdapter2.Fill(this.tNovationDataSetTIMING.tblConsultant);
             //update the listbox
             DisplayConsultants();
             this.Refresh();
@@ -116,6 +114,11 @@ namespace TNovationProject
         {
             //Update the listbox
             DisplayConsultants();
+        }
+
+        private void listBoxConsultant_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
 
 
