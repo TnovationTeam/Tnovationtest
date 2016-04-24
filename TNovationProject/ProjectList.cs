@@ -9,6 +9,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using TNovationClassLibrary;
+using System.Data.SqlClient;
+using System.Configuration;
+using System.Data.SqlClient;
+
 namespace TNovationProject
 {
     public partial class ProjectList : Form
@@ -20,14 +24,29 @@ namespace TNovationProject
 
         private void ProjectList_Load(object sender, EventArgs e)
         {
+            DataGridViewProjects.DataSource = GetProjects();
             //update the listbox
             DisplayProjects();
+            this.Refresh();
 
         }
 
-        private void listView2_SelectedIndexChanged(object sender, EventArgs e)
+        private DataTable GetProjects()
         {
+            DataTable dtProjects = new DataTable();
 
+            string connString = ConfigurationManager.ConnectionStrings["TNovationProject.Properties.Settings.TNovation"].ConnectionString;
+            using (SqlConnection con = new SqlConnection(connString))
+            {
+                using (SqlCommand cmd = new SqlCommand("SELECT * FROM tblProject", con))
+                {
+                    con.Open();
+                    SqlDataReader reader = cmd.ExecuteReader();
+                    dtProjects.Load(reader);
+                }
+            }
+
+            return dtProjects;
         }
 
         private void buttonUpdate_Click(object sender, EventArgs e)
