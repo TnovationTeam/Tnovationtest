@@ -11,17 +11,36 @@ using TNovationClassLibrary;
 
 namespace TNovationProject
 {
-    public partial class EventForm : Form
+    public partial class EventAdd : Form
     {
-        public EventForm()
+        public EventAdd()
         {
             InitializeComponent();
         }
 
-        private void EventForm_Load(object sender, EventArgs e)
+        private void EventAdd_Load(object sender, EventArgs e)
         {
 
         }
+
+        private void buttonUpdate_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonAdd_Click(object sender, EventArgs e)
+        {
+            //add new record
+            Add();
+           
+            new EventList().Show();
+            this.Hide();
+        }
+
+
+
+
+
         void Add()
         {
             //create an instance of TNovation
@@ -47,50 +66,9 @@ namespace TNovationProject
             }
             else
             {
-                //report an error 
-                labelError.Text = "There were problems with the data entered";
+                //
+               
             }
         }
-       
-
-        private void buttonBookIn_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void buttonSave_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void buttonBack_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void buttonAdd_Click(object sender, EventArgs e)
-        {
-            //add new record
-            Add();
-      
-            new EventList().Show();
-            this.Hide();
-        }
-
-        private void textBoxEventCode_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void buttonUpdate_Click(object sender, EventArgs e)
-        {
-            
-            
-           
-            new EventList().Show();
-            this.Hide();
-        }
-
-       
     }
 }

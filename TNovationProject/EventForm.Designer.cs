@@ -47,9 +47,7 @@
             this.lblConsultantAttending = new System.Windows.Forms.Label();
             this.lblLocation = new System.Windows.Forms.Label();
             this.lblCompanyName = new System.Windows.Forms.Label();
-            this.buttonBookIn = new System.Windows.Forms.Button();
             this.buttonBack = new System.Windows.Forms.Button();
-            this.buttonSave = new System.Windows.Forms.Button();
             this.buttonAdd = new System.Windows.Forms.Button();
             this.textBoxGuestSpeaker = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -220,19 +218,6 @@
             this.lblCompanyName.TabIndex = 35;
             this.lblCompanyName.Text = "Company Name:";
             // 
-            // buttonBookIn
-            // 
-            this.buttonBookIn.BackColor = System.Drawing.Color.DodgerBlue;
-            this.buttonBookIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonBookIn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.buttonBookIn.Location = new System.Drawing.Point(574, 279);
-            this.buttonBookIn.Name = "buttonBookIn";
-            this.buttonBookIn.Size = new System.Drawing.Size(99, 46);
-            this.buttonBookIn.TabIndex = 45;
-            this.buttonBookIn.Text = "Book In";
-            this.buttonBookIn.UseVisualStyleBackColor = false;
-            this.buttonBookIn.Click += new System.EventHandler(this.buttonBookIn_Click);
-            // 
             // buttonBack
             // 
             this.buttonBack.BackColor = System.Drawing.Color.DodgerBlue;
@@ -245,18 +230,6 @@
             this.buttonBack.Text = "Back";
             this.buttonBack.UseVisualStyleBackColor = false;
             this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
-            // 
-            // buttonSave
-            // 
-            this.buttonSave.BackColor = System.Drawing.Color.DodgerBlue;
-            this.buttonSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonSave.Location = new System.Drawing.Point(417, 382);
-            this.buttonSave.Name = "buttonSave";
-            this.buttonSave.Size = new System.Drawing.Size(99, 51);
-            this.buttonSave.TabIndex = 43;
-            this.buttonSave.Text = "Save";
-            this.buttonSave.UseVisualStyleBackColor = false;
-            this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
             // 
             // buttonAdd
             // 
@@ -320,9 +293,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBoxGuestSpeaker);
             this.Controls.Add(this.buttonAdd);
-            this.Controls.Add(this.buttonBookIn);
             this.Controls.Add(this.buttonBack);
-            this.Controls.Add(this.buttonSave);
             this.Controls.Add(this.textBoxConsultantAttending);
             this.Controls.Add(this.textBoxLocation);
             this.Controls.Add(this.textBoxCompanyName);
@@ -371,9 +342,7 @@
         private System.Windows.Forms.Label lblConsultantAttending;
         private System.Windows.Forms.Label lblLocation;
         private System.Windows.Forms.Label lblCompanyName;
-        private System.Windows.Forms.Button buttonBookIn;
         private System.Windows.Forms.Button buttonBack;
-        private System.Windows.Forms.Button buttonSave;
         private System.Windows.Forms.Button buttonAdd;
         private System.Windows.Forms.TextBox textBoxGuestSpeaker;
         private System.Windows.Forms.Label label1;

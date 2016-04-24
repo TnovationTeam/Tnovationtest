@@ -101,6 +101,12 @@
     <Compile Include="ConsultantList.Designer.cs">
       <DependentUpon>ConsultantList.cs</DependentUpon>
     </Compile>
+    <Compile Include="EventAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EventAdd.Designer.cs">
+      <DependentUpon>EventAdd.cs</DependentUpon>
+    </Compile>
     <Compile Include="EventForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -199,6 +205,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ConsultantList.resx">
       <DependentUpon>ConsultantList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EventAdd.resx">
+      <DependentUpon>EventAdd.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EventForm.resx">
       <DependentUpon>EventForm.cs</DependentUpon>
