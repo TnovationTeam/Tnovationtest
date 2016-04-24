@@ -52,6 +52,7 @@
             this.labelHeading = new System.Windows.Forms.Label();
             this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
             this.labelSubHEADING = new System.Windows.Forms.Label();
+            this.labelError = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -59,7 +60,7 @@
             // 
             this.buttonBack.BackColor = System.Drawing.Color.CornflowerBlue;
             this.buttonBack.Location = new System.Drawing.Point(654, 512);
-            this.buttonBack.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonBack.Margin = new System.Windows.Forms.Padding(4);
             this.buttonBack.Name = "buttonBack";
             this.buttonBack.Size = new System.Drawing.Size(128, 48);
             this.buttonBack.TabIndex = 40;
@@ -71,7 +72,7 @@
             // 
             this.buttonUpdate.BackColor = System.Drawing.Color.CornflowerBlue;
             this.buttonUpdate.Location = new System.Drawing.Point(451, 512);
-            this.buttonUpdate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonUpdate.Margin = new System.Windows.Forms.Padding(4);
             this.buttonUpdate.Name = "buttonUpdate";
             this.buttonUpdate.Size = new System.Drawing.Size(128, 48);
             this.buttonUpdate.TabIndex = 39;
@@ -82,7 +83,7 @@
             // textBoxTypeOfEvent
             // 
             this.textBoxTypeOfEvent.Location = new System.Drawing.Point(618, 386);
-            this.textBoxTypeOfEvent.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxTypeOfEvent.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxTypeOfEvent.Name = "textBoxTypeOfEvent";
             this.textBoxTypeOfEvent.Size = new System.Drawing.Size(148, 23);
             this.textBoxTypeOfEvent.TabIndex = 38;
@@ -90,7 +91,7 @@
             // textBoxLocation
             // 
             this.textBoxLocation.Location = new System.Drawing.Point(618, 330);
-            this.textBoxLocation.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxLocation.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxLocation.Name = "textBoxLocation";
             this.textBoxLocation.Size = new System.Drawing.Size(148, 23);
             this.textBoxLocation.TabIndex = 37;
@@ -98,7 +99,7 @@
             // textBoxGuestSpeaker
             // 
             this.textBoxGuestSpeaker.Location = new System.Drawing.Point(618, 262);
-            this.textBoxGuestSpeaker.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxGuestSpeaker.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxGuestSpeaker.Name = "textBoxGuestSpeaker";
             this.textBoxGuestSpeaker.Size = new System.Drawing.Size(148, 23);
             this.textBoxGuestSpeaker.TabIndex = 36;
@@ -106,7 +107,7 @@
             // textBoxStartDate
             // 
             this.textBoxStartDate.Location = new System.Drawing.Point(618, 204);
-            this.textBoxStartDate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxStartDate.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxStartDate.Name = "textBoxStartDate";
             this.textBoxStartDate.Size = new System.Drawing.Size(148, 23);
             this.textBoxStartDate.TabIndex = 35;
@@ -114,7 +115,7 @@
             // textBoxContact
             // 
             this.textBoxContact.Location = new System.Drawing.Point(222, 456);
-            this.textBoxContact.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxContact.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxContact.Name = "textBoxContact";
             this.textBoxContact.Size = new System.Drawing.Size(148, 23);
             this.textBoxContact.TabIndex = 34;
@@ -122,7 +123,7 @@
             // textBoxConsultantAttending
             // 
             this.textBoxConsultantAttending.Location = new System.Drawing.Point(222, 389);
-            this.textBoxConsultantAttending.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxConsultantAttending.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxConsultantAttending.Name = "textBoxConsultantAttending";
             this.textBoxConsultantAttending.Size = new System.Drawing.Size(148, 23);
             this.textBoxConsultantAttending.TabIndex = 33;
@@ -130,7 +131,7 @@
             // textBoxCompanyName
             // 
             this.textBoxCompanyName.Location = new System.Drawing.Point(224, 322);
-            this.textBoxCompanyName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxCompanyName.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxCompanyName.Name = "textBoxCompanyName";
             this.textBoxCompanyName.Size = new System.Drawing.Size(148, 23);
             this.textBoxCompanyName.TabIndex = 32;
@@ -138,7 +139,7 @@
             // textBoxEventName
             // 
             this.textBoxEventName.Location = new System.Drawing.Point(222, 266);
-            this.textBoxEventName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxEventName.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxEventName.Name = "textBoxEventName";
             this.textBoxEventName.Size = new System.Drawing.Size(148, 23);
             this.textBoxEventName.TabIndex = 31;
@@ -146,7 +147,7 @@
             // textBoxEventCode
             // 
             this.textBoxEventCode.Location = new System.Drawing.Point(222, 206);
-            this.textBoxEventCode.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxEventCode.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxEventCode.Name = "textBoxEventCode";
             this.textBoxEventCode.Size = new System.Drawing.Size(148, 23);
             this.textBoxEventCode.TabIndex = 30;
@@ -268,7 +269,7 @@
             // 
             this.pictureBoxLogo.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxLogo.Image")));
             this.pictureBoxLogo.Location = new System.Drawing.Point(44, 11);
-            this.pictureBoxLogo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBoxLogo.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBoxLogo.Name = "pictureBoxLogo";
             this.pictureBoxLogo.Size = new System.Drawing.Size(162, 70);
             this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -286,12 +287,21 @@
             this.labelSubHEADING.TabIndex = 43;
             this.labelSubHEADING.Text = "Update Event Details";
             // 
+            // labelError
+            // 
+            this.labelError.AutoSize = true;
+            this.labelError.Location = new System.Drawing.Point(59, 512);
+            this.labelError.Name = "labelError";
+            this.labelError.Size = new System.Drawing.Size(0, 16);
+            this.labelError.TabIndex = 44;
+            // 
             // UpdateEvent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(822, 591);
+            this.Controls.Add(this.labelError);
             this.Controls.Add(this.labelSubHEADING);
             this.Controls.Add(this.pictureBoxLogo);
             this.Controls.Add(this.labelHeading);
@@ -316,7 +326,7 @@
             this.Controls.Add(this.labelEventName);
             this.Controls.Add(this.labelEventCode);
             this.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UpdateEvent";
             this.Text = "UpdateEvent";
             this.Load += new System.EventHandler(this.UpdateEvent_Load);
@@ -351,5 +361,6 @@
         private System.Windows.Forms.Label labelHeading;
         private System.Windows.Forms.PictureBox pictureBoxLogo;
         private System.Windows.Forms.Label labelSubHEADING;
+        private System.Windows.Forms.Label labelError;
     }
 }

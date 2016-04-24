@@ -67,7 +67,8 @@ namespace TNovationProject
             }
             else
             {
-                //report an error 
+                 //report an error 
+                labelError.Text = "The Event Code does not exists, go back to the ListEvent Form and check again.";
                
             }
         }
