@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace TNovationProject
 {
-    public partial class EventForm : Form
+    public partial class AddForm : Form
     {
-        public EventForm()
+        public AddForm()
         {
             InitializeComponent();
-        }
-
-        private void EventForm_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
