@@ -71,5 +71,10 @@ namespace TNovationProject
                
             }
         }
+
+        private void labelEventCode_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
