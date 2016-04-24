@@ -107,6 +107,12 @@
     <Compile Include="ConsultantList.Designer.cs">
       <DependentUpon>ConsultantList.cs</DependentUpon>
     </Compile>
+    <Compile Include="ListEvent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListEvent.Designer.cs">
+      <DependentUpon>ListEvent.cs</DependentUpon>
+    </Compile>
     <Compile Include="mdiBackend.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -196,6 +202,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ConsultantList.resx">
       <DependentUpon>ConsultantList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListEvent.resx">
+      <DependentUpon>ListEvent.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="mdiBackend.resx">
       <DependentUpon>mdiBackend.cs</DependentUpon>
