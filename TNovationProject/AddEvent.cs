@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace TNovationProject
 {
-    public partial class AddForm : Form
+    public partial class AddEvent : Form
     {
-        public AddForm()
+        public AddEvent()
         {
             InitializeComponent();
         }
