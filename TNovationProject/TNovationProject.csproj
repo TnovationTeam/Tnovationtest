@@ -113,11 +113,6 @@
     <Compile Include="EventList.Designer.cs">
       <DependentUpon>EventList.cs</DependentUpon>
     </Compile>
-    <Compile Include="FreddyDataConnection.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>FreddyDataConnection.xsd</DependentUpon>
-    </Compile>
     <Compile Include="mdiBackend.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -240,17 +235,6 @@
     </None>
     <None Include="CallumProjectDataSet.xss">
       <DependentUpon>CallumProjectDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="FreddyDataConnection.xsc">
-      <DependentUpon>FreddyDataConnection.xsd</DependentUpon>
-    </None>
-    <None Include="FreddyDataConnection.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>FreddyDataConnection.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="FreddyDataConnection.xss">
-      <DependentUpon>FreddyDataConnection.xsd</DependentUpon>
     </None>
     <None Include="MwenyaConsultantDataSet.xsc">
       <DependentUpon>MwenyaConsultantDataSet.xsd</DependentUpon>

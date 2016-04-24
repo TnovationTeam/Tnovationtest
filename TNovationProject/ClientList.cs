@@ -28,7 +28,7 @@ namespace TNovationProject
         private void ClientList_Load(object sender, EventArgs e)
         {
 
-            dataGridViewClient.DataSource = GetClient();
+            dataGridViewC.DataSource = GetClient();
                  
     
                 //update the listbox

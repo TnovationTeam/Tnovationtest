@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ClientList));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -48,40 +47,9 @@
             this.labelHeading = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.tblClientBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tNovationDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tblClientBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.tblClientBindingSource7 = new System.Windows.Forms.BindingSource(this.components);
-            this.tNovationDataSetcompleted = new TNovationProject.TNovationDataSetcompleted();
-            this.tblClientBindingSource6 = new System.Windows.Forms.BindingSource(this.components);
-            this.tNovationDataSetTIMING = new TNovationProject.TNovationDataSetTIMING();
-            this.tblClientBindingSource5 = new System.Windows.Forms.BindingSource(this.components);
-            this.tNovationDataSetsall = new TNovationProject.TNovationDataSetsall();
-            this.tblClientBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.freddyDataConnection = new TNovationProject.FreddyDataConnection();
-            this.tblClientTableAdapter1 = new TNovationProject.FreddyDataConnectionTableAdapters.tblClientTableAdapter();
-            this.tblClientBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
-            this.tblClientBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
-            this.tblClientTableAdapter = new TNovationProject.TNovationDataSetsallTableAdapters.tblClientTableAdapter();
-            this.tblClientTableAdapter2 = new TNovationProject.TNovationDataSetTIMINGTableAdapters.tblClientTableAdapter();
-            this.tblClientTableAdapter3 = new TNovationProject.TNovationDataSetcompletedTableAdapters.tblClientTableAdapter();
-            this.button1 = new System.Windows.Forms.Button();
-            this.dataGridViewClient = new System.Windows.Forms.DataGridView();
+            this.dataGridViewC = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblClientBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblClientBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblClientBindingSource7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetcompleted)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblClientBindingSource6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetTIMING)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblClientBindingSource5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetsall)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblClientBindingSource2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.freddyDataConnection)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblClientBindingSource3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblClientBindingSource4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewClient)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewC)).BeginInit();
             this.SuspendLayout();
             // 
             // labelClientInformation
@@ -229,97 +197,13 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Maroon;
-            this.label1.Location = new System.Drawing.Point(212, 98);
+            this.label1.Location = new System.Drawing.Point(191, 98);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(98, 16);
             this.label1.TabIndex = 71;
             this.label1.Text = "Client details";
             // 
-            // tblClientBindingSource
-            // 
-            this.tblClientBindingSource.DataMember = "tblClient";
-            // 
-            // tblClientBindingSource1
-            // 
-            this.tblClientBindingSource1.DataMember = "tblClient";
-            this.tblClientBindingSource1.DataSource = this.tNovationDataSetBindingSource;
-            // 
-            // tblClientBindingSource7
-            // 
-            this.tblClientBindingSource7.DataMember = "tblClient";
-            this.tblClientBindingSource7.DataSource = this.tNovationDataSetcompleted;
-            // 
-            // tNovationDataSetcompleted
-            // 
-            this.tNovationDataSetcompleted.DataSetName = "TNovationDataSetcompleted";
-            this.tNovationDataSetcompleted.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tblClientBindingSource6
-            // 
-            this.tblClientBindingSource6.DataMember = "tblClient";
-            this.tblClientBindingSource6.DataSource = this.tNovationDataSetTIMING;
-            // 
-            // tNovationDataSetTIMING
-            // 
-            this.tNovationDataSetTIMING.DataSetName = "TNovationDataSetTIMING";
-            this.tNovationDataSetTIMING.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tblClientBindingSource5
-            // 
-            this.tblClientBindingSource5.DataMember = "tblClient";
-            this.tblClientBindingSource5.DataSource = this.tNovationDataSetsall;
-            // 
-            // tNovationDataSetsall
-            // 
-            this.tNovationDataSetsall.DataSetName = "TNovationDataSetsall";
-            this.tNovationDataSetsall.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tblClientBindingSource2
-            // 
-            this.tblClientBindingSource2.DataMember = "tblClient";
-            this.tblClientBindingSource2.DataSource = this.freddyDataConnection;
-            // 
-            // freddyDataConnection
-            // 
-            this.freddyDataConnection.DataSetName = "FreddyDataConnection";
-            this.freddyDataConnection.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tblClientTableAdapter1
-            // 
-            this.tblClientTableAdapter1.ClearBeforeFill = true;
-            // 
-            // tblClientBindingSource3
-            // 
-            this.tblClientBindingSource3.DataMember = "tblClient";
-            this.tblClientBindingSource3.DataSource = this.tNovationDataSetBindingSource;
-            // 
-            // tblClientBindingSource4
-            // 
-            this.tblClientBindingSource4.DataMember = "tblClient";
-            this.tblClientBindingSource4.DataSource = this.tNovationDataSetBindingSource;
-            // 
-            // tblClientTableAdapter
-            // 
-            this.tblClientTableAdapter.ClearBeforeFill = true;
-            // 
-            // tblClientTableAdapter2
-            // 
-            this.tblClientTableAdapter2.ClearBeforeFill = true;
-            // 
-            // tblClientTableAdapter3
-            // 
-            this.tblClientTableAdapter3.ClearBeforeFill = true;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(906, 376);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 72;
-            this.button1.Text = "ShowData";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // dataGridViewClient
+            // dataGridViewC
             // 
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
@@ -328,8 +212,8 @@
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewClient.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridViewClient.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewC.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridViewC.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -337,9 +221,9 @@
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewClient.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridViewClient.Location = new System.Drawing.Point(278, 141);
-            this.dataGridViewClient.Name = "dataGridViewClient";
+            this.dataGridViewC.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridViewC.Location = new System.Drawing.Point(194, 117);
+            this.dataGridViewC.Name = "dataGridViewC";
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -347,17 +231,16 @@
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewClient.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.dataGridViewClient.Size = new System.Drawing.Size(691, 196);
-            this.dataGridViewClient.TabIndex = 73;
+            this.dataGridViewC.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridViewC.Size = new System.Drawing.Size(1035, 238);
+            this.dataGridViewC.TabIndex = 74;
             // 
             // ClientList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1241, 565);
-            this.Controls.Add(this.dataGridViewClient);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.dataGridViewC);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.labelHeading);
             this.Controls.Add(this.pictureBox1);
@@ -378,19 +261,7 @@
             this.Text = "ClientList";
             this.Load += new System.EventHandler(this.ClientList_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblClientBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetBindingSource)).EndInit();
-            
-            ((System.ComponentModel.ISupportInitialize)(this.tblClientBindingSource7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetcompleted)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblClientBindingSource6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetTIMING)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblClientBindingSource5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetsall)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblClientBindingSource2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.freddyDataConnection)).EndInit();
-     
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewClient)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewC)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -412,27 +283,13 @@
         private System.Windows.Forms.Label labelUser;
         private System.Windows.Forms.Label labelHeading;
         private System.Windows.Forms.PictureBox pictureBox1;
-        
-        private System.Windows.Forms.BindingSource tblClientBindingSource;
+      
      
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.BindingSource tblClientBindingSource1;
-        private System.Windows.Forms.BindingSource tNovationDataSetBindingSource;
-        private FreddyDataConnection freddyDataConnection;
-        private System.Windows.Forms.BindingSource tblClientBindingSource2;
-        private FreddyDataConnectionTableAdapters.tblClientTableAdapter tblClientTableAdapter1;
-        private System.Windows.Forms.BindingSource tblClientBindingSource4;
-        private System.Windows.Forms.BindingSource tblClientBindingSource3;
-        private TNovationDataSetsall tNovationDataSetsall;
-        private System.Windows.Forms.BindingSource tblClientBindingSource5;
-        private TNovationDataSetsallTableAdapters.tblClientTableAdapter tblClientTableAdapter;
-        private TNovationDataSetTIMING tNovationDataSetTIMING;
-        private System.Windows.Forms.BindingSource tblClientBindingSource6;
-        private TNovationDataSetTIMINGTableAdapters.tblClientTableAdapter tblClientTableAdapter2;
-        private TNovationDataSetcompleted tNovationDataSetcompleted;
-        private System.Windows.Forms.BindingSource tblClientBindingSource7;
-        private TNovationDataSetcompletedTableAdapters.tblClientTableAdapter tblClientTableAdapter3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridView dataGridViewClient;
+            
+           
+    
+ 
+        private System.Windows.Forms.DataGridView dataGridViewC;
     }
 }
