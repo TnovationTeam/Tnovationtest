@@ -101,23 +101,11 @@
     <Compile Include="ConsultantList.Designer.cs">
       <DependentUpon>ConsultantList.cs</DependentUpon>
     </Compile>
-    <Compile Include="EventAdd.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="EventAdd.Designer.cs">
-      <DependentUpon>EventAdd.cs</DependentUpon>
-    </Compile>
     <Compile Include="EventForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="EventForm.Designer.cs">
       <DependentUpon>EventForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="EventList.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="EventList.Designer.cs">
-      <DependentUpon>EventList.cs</DependentUpon>
     </Compile>
     <Compile Include="mdiBackend.cs">
       <SubType>Form</SubType>
@@ -206,14 +194,8 @@
     <EmbeddedResource Include="ConsultantList.resx">
       <DependentUpon>ConsultantList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EventAdd.resx">
-      <DependentUpon>EventAdd.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="EventForm.resx">
       <DependentUpon>EventForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="EventList.resx">
-      <DependentUpon>EventList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="mdiBackend.resx">
       <DependentUpon>mdiBackend.cs</DependentUpon>
