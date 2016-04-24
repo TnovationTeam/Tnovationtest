@@ -27,14 +27,15 @@ namespace TNovationProject
         {
             //add new record
             Add();
-          // lblError.Text = "The data record is entered to the database! Click back to return to the clients list page.";
-            //This line of code navigates to the Client list page when clicked on add button.
-      
+            new ListEvent().Show();
+            this.Hide();
         }
 
         private void buttonBack_Click(object sender, EventArgs e)
         {
-            
+            //This line of code navigates to listEvent form
+            new ListEvent().Show();
+            this.Hide();
         }
 
         void Add()

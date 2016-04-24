@@ -173,7 +173,6 @@ C:\Users\Egle\Source\Repos\Tnovationtest\TNovationProject\obj\Debug\TNovationPro
 C:\Users\Egle\Source\Repos\Tnovationtest\TNovationProject\obj\Debug\TNovationProject.AddProject.resources
 C:\Users\Egle\Source\Repos\Tnovationtest\TNovationProject\obj\Debug\TNovationProject.ClientList.resources
 C:\Users\Egle\Source\Repos\Tnovationtest\TNovationProject\obj\Debug\TNovationProject.ConsultantList.resources
-C:\Users\Egle\Source\Repos\Tnovationtest\TNovationProject\obj\Debug\TNovationProject.EventList.resources
 C:\Users\Egle\Source\Repos\Tnovationtest\TNovationProject\obj\Debug\TNovationProject.mdiBackend.resources
 C:\Users\Egle\Source\Repos\Tnovationtest\TNovationProject\obj\Debug\TNovationProject.ProjectList.resources
 C:\Users\Egle\Source\Repos\Tnovationtest\TNovationProject\obj\Debug\TNovationProject.Properties.Resources.resources
@@ -397,3 +396,5 @@ C:\Users\Callum\Source\Repos\Tnovationtest5\TNovationProject\obj\Debug\TNovation
 C:\Users\Callum\Source\Repos\Tnovationtest5\TNovationProject\obj\Debug\TNovationProject.csproj.GenerateResource.Cache
 C:\Users\Egle\Source\Repos\Tnovationtest\TNovationProject\obj\Debug\TNovationProject.AddEvent.resources
 F:\TNOVATION\TNovationProject\obj\Debug\TNovationProject.AddEvent.resources
+C:\Users\Egle\Source\Repos\Tnovationtest\TNovationProject\obj\Debug\TNovationProject.ListEvent.resources
+C:\Users\Egle\Source\Repos\Tnovationtest\TNovationProject\obj\Debug\TNovationProject.UpdateEvent.resources

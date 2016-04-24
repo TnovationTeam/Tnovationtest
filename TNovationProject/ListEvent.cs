@@ -14,6 +14,7 @@ namespace TNovationProject
     public partial class ListEvent : Form
     {
         Int32 EventCode;
+        string searchString;
         public ListEvent()
         {
             InitializeComponent();
@@ -39,7 +40,8 @@ namespace TNovationProject
 
         private void buttonUpdate_Click(object sender, EventArgs e)
         {
-
+            new UpdateEvent().Show();
+            this.Hide();
         }
 
         private void buttonDelete_Click(object sender, EventArgs e)
@@ -103,6 +105,39 @@ namespace TNovationProject
             //return the count of records in the list
             return Events.Count;
         }
+
+        private void buttonSearch_Click(object sender, EventArgs e)
+        {
+             listBoxEvent.ClearSelected();
+
+            searchString = textBoxSearch.Text;
+            listBoxEvent.SelectionMode = SelectionMode.MultiExtended;
+            int x = -1;
+            
+
+            if (searchString.Length != 0)
+            {
+                do
+                {
+                    
+                    x =  listBoxEvent.FindString(searchString, x);
+                    if (x != -1)
+                    {
+                        
+                        if ( listBoxEvent.SelectedIndices.Count > 0)
+                        {
+                            if (x ==  listBoxEvent.SelectedIndices[0])
+                                return;
+                        }
+                   
+                         listBoxEvent.SetSelected(x, true);
+                    }
+                }
+                while (x != -1);
+            }
+           
+        }
+        }
        
 
 
@@ -111,8 +146,8 @@ namespace TNovationProject
         }
 
         
-    }
+    
 
 
-    }
-}
+    
+
