@@ -12,7 +12,7 @@ using TNovationClassLibrary;
 namespace TNovationProject
 {
     public partial class EventList : Form
-    {
+    {    
         Int32 EventCode;
 
         public EventList()
@@ -24,25 +24,29 @@ namespace TNovationProject
         {
             //update the listbox
             DisplayEvents();
+            this.Refresh();
         }
         private void buttonArchive_Click(object sender, EventArgs e)
         {
-             DialogResult result = MessageBox.Show("Do you want to 'Archive' this event?", "Confirmation", MessageBoxButtons.YesNoCancel);
-            if (result == DialogResult.Yes)
+            if (listboxEvent.SelectedIndex != -1)
             {
-                //this will delete the event from the list and archive it in the database
+
+                //get the primary key value of the record to delete 
+               EventCode = Convert.ToInt32(listboxEvent.SelectedValue);
+                DeleteEvent();
+                //update the listbox
+                DisplayEvents();
+                new EventList().Show();
+                this.Hide();
+                this.Refresh();
+
             }
-            else if (result == DialogResult.No)
+            else //if no record has been selected 
             {
-                //this will cancel the request to archive
+                //display an error
+                labelError.Text = "Please select a record to delete from the list";
             }
-            else
-            {
-                //
-            } 
-            //this will direct to the event form in which the user can archive the event
-            EventForm Form = new EventForm();
-            Form.Show();
+
         }
 
         private void buttonAdd_Click(object sender, EventArgs e)
@@ -78,6 +82,24 @@ namespace TNovationProject
             DisplayEvents();
         }
 
+        void DeleteEvent()
+        {
+            //function to delete the selected record
+
+            //create a new instance of the event book
+            clsEventCollection TNovation = new clsEventCollection();
+            //find the record to delete 
+            TNovation.ThisEvent.Find(EventCode);
+            //delete the record
+            TNovation.Delete();
+
+        }
+
+        private void buttonUpdate_Click(object sender, EventArgs e)
+        {
+            new EventForm().Show();
+            this.Hide();
+        }
        
 
 

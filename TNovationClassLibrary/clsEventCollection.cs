@@ -150,6 +150,37 @@ namespace TNovationClassLibrary
             return DB.Execute("sproc_tblEvent_Insert");
         }
 
- 
+
+        public void Delete()
+        {
+            //deletes the record pointed to by thisEvent
+            //connects to the database
+            clsDataConnection DB = new clsDataConnection();
+            //set the parameters for the stored procedure
+            DB.AddParameter("@EventCode", thisEvent.EventCode);
+            //execute the stored procedure
+            DB.Execute("sproc_tblEvent_Delete");
+        }
+
+
+
+        public void Update()
+        {
+            //update an existing record based on the values of thisaddress
+            //connect to the database
+            clsDataConnection DB = new clsDataConnection();
+            //set the parameters for the stored procedure
+            DB.AddParameter("@EventCode", thisEvent.EventCode);
+            DB.AddParameter("@EventName", thisEvent.EventName);
+            DB.AddParameter("@CompanyName", thisEvent.CompanyName);
+            DB.AddParameter("@ConsultantAttending", thisEvent.ConsultantAttending);
+            DB.AddParameter("@Contact", thisEvent.Contact);
+            DB.AddParameter("@StartDate", thisEvent.StartDate);
+            DB.AddParameter("@GuestSpeaker", thisEvent.GuestSpeaker);
+            DB.AddParameter("@Location", thisEvent.Location);
+            DB.AddParameter("@TypeOfEvent", thisEvent.TypeOfEvent);
+            //execute the query returning the primary key value
+            DB.Execute("sproc_tblEvent_Update");
+        }
     }
 }

@@ -33,7 +33,7 @@ namespace TNovationTestFramework
 
 
         [TestMethod]
-      public void AllEventsOK()
+        public void AllEventsOK()
         {
             //create an instance of the class we want to create
             clsEventCollection Events = new clsEventCollection();
@@ -46,6 +46,13 @@ namespace TNovationTestFramework
             //set its properties
             TestItem.EventCode = 1;
             TestItem.EventName = "Excel London";
+            TestItem.CompanyName = "CTech";
+            TestItem.ConsultantAttending = "Freddy";
+            TestItem.Contact = "0758675643";
+            TestItem.StartDate = DateTime.Now.Date; ;
+            TestItem.GuestSpeaker = "Tiffany Laster";
+            TestItem.Location = "IT support for company";
+            TestItem.TypeOfEvent = "Networking";
             //add the item to the test list
             TestList.Add(TestItem);
             //assign the data to the property
@@ -90,39 +97,6 @@ namespace TNovationTestFramework
 
         }
 
-
-        [TestMethod]
-        public void AddMethodOK()
-        {
-            //create an instance of the class we want to create 
-            clsEventCollection AllEvents = new clsEventCollection();
-            //create the item of the test data
-            clsEvent TestItem = new clsEvent();
-            //var to store the primary key
-            Int32 PrimaryKey = 0;
-            //set its properties
-            TestItem.EventCode = 7;
-            TestItem.EventName = "Yayitsfixed-Freddy";
-            TestItem.CompanyName = "Thank me,hahaha";
-            TestItem.ConsultantAttending = "test";
-            TestItem.Contact = "07545636";
-            TestItem.StartDate = DateTime.Now.Date; ;
-            TestItem.GuestSpeaker = "Test";
-            TestItem.Location = "test";
-            TestItem.TypeOfEvent ="test";
-           
-            //set ThisEvent to the test data
-            AllEvents.ThisEvent = TestItem;
-            //add the record
-            PrimaryKey = AllEvents.Add();
-            //set the primary key of the test data
-            TestItem.EventCode = PrimaryKey;
-            //find the record
-            AllEvents.ThisEvent.Find(PrimaryKey);
-            //test to see that the two values are the same
-            Assert.AreEqual(AllEvents.ThisEvent, TestItem);
-
-        }
 
         [TestMethod]
         public void EventListOK()
@@ -188,5 +162,118 @@ namespace TNovationTestFramework
         //    //test to see that the two values are the same
         //    Assert.AreEqual(Events.Count, 2);
         //}
+
+        [TestMethod]
+        public void AddMethodOK()
+        {
+            //create an instance of the class we want to create 
+            clsEventCollection AllEvents = new clsEventCollection();
+            //create the item of the test data
+            clsEvent TestItem = new clsEvent();
+            //var to store the primary key
+            Int32 PrimaryKey = 0;
+            //set its properties
+            TestItem.EventCode = 7;
+            TestItem.EventName = "Yayitsfixed-Freddy";
+            TestItem.CompanyName = "Thank me,hahaha";
+            TestItem.ConsultantAttending = "test";
+            TestItem.Contact = "07545636";
+            TestItem.StartDate = DateTime.Now.Date; ;
+            TestItem.GuestSpeaker = "Test";
+            TestItem.Location = "test";
+            TestItem.TypeOfEvent = "test";
+
+            //set ThisEvent to the test data
+            AllEvents.ThisEvent = TestItem;
+            //add the record
+            PrimaryKey = AllEvents.Add();
+            //set the primary key of the test data
+            TestItem.EventCode = PrimaryKey;
+            //find the record
+            AllEvents.ThisEvent.Find(PrimaryKey);
+            //test to see that the two values are the same
+            Assert.AreEqual(AllEvents.ThisEvent, TestItem);
+
+        }
+
+
+        [TestMethod]
+        public void DeleteMethodOK()
+        {
+            //create an instance of the class we want to create 
+            clsEventCollection AllEvents = new clsEventCollection();
+            //create the item of the test data
+            clsEvent TestItem = new clsEvent();
+            //var to store the primary key
+            Int32 PrimaryKey = 0;
+            //set its properties
+            TestItem.EventCode = 10;
+            TestItem.EventName = "this better work";
+            TestItem.CompanyName = "Thank hahaha";
+            TestItem.ConsultantAttending = "test";
+            TestItem.Contact = "07545636";
+            TestItem.StartDate = DateTime.Now.Date; ;
+            TestItem.GuestSpeaker = "Test";
+            TestItem.Location = "test";
+            TestItem.TypeOfEvent = "test";
+            //set ThisAddress to the test data
+            AllEvents.ThisEvent = TestItem;
+            TestItem.EventCode = PrimaryKey;
+            //find the record
+            AllEvents.ThisEvent.Find(PrimaryKey);
+            //delete the record
+            AllEvents.Delete();
+            //now find the record
+            Boolean Found = AllEvents.ThisEvent.Find(PrimaryKey);
+            //test to see that the record was not found
+            Assert.IsFalse(Found);
+
+        }
+
+        [TestMethod]
+        public void UpdateMethodOK()
+        {
+            //create an instance of the class we want to create 
+            clsEventCollection AllEvents = new clsEventCollection();
+            //create the item of the test data
+            clsEvent TestItem = new clsEvent();
+            //var to store the primary key
+            Int32 PrimaryKey = 0;
+            //set its properties
+            TestItem.EventCode = 11;
+            TestItem.EventName = "thissdh work";
+            TestItem.CompanyName = "Thandshhaha";
+            TestItem.ConsultantAttending = "tdfhest";
+            TestItem.Contact = "075645636";
+            TestItem.StartDate = DateTime.Now.Date; ;
+            TestItem.GuestSpeaker = "Tshaest";
+            TestItem.Location = "tessdft";
+            TestItem.TypeOfEvent = "tessdft";
+            //set ThisAddress to the test data
+            AllEvents.ThisEvent = TestItem;
+
+            //set the primary key of the test data
+            TestItem.EventCode = PrimaryKey;
+            //modify the test data
+            TestItem.EventCode = 12;
+            TestItem.EventName = "thdhsr work";
+            TestItem.CompanyName = "Thadsfhaha";
+            TestItem.ConsultantAttending = "tedsfhst";
+            TestItem.Contact = "075456436";
+            TestItem.StartDate = DateTime.Now.Date; ;
+            TestItem.GuestSpeaker = "Tesfswt";
+            TestItem.Location = "tefsst";
+            TestItem.TypeOfEvent = "tsdfest";
+            //set the record based on new test data
+            AllEvents.ThisEvent = TestItem;
+            //update the record
+            AllEvents.Update();
+            //find the record
+            AllEvents.ThisEvent.Find(PrimaryKey);
+            //test to see this address matches the test data
+            Assert.AreEqual(AllEvents.ThisEvent, TestItem);
+        }
+    
+    
     }
 }
