@@ -34,6 +34,7 @@
             this.buttonDelete = new System.Windows.Forms.Button();
             this.buttonSearch = new System.Windows.Forms.Button();
             this.textBoxSearch = new System.Windows.Forms.TextBox();
+            this.buttonPopulate = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // listBoxEvent
@@ -43,6 +44,7 @@
             this.listBoxEvent.Name = "listBoxEvent";
             this.listBoxEvent.Size = new System.Drawing.Size(168, 225);
             this.listBoxEvent.TabIndex = 0;
+            this.listBoxEvent.SelectedIndexChanged += new System.EventHandler(this.listBoxEvent_SelectedIndexChanged);
             // 
             // buttonAdd
             // 
@@ -52,6 +54,7 @@
             this.buttonAdd.TabIndex = 1;
             this.buttonAdd.Text = "Add";
             this.buttonAdd.UseVisualStyleBackColor = true;
+            this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
             // buttonUpdate
             // 
@@ -61,6 +64,7 @@
             this.buttonUpdate.TabIndex = 2;
             this.buttonUpdate.Text = "Update";
             this.buttonUpdate.UseVisualStyleBackColor = true;
+            this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
             // buttonDelete
             // 
@@ -70,6 +74,7 @@
             this.buttonDelete.TabIndex = 3;
             this.buttonDelete.Text = "Delete";
             this.buttonDelete.UseVisualStyleBackColor = true;
+            this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
             // 
             // buttonSearch
             // 
@@ -87,11 +92,22 @@
             this.textBoxSearch.Size = new System.Drawing.Size(168, 20);
             this.textBoxSearch.TabIndex = 5;
             // 
+            // buttonPopulate
+            // 
+            this.buttonPopulate.Location = new System.Drawing.Point(216, 268);
+            this.buttonPopulate.Name = "buttonPopulate";
+            this.buttonPopulate.Size = new System.Drawing.Size(75, 23);
+            this.buttonPopulate.TabIndex = 6;
+            this.buttonPopulate.Text = "Populate";
+            this.buttonPopulate.UseVisualStyleBackColor = true;
+            this.buttonPopulate.Click += new System.EventHandler(this.buttonPopulate_Click);
+            // 
             // ListEvent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(558, 427);
+            this.Controls.Add(this.buttonPopulate);
             this.Controls.Add(this.textBoxSearch);
             this.Controls.Add(this.buttonSearch);
             this.Controls.Add(this.buttonDelete);
@@ -100,6 +116,7 @@
             this.Controls.Add(this.listBoxEvent);
             this.Name = "ListEvent";
             this.Text = "ListEvent";
+            this.Load += new System.EventHandler(this.ListEvent_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -113,5 +130,6 @@
         private System.Windows.Forms.Button buttonDelete;
         private System.Windows.Forms.Button buttonSearch;
         private System.Windows.Forms.TextBox textBoxSearch;
+        private System.Windows.Forms.Button buttonPopulate;
     }
 }
