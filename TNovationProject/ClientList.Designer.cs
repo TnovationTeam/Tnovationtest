@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ClientList));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
             this.labelClientInformation = new System.Windows.Forms.Label();
             this.buttonDelete = new System.Windows.Forms.Button();
             this.buttonUpdate = new System.Windows.Forms.Button();
@@ -48,6 +48,9 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridViewC = new System.Windows.Forms.DataGridView();
+            this.buttonClientDet = new System.Windows.Forms.Button();
+            this.textBoxClientDet = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewC)).BeginInit();
             this.SuspendLayout();
@@ -64,7 +67,7 @@
             // 
             // buttonDelete
             // 
-            this.buttonDelete.Location = new System.Drawing.Point(755, 376);
+            this.buttonDelete.Location = new System.Drawing.Point(754, 376);
             this.buttonDelete.Name = "buttonDelete";
             this.buttonDelete.Size = new System.Drawing.Size(86, 23);
             this.buttonDelete.TabIndex = 58;
@@ -74,7 +77,7 @@
             // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(652, 376);
+            this.buttonUpdate.Location = new System.Drawing.Point(651, 376);
             this.buttonUpdate.Name = "buttonUpdate";
             this.buttonUpdate.Size = new System.Drawing.Size(86, 23);
             this.buttonUpdate.TabIndex = 57;
@@ -84,7 +87,7 @@
             // 
             // buttonAdd
             // 
-            this.buttonAdd.Location = new System.Drawing.Point(544, 376);
+            this.buttonAdd.Location = new System.Drawing.Point(543, 376);
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(86, 23);
             this.buttonAdd.TabIndex = 56;
@@ -106,17 +109,18 @@
             // 
             this.labelInfo2.AutoSize = true;
             this.labelInfo2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelInfo2.Location = new System.Drawing.Point(13, 470);
+            this.labelInfo2.Location = new System.Drawing.Point(10, 480);
             this.labelInfo2.Name = "labelInfo2";
-            this.labelInfo2.Size = new System.Drawing.Size(364, 18);
+            this.labelInfo2.Size = new System.Drawing.Size(556, 18);
             this.labelInfo2.TabIndex = 62;
-            this.labelInfo2.Text = "To update a record click on the Update Client button";
+            this.labelInfo2.Text = "To update, select a record in the listbox on the left and click Update Client but" +
+    "ton";
             // 
             // labelInfo1
             // 
             this.labelInfo1.AutoSize = true;
             this.labelInfo1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelInfo1.Location = new System.Drawing.Point(13, 437);
+            this.labelInfo1.Location = new System.Drawing.Point(10, 449);
             this.labelInfo1.Name = "labelInfo1";
             this.labelInfo1.Size = new System.Drawing.Size(320, 18);
             this.labelInfo1.TabIndex = 63;
@@ -126,15 +130,16 @@
             // 
             this.labelInfo3.AutoSize = true;
             this.labelInfo3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelInfo3.Location = new System.Drawing.Point(13, 502);
+            this.labelInfo3.Location = new System.Drawing.Point(10, 512);
             this.labelInfo3.Name = "labelInfo3";
-            this.labelInfo3.Size = new System.Drawing.Size(472, 18);
+            this.labelInfo3.Size = new System.Drawing.Size(546, 18);
             this.labelInfo3.TabIndex = 64;
-            this.labelInfo3.Text = "Select a record to delete in the listbox and click Delete Client button";
+            this.labelInfo3.Text = "To delete, select a record in the listbox on the left and click Delete Client but" +
+    "ton";
             // 
             // buttonPopulate
             // 
-            this.buttonPopulate.Location = new System.Drawing.Point(425, 375);
+            this.buttonPopulate.Location = new System.Drawing.Point(199, 376);
             this.buttonPopulate.Name = "buttonPopulate";
             this.buttonPopulate.Size = new System.Drawing.Size(98, 23);
             this.buttonPopulate.TabIndex = 65;
@@ -205,41 +210,73 @@
             // 
             // dataGridViewC
             // 
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewC.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle16.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle16.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewC.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle16;
             this.dataGridViewC.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewC.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle17.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle17.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewC.DefaultCellStyle = dataGridViewCellStyle17;
             this.dataGridViewC.Location = new System.Drawing.Point(194, 117);
             this.dataGridViewC.Name = "dataGridViewC";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewC.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle18.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle18.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewC.RowHeadersDefaultCellStyle = dataGridViewCellStyle18;
             this.dataGridViewC.Size = new System.Drawing.Size(1035, 238);
             this.dataGridViewC.TabIndex = 74;
+            // 
+            // buttonClientDet
+            // 
+            this.buttonClientDet.Location = new System.Drawing.Point(118, 375);
+            this.buttonClientDet.Name = "buttonClientDet";
+            this.buttonClientDet.Size = new System.Drawing.Size(75, 23);
+            this.buttonClientDet.TabIndex = 75;
+            this.buttonClientDet.Text = "Find client";
+            this.buttonClientDet.UseVisualStyleBackColor = true;
+            this.buttonClientDet.Click += new System.EventHandler(this.buttonClientDet_Click);
+            // 
+            // textBoxClientDet
+            // 
+            this.textBoxClientDet.Location = new System.Drawing.Point(12, 375);
+            this.textBoxClientDet.Name = "textBoxClientDet";
+            this.textBoxClientDet.Size = new System.Drawing.Size(100, 20);
+            this.textBoxClientDet.TabIndex = 76;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Red;
+            this.label2.Location = new System.Drawing.Point(10, 403);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(383, 36);
+            this.label2.TabIndex = 77;
+            this.label2.Text = "To find a client, please enter the first name of the client \r\nand it will be high" +
+    "lighted.";
             // 
             // ClientList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1241, 565);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.textBoxClientDet);
+            this.Controls.Add(this.buttonClientDet);
             this.Controls.Add(this.dataGridViewC);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.labelHeading);
@@ -291,5 +328,8 @@
     
  
         private System.Windows.Forms.DataGridView dataGridViewC;
+        private System.Windows.Forms.Button buttonClientDet;
+        private System.Windows.Forms.TextBox textBoxClientDet;
+        private System.Windows.Forms.Label label2;
     }
 }

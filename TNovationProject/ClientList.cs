@@ -18,7 +18,7 @@ namespace TNovationProject
     public partial class ClientList : Form
     {
         Int32 ClientNo;
-
+        string searchString;
         public ClientList()
         {
             InitializeComponent();
@@ -139,6 +139,39 @@ namespace TNovationProject
         private void listboxClient_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void buttonClientDet_Click(object sender, EventArgs e)
+        {
+
+            listboxClient.ClearSelected();
+
+            searchString = textBoxClientDet.Text;
+            listboxClient.SelectionMode = SelectionMode.MultiExtended;
+            int x = -1;
+            
+
+            if (searchString.Length != 0)
+            {
+                do
+                {
+                    
+                    x = listboxClient.FindString(searchString, x);
+                    if (x != -1)
+                    {
+                        
+                        if (listboxClient.SelectedIndices.Count > 0)
+                        {
+                            if (x == listboxClient.SelectedIndices[0])
+                                return;
+                        }
+                   
+                        listboxClient.SetSelected(x, true);
+                    }
+                }
+                while (x != -1);
+            }
+           
         }
 
         
