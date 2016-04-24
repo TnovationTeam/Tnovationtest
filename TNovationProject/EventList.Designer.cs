@@ -37,6 +37,7 @@
             this.buttonAdd = new System.Windows.Forms.Button();
             this.listboxEvent = new System.Windows.Forms.ListBox();
             this.buttonPopulate = new System.Windows.Forms.Button();
+            this.labelError = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -72,6 +73,7 @@
             this.buttonUpdate.TabIndex = 29;
             this.buttonUpdate.Text = "Update";
             this.buttonUpdate.UseVisualStyleBackColor = false;
+            this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
             // buttonBack
             // 
@@ -130,11 +132,21 @@
             this.buttonPopulate.UseVisualStyleBackColor = false;
             this.buttonPopulate.Click += new System.EventHandler(this.buttonPopulate_Click);
             // 
+            // labelError
+            // 
+            this.labelError.AutoSize = true;
+            this.labelError.Location = new System.Drawing.Point(210, 414);
+            this.labelError.Name = "labelError";
+            this.labelError.Size = new System.Drawing.Size(29, 13);
+            this.labelError.TabIndex = 32;
+            this.labelError.Text = "Error";
+            // 
             // EventList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(770, 464);
+            this.Controls.Add(this.labelError);
             this.Controls.Add(this.buttonPopulate);
             this.Controls.Add(this.listboxEvent);
             this.Controls.Add(this.buttonUpdate);
@@ -164,5 +176,6 @@
         private System.Windows.Forms.Button buttonAdd;
         private System.Windows.Forms.ListBox listboxEvent;
         private System.Windows.Forms.Button buttonPopulate;
+        private System.Windows.Forms.Label labelError;
     }
 }

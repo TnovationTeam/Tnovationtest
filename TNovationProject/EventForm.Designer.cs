@@ -54,6 +54,7 @@
             this.textBoxGuestSpeaker = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.labelError = new System.Windows.Forms.Label();
+            this.buttonUpdate = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -297,11 +298,24 @@
             this.labelError.TabIndex = 49;
             this.labelError.Text = "[labelError]";
             // 
+            // buttonUpdate
+            // 
+            this.buttonUpdate.BackColor = System.Drawing.Color.DodgerBlue;
+            this.buttonUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonUpdate.Location = new System.Drawing.Point(574, 126);
+            this.buttonUpdate.Name = "buttonUpdate";
+            this.buttonUpdate.Size = new System.Drawing.Size(88, 33);
+            this.buttonUpdate.TabIndex = 50;
+            this.buttonUpdate.Text = "Update";
+            this.buttonUpdate.UseVisualStyleBackColor = false;
+            this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
+            // 
             // EventForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(706, 513);
+            this.Controls.Add(this.buttonUpdate);
             this.Controls.Add(this.labelError);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBoxGuestSpeaker);
@@ -364,5 +378,6 @@
         private System.Windows.Forms.TextBox textBoxGuestSpeaker;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label labelError;
+        private System.Windows.Forms.Button buttonUpdate;
     }
 }

@@ -84,6 +84,15 @@ namespace TNovationProject
 
         }
 
+        private void buttonUpdate_Click(object sender, EventArgs e)
+        {
+            
+            
+           
+            new EventList().Show();
+            this.Hide();
+        }
+
        
     }
 }
