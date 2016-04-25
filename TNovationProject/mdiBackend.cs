@@ -102,45 +102,8 @@ namespace TNovationProject
 
         }
 
-        private void clientToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            //create an object based on ClientList form
-            ClientList UserList = new ClientList();
-            //make the object a child of the mdi parent
-            UserList.MdiParent = this;
-            //make the form visible
-            UserList.Visible = true;
-        }
-
-        private void eventListToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            //create an object based on EventList form
-            ListEvent EventList = new ListEvent();
-            //make the object a child of the mdi parent
-            EventList.MdiParent = this;
-            //make the form visible
-            EventList.Visible = true;
-        }
-
-        private void consultantListToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            //create an object based on EventList form
-            LogInConsultant ConsultantLogIn = new LogInConsultant();
-            //make the object a child of the mdi parent
-            ConsultantLogIn.MdiParent = this;
-            //make the form visible
-            ConsultantLogIn.Visible = true;
-        }
-
-        private void projectListToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            //create an object based on EventList form
-            ProjectList ProjectNameList = new ProjectList();
-            //make the object a child of the mdi parent
-            ProjectNameList.MdiParent = this;
-            //make the form visible
-            ProjectNameList.Visible = true;
-        }
+ 
+        
 
         private void menuToolStripMenuItem_Click(object sender, EventArgs e)
         {
