@@ -471,3 +471,6 @@ C:\Users\p13237621\Source\Repos\Tnovationtest\TNovationProject\bin\Debug\TNovati
 C:\Users\p13237621\Source\Repos\Tnovationtest\TNovationProject\bin\Debug\TNovationProject.pdb
 C:\Users\p13237621\Source\Repos\Tnovationtest\TNovationProject\bin\Debug\TNovationClassLibrary.dll
 C:\Users\p13237621\Source\Repos\Tnovationtest\TNovationProject\bin\Debug\TNovationClassLibrary.pdb
+C:\Users\MwenyaSebastian\Source\Repos\Tnovationtest32\TNovationProject\bin\Debug\TNovationProject.exe.config
+C:\Users\MwenyaSebastian\Source\Repos\Tnovationtest32\TNovationProject\obj\Debug\TNovationProject.exe
+C:\Users\MwenyaSebastian\Source\Repos\Tnovationtest32\TNovationProject\obj\Debug\TNovationProject.pdb
