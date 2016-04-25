@@ -31,7 +31,9 @@ namespace TNovationProject
 
         private void buttonClient_Click(object sender, EventArgs e)
         {
-            new ClientList().Show();
+            //This line of code navigates to the Add Client page when clicked on Add client button.
+            new ClientLogin().Show();
+            this.Hide();
             
         }
 

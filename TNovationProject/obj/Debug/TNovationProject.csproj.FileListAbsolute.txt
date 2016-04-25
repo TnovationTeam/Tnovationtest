@@ -381,7 +381,6 @@ C:\Users\Egle\Source\Repos\Tnovationtest\TNovationProject\obj\Debug\TNovationPro
 F:\TNOVATION\TNovationProject\obj\Debug\TNovationProject.ListEvent.resources
 F:\TNOVATION\TNovationProject\obj\Debug\TNovationProject.UpdateEvent.resources
 F:\TNOVATION\TNovationProject\obj\Debug\TNovationProject.AddCompanyList.resources
-F:\TNOVATION\TNovationProject\obj\Debug\TNovationProject.UpdateCompany.resources
 F:\TNOVATION\TNovationProject\bin\Debug\TNovation.mdf
 F:\TNOVATION\TNovationProject\bin\Debug\TNovation_log.ldf
 C:\Users\p13239500\Source\Repos\Tnovationtest\TNovationProject\bin\Debug\TNovation.mdf
@@ -474,3 +473,9 @@ C:\Users\p13237621\Source\Repos\Tnovationtest\TNovationProject\bin\Debug\TNovati
 C:\Users\MwenyaSebastian\Source\Repos\Tnovationtest32\TNovationProject\bin\Debug\TNovationProject.exe.config
 C:\Users\MwenyaSebastian\Source\Repos\Tnovationtest32\TNovationProject\obj\Debug\TNovationProject.exe
 C:\Users\MwenyaSebastian\Source\Repos\Tnovationtest32\TNovationProject\obj\Debug\TNovationProject.pdb
+F:\TNOVATION\TNovationProject\obj\Debug\TNovationProject.CompanyList.resources
+F:\TNOVATION\TNovationProject\obj\Debug\TNovationProject.frmMain.resources
+F:\TNOVATION\TNovationProject\obj\Debug\TNovationProject.LogInConsultant.resources
+F:\TNOVATION\TNovationProject\obj\Debug\TNovationProject.Menu.resources
+F:\TNOVATION\TNovationProject\obj\Debug\TNovationProject.UpdateProject.resources
+F:\TNOVATION\TNovationProject\obj\Debug\TNovationProject.ClientLogin.resources
