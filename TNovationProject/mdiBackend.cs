@@ -125,11 +125,11 @@ namespace TNovationProject
         private void consultantListToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //create an object based on EventList form
-            ConsultantList ConsultantNameList = new ConsultantList();
+            LogInConsultant ConsultantLogIn = new LogInConsultant();
             //make the object a child of the mdi parent
-            ConsultantNameList.MdiParent = this;
+            ConsultantLogIn.MdiParent = this;
             //make the form visible
-            ConsultantNameList.Visible = true;
+            ConsultantLogIn.Visible = true;
         }
 
         private void projectListToolStripMenuItem_Click(object sender, EventArgs e)
