@@ -235,7 +235,7 @@ namespace TNovationTestFramework
              //invoke the method
              Found = AEvent.Find(EventCode);
              //check the event code
-             if (AEvent.StartDate != Convert.ToDateTime("22/03/2016 13:00:00"))
+             if (AEvent.StartDate != Convert.ToDateTime("22/03/2016"))
              {
                  OK = false;
              }
@@ -480,14 +480,14 @@ namespace TNovationTestFramework
              DateTime TestDate;
              //set to todays date
              TestDate = DateTime.Now.Date;
-             //date changed to -100, this test should fail
+             //date changed to 1, this test should fail
              TestDate = TestDate.AddDays(1);
              //convert date variable to string variable
              string StartDate = TestDate.ToString();
              //invoke method
              OK = AEvent.Valid(EventName, CompanyName, Contact, StartDate, GuestSpeaker, Location, TypeOfEvent, ConsultantAttending);
              //check iff it is correct
-             Assert.IsTrue(OK);
+             Assert.IsFalse(OK);
 
          }
          [TestMethod]
@@ -938,7 +938,7 @@ namespace TNovationTestFramework
              string Location = "Excel London";///testing this
              string TypeOfEvent = "Conference";
              string ConsultantAttending = "Egle Sciglinskaite";
-             Contact = Contact.PadRight(8, '2');
+             Contact = Contact.PadRight(7, '2');
              //invoke method
              OK = AEvent.Valid(EventName, CompanyName, Contact, StartDate, GuestSpeaker, Location, TypeOfEvent, ConsultantAttending);
              //check iff it is correct
