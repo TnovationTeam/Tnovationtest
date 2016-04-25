@@ -82,7 +82,7 @@ namespace TNovationClassLibrary
             while (Index < RecordCount)
             {
                 //create a blank address
-                clsClient ACompany = new clsClient();
+                clsCompany ACompany = new clsCompany();
                 //read in the fields from the current record
                 ACompany.CompanyCode = Convert.ToInt32(DB.DataTable.Rows[Index]["CompanyCode"]);
                 ACompany.CompanyAddress = Convert.ToString(DB.DataTable.Rows[Index]["CompanyAddress"]);
