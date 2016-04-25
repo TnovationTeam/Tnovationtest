@@ -232,9 +232,6 @@
     <EmbeddedResource Include="ClientList.resx">
       <DependentUpon>ClientList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CompanyList.resx">
-      <DependentUpon>CompanyList.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="ConsultantList.resx">
       <DependentUpon>ConsultantList.cs</DependentUpon>
     </EmbeddedResource>
