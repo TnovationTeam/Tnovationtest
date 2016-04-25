@@ -33,6 +33,11 @@ namespace TNovationProject
 
         private void buttonLogIn_Click(object sender, EventArgs e)
         {
+           
+        }
+
+        private void buttonLogIn_Click_1(object sender, EventArgs e)
+        {
             if (textBoxUserName.Text == "" || textBoxPassword.Text == "")
             {
                 MessageBox.Show("Please provide UserName and Password");
