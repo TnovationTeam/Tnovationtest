@@ -11,7 +11,7 @@ using System.Windows.Forms;
 using TNovationClassLibrary;
 using System.Data.SqlClient;
 using System.Configuration;
-using System.Data.SqlClient;
+
 
 namespace TNovationProject
 {
