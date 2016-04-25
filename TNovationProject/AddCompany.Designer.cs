@@ -204,6 +204,7 @@
             this.buttonAdd.TabIndex = 70;
             this.buttonAdd.Text = "Add";
             this.buttonAdd.UseVisualStyleBackColor = true;
+            this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
             // buttonCancel
             // 
@@ -213,6 +214,7 @@
             this.buttonCancel.TabIndex = 71;
             this.buttonCancel.Text = "Cancel";
             this.buttonCancel.UseVisualStyleBackColor = true;
+            this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
             // 
             // buttonBack
             // 
@@ -222,6 +224,7 @@
             this.buttonBack.TabIndex = 72;
             this.buttonBack.Text = "Back";
             this.buttonBack.UseVisualStyleBackColor = true;
+            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
             // 
             // AddCompany
             // 
@@ -250,6 +253,7 @@
             this.Controls.Add(this.labelLogo);
             this.Name = "AddCompany";
             this.Text = "AddCompany";
+            this.Load += new System.EventHandler(this.AddCompany_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.labelLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
