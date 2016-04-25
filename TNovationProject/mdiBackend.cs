@@ -141,5 +141,15 @@ namespace TNovationProject
             //make the form visible
             ProjectNameList.Visible = true;
         }
+
+        private void menuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //create an object based on EventList form
+            Menu MainMenu = new Menu();
+            //make the object a child of the mdi parent
+           MainMenu.MdiParent = this;
+            //make the form visible
+            MainMenu.Visible = true;
+        }
     }
 }
