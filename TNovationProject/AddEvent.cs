@@ -43,7 +43,7 @@ namespace TNovationProject
             //create an instance of TNovation
             clsEventCollection TNovation = new clsEventCollection();
             //validate the data on the webform
-            Boolean OK = TNovation.ThisEvent.Valid(textBoxEventName.Text, textBoxCompanyName.Text, textBoxConsultantAttending.Text, textBoxContact.Text, textBoxStartDate.Text, textBoxGuestSpeaker.Text, textBoxLocation.Text, textBoxTypeOfEvent.Text);
+            Boolean OK = TNovation.ThisEvent.Valid(textBoxEventName.Text, textBoxCompanyName.Text,textBoxContact.Text, textBoxStartDate.Text, textBoxGuestSpeaker.Text, textBoxLocation.Text, textBoxTypeOfEvent.Text, textBoxConsultantAttending.Text);
             //if the data is OK then add it to the object
             if (OK == true)
             {
@@ -51,12 +51,13 @@ namespace TNovationProject
                 TNovation.ThisEvent.EventCode = Convert.ToInt32(textBoxEventCode.Text);
                 TNovation.ThisEvent.EventName = textBoxEventName.Text;
                 TNovation.ThisEvent.CompanyName = textBoxCompanyName.Text;
-                TNovation.ThisEvent.ConsultantAttending = textBoxConsultantAttending.Text;
+               
                 TNovation.ThisEvent.Contact = textBoxContact.Text;
                 TNovation.ThisEvent.StartDate = Convert.ToDateTime(textBoxStartDate.Text);
                 TNovation.ThisEvent.GuestSpeaker = textBoxGuestSpeaker.Text;
                 TNovation.ThisEvent.Location = textBoxLocation.Text;
                 TNovation.ThisEvent.TypeOfEvent = textBoxTypeOfEvent.Text;
+                TNovation.ThisEvent.ConsultantAttending = textBoxConsultantAttending.Text;
                 //add the record
                 TNovation.Add();
             }
