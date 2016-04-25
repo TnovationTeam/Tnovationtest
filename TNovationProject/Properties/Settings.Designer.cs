@@ -37,17 +37,6 @@ namespace TNovationProject.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\v11.0;AttachDbFilename=F:\\TNovation_Client\\App_Data\\TNovati" +
-            "on.mdf;Integrated Security=True;Connect Timeout=30")]
-        public string TNovation {
-            get {
-                return ((string)(this["TNovation"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
         [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\v11.0;AttachDbFilename=C:\\Users\\P13228620\\Source\\Repos\\Tnov" +
             "ationtest\\App_Data\\TNovation.mdf;Integrated Security=True;Connect Timeout=30")]
         public string TNovationProjectConnection {
@@ -101,6 +90,29 @@ namespace TNovationProject.Properties {
         public string TNovationConnectionString2Proper {
             get {
                 return ((string)(this["TNovationConnectionString2Proper"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\v11.0;AttachDbFilename=F:\\TNOVATION\\App_Data\\TNovation.mdf;" +
+            "Integrated Security=True;Connect Timeout=30")]
+        public string TNovation {
+            get {
+                return ((string)(this["TNovation"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\v11.0;AttachDbFilename=C:\\Users\\MwenyaSebastian\\Source\\Repo" +
+            "s\\Tnovationtest34\\App_Data\\TNovation.mdf;Integrated Security=True;Connect Timeou" +
+            "t=30")]
+        public string TNovationConnectionString2LATESTTTTTTTTTT {
+            get {
+                return ((string)(this["TNovationConnectionString2LATESTTTTTTTTTT"]));
             }
         }
     }

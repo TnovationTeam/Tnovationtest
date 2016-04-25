@@ -49,12 +49,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridViewC = new System.Windows.Forms.DataGridView();
-            this.buttonClientDet = new System.Windows.Forms.Button();
-            this.textBoxClientDet = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.tNovationDataSetFinalHandIN = new TNovationProject.TNovationDataSetFinalHandIN();
-            this.tblClientBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tblClientTableAdapter = new TNovationProject.TNovationDataSetFinalHandINTableAdapters.tblClientTableAdapter();
             this.clientNoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clientNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clientEmailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -65,10 +59,21 @@
             this.clientTelDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dateAddedDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.activeDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.tblClientBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tNovationDataSetFinalHandIN = new TNovationProject.TNovationDataSetFinalHandIN();
+            this.buttonClientDet = new System.Windows.Forms.Button();
+            this.textBoxClientDet = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.tblClientTableAdapter = new TNovationProject.TNovationDataSetFinalHandINTableAdapters.tblClientTableAdapter();
+            this.tNovationDataSetLATESTAPRIL = new TNovationProject.TNovationDataSetLATESTAPRIL();
+            this.tblClientBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.tblClientTableAdapter1 = new TNovationProject.TNovationDataSetLATESTAPRILTableAdapters.tblClientTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewC)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetFinalHandIN)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblClientBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetFinalHandIN)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetLATESTAPRIL)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblClientBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // labelClientInformation
@@ -247,7 +252,7 @@
             this.clientTelDataGridViewTextBoxColumn,
             this.dateAddedDataGridViewTextBoxColumn,
             this.activeDataGridViewCheckBoxColumn});
-            this.dataGridViewC.DataSource = this.tblClientBindingSource;
+            this.dataGridViewC.DataSource = this.tblClientBindingSource1;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -268,49 +273,6 @@
             this.dataGridViewC.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridViewC.Size = new System.Drawing.Size(1035, 238);
             this.dataGridViewC.TabIndex = 74;
-            // 
-            // buttonClientDet
-            // 
-            this.buttonClientDet.Location = new System.Drawing.Point(118, 375);
-            this.buttonClientDet.Name = "buttonClientDet";
-            this.buttonClientDet.Size = new System.Drawing.Size(75, 23);
-            this.buttonClientDet.TabIndex = 75;
-            this.buttonClientDet.Text = "Find client";
-            this.buttonClientDet.UseVisualStyleBackColor = true;
-            this.buttonClientDet.Click += new System.EventHandler(this.buttonClientDet_Click);
-            // 
-            // textBoxClientDet
-            // 
-            this.textBoxClientDet.Location = new System.Drawing.Point(12, 375);
-            this.textBoxClientDet.Name = "textBoxClientDet";
-            this.textBoxClientDet.Size = new System.Drawing.Size(100, 20);
-            this.textBoxClientDet.TabIndex = 76;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(10, 403);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(383, 36);
-            this.label2.TabIndex = 77;
-            this.label2.Text = "To find a client, please enter the first name of the client \r\nand it will be high" +
-    "lighted.";
-            // 
-            // tNovationDataSetFinalHandIN
-            // 
-            this.tNovationDataSetFinalHandIN.DataSetName = "TNovationDataSetFinalHandIN";
-            this.tNovationDataSetFinalHandIN.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tblClientBindingSource
-            // 
-            this.tblClientBindingSource.DataMember = "tblClient";
-            this.tblClientBindingSource.DataSource = this.tNovationDataSetFinalHandIN;
-            // 
-            // tblClientTableAdapter
-            // 
-            this.tblClientTableAdapter.ClearBeforeFill = true;
             // 
             // clientNoDataGridViewTextBoxColumn
             // 
@@ -372,6 +334,63 @@
             this.activeDataGridViewCheckBoxColumn.HeaderText = "Active";
             this.activeDataGridViewCheckBoxColumn.Name = "activeDataGridViewCheckBoxColumn";
             // 
+            // tblClientBindingSource
+            // 
+            this.tblClientBindingSource.DataMember = "tblClient";
+            this.tblClientBindingSource.DataSource = this.tNovationDataSetFinalHandIN;
+            // 
+            // tNovationDataSetFinalHandIN
+            // 
+            this.tNovationDataSetFinalHandIN.DataSetName = "TNovationDataSetFinalHandIN";
+            this.tNovationDataSetFinalHandIN.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // buttonClientDet
+            // 
+            this.buttonClientDet.Location = new System.Drawing.Point(118, 375);
+            this.buttonClientDet.Name = "buttonClientDet";
+            this.buttonClientDet.Size = new System.Drawing.Size(75, 23);
+            this.buttonClientDet.TabIndex = 75;
+            this.buttonClientDet.Text = "Find client";
+            this.buttonClientDet.UseVisualStyleBackColor = true;
+            this.buttonClientDet.Click += new System.EventHandler(this.buttonClientDet_Click);
+            // 
+            // textBoxClientDet
+            // 
+            this.textBoxClientDet.Location = new System.Drawing.Point(12, 375);
+            this.textBoxClientDet.Name = "textBoxClientDet";
+            this.textBoxClientDet.Size = new System.Drawing.Size(100, 20);
+            this.textBoxClientDet.TabIndex = 76;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Red;
+            this.label2.Location = new System.Drawing.Point(10, 403);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(383, 36);
+            this.label2.TabIndex = 77;
+            this.label2.Text = "To find a client, please enter the first name of the client \r\nand it will be high" +
+    "lighted.";
+            // 
+            // tblClientTableAdapter
+            // 
+            this.tblClientTableAdapter.ClearBeforeFill = true;
+            // 
+            // tNovationDataSetLATESTAPRIL
+            // 
+            this.tNovationDataSetLATESTAPRIL.DataSetName = "TNovationDataSetLATESTAPRIL";
+            this.tNovationDataSetLATESTAPRIL.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tblClientBindingSource1
+            // 
+            this.tblClientBindingSource1.DataMember = "tblClient";
+            this.tblClientBindingSource1.DataSource = this.tNovationDataSetLATESTAPRIL;
+            // 
+            // tblClientTableAdapter1
+            // 
+            this.tblClientTableAdapter1.ClearBeforeFill = true;
+            // 
             // ClientList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -403,8 +422,10 @@
             this.Load += new System.EventHandler(this.ClientList_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewC)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetFinalHandIN)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblClientBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetFinalHandIN)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetLATESTAPRIL)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblClientBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -450,5 +471,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn clientTelDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn dateAddedDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewCheckBoxColumn activeDataGridViewCheckBoxColumn;
+        private TNovationDataSetLATESTAPRIL tNovationDataSetLATESTAPRIL;
+        private System.Windows.Forms.BindingSource tblClientBindingSource1;
+        private TNovationDataSetLATESTAPRILTableAdapters.tblClientTableAdapter tblClientTableAdapter1;
     }
 }

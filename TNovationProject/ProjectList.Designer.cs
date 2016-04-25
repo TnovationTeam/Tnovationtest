@@ -52,6 +52,8 @@
             this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tblProjectBindingSource11 = new System.Windows.Forms.BindingSource(this.components);
+            this.tNovationDataSetFinalHandIN = new TNovationProject.TNovationDataSetFinalHandIN();
             this.tblProjectBindingSource10 = new System.Windows.Forms.BindingSource(this.components);
             this.callumProjectDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.callumProjectDataSet = new TNovationProject.CallumProjectDataSet();
@@ -72,9 +74,10 @@
             this.tblProjectBindingSource9 = new System.Windows.Forms.BindingSource(this.components);
             this.buttonPopulate = new System.Windows.Forms.Button();
             this.labelError = new System.Windows.Forms.Label();
-            this.tNovationDataSetFinalHandIN = new TNovationProject.TNovationDataSetFinalHandIN();
-            this.tblProjectBindingSource11 = new System.Windows.Forms.BindingSource(this.components);
             this.tblProjectTableAdapter4 = new TNovationProject.TNovationDataSetFinalHandINTableAdapters.tblProjectTableAdapter();
+            this.tNovationDataSetLATESTAPRIL = new TNovationProject.TNovationDataSetLATESTAPRIL();
+            this.tblProjectBindingSource12 = new System.Windows.Forms.BindingSource(this.components);
+            this.tblProjectTableAdapter5 = new TNovationProject.TNovationDataSetLATESTAPRILTableAdapters.tblProjectTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblProjectBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblProjectBindingSource1)).BeginInit();
@@ -82,6 +85,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblCompanyBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridViewProjects)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblProjectBindingSource11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetFinalHandIN)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblProjectBindingSource10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.callumProjectDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.callumProjectDataSet)).BeginInit();
@@ -96,8 +101,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.tblProjectBindingSource3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetcompletedBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblProjectBindingSource9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetFinalHandIN)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblProjectBindingSource11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetLATESTAPRIL)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblProjectBindingSource12)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBoxLogo
@@ -211,7 +216,7 @@
             this.dataGridViewTextBoxColumn14,
             this.dataGridViewTextBoxColumn15,
             this.dataGridViewTextBoxColumn16});
-            this.DataGridViewProjects.DataSource = this.tblProjectBindingSource11;
+            this.DataGridViewProjects.DataSource = this.tblProjectBindingSource12;
             this.DataGridViewProjects.Location = new System.Drawing.Point(204, 145);
             this.DataGridViewProjects.Name = "DataGridViewProjects";
             this.DataGridViewProjects.Size = new System.Drawing.Size(634, 263);
@@ -264,6 +269,16 @@
             this.dataGridViewTextBoxColumn16.DataPropertyName = "ProjectLocation";
             this.dataGridViewTextBoxColumn16.HeaderText = "ProjectLocation";
             this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
+            // 
+            // tblProjectBindingSource11
+            // 
+            this.tblProjectBindingSource11.DataMember = "tblProject";
+            this.tblProjectBindingSource11.DataSource = this.tNovationDataSetFinalHandIN;
+            // 
+            // tNovationDataSetFinalHandIN
+            // 
+            this.tNovationDataSetFinalHandIN.DataSetName = "TNovationDataSetFinalHandIN";
+            this.tNovationDataSetFinalHandIN.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // tblProjectBindingSource10
             // 
@@ -371,19 +386,23 @@
             this.labelError.Size = new System.Drawing.Size(0, 13);
             this.labelError.TabIndex = 38;
             // 
-            // tNovationDataSetFinalHandIN
-            // 
-            this.tNovationDataSetFinalHandIN.DataSetName = "TNovationDataSetFinalHandIN";
-            this.tNovationDataSetFinalHandIN.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tblProjectBindingSource11
-            // 
-            this.tblProjectBindingSource11.DataMember = "tblProject";
-            this.tblProjectBindingSource11.DataSource = this.tNovationDataSetFinalHandIN;
-            // 
             // tblProjectTableAdapter4
             // 
             this.tblProjectTableAdapter4.ClearBeforeFill = true;
+            // 
+            // tNovationDataSetLATESTAPRIL
+            // 
+            this.tNovationDataSetLATESTAPRIL.DataSetName = "TNovationDataSetLATESTAPRIL";
+            this.tNovationDataSetLATESTAPRIL.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tblProjectBindingSource12
+            // 
+            this.tblProjectBindingSource12.DataMember = "tblProject";
+            this.tblProjectBindingSource12.DataSource = this.tNovationDataSetLATESTAPRIL;
+            // 
+            // tblProjectTableAdapter5
+            // 
+            this.tblProjectTableAdapter5.ClearBeforeFill = true;
             // 
             // ProjectList
             // 
@@ -401,7 +420,7 @@
             this.Controls.Add(this.buttonAdd);
             this.Controls.Add(this.labelHeading);
             this.Controls.Add(this.pictureBoxLogo);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ProjectList";
             this.Text = "ProjectList";
             this.Load += new System.EventHandler(this.ProjectList_Load_1);
@@ -412,6 +431,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblCompanyBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridViewProjects)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblProjectBindingSource11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetFinalHandIN)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblProjectBindingSource10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.callumProjectDataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.callumProjectDataSet)).EndInit();
@@ -426,8 +447,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.tblProjectBindingSource3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetcompletedBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblProjectBindingSource9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetFinalHandIN)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblProjectBindingSource11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetLATESTAPRIL)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblProjectBindingSource12)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -498,5 +519,8 @@
         private TNovationDataSetFinalHandIN tNovationDataSetFinalHandIN;
         private System.Windows.Forms.BindingSource tblProjectBindingSource11;
         private TNovationDataSetFinalHandINTableAdapters.tblProjectTableAdapter tblProjectTableAdapter4;
+        private TNovationDataSetLATESTAPRIL tNovationDataSetLATESTAPRIL;
+        private System.Windows.Forms.BindingSource tblProjectBindingSource12;
+        private TNovationDataSetLATESTAPRILTableAdapters.tblProjectTableAdapter tblProjectTableAdapter5;
     }
 }

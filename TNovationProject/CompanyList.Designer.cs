@@ -35,6 +35,15 @@
             this.labelHeading = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.dataGridViewC = new System.Windows.Forms.DataGridView();
+            this.companyCodeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.companyAddressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.companyEmailAddressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.involvedClientDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.involvedProjectDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.mobileNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.phoneNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tblCompanyBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tNovationDataSetFinalHandIN = new TNovationProject.TNovationDataSetFinalHandIN();
             this.labelCompanydetails = new System.Windows.Forms.Label();
             this.labelUser = new System.Windows.Forms.Label();
             this.listboxClient = new System.Windows.Forms.ListBox();
@@ -50,20 +59,16 @@
             this.buttonDelete = new System.Windows.Forms.Button();
             this.buttonUpdate = new System.Windows.Forms.Button();
             this.buttonAdd = new System.Windows.Forms.Button();
-            this.tNovationDataSetFinalHandIN = new TNovationProject.TNovationDataSetFinalHandIN();
-            this.tblCompanyBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tblCompanyTableAdapter = new TNovationProject.TNovationDataSetFinalHandINTableAdapters.tblCompanyTableAdapter();
-            this.companyCodeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.companyAddressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.companyEmailAddressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.involvedClientDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.involvedProjectDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.mobileNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.phoneNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tNovationDataSetLATESTAPRIL = new TNovationProject.TNovationDataSetLATESTAPRIL();
+            this.tblCompanyBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.tblCompanyTableAdapter1 = new TNovationProject.TNovationDataSetLATESTAPRILTableAdapters.tblCompanyTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewC)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetFinalHandIN)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblCompanyBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetFinalHandIN)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetLATESTAPRIL)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblCompanyBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // labelHeading
@@ -107,7 +112,7 @@
             this.involvedProjectDataGridViewTextBoxColumn,
             this.mobileNumberDataGridViewTextBoxColumn,
             this.phoneNumberDataGridViewTextBoxColumn});
-            this.dataGridViewC.DataSource = this.tblCompanyBindingSource;
+            this.dataGridViewC.DataSource = this.tblCompanyBindingSource1;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -128,6 +133,58 @@
             this.dataGridViewC.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridViewC.Size = new System.Drawing.Size(1035, 238);
             this.dataGridViewC.TabIndex = 79;
+            // 
+            // companyCodeDataGridViewTextBoxColumn
+            // 
+            this.companyCodeDataGridViewTextBoxColumn.DataPropertyName = "CompanyCode";
+            this.companyCodeDataGridViewTextBoxColumn.HeaderText = "CompanyCode";
+            this.companyCodeDataGridViewTextBoxColumn.Name = "companyCodeDataGridViewTextBoxColumn";
+            // 
+            // companyAddressDataGridViewTextBoxColumn
+            // 
+            this.companyAddressDataGridViewTextBoxColumn.DataPropertyName = "CompanyAddress";
+            this.companyAddressDataGridViewTextBoxColumn.HeaderText = "CompanyAddress";
+            this.companyAddressDataGridViewTextBoxColumn.Name = "companyAddressDataGridViewTextBoxColumn";
+            // 
+            // companyEmailAddressDataGridViewTextBoxColumn
+            // 
+            this.companyEmailAddressDataGridViewTextBoxColumn.DataPropertyName = "CompanyEmailAddress";
+            this.companyEmailAddressDataGridViewTextBoxColumn.HeaderText = "CompanyEmailAddress";
+            this.companyEmailAddressDataGridViewTextBoxColumn.Name = "companyEmailAddressDataGridViewTextBoxColumn";
+            // 
+            // involvedClientDataGridViewTextBoxColumn
+            // 
+            this.involvedClientDataGridViewTextBoxColumn.DataPropertyName = "InvolvedClient";
+            this.involvedClientDataGridViewTextBoxColumn.HeaderText = "InvolvedClient";
+            this.involvedClientDataGridViewTextBoxColumn.Name = "involvedClientDataGridViewTextBoxColumn";
+            // 
+            // involvedProjectDataGridViewTextBoxColumn
+            // 
+            this.involvedProjectDataGridViewTextBoxColumn.DataPropertyName = "InvolvedProject";
+            this.involvedProjectDataGridViewTextBoxColumn.HeaderText = "InvolvedProject";
+            this.involvedProjectDataGridViewTextBoxColumn.Name = "involvedProjectDataGridViewTextBoxColumn";
+            // 
+            // mobileNumberDataGridViewTextBoxColumn
+            // 
+            this.mobileNumberDataGridViewTextBoxColumn.DataPropertyName = "MobileNumber";
+            this.mobileNumberDataGridViewTextBoxColumn.HeaderText = "MobileNumber";
+            this.mobileNumberDataGridViewTextBoxColumn.Name = "mobileNumberDataGridViewTextBoxColumn";
+            // 
+            // phoneNumberDataGridViewTextBoxColumn
+            // 
+            this.phoneNumberDataGridViewTextBoxColumn.DataPropertyName = "PhoneNumber";
+            this.phoneNumberDataGridViewTextBoxColumn.HeaderText = "PhoneNumber";
+            this.phoneNumberDataGridViewTextBoxColumn.Name = "phoneNumberDataGridViewTextBoxColumn";
+            // 
+            // tblCompanyBindingSource
+            // 
+            this.tblCompanyBindingSource.DataMember = "tblCompany";
+            this.tblCompanyBindingSource.DataSource = this.tNovationDataSetFinalHandIN;
+            // 
+            // tNovationDataSetFinalHandIN
+            // 
+            this.tNovationDataSetFinalHandIN.DataSetName = "TNovationDataSetFinalHandIN";
+            this.tNovationDataSetFinalHandIN.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // labelCompanydetails
             // 
@@ -275,61 +332,23 @@
             this.buttonAdd.Text = "Add Company";
             this.buttonAdd.UseVisualStyleBackColor = true;
             // 
-            // tNovationDataSetFinalHandIN
-            // 
-            this.tNovationDataSetFinalHandIN.DataSetName = "TNovationDataSetFinalHandIN";
-            this.tNovationDataSetFinalHandIN.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tblCompanyBindingSource
-            // 
-            this.tblCompanyBindingSource.DataMember = "tblCompany";
-            this.tblCompanyBindingSource.DataSource = this.tNovationDataSetFinalHandIN;
-            // 
             // tblCompanyTableAdapter
             // 
             this.tblCompanyTableAdapter.ClearBeforeFill = true;
             // 
-            // companyCodeDataGridViewTextBoxColumn
+            // tNovationDataSetLATESTAPRIL
             // 
-            this.companyCodeDataGridViewTextBoxColumn.DataPropertyName = "CompanyCode";
-            this.companyCodeDataGridViewTextBoxColumn.HeaderText = "CompanyCode";
-            this.companyCodeDataGridViewTextBoxColumn.Name = "companyCodeDataGridViewTextBoxColumn";
+            this.tNovationDataSetLATESTAPRIL.DataSetName = "TNovationDataSetLATESTAPRIL";
+            this.tNovationDataSetLATESTAPRIL.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // companyAddressDataGridViewTextBoxColumn
+            // tblCompanyBindingSource1
             // 
-            this.companyAddressDataGridViewTextBoxColumn.DataPropertyName = "CompanyAddress";
-            this.companyAddressDataGridViewTextBoxColumn.HeaderText = "CompanyAddress";
-            this.companyAddressDataGridViewTextBoxColumn.Name = "companyAddressDataGridViewTextBoxColumn";
+            this.tblCompanyBindingSource1.DataMember = "tblCompany";
+            this.tblCompanyBindingSource1.DataSource = this.tNovationDataSetLATESTAPRIL;
             // 
-            // companyEmailAddressDataGridViewTextBoxColumn
+            // tblCompanyTableAdapter1
             // 
-            this.companyEmailAddressDataGridViewTextBoxColumn.DataPropertyName = "CompanyEmailAddress";
-            this.companyEmailAddressDataGridViewTextBoxColumn.HeaderText = "CompanyEmailAddress";
-            this.companyEmailAddressDataGridViewTextBoxColumn.Name = "companyEmailAddressDataGridViewTextBoxColumn";
-            // 
-            // involvedClientDataGridViewTextBoxColumn
-            // 
-            this.involvedClientDataGridViewTextBoxColumn.DataPropertyName = "InvolvedClient";
-            this.involvedClientDataGridViewTextBoxColumn.HeaderText = "InvolvedClient";
-            this.involvedClientDataGridViewTextBoxColumn.Name = "involvedClientDataGridViewTextBoxColumn";
-            // 
-            // involvedProjectDataGridViewTextBoxColumn
-            // 
-            this.involvedProjectDataGridViewTextBoxColumn.DataPropertyName = "InvolvedProject";
-            this.involvedProjectDataGridViewTextBoxColumn.HeaderText = "InvolvedProject";
-            this.involvedProjectDataGridViewTextBoxColumn.Name = "involvedProjectDataGridViewTextBoxColumn";
-            // 
-            // mobileNumberDataGridViewTextBoxColumn
-            // 
-            this.mobileNumberDataGridViewTextBoxColumn.DataPropertyName = "MobileNumber";
-            this.mobileNumberDataGridViewTextBoxColumn.HeaderText = "MobileNumber";
-            this.mobileNumberDataGridViewTextBoxColumn.Name = "mobileNumberDataGridViewTextBoxColumn";
-            // 
-            // phoneNumberDataGridViewTextBoxColumn
-            // 
-            this.phoneNumberDataGridViewTextBoxColumn.DataPropertyName = "PhoneNumber";
-            this.phoneNumberDataGridViewTextBoxColumn.HeaderText = "PhoneNumber";
-            this.phoneNumberDataGridViewTextBoxColumn.Name = "phoneNumberDataGridViewTextBoxColumn";
+            this.tblCompanyTableAdapter1.ClearBeforeFill = true;
             // 
             // CompanyList
             // 
@@ -359,8 +378,10 @@
             this.Load += new System.EventHandler(this.CompanyList_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewC)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetFinalHandIN)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblCompanyBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetFinalHandIN)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetLATESTAPRIL)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblCompanyBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -396,5 +417,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn involvedProjectDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn mobileNumberDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn phoneNumberDataGridViewTextBoxColumn;
+        private TNovationDataSetLATESTAPRIL tNovationDataSetLATESTAPRIL;
+        private System.Windows.Forms.BindingSource tblCompanyBindingSource1;
+        private TNovationDataSetLATESTAPRILTableAdapters.tblCompanyTableAdapter tblCompanyTableAdapter1;
     }
 }

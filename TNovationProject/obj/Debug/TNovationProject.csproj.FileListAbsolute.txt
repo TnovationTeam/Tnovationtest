@@ -479,3 +479,4 @@ F:\TNOVATION\TNovationProject\obj\Debug\TNovationProject.LogInConsultant.resourc
 F:\TNOVATION\TNovationProject\obj\Debug\TNovationProject.Menu.resources
 F:\TNOVATION\TNovationProject\obj\Debug\TNovationProject.UpdateProject.resources
 F:\TNOVATION\TNovationProject\obj\Debug\TNovationProject.ClientLogin.resources
+C:\Users\p13237621\Source\Repos\Tnovationtest\TNovationProject\obj\Debug\TNovationProject.ClientLogin.resources
