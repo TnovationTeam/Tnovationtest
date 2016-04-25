@@ -440,4 +440,6 @@ C:\Users\MwenyaSebastian\Source\Repos\Tnovationtest29\TNovationProject\obj\Debug
 C:\Users\p13237621\Source\Repos\Tnovationtest\TNovationProject\bin\Debug\TNovationProject.exe.config
 C:\Users\p13237621\Source\Repos\Tnovationtest\TNovationProject\obj\Debug\TNovationProject.exe
 C:\Users\p13237621\Source\Repos\Tnovationtest\TNovationProject\obj\Debug\TNovationProject.pdb
-C:\Users\p13237621\Source\Repos\Tnovationtest\TNovationProject\obj\Debug\TNovationProject.csprojResolveAssemblyReference.cache
+C:\Users\MwenyaSebastian\Source\Repos\Tnovationtest30\TNovationProject\bin\Debug\TNovationProject.exe.config
+C:\Users\MwenyaSebastian\Source\Repos\Tnovationtest30\TNovationProject\obj\Debug\TNovationProject.exe
+C:\Users\MwenyaSebastian\Source\Repos\Tnovationtest30\TNovationProject\obj\Debug\TNovationProject.pdb
