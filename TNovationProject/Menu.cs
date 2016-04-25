@@ -20,33 +20,38 @@ namespace TNovationProject
         private void buttonConsultant_Click(object sender, EventArgs e)
         {
             new ConsultantList().Show();
-            this.Hide();
+            
         }
 
         private void buttonEvents_Click(object sender, EventArgs e)
         {
             new ListEvent().Show();
-            this.Hide();
+           
         }
 
         private void buttonClient_Click(object sender, EventArgs e)
         {
             new ClientList().Show();
-            this.Hide();
+            
         }
 
         private void buttonCompany_Click(object sender, EventArgs e)
         {
             new CompanyList().Show();
-            this.Hide();
+            
         }
 
         private void buttonProject_Click(object sender, EventArgs e)
         {
 
             new ProjectList().Show();
-            this.Hide();
+            
 
+        }
+
+        private void Menu_Load(object sender, EventArgs e)
+        {
+           
         }
 
       
