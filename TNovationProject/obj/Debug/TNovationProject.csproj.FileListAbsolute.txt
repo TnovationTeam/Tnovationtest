@@ -437,3 +437,6 @@ C:\Users\MwenyaSebastian\Source\Repos\Tnovationtest29\TNovationProject\obj\Debug
 C:\Users\MwenyaSebastian\Source\Repos\Tnovationtest29\TNovationProject\obj\Debug\TNovationProject.UpdateEvent.resources
 C:\Users\MwenyaSebastian\Source\Repos\Tnovationtest29\TNovationProject\obj\Debug\TNovationProject.UpdateProject.resources
 C:\Users\MwenyaSebastian\Source\Repos\Tnovationtest29\TNovationProject\obj\Debug\TNovationProject.csproj.GenerateResource.Cache
+C:\Users\p13237621\Source\Repos\Tnovationtest\TNovationProject\bin\Debug\TNovationProject.exe.config
+C:\Users\p13237621\Source\Repos\Tnovationtest\TNovationProject\obj\Debug\TNovationProject.exe
+C:\Users\p13237621\Source\Repos\Tnovationtest\TNovationProject\obj\Debug\TNovationProject.pdb
