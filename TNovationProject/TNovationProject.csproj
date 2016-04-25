@@ -11,6 +11,7 @@
     <AssemblyName>TNovationProject</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -23,7 +24,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -72,6 +72,12 @@
     <Compile Include="AddCompany.Designer.cs">
       <DependentUpon>AddCompany.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddCompanyList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCompanyList.Designer.cs">
+      <DependentUpon>AddCompanyList.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddConsultant.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,6 +106,12 @@
     </Compile>
     <Compile Include="ClientList.Designer.cs">
       <DependentUpon>ClientList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CompanyList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CompanyList.Designer.cs">
+      <DependentUpon>CompanyList.cs</DependentUpon>
     </Compile>
     <Compile Include="ConsultantList.cs">
       <SubType>Form</SubType>
@@ -147,6 +159,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>TNovationDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="TNovationDataSetCompany.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TNovationDataSetCompany.xsd</DependentUpon>
+    </Compile>
     <Compile Include="TNovationDataSetcompleted.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -167,6 +184,12 @@
     </Compile>
     <Compile Include="UpdateClient.Designer.cs">
       <DependentUpon>UpdateClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateCompany.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateCompany.Designer.cs">
+      <DependentUpon>UpdateCompany.cs</DependentUpon>
     </Compile>
     <Compile Include="UpdateConsultant.cs">
       <SubType>Form</SubType>
@@ -194,6 +217,9 @@
     <EmbeddedResource Include="AddCompany.resx">
       <DependentUpon>AddCompany.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AddCompanyList.resx">
+      <DependentUpon>AddCompanyList.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AddConsultant.resx">
       <DependentUpon>AddConsultant.cs</DependentUpon>
     </EmbeddedResource>
@@ -205,6 +231,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ClientList.resx">
       <DependentUpon>ClientList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CompanyList.resx">
+      <DependentUpon>CompanyList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ConsultantList.resx">
       <DependentUpon>ConsultantList.cs</DependentUpon>
@@ -224,6 +253,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UpdateClient.resx">
       <DependentUpon>UpdateClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateCompany.resx">
+      <DependentUpon>UpdateCompany.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UpdateConsultant.resx">
       <DependentUpon>UpdateConsultant.cs</DependentUpon>
@@ -270,6 +302,17 @@
     </None>
     <None Include="TNovationDataSet.xss">
       <DependentUpon>TNovationDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TNovationDataSetCompany.xsc">
+      <DependentUpon>TNovationDataSetCompany.xsd</DependentUpon>
+    </None>
+    <None Include="TNovationDataSetCompany.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TNovationDataSetCompany.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TNovationDataSetCompany.xss">
+      <DependentUpon>TNovationDataSetCompany.xsd</DependentUpon>
     </None>
     <None Include="TNovationDataSetcompleted.xsc">
       <DependentUpon>TNovationDataSetcompleted.xsd</DependentUpon>
@@ -327,6 +370,15 @@
       <Project>{6129c85e-8fd8-4d99-a936-02dee166a193}</Project>
       <Name>TNovationClassLibrary</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="TNovation.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TNovation_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>TNovation.mdf</DependentUpon>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
