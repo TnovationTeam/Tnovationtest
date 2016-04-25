@@ -399,3 +399,5 @@ F:\TNOVATION\TNovationProject\obj\Debug\TNovationProject.AddEvent.resources
 C:\Users\Egle\Source\Repos\Tnovationtest\TNovationProject\obj\Debug\TNovationProject.ListEvent.resources
 C:\Users\Egle\Source\Repos\Tnovationtest\TNovationProject\obj\Debug\TNovationProject.UpdateEvent.resources
 C:\Users\p13239500\Source\Repos\Tnovationtest\TNovationProject\bin\Debug\TNovationProject.exe.config
+F:\TNOVATION\TNovationProject\obj\Debug\TNovationProject.ListEvent.resources
+F:\TNOVATION\TNovationProject\obj\Debug\TNovationProject.UpdateEvent.resources
