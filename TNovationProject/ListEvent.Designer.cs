@@ -31,6 +31,8 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ListEvent));
             this.listBoxEvent = new System.Windows.Forms.ListBox();
+            this.tblEventBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tNovationDataSetFinalHandIN = new TNovationProject.TNovationDataSetFinalHandIN();
             this.buttonAdd = new System.Windows.Forms.Button();
             this.buttonUpdate = new System.Windows.Forms.Button();
             this.buttonDelete = new System.Windows.Forms.Button();
@@ -40,18 +42,21 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
             this.labelHeading = new System.Windows.Forms.Label();
-            this.tNovationDataSetFinalHandIN = new TNovationProject.TNovationDataSetFinalHandIN();
-            this.tblEventBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tblEventTableAdapter = new TNovationProject.TNovationDataSetFinalHandINTableAdapters.tblEventTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetFinalHandIN)).BeginInit();
+            this.tNovationDataSetLATESTAPRIL = new TNovationProject.TNovationDataSetLATESTAPRIL();
+            this.tblEventBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.tblEventTableAdapter1 = new TNovationProject.TNovationDataSetLATESTAPRILTableAdapters.tblEventTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.tblEventBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetFinalHandIN)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetLATESTAPRIL)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblEventBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // listBoxEvent
             // 
             this.listBoxEvent.BackColor = System.Drawing.Color.Lavender;
-            this.listBoxEvent.DataSource = this.tblEventBindingSource;
+            this.listBoxEvent.DataSource = this.tblEventBindingSource1;
             this.listBoxEvent.DisplayMember = "EventName";
             this.listBoxEvent.FormattingEnabled = true;
             this.listBoxEvent.Location = new System.Drawing.Point(145, 167);
@@ -60,6 +65,16 @@
             this.listBoxEvent.TabIndex = 0;
             this.listBoxEvent.ValueMember = "EventCode";
             this.listBoxEvent.SelectedIndexChanged += new System.EventHandler(this.listBoxEvent_SelectedIndexChanged);
+            // 
+            // tblEventBindingSource
+            // 
+            this.tblEventBindingSource.DataMember = "tblEvent";
+            this.tblEventBindingSource.DataSource = this.tNovationDataSetFinalHandIN;
+            // 
+            // tNovationDataSetFinalHandIN
+            // 
+            this.tNovationDataSetFinalHandIN.DataSetName = "TNovationDataSetFinalHandIN";
+            this.tNovationDataSetFinalHandIN.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // buttonAdd
             // 
@@ -168,19 +183,23 @@
             this.labelHeading.TabIndex = 25;
             this.labelHeading.Text = "T{Novation}";
             // 
-            // tNovationDataSetFinalHandIN
-            // 
-            this.tNovationDataSetFinalHandIN.DataSetName = "TNovationDataSetFinalHandIN";
-            this.tNovationDataSetFinalHandIN.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tblEventBindingSource
-            // 
-            this.tblEventBindingSource.DataMember = "tblEvent";
-            this.tblEventBindingSource.DataSource = this.tNovationDataSetFinalHandIN;
-            // 
             // tblEventTableAdapter
             // 
             this.tblEventTableAdapter.ClearBeforeFill = true;
+            // 
+            // tNovationDataSetLATESTAPRIL
+            // 
+            this.tNovationDataSetLATESTAPRIL.DataSetName = "TNovationDataSetLATESTAPRIL";
+            this.tNovationDataSetLATESTAPRIL.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tblEventBindingSource1
+            // 
+            this.tblEventBindingSource1.DataMember = "tblEvent";
+            this.tblEventBindingSource1.DataSource = this.tNovationDataSetLATESTAPRIL;
+            // 
+            // tblEventTableAdapter1
+            // 
+            this.tblEventTableAdapter1.ClearBeforeFill = true;
             // 
             // ListEvent
             // 
@@ -201,9 +220,11 @@
             this.Name = "ListEvent";
             this.Text = "ListEvent";
             this.Load += new System.EventHandler(this.ListEvent_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetFinalHandIN)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblEventBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetFinalHandIN)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetLATESTAPRIL)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblEventBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -224,5 +245,8 @@
         private TNovationDataSetFinalHandIN tNovationDataSetFinalHandIN;
         private System.Windows.Forms.BindingSource tblEventBindingSource;
         private TNovationDataSetFinalHandINTableAdapters.tblEventTableAdapter tblEventTableAdapter;
+        private TNovationDataSetLATESTAPRIL tNovationDataSetLATESTAPRIL;
+        private System.Windows.Forms.BindingSource tblEventBindingSource1;
+        private TNovationDataSetLATESTAPRILTableAdapters.tblEventTableAdapter tblEventTableAdapter1;
     }
 }
