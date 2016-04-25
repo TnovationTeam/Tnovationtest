@@ -25,5 +25,10 @@ namespace TNovationProject
             this.tblCompanyTableAdapter.Fill(this.tNovationDataSetFinalHandIN.tblCompany);
 
         }
+
+        private void buttonAdd_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -169,6 +169,7 @@
             this.buttonAdd.TabIndex = 79;
             this.buttonAdd.Text = "Add Client";
             this.buttonAdd.UseVisualStyleBackColor = true;
+            this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
             // textBoxClientDet
             // 

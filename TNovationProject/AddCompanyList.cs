@@ -16,5 +16,12 @@ namespace TNovationProject
         {
             InitializeComponent();
         }
+
+        private void buttonAdd_Click(object sender, EventArgs e)
+        {
+            //This line of code navigates to the Add Client page when clicked on Add client button.
+            new AddCompany().Show();
+            this.Hide();
+        }
     }
 }

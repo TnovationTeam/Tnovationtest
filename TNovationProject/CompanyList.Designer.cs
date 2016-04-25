@@ -42,6 +42,8 @@
             this.involvedProjectDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.mobileNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.phoneNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tblCompanyBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.tNovationDataSetLATESTAPRIL = new TNovationProject.TNovationDataSetLATESTAPRIL();
             this.tblCompanyBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tNovationDataSetFinalHandIN = new TNovationProject.TNovationDataSetFinalHandIN();
             this.labelCompanydetails = new System.Windows.Forms.Label();
@@ -60,15 +62,13 @@
             this.buttonUpdate = new System.Windows.Forms.Button();
             this.buttonAdd = new System.Windows.Forms.Button();
             this.tblCompanyTableAdapter = new TNovationProject.TNovationDataSetFinalHandINTableAdapters.tblCompanyTableAdapter();
-            this.tNovationDataSetLATESTAPRIL = new TNovationProject.TNovationDataSetLATESTAPRIL();
-            this.tblCompanyBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.tblCompanyTableAdapter1 = new TNovationProject.TNovationDataSetLATESTAPRILTableAdapters.tblCompanyTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewC)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblCompanyBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetLATESTAPRIL)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblCompanyBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetFinalHandIN)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetLATESTAPRIL)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblCompanyBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // labelHeading
@@ -175,6 +175,16 @@
             this.phoneNumberDataGridViewTextBoxColumn.DataPropertyName = "PhoneNumber";
             this.phoneNumberDataGridViewTextBoxColumn.HeaderText = "PhoneNumber";
             this.phoneNumberDataGridViewTextBoxColumn.Name = "phoneNumberDataGridViewTextBoxColumn";
+            // 
+            // tblCompanyBindingSource1
+            // 
+            this.tblCompanyBindingSource1.DataMember = "tblCompany";
+            this.tblCompanyBindingSource1.DataSource = this.tNovationDataSetLATESTAPRIL;
+            // 
+            // tNovationDataSetLATESTAPRIL
+            // 
+            this.tNovationDataSetLATESTAPRIL.DataSetName = "TNovationDataSetLATESTAPRIL";
+            this.tNovationDataSetLATESTAPRIL.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // tblCompanyBindingSource
             // 
@@ -331,20 +341,11 @@
             this.buttonAdd.TabIndex = 80;
             this.buttonAdd.Text = "Add Company";
             this.buttonAdd.UseVisualStyleBackColor = true;
+            this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
             // tblCompanyTableAdapter
             // 
             this.tblCompanyTableAdapter.ClearBeforeFill = true;
-            // 
-            // tNovationDataSetLATESTAPRIL
-            // 
-            this.tNovationDataSetLATESTAPRIL.DataSetName = "TNovationDataSetLATESTAPRIL";
-            this.tNovationDataSetLATESTAPRIL.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tblCompanyBindingSource1
-            // 
-            this.tblCompanyBindingSource1.DataMember = "tblCompany";
-            this.tblCompanyBindingSource1.DataSource = this.tNovationDataSetLATESTAPRIL;
             // 
             // tblCompanyTableAdapter1
             // 
@@ -378,10 +379,10 @@
             this.Load += new System.EventHandler(this.CompanyList_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewC)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblCompanyBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetLATESTAPRIL)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblCompanyBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetFinalHandIN)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetLATESTAPRIL)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblCompanyBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
