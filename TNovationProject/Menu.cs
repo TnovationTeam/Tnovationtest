@@ -19,7 +19,7 @@ namespace TNovationProject
 
         private void buttonConsultant_Click(object sender, EventArgs e)
         {
-            new ConsultantList().Show();
+            new LogInConsultant().Show();
             
         }
 
