@@ -192,6 +192,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>TNovationDataSetFinalHandIN.xsd</DependentUpon>
     </Compile>
+    <Compile Include="TNovationDataSetLATESTAPRIL.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TNovationDataSetLATESTAPRIL.xsd</DependentUpon>
+    </Compile>
     <Compile Include="TNovationDataSetsall.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -361,6 +366,17 @@
     </None>
     <None Include="TNovationDataSetFinalHandIN.xss">
       <DependentUpon>TNovationDataSetFinalHandIN.xsd</DependentUpon>
+    </None>
+    <None Include="TNovationDataSetLATESTAPRIL.xsc">
+      <DependentUpon>TNovationDataSetLATESTAPRIL.xsd</DependentUpon>
+    </None>
+    <None Include="TNovationDataSetLATESTAPRIL.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TNovationDataSetLATESTAPRIL.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TNovationDataSetLATESTAPRIL.xss">
+      <DependentUpon>TNovationDataSetLATESTAPRIL.xsd</DependentUpon>
     </None>
     <None Include="TNovationDataSetsall.xsc">
       <DependentUpon>TNovationDataSetsall.xsd</DependentUpon>
