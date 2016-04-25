@@ -113,7 +113,7 @@ namespace TNovationClassLibrary
             DB.AddParameter("@MobileNumber", thisCompany.MobileNumber);
             DB.AddParameter("@PhoneNumber", thisCompany.PhoneNumber);
             //execute the query returning the primary key value
-            return DB.Execute("sproc_tblClient_Insert");
+            return DB.Execute("sproc_tblCompany_Insert");
         }
 
         public void Delete()
@@ -124,7 +124,7 @@ namespace TNovationClassLibrary
             //set the parameters for the stored procedure
             DB.AddParameter("@CompanyCode", thisCompany.CompanyCode);
             //execute the stored procedure
-            DB.Execute("sproc_tblClient_Delete");
+            DB.Execute("sproc_tblCompany_Delete");
         }
 
         public void Update()
@@ -133,18 +133,15 @@ namespace TNovationClassLibrary
             //connect to the database
             clsDataConnection DB = new clsDataConnection();
             //set the parameters for the stored procedure
-            DB.AddParameter("@ClientNo", thisCompany.ClientNo);
-            DB.AddParameter("@ClientName", thisCompany.ClientName);
-            DB.AddParameter("@ClientEmail", thisCompany.ClientEmail);
-            DB.AddParameter("@ClientPosition", thisCompany.ClientPosition);
-            DB.AddParameter("@ClientQualification", thisCompany.ClientQualification);
-            DB.AddParameter("@ClientService", thisCompany.ClientService);
-            DB.AddParameter("@ClientAddress", thisCompany.ClientAddress);
-            DB.AddParameter("@ClientTel", thisCompany.ClientTel);
-            DB.AddParameter("@DateAdded", thisCompany.DateAdded);
-            DB.AddParameter("@Active", thisCompany.Active);
+            DB.AddParameter("@CompanyCode", thisCompany.CompanyCode);
+            DB.AddParameter("@CompanyAddress", thisCompany.CompanyAddress);
+            DB.AddParameter("@CompanyEmailAddress", thisCompany.CompanyEmailAddress);
+            DB.AddParameter("@InvolvedClient", thisCompany.InvolvedClient);
+            DB.AddParameter("@InvolvedProject", thisCompany.InvolvedProject);
+            DB.AddParameter("@MobileNumber", thisCompany.MobileNumber);
+            DB.AddParameter("@PhoneNumber", thisCompany.PhoneNumber);
             //execute the query returning the primary key value
-            DB.Execute("sproc_tblClient_Update");
+            DB.Execute("sproc_tblCompany_Update");
         }
     }
 }

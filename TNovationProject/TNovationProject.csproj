@@ -185,12 +185,6 @@
     <Compile Include="UpdateClient.Designer.cs">
       <DependentUpon>UpdateClient.cs</DependentUpon>
     </Compile>
-    <Compile Include="UpdateCompany.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UpdateCompany.Designer.cs">
-      <DependentUpon>UpdateCompany.cs</DependentUpon>
-    </Compile>
     <Compile Include="UpdateConsultant.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -250,9 +244,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UpdateClient.resx">
       <DependentUpon>UpdateClient.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UpdateCompany.resx">
-      <DependentUpon>UpdateCompany.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UpdateConsultant.resx">
       <DependentUpon>UpdateConsultant.cs</DependentUpon>
