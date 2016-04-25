@@ -59,6 +59,7 @@
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.companyListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.toolStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
@@ -72,7 +73,8 @@
             this.clientToolStripMenuItem,
             this.eventListToolStripMenuItem,
             this.consultantListToolStripMenuItem,
-            this.projectListToolStripMenuItem});
+            this.projectListToolStripMenuItem,
+            this.companyListToolStripMenuItem});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
             this.menuStrip.Size = new System.Drawing.Size(632, 24);
@@ -309,6 +311,13 @@
             this.toolStripStatusLabel.Size = new System.Drawing.Size(39, 17);
             this.toolStripStatusLabel.Text = "Status";
             // 
+            // companyListToolStripMenuItem
+            // 
+            this.companyListToolStripMenuItem.Name = "companyListToolStripMenuItem";
+            this.companyListToolStripMenuItem.Size = new System.Drawing.Size(92, 20);
+            this.companyListToolStripMenuItem.Text = "Company List";
+            this.companyListToolStripMenuItem.Click += new System.EventHandler(this.companyListToolStripMenuItem_Click);
+            // 
             // mdiBackend
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -365,6 +374,7 @@
         private System.Windows.Forms.ToolStripMenuItem eventListToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem consultantListToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem projectListToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem companyListToolStripMenuItem;
     }
 }
 

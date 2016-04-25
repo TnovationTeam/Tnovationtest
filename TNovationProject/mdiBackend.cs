@@ -141,5 +141,14 @@ namespace TNovationProject
             //make the form visible
             ProjectNameList.Visible = true;
         }
+
+        private void companyListToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CompanyList CompanyNameList = new CompanyList();
+            //make the object a child of the mdi parent
+            CompanyNameList.MdiParent = this;
+            //make the form visible
+            CompanyNameList.Visible = true;
+        }
     }
 }
