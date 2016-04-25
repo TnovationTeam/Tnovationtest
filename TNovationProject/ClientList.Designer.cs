@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ClientList));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -51,8 +52,23 @@
             this.buttonClientDet = new System.Windows.Forms.Button();
             this.textBoxClientDet = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.tNovationDataSetFinalHandIN = new TNovationProject.TNovationDataSetFinalHandIN();
+            this.tblClientBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tblClientTableAdapter = new TNovationProject.TNovationDataSetFinalHandINTableAdapters.tblClientTableAdapter();
+            this.clientNoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clientNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clientEmailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clientPositionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clientQualificationDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clientServiceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clientAddressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clientTelDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dateAddedDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.activeDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewC)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetFinalHandIN)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblClientBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // labelClientInformation
@@ -210,6 +226,7 @@
             // 
             // dataGridViewC
             // 
+            this.dataGridViewC.AutoGenerateColumns = false;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -219,6 +236,18 @@
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridViewC.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridViewC.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewC.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.clientNoDataGridViewTextBoxColumn,
+            this.clientNameDataGridViewTextBoxColumn,
+            this.clientEmailDataGridViewTextBoxColumn,
+            this.clientPositionDataGridViewTextBoxColumn,
+            this.clientQualificationDataGridViewTextBoxColumn,
+            this.clientServiceDataGridViewTextBoxColumn,
+            this.clientAddressDataGridViewTextBoxColumn,
+            this.clientTelDataGridViewTextBoxColumn,
+            this.dateAddedDataGridViewTextBoxColumn,
+            this.activeDataGridViewCheckBoxColumn});
+            this.dataGridViewC.DataSource = this.tblClientBindingSource;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -269,6 +298,80 @@
             this.label2.Text = "To find a client, please enter the first name of the client \r\nand it will be high" +
     "lighted.";
             // 
+            // tNovationDataSetFinalHandIN
+            // 
+            this.tNovationDataSetFinalHandIN.DataSetName = "TNovationDataSetFinalHandIN";
+            this.tNovationDataSetFinalHandIN.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tblClientBindingSource
+            // 
+            this.tblClientBindingSource.DataMember = "tblClient";
+            this.tblClientBindingSource.DataSource = this.tNovationDataSetFinalHandIN;
+            // 
+            // tblClientTableAdapter
+            // 
+            this.tblClientTableAdapter.ClearBeforeFill = true;
+            // 
+            // clientNoDataGridViewTextBoxColumn
+            // 
+            this.clientNoDataGridViewTextBoxColumn.DataPropertyName = "ClientNo";
+            this.clientNoDataGridViewTextBoxColumn.HeaderText = "ClientNo";
+            this.clientNoDataGridViewTextBoxColumn.Name = "clientNoDataGridViewTextBoxColumn";
+            // 
+            // clientNameDataGridViewTextBoxColumn
+            // 
+            this.clientNameDataGridViewTextBoxColumn.DataPropertyName = "ClientName";
+            this.clientNameDataGridViewTextBoxColumn.HeaderText = "ClientName";
+            this.clientNameDataGridViewTextBoxColumn.Name = "clientNameDataGridViewTextBoxColumn";
+            // 
+            // clientEmailDataGridViewTextBoxColumn
+            // 
+            this.clientEmailDataGridViewTextBoxColumn.DataPropertyName = "ClientEmail";
+            this.clientEmailDataGridViewTextBoxColumn.HeaderText = "ClientEmail";
+            this.clientEmailDataGridViewTextBoxColumn.Name = "clientEmailDataGridViewTextBoxColumn";
+            // 
+            // clientPositionDataGridViewTextBoxColumn
+            // 
+            this.clientPositionDataGridViewTextBoxColumn.DataPropertyName = "ClientPosition";
+            this.clientPositionDataGridViewTextBoxColumn.HeaderText = "ClientPosition";
+            this.clientPositionDataGridViewTextBoxColumn.Name = "clientPositionDataGridViewTextBoxColumn";
+            // 
+            // clientQualificationDataGridViewTextBoxColumn
+            // 
+            this.clientQualificationDataGridViewTextBoxColumn.DataPropertyName = "ClientQualification";
+            this.clientQualificationDataGridViewTextBoxColumn.HeaderText = "ClientQualification";
+            this.clientQualificationDataGridViewTextBoxColumn.Name = "clientQualificationDataGridViewTextBoxColumn";
+            // 
+            // clientServiceDataGridViewTextBoxColumn
+            // 
+            this.clientServiceDataGridViewTextBoxColumn.DataPropertyName = "ClientService";
+            this.clientServiceDataGridViewTextBoxColumn.HeaderText = "ClientService";
+            this.clientServiceDataGridViewTextBoxColumn.Name = "clientServiceDataGridViewTextBoxColumn";
+            // 
+            // clientAddressDataGridViewTextBoxColumn
+            // 
+            this.clientAddressDataGridViewTextBoxColumn.DataPropertyName = "ClientAddress";
+            this.clientAddressDataGridViewTextBoxColumn.HeaderText = "ClientAddress";
+            this.clientAddressDataGridViewTextBoxColumn.Name = "clientAddressDataGridViewTextBoxColumn";
+            // 
+            // clientTelDataGridViewTextBoxColumn
+            // 
+            this.clientTelDataGridViewTextBoxColumn.DataPropertyName = "ClientTel";
+            this.clientTelDataGridViewTextBoxColumn.HeaderText = "ClientTel";
+            this.clientTelDataGridViewTextBoxColumn.Name = "clientTelDataGridViewTextBoxColumn";
+            // 
+            // dateAddedDataGridViewTextBoxColumn
+            // 
+            this.dateAddedDataGridViewTextBoxColumn.DataPropertyName = "DateAdded";
+            this.dateAddedDataGridViewTextBoxColumn.HeaderText = "DateAdded";
+            this.dateAddedDataGridViewTextBoxColumn.Name = "dateAddedDataGridViewTextBoxColumn";
+            // 
+            // activeDataGridViewCheckBoxColumn
+            // 
+            this.activeDataGridViewCheckBoxColumn.DataPropertyName = "Active";
+            this.activeDataGridViewCheckBoxColumn.HeaderText = "Active";
+            this.activeDataGridViewCheckBoxColumn.Name = "activeDataGridViewCheckBoxColumn";
+            // 
             // ClientList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -300,6 +403,8 @@
             this.Load += new System.EventHandler(this.ClientList_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewC)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetFinalHandIN)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblClientBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -332,5 +437,18 @@
         private System.Windows.Forms.Button buttonClientDet;
         private System.Windows.Forms.TextBox textBoxClientDet;
         private System.Windows.Forms.Label label2;
+        private TNovationDataSetFinalHandIN tNovationDataSetFinalHandIN;
+        private System.Windows.Forms.BindingSource tblClientBindingSource;
+        private TNovationDataSetFinalHandINTableAdapters.tblClientTableAdapter tblClientTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clientNoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clientNameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clientEmailDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clientPositionDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clientQualificationDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clientServiceDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clientAddressDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clientTelDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dateAddedDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn activeDataGridViewCheckBoxColumn;
     }
 }

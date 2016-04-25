@@ -169,6 +169,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>TNovationDataSetcompleted.xsd</DependentUpon>
     </Compile>
+    <Compile Include="TNovationDataSetFinalHandIN.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TNovationDataSetFinalHandIN.xsd</DependentUpon>
+    </Compile>
     <Compile Include="TNovationDataSetsall.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -225,6 +230,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ClientList.resx">
       <DependentUpon>ClientList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CompanyList.resx">
+      <DependentUpon>CompanyList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ConsultantList.resx">
       <DependentUpon>ConsultantList.cs</DependentUpon>
@@ -315,6 +323,17 @@
     </None>
     <None Include="TNovationDataSetcompleted.xss">
       <DependentUpon>TNovationDataSetcompleted.xsd</DependentUpon>
+    </None>
+    <None Include="TNovationDataSetFinalHandIN.xsc">
+      <DependentUpon>TNovationDataSetFinalHandIN.xsd</DependentUpon>
+    </None>
+    <None Include="TNovationDataSetFinalHandIN.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TNovationDataSetFinalHandIN.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TNovationDataSetFinalHandIN.xss">
+      <DependentUpon>TNovationDataSetFinalHandIN.xsd</DependentUpon>
     </None>
     <None Include="TNovationDataSetsall.xsc">
       <DependentUpon>TNovationDataSetsall.xsd</DependentUpon>

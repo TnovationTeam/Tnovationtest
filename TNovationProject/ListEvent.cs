@@ -27,6 +27,8 @@ namespace TNovationProject
 
         private void ListEvent_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'tNovationDataSetFinalHandIN.tblEvent' table. You can move, or remove it, as needed.
+            this.tblEventTableAdapter.Fill(this.tNovationDataSetFinalHandIN.tblEvent);
             //update the listbox
             DisplayEvents();
             this.Refresh();

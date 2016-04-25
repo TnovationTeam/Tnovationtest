@@ -27,8 +27,9 @@ namespace TNovationProject
         //this function handles the load event of the page
         private void ClientList_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'tNovationDataSetFinalHandIN.tblClient' table. You can move, or remove it, as needed.
+            this.tblClientTableAdapter.Fill(this.tNovationDataSetFinalHandIN.tblClient);
 
-            dataGridViewC.DataSource = GetClient();
                  
     
                 //update the listbox

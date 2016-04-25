@@ -16,5 +16,12 @@ namespace TNovationProject
         {
             InitializeComponent();
         }
+
+        private void CompanyList_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'tNovationDataSetFinalHandIN.tblCompany' table. You can move, or remove it, as needed.
+            this.tblCompanyTableAdapter.Fill(this.tNovationDataSetFinalHandIN.tblCompany);
+
+        }
     }
 }

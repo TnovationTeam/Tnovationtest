@@ -72,6 +72,9 @@
             this.tblProjectBindingSource9 = new System.Windows.Forms.BindingSource(this.components);
             this.buttonPopulate = new System.Windows.Forms.Button();
             this.labelError = new System.Windows.Forms.Label();
+            this.tNovationDataSetFinalHandIN = new TNovationProject.TNovationDataSetFinalHandIN();
+            this.tblProjectBindingSource11 = new System.Windows.Forms.BindingSource(this.components);
+            this.tblProjectTableAdapter4 = new TNovationProject.TNovationDataSetFinalHandINTableAdapters.tblProjectTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblProjectBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblProjectBindingSource1)).BeginInit();
@@ -93,15 +96,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.tblProjectBindingSource3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetcompletedBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblProjectBindingSource9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetFinalHandIN)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblProjectBindingSource11)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBoxLogo
             // 
             this.pictureBoxLogo.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxLogo.Image")));
-            this.pictureBoxLogo.Location = new System.Drawing.Point(29, 25);
-            this.pictureBoxLogo.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBoxLogo.Location = new System.Drawing.Point(22, 20);
             this.pictureBoxLogo.Name = "pictureBoxLogo";
-            this.pictureBoxLogo.Size = new System.Drawing.Size(125, 91);
+            this.pictureBoxLogo.Size = new System.Drawing.Size(94, 74);
             this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxLogo.TabIndex = 23;
             this.pictureBoxLogo.TabStop = false;
@@ -112,10 +116,9 @@
             this.labelHeading.BackColor = System.Drawing.Color.LightSteelBlue;
             this.labelHeading.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelHeading.ForeColor = System.Drawing.Color.Navy;
-            this.labelHeading.Location = new System.Drawing.Point(179, 25);
-            this.labelHeading.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelHeading.Location = new System.Drawing.Point(134, 20);
             this.labelHeading.Name = "labelHeading";
-            this.labelHeading.Size = new System.Drawing.Size(466, 91);
+            this.labelHeading.Size = new System.Drawing.Size(378, 73);
             this.labelHeading.TabIndex = 24;
             this.labelHeading.Text = "T{Novation}";
             // 
@@ -123,10 +126,9 @@
             // 
             this.buttonAdd.BackColor = System.Drawing.Color.DodgerBlue;
             this.buttonAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonAdd.Location = new System.Drawing.Point(1125, 178);
-            this.buttonAdd.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonAdd.Location = new System.Drawing.Point(844, 145);
             this.buttonAdd.Name = "buttonAdd";
-            this.buttonAdd.Size = new System.Drawing.Size(117, 46);
+            this.buttonAdd.Size = new System.Drawing.Size(88, 37);
             this.buttonAdd.TabIndex = 27;
             this.buttonAdd.Text = "Add";
             this.buttonAdd.UseVisualStyleBackColor = false;
@@ -136,10 +138,9 @@
             // 
             this.buttonUpdate.BackColor = System.Drawing.Color.DodgerBlue;
             this.buttonUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonUpdate.Location = new System.Drawing.Point(1125, 232);
-            this.buttonUpdate.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonUpdate.Location = new System.Drawing.Point(844, 188);
             this.buttonUpdate.Name = "buttonUpdate";
-            this.buttonUpdate.Size = new System.Drawing.Size(117, 41);
+            this.buttonUpdate.Size = new System.Drawing.Size(88, 33);
             this.buttonUpdate.TabIndex = 30;
             this.buttonUpdate.Text = "Update";
             this.buttonUpdate.UseVisualStyleBackColor = false;
@@ -149,10 +150,9 @@
             // 
             this.buttonArchive.BackColor = System.Drawing.Color.DodgerBlue;
             this.buttonArchive.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonArchive.Location = new System.Drawing.Point(1125, 281);
-            this.buttonArchive.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonArchive.Location = new System.Drawing.Point(844, 228);
             this.buttonArchive.Name = "buttonArchive";
-            this.buttonArchive.Size = new System.Drawing.Size(117, 42);
+            this.buttonArchive.Size = new System.Drawing.Size(88, 34);
             this.buttonArchive.TabIndex = 31;
             this.buttonArchive.Text = "Archive";
             this.buttonArchive.UseVisualStyleBackColor = false;
@@ -161,11 +161,9 @@
             // listboxProjects
             // 
             this.listboxProjects.FormattingEnabled = true;
-            this.listboxProjects.ItemHeight = 16;
-            this.listboxProjects.Location = new System.Drawing.Point(29, 178);
-            this.listboxProjects.Margin = new System.Windows.Forms.Padding(4);
+            this.listboxProjects.Location = new System.Drawing.Point(22, 145);
             this.listboxProjects.Name = "listboxProjects";
-            this.listboxProjects.Size = new System.Drawing.Size(211, 324);
+            this.listboxProjects.Size = new System.Drawing.Size(159, 264);
             this.listboxProjects.TabIndex = 32;
             // 
             // tblProjectBindingSource2
@@ -180,10 +178,9 @@
             // 
             this.ProjectName.AutoSize = true;
             this.ProjectName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
-            this.ProjectName.Location = new System.Drawing.Point(29, 155);
-            this.ProjectName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.ProjectName.Location = new System.Drawing.Point(22, 126);
             this.ProjectName.Name = "ProjectName";
-            this.ProjectName.Size = new System.Drawing.Size(123, 20);
+            this.ProjectName.Size = new System.Drawing.Size(102, 16);
             this.ProjectName.TabIndex = 34;
             this.ProjectName.Text = "Project Name";
             // 
@@ -191,10 +188,9 @@
             // 
             this.ProjectDetails.AutoSize = true;
             this.ProjectDetails.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
-            this.ProjectDetails.Location = new System.Drawing.Point(268, 155);
-            this.ProjectDetails.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.ProjectDetails.Location = new System.Drawing.Point(201, 126);
             this.ProjectDetails.Name = "ProjectDetails";
-            this.ProjectDetails.Size = new System.Drawing.Size(135, 20);
+            this.ProjectDetails.Size = new System.Drawing.Size(110, 16);
             this.ProjectDetails.TabIndex = 35;
             this.ProjectDetails.Text = "Project Details";
             // 
@@ -215,11 +211,10 @@
             this.dataGridViewTextBoxColumn14,
             this.dataGridViewTextBoxColumn15,
             this.dataGridViewTextBoxColumn16});
-            this.DataGridViewProjects.DataSource = this.tblProjectBindingSource10;
-            this.DataGridViewProjects.Location = new System.Drawing.Point(272, 178);
-            this.DataGridViewProjects.Margin = new System.Windows.Forms.Padding(4);
+            this.DataGridViewProjects.DataSource = this.tblProjectBindingSource11;
+            this.DataGridViewProjects.Location = new System.Drawing.Point(204, 145);
             this.DataGridViewProjects.Name = "DataGridViewProjects";
-            this.DataGridViewProjects.Size = new System.Drawing.Size(845, 324);
+            this.DataGridViewProjects.Size = new System.Drawing.Size(634, 263);
             this.DataGridViewProjects.TabIndex = 36;
             // 
             // dataGridViewTextBoxColumn9
@@ -360,10 +355,9 @@
             // 
             this.buttonPopulate.BackColor = System.Drawing.Color.DodgerBlue;
             this.buttonPopulate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonPopulate.Location = new System.Drawing.Point(1125, 331);
-            this.buttonPopulate.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonPopulate.Location = new System.Drawing.Point(844, 269);
             this.buttonPopulate.Name = "buttonPopulate";
-            this.buttonPopulate.Size = new System.Drawing.Size(117, 46);
+            this.buttonPopulate.Size = new System.Drawing.Size(88, 37);
             this.buttonPopulate.TabIndex = 37;
             this.buttonPopulate.Text = "Populate";
             this.buttonPopulate.UseVisualStyleBackColor = false;
@@ -371,16 +365,31 @@
             // labelError
             // 
             this.labelError.AutoSize = true;
-            this.labelError.Location = new System.Drawing.Point(757, 112);
+            this.labelError.Location = new System.Drawing.Point(568, 91);
+            this.labelError.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelError.Name = "labelError";
-            this.labelError.Size = new System.Drawing.Size(0, 17);
+            this.labelError.Size = new System.Drawing.Size(0, 13);
             this.labelError.TabIndex = 38;
+            // 
+            // tNovationDataSetFinalHandIN
+            // 
+            this.tNovationDataSetFinalHandIN.DataSetName = "TNovationDataSetFinalHandIN";
+            this.tNovationDataSetFinalHandIN.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tblProjectBindingSource11
+            // 
+            this.tblProjectBindingSource11.DataMember = "tblProject";
+            this.tblProjectBindingSource11.DataSource = this.tNovationDataSetFinalHandIN;
+            // 
+            // tblProjectTableAdapter4
+            // 
+            this.tblProjectTableAdapter4.ClearBeforeFill = true;
             // 
             // ProjectList
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1248, 510);
+            this.ClientSize = new System.Drawing.Size(936, 414);
             this.Controls.Add(this.labelError);
             this.Controls.Add(this.buttonPopulate);
             this.Controls.Add(this.DataGridViewProjects);
@@ -392,7 +401,7 @@
             this.Controls.Add(this.buttonAdd);
             this.Controls.Add(this.labelHeading);
             this.Controls.Add(this.pictureBoxLogo);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "ProjectList";
             this.Text = "ProjectList";
             this.Load += new System.EventHandler(this.ProjectList_Load_1);
@@ -417,6 +426,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.tblProjectBindingSource3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetcompletedBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblProjectBindingSource9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetFinalHandIN)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblProjectBindingSource11)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -484,5 +495,8 @@
         private System.Windows.Forms.BindingSource callumProjectDataSetBindingSource;
         private System.Windows.Forms.Button buttonPopulate;
         private System.Windows.Forms.Label labelError;
+        private TNovationDataSetFinalHandIN tNovationDataSetFinalHandIN;
+        private System.Windows.Forms.BindingSource tblProjectBindingSource11;
+        private TNovationDataSetFinalHandINTableAdapters.tblProjectTableAdapter tblProjectTableAdapter4;
     }
 }

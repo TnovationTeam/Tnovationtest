@@ -69,6 +69,9 @@
             this.listBoxConsultant = new System.Windows.Forms.ListBox();
             this.labelError = new System.Windows.Forms.Label();
             this.tblConsultantTableAdapter3 = new TNovationProject.TNovationDataSetcompletedTableAdapters.tblConsultantTableAdapter();
+            this.tNovationDataSetFinalHandIN = new TNovationProject.TNovationDataSetFinalHandIN();
+            this.tblConsultantBindingSource6 = new System.Windows.Forms.BindingSource(this.components);
+            this.tblConsultantTableAdapter4 = new TNovationProject.TNovationDataSetFinalHandINTableAdapters.tblConsultantTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -82,6 +85,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.tblConsultantBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mwenyaConsultantDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblConsultantBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetFinalHandIN)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblConsultantBindingSource6)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -183,7 +188,7 @@
             this.employmentHistoryDataGridViewTextBoxColumn,
             this.statusDataGridViewCheckBoxColumn,
             this.dateAddedDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.tblConsultantBindingSource5;
+            this.dataGridView1.DataSource = this.tblConsultantBindingSource6;
             this.dataGridView1.Location = new System.Drawing.Point(41, 193);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(1344, 466);
@@ -350,11 +355,25 @@
             // 
             this.tblConsultantTableAdapter3.ClearBeforeFill = true;
             // 
+            // tNovationDataSetFinalHandIN
+            // 
+            this.tNovationDataSetFinalHandIN.DataSetName = "TNovationDataSetFinalHandIN";
+            this.tNovationDataSetFinalHandIN.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tblConsultantBindingSource6
+            // 
+            this.tblConsultantBindingSource6.DataMember = "tblConsultant";
+            this.tblConsultantBindingSource6.DataSource = this.tNovationDataSetFinalHandIN;
+            // 
+            // tblConsultantTableAdapter4
+            // 
+            this.tblConsultantTableAdapter4.ClearBeforeFill = true;
+            // 
             // ConsultantList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1549, 702);
+            this.ClientSize = new System.Drawing.Size(1362, 702);
             this.Controls.Add(this.labelError);
             this.Controls.Add(this.listBoxConsultant);
             this.Controls.Add(this.dataGridView1);
@@ -382,6 +401,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.tblConsultantBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mwenyaConsultantDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblConsultantBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetFinalHandIN)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblConsultantBindingSource6)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -429,5 +450,8 @@
         private TNovationDataSetcompleted tNovationDataSetcompleted;
         private System.Windows.Forms.BindingSource tblConsultantBindingSource5;
         private TNovationDataSetcompletedTableAdapters.tblConsultantTableAdapter tblConsultantTableAdapter3;
+        private TNovationDataSetFinalHandIN tNovationDataSetFinalHandIN;
+        private System.Windows.Forms.BindingSource tblConsultantBindingSource6;
+        private TNovationDataSetFinalHandINTableAdapters.tblConsultantTableAdapter tblConsultantTableAdapter4;
     }
 }

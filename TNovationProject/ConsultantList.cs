@@ -35,6 +35,8 @@ namespace TNovationProject
 
         private void ConsultantList_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'tNovationDataSetFinalHandIN.tblConsultant' table. You can move, or remove it, as needed.
+            this.tblConsultantTableAdapter4.Fill(this.tNovationDataSetFinalHandIN.tblConsultant);
             // TODO: This line of code loads data into the 'tNovationDataSetcompleted.tblConsultant' table. You can move, or remove it, as needed.
            
             //update the listbox
