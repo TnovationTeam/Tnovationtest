@@ -87,12 +87,5 @@ namespace TNovationProject
             this.Hide();
         }
 
-
-
-
-
-
-
-
     }
 }
