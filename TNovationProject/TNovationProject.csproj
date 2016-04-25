@@ -107,6 +107,12 @@
     <Compile Include="ClientList.Designer.cs">
       <DependentUpon>ClientList.cs</DependentUpon>
     </Compile>
+    <Compile Include="ClientLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientLogin.Designer.cs">
+      <DependentUpon>ClientLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="CompanyList.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -119,17 +125,35 @@
     <Compile Include="ConsultantList.Designer.cs">
       <DependentUpon>ConsultantList.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
     <Compile Include="ListEvent.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ListEvent.Designer.cs">
       <DependentUpon>ListEvent.cs</DependentUpon>
     </Compile>
+    <Compile Include="LogInConsultant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogInConsultant.Designer.cs">
+      <DependentUpon>LogInConsultant.cs</DependentUpon>
+    </Compile>
     <Compile Include="mdiBackend.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="mdiBackend.Designer.cs">
       <DependentUpon>mdiBackend.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
     <Compile Include="MwenyaConsultantDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -173,6 +197,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>TNovationDataSetFinalHandIN.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TNovationDataSetLATESTAPRIL.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TNovationDataSetLATESTAPRIL.xsd</DependentUpon>
     </Compile>
     <Compile Include="TNovationDataSetsall.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -237,17 +266,29 @@
     <EmbeddedResource Include="ClientList.resx">
       <DependentUpon>ClientList.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ClientLogin.resx">
+      <DependentUpon>ClientLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CompanyList.resx">
       <DependentUpon>CompanyList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ConsultantList.resx">
       <DependentUpon>ConsultantList.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ListEvent.resx">
       <DependentUpon>ListEvent.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="LogInConsultant.resx">
+      <DependentUpon>LogInConsultant.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="mdiBackend.resx">
       <DependentUpon>mdiBackend.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ProjectList.resx">
       <DependentUpon>ProjectList.cs</DependentUpon>
@@ -343,6 +384,17 @@
     </None>
     <None Include="TNovationDataSetFinalHandIN.xss">
       <DependentUpon>TNovationDataSetFinalHandIN.xsd</DependentUpon>
+    </None>
+    <None Include="TNovationDataSetLATESTAPRIL.xsc">
+      <DependentUpon>TNovationDataSetLATESTAPRIL.xsd</DependentUpon>
+    </None>
+    <None Include="TNovationDataSetLATESTAPRIL.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TNovationDataSetLATESTAPRIL.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TNovationDataSetLATESTAPRIL.xss">
+      <DependentUpon>TNovationDataSetLATESTAPRIL.xsd</DependentUpon>
     </None>
     <None Include="TNovationDataSetsall.xsc">
       <DependentUpon>TNovationDataSetsall.xsd</DependentUpon>

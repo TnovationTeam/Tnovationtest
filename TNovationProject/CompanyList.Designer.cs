@@ -34,7 +34,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.labelHeading = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.dataGridViewCompany = new System.Windows.Forms.DataGridView();
+            this.dataGridViewC = new System.Windows.Forms.DataGridView();
             this.companyCodeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.companyAddressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.companyEmailAddressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -46,7 +46,7 @@
             this.tNovationDataSetFinalHandIN = new TNovationProject.TNovationDataSetFinalHandIN();
             this.labelCompanydetails = new System.Windows.Forms.Label();
             this.labelUser = new System.Windows.Forms.Label();
-            this.listboxCompany = new System.Windows.Forms.ListBox();
+            this.listboxClient = new System.Windows.Forms.ListBox();
             this.labelCompanyInformation = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.textBoxCompanyDet = new System.Windows.Forms.TextBox();
@@ -60,10 +60,15 @@
             this.buttonUpdate = new System.Windows.Forms.Button();
             this.buttonAdd = new System.Windows.Forms.Button();
             this.tblCompanyTableAdapter = new TNovationProject.TNovationDataSetFinalHandINTableAdapters.tblCompanyTableAdapter();
+            this.tNovationDataSetLATESTAPRIL = new TNovationProject.TNovationDataSetLATESTAPRIL();
+            this.tblCompanyBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.tblCompanyTableAdapter1 = new TNovationProject.TNovationDataSetLATESTAPRILTableAdapters.tblCompanyTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCompany)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewC)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblCompanyBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetFinalHandIN)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetLATESTAPRIL)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblCompanyBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // labelHeading
@@ -87,9 +92,9 @@
             this.pictureBox1.TabIndex = 70;
             this.pictureBox1.TabStop = false;
             // 
-            // dataGridViewCompany
+            // dataGridViewC
             // 
-            this.dataGridViewCompany.AutoGenerateColumns = false;
+            this.dataGridViewC.AutoGenerateColumns = false;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -97,9 +102,9 @@
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewCompany.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridViewCompany.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewCompany.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewC.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridViewC.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewC.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.companyCodeDataGridViewTextBoxColumn,
             this.companyAddressDataGridViewTextBoxColumn,
             this.companyEmailAddressDataGridViewTextBoxColumn,
@@ -107,7 +112,7 @@
             this.involvedProjectDataGridViewTextBoxColumn,
             this.mobileNumberDataGridViewTextBoxColumn,
             this.phoneNumberDataGridViewTextBoxColumn});
-            this.dataGridViewCompany.DataSource = this.tblCompanyBindingSource;
+            this.dataGridViewC.DataSource = this.tblCompanyBindingSource1;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -115,9 +120,9 @@
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewCompany.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridViewCompany.Location = new System.Drawing.Point(219, 196);
-            this.dataGridViewCompany.Name = "dataGridViewCompany";
+            this.dataGridViewC.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridViewC.Location = new System.Drawing.Point(219, 196);
+            this.dataGridViewC.Name = "dataGridViewC";
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -125,9 +130,9 @@
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewCompany.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.dataGridViewCompany.Size = new System.Drawing.Size(1035, 238);
-            this.dataGridViewCompany.TabIndex = 79;
+            this.dataGridViewC.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridViewC.Size = new System.Drawing.Size(1035, 238);
+            this.dataGridViewC.TabIndex = 79;
             // 
             // companyCodeDataGridViewTextBoxColumn
             // 
@@ -203,13 +208,13 @@
             this.labelUser.TabIndex = 77;
             this.labelUser.Text = "Company names";
             // 
-            // listboxCompany
+            // listboxClient
             // 
-            this.listboxCompany.FormattingEnabled = true;
-            this.listboxCompany.Location = new System.Drawing.Point(37, 196);
-            this.listboxCompany.Name = "listboxCompany";
-            this.listboxCompany.Size = new System.Drawing.Size(167, 238);
-            this.listboxCompany.TabIndex = 76;
+            this.listboxClient.FormattingEnabled = true;
+            this.listboxClient.Location = new System.Drawing.Point(37, 196);
+            this.listboxClient.Name = "listboxClient";
+            this.listboxClient.Size = new System.Drawing.Size(167, 238);
+            this.listboxClient.TabIndex = 76;
             // 
             // labelCompanyInformation
             // 
@@ -248,7 +253,6 @@
             this.buttonCompanyDet.TabIndex = 88;
             this.buttonCompanyDet.Text = "Find client";
             this.buttonCompanyDet.UseVisualStyleBackColor = true;
-            this.buttonCompanyDet.Click += new System.EventHandler(this.buttonCompanyDet_Click);
             // 
             // buttonPopulate
             // 
@@ -258,7 +262,6 @@
             this.buttonPopulate.TabIndex = 87;
             this.buttonPopulate.Text = "Populate list box";
             this.buttonPopulate.UseVisualStyleBackColor = true;
-            this.buttonPopulate.Click += new System.EventHandler(this.buttonPopulate_Click);
             // 
             // labelInfo3
             // 
@@ -310,7 +313,6 @@
             this.buttonDelete.TabIndex = 82;
             this.buttonDelete.Text = "Delete Company";
             this.buttonDelete.UseVisualStyleBackColor = true;
-            this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
             // 
             // buttonUpdate
             // 
@@ -320,7 +322,6 @@
             this.buttonUpdate.TabIndex = 81;
             this.buttonUpdate.Text = "Update Company";
             this.buttonUpdate.UseVisualStyleBackColor = true;
-            this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
             // buttonAdd
             // 
@@ -330,11 +331,24 @@
             this.buttonAdd.TabIndex = 80;
             this.buttonAdd.Text = "Add Company";
             this.buttonAdd.UseVisualStyleBackColor = true;
-            this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
             // tblCompanyTableAdapter
             // 
             this.tblCompanyTableAdapter.ClearBeforeFill = true;
+            // 
+            // tNovationDataSetLATESTAPRIL
+            // 
+            this.tNovationDataSetLATESTAPRIL.DataSetName = "TNovationDataSetLATESTAPRIL";
+            this.tNovationDataSetLATESTAPRIL.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tblCompanyBindingSource1
+            // 
+            this.tblCompanyBindingSource1.DataMember = "tblCompany";
+            this.tblCompanyBindingSource1.DataSource = this.tNovationDataSetLATESTAPRIL;
+            // 
+            // tblCompanyTableAdapter1
+            // 
+            this.tblCompanyTableAdapter1.ClearBeforeFill = true;
             // 
             // CompanyList
             // 
@@ -352,10 +366,10 @@
             this.Controls.Add(this.buttonDelete);
             this.Controls.Add(this.buttonUpdate);
             this.Controls.Add(this.buttonAdd);
-            this.Controls.Add(this.dataGridViewCompany);
+            this.Controls.Add(this.dataGridViewC);
             this.Controls.Add(this.labelCompanydetails);
             this.Controls.Add(this.labelUser);
-            this.Controls.Add(this.listboxCompany);
+            this.Controls.Add(this.listboxClient);
             this.Controls.Add(this.labelCompanyInformation);
             this.Controls.Add(this.labelHeading);
             this.Controls.Add(this.pictureBox1);
@@ -363,9 +377,11 @@
             this.Text = "CompanyList";
             this.Load += new System.EventHandler(this.CompanyList_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCompany)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewC)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblCompanyBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetFinalHandIN)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetLATESTAPRIL)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblCompanyBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -375,10 +391,10 @@
 
         private System.Windows.Forms.Label labelHeading;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.DataGridView dataGridViewCompany;
+        private System.Windows.Forms.DataGridView dataGridViewC;
         private System.Windows.Forms.Label labelCompanydetails;
         private System.Windows.Forms.Label labelUser;
-        private System.Windows.Forms.ListBox listboxCompany;
+        private System.Windows.Forms.ListBox listboxClient;
         private System.Windows.Forms.Label labelCompanyInformation;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBoxCompanyDet;
@@ -401,5 +417,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn involvedProjectDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn mobileNumberDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn phoneNumberDataGridViewTextBoxColumn;
+        private TNovationDataSetLATESTAPRIL tNovationDataSetLATESTAPRIL;
+        private System.Windows.Forms.BindingSource tblCompanyBindingSource1;
+        private TNovationDataSetLATESTAPRILTableAdapters.tblCompanyTableAdapter tblCompanyTableAdapter1;
     }
 }

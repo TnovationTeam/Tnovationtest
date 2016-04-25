@@ -229,7 +229,7 @@ namespace TNovationClassLibrary
                 OK = false;
             }
 
-            if(Contact.Length < 9)
+            if(Contact.Length < 8)
             {
                 OK = false;
 

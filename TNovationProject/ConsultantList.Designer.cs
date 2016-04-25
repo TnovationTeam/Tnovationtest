@@ -53,6 +53,8 @@
             this.employmentHistoryDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.statusDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.dateAddedDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tblConsultantBindingSource6 = new System.Windows.Forms.BindingSource(this.components);
+            this.tNovationDataSetFinalHandIN = new TNovationProject.TNovationDataSetFinalHandIN();
             this.tblConsultantBindingSource5 = new System.Windows.Forms.BindingSource(this.components);
             this.tNovationDataSetcompleted = new TNovationProject.TNovationDataSetcompleted();
             this.tblConsultantBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
@@ -69,12 +71,15 @@
             this.listBoxConsultant = new System.Windows.Forms.ListBox();
             this.labelError = new System.Windows.Forms.Label();
             this.tblConsultantTableAdapter3 = new TNovationProject.TNovationDataSetcompletedTableAdapters.tblConsultantTableAdapter();
-            this.tNovationDataSetFinalHandIN = new TNovationProject.TNovationDataSetFinalHandIN();
-            this.tblConsultantBindingSource6 = new System.Windows.Forms.BindingSource(this.components);
             this.tblConsultantTableAdapter4 = new TNovationProject.TNovationDataSetFinalHandINTableAdapters.tblConsultantTableAdapter();
+            this.tNovationDataSetLATESTAPRIL = new TNovationProject.TNovationDataSetLATESTAPRIL();
+            this.tblConsultantBindingSource7 = new System.Windows.Forms.BindingSource(this.components);
+            this.tblConsultantTableAdapter5 = new TNovationProject.TNovationDataSetLATESTAPRILTableAdapters.tblConsultantTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblConsultantBindingSource6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetFinalHandIN)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblConsultantBindingSource5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetcompleted)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblConsultantBindingSource4)).BeginInit();
@@ -85,8 +90,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.tblConsultantBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mwenyaConsultantDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblConsultantBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetFinalHandIN)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblConsultantBindingSource6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetLATESTAPRIL)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblConsultantBindingSource7)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -188,7 +193,7 @@
             this.employmentHistoryDataGridViewTextBoxColumn,
             this.statusDataGridViewCheckBoxColumn,
             this.dateAddedDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.tblConsultantBindingSource6;
+            this.dataGridView1.DataSource = this.tblConsultantBindingSource7;
             this.dataGridView1.Location = new System.Drawing.Point(41, 193);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(1344, 466);
@@ -271,6 +276,16 @@
             this.dateAddedDataGridViewTextBoxColumn.DataPropertyName = "DateAdded";
             this.dateAddedDataGridViewTextBoxColumn.HeaderText = "DateAdded";
             this.dateAddedDataGridViewTextBoxColumn.Name = "dateAddedDataGridViewTextBoxColumn";
+            // 
+            // tblConsultantBindingSource6
+            // 
+            this.tblConsultantBindingSource6.DataMember = "tblConsultant";
+            this.tblConsultantBindingSource6.DataSource = this.tNovationDataSetFinalHandIN;
+            // 
+            // tNovationDataSetFinalHandIN
+            // 
+            this.tNovationDataSetFinalHandIN.DataSetName = "TNovationDataSetFinalHandIN";
+            this.tNovationDataSetFinalHandIN.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // tblConsultantBindingSource5
             // 
@@ -355,24 +370,29 @@
             // 
             this.tblConsultantTableAdapter3.ClearBeforeFill = true;
             // 
-            // tNovationDataSetFinalHandIN
-            // 
-            this.tNovationDataSetFinalHandIN.DataSetName = "TNovationDataSetFinalHandIN";
-            this.tNovationDataSetFinalHandIN.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tblConsultantBindingSource6
-            // 
-            this.tblConsultantBindingSource6.DataMember = "tblConsultant";
-            this.tblConsultantBindingSource6.DataSource = this.tNovationDataSetFinalHandIN;
-            // 
             // tblConsultantTableAdapter4
             // 
             this.tblConsultantTableAdapter4.ClearBeforeFill = true;
+            // 
+            // tNovationDataSetLATESTAPRIL
+            // 
+            this.tNovationDataSetLATESTAPRIL.DataSetName = "TNovationDataSetLATESTAPRIL";
+            this.tNovationDataSetLATESTAPRIL.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tblConsultantBindingSource7
+            // 
+            this.tblConsultantBindingSource7.DataMember = "tblConsultant";
+            this.tblConsultantBindingSource7.DataSource = this.tNovationDataSetLATESTAPRIL;
+            // 
+            // tblConsultantTableAdapter5
+            // 
+            this.tblConsultantTableAdapter5.ClearBeforeFill = true;
             // 
             // ConsultantList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1362, 702);
             this.Controls.Add(this.labelError);
             this.Controls.Add(this.listBoxConsultant);
@@ -391,6 +411,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblConsultantBindingSource6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetFinalHandIN)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblConsultantBindingSource5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetcompleted)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblConsultantBindingSource4)).EndInit();
@@ -401,8 +423,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.tblConsultantBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mwenyaConsultantDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblConsultantBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetFinalHandIN)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblConsultantBindingSource6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tNovationDataSetLATESTAPRIL)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblConsultantBindingSource7)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -453,5 +475,8 @@
         private TNovationDataSetFinalHandIN tNovationDataSetFinalHandIN;
         private System.Windows.Forms.BindingSource tblConsultantBindingSource6;
         private TNovationDataSetFinalHandINTableAdapters.tblConsultantTableAdapter tblConsultantTableAdapter4;
+        private TNovationDataSetLATESTAPRIL tNovationDataSetLATESTAPRIL;
+        private System.Windows.Forms.BindingSource tblConsultantBindingSource7;
+        private TNovationDataSetLATESTAPRILTableAdapters.tblConsultantTableAdapter tblConsultantTableAdapter5;
     }
 }
