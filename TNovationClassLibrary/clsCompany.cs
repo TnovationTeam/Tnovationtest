@@ -158,10 +158,8 @@ namespace TNovationClassLibrary
         {
             //create a Boolean variable to flag the error
             Boolean OK = true;
-            //create a temporary variable to store the date values
-            //DateTime DateTemp;
-            //if the CompanyAddress is blank
-
+            //create a temporary variable to store the data values
+            String AddressTemp;
             //if the company address is blank
             if (CompanyAddress.Length == 0)
             {
@@ -172,6 +170,56 @@ namespace TNovationClassLibrary
             if (CompanyAddress.Length > 6)
             {
                 //set the flag OK to false
+                OK = false;
+            }
+
+            //try the address validation assuming the data is a valid address
+            try
+            {
+                //copy the Address value to the AddressTemp variable
+                AddressTemp = Convert.ToString(CompanyAddress);
+            }
+            //the data was not an address so flag an error
+            catch
+            {
+                OK = false;
+            }
+
+            //if the company email address is blank
+            if (CompanyEmailAddress.Length == 0)
+            {
+                //set the flag Ok to false
+                OK = false;
+            }
+
+            //if the post code is too long
+            if (CompanyEmailAddress.Length > 9)
+            {
+                //set the flag Ok to false
+                OK = false;
+            }
+
+            //is the address blank
+            if (CompanyAddress.Length==0)
+            {
+                OK = false;
+            }
+
+            //if the Address is too long
+            if (CompanyEmailAddress.Length > 50)
+            {
+                //set the flag Ok to false
+                OK = false;
+            }
+            //is the InvolvedClient blank
+            if (InvolvedClient.Length == 0)
+            {
+                OK = false;
+            }
+            //if the Involved Client is too long
+            if(InvolvedClient.Length > 50)
+            {
+                //set the flag OK to false;
                 OK = false;
             }
             //copy the DateAdded value to the DateTemp variable
